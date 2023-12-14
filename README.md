@@ -81,7 +81,7 @@ function noSpace(x){
 
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-For example, for `[1, 2, 2]` it should return `9`because 1^2^ + 2^2^ + 2^2^ = 9.
+For example, for `[1, 2, 2]` it should return `9` because $`1^2 + 2^2 + 2^2 = 9`$.
 
 <details><summary>My Solution</summary>
 
@@ -215,7 +215,7 @@ If you've completed this kata already and want a bigger challenge, here's the [3
 
 Bob is bored during his physics lessons so he's built himself a toy box to help pass the time. The box is special because it has the ability to change gravity.
 
-There are some columns of toy cubes in the box arranged in a line. The i-th column contains `a_i` cubes. At first, the gravity in the box is pulling the cubes downwards. When Bob switches the gravity, it begins to pull all the cubes to a certain side of the box, `d`, which can be either `'L`' or` 'R'` (left or right). Below is an example of what a box of cubes might look like before and after switching gravity.
+There are some columns of toy cubes in the box arranged in a line. The i-th column contains `a_i` cubes. At first, the gravity in the box is pulling the cubes downwards. When Bob switches the gravity, it begins to pull all the cubes to a certain side of the box, `d`, which can be either `'L'` or `'R'` (left or right). Below is an example of what a box of cubes might look like before and after switching gravity.
 
 ```
 +---+                                       +---+
@@ -660,7 +660,7 @@ const countBits = function(n) {
 
 Write a function that accepts a string, and returns the same string with all even indexed characters in each word upper cased, and all odd indexed characters in each word lower cased. The indexing just explained is zero based, so the zero-ith index is even, therefore that character should be upper cased and you need to start over for each word.
 
-The passed in string will only consist of alphabetical characters and spaces(`' '`). Spaces will only be present if there are multiple words. Words will be separated by a single space(`' `').
+The passed in string will only consist of alphabetical characters and spaces(`' '`). Spaces will only be present if there are multiple words. Words will be separated by a single space(`' '`).
 
 ### Examples:
 ```
