@@ -1191,16 +1191,16 @@ function digitize(n) {
 ## 37. [Playing with digits](https://www.codewars.com/kata/5552101f47fc5178b1000050)
 
 Some numbers have funny properties. For example:
-
+```
 - 89 --> 8¹ + 9² = 89 * 1
 - 695 --> 6² + 9³ + 5⁴= 1390 = 695 * 2
 - 46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
-
+```
 
 - Given two positive integers `n` and `p`, we want to find a positive integer `k`, if it exists, such that the sum of the digits of `n` raised to consecutive powers starting from p is equal to `k * n`.
 
 In other words, writing the consecutive digits of `n` as `a, b, c, d ..`., is there an integer `k` such that :
-$`(a^p + b^p+1 + c^p+2 + d^p+3 + ...) = n∗k`$
+$`(a^p + b^{p+1} + c^{p+2} + d^{p+3} + ...) = n∗k`$
 If it is the case we will return `k`, if not return `-1`.
 
 Note: `n` and `p` will always be strictly positive integers.
@@ -1934,7 +1934,7 @@ function sumStrings(a, b) {
 
 ## 59. [Build a pile of Cubes](https://www.codewars.com/kata/5592e3bd57b64d00f3000047)
 
-Your task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of $`n^3`$ of of $`(n - 1)^3$ and so on until the top which will have a volume of $`1^3`$.
+Your task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of $`n^3`$ of of $`(n - 1)^3`$ and so on until the top which will have a volume of $`1^3`$.
 
 You are given the total volume m of the building. Being given m can you find the number n of cubes you will have to build?
 
