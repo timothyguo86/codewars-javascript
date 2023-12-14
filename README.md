@@ -15,7 +15,7 @@ You receive an array with your peers' test scores. Now calculate the average and
 
 Return `True` if you're better, else `False`!
 
-Note:
+### Note:
 Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
 
 <details><summary>My Solution</summary>
@@ -54,6 +54,15 @@ function removeChar(str){
 
 Write a function that removes the spaces from the string, then return the resultant string.
 
+### Examples:
+
+```
+Input -> Output
+"8 j 8   mBliB8g  imjB8B8  jl  B" -> "8j8mBliB8gimjB8B8jlB"
+"8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd" -> "88Bifk8hB8BB8BBBB888chl8BhBfd"
+"8aaaaa dddd r     " -> "8aaaaaddddr"
+```
+
 <details><summary>My Solution</summary>
 
 ```js
@@ -72,7 +81,7 @@ function noSpace(x){
 
 Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-For example, for `[1, 2, 2]` it should return `9`
+For example, for `[1, 2, 2]` it should return `9`because 1^2^ + 2^2^ + 2^2^ = 9.
 
 <details><summary>My Solution</summary>
 
