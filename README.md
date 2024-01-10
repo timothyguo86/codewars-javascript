@@ -24,7 +24,7 @@ Your points are not included in the array of your class's points. For calculatin
 function betterThanAverage(classPoints, yourPoints) {
   return (
     yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
-  );
+  )
 }
 ```
 
@@ -42,7 +42,7 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 ```js
 function removeChar(str) {
-  return str.slice(1, -1);
+  return str.slice(1, -1)
 }
 ```
 
@@ -69,7 +69,7 @@ Input -> Output
 
 ```js
 function noSpace(x) {
-  return x.replace(/ /g, "");
+  return x.replace(/ /g, '')
 }
 ```
 
@@ -90,8 +90,8 @@ For example, for `[1, 2, 2]` it should return `9` because $`1^2 + 2^2 + 2^2 = 9`
 ```js
 function squareSum(numbers) {
   return numbers.reduce((sum, n) => {
-    return (sum += n ** 2);
-  }, 0);
+    return (sum += n ** 2)
+  }, 0)
 }
 ```
 
@@ -119,16 +119,16 @@ Examples(Input1, Input2 --> Output):
 
 ```js
 const rps = (p1, p2) => {
-  if (p1 === p2) return "Draw!";
+  if (p1 === p2) return 'Draw!'
 
   const map = {
-    rock: "scissors",
-    paper: "rock",
-    scissors: "paper",
-  };
+    rock: 'scissors',
+    paper: 'rock',
+    scissors: 'paper'
+  }
 
-  return map[p1] === p2 ? "Player 1 won!" : "Player 2 won!";
-};
+  return map[p1] === p2 ? 'Player 1 won!' : 'Player 2 won!'
+}
 ```
 
 </details>
@@ -196,21 +196,21 @@ You have to write a function pattern which returns the following Pattern (See Pa
 
 ```js
 function pattern(n) {
-  let str = "";
+  let str = ''
 
   if (n < 1) {
-    return str;
+    return str
   } else {
     for (var j = n; j > 0; j--) {
       for (var i = n; i > n - j; i--) {
-        str = str.concat(i.toString());
+        str = str.concat(i.toString())
       }
-      str = str.concat("\n");
+      str = str.concat('\n')
     }
 
-    str = str.slice(0, -1);
+    str = str.slice(0, -1)
 
-    return str;
+    return str
   }
 }
 ```
@@ -255,9 +255,9 @@ Given the initial configuration of the cubes in the box, find out how many cubes
 
 ```js
 const flip = (d, a) => {
-  const compare = (a, b) => a - b;
-  return d === "R" ? a.sort(compare) : a.sort(compare).reverse();
-};
+  const compare = (a, b) => a - b
+  return d === 'R' ? a.sort(compare) : a.sort(compare).reverse()
+}
 ```
 
 </details>
@@ -293,13 +293,13 @@ Notes:
 function points(games) {
   return games.reduce((sum, game) => {
     if (game[0] > game[2]) {
-      sum += 3;
+      sum += 3
     } else if (game[0] === game[2]) {
-      sum += 1;
+      sum += 1
     }
 
-    return sum;
-  }, 0);
+    return sum
+  }, 0)
 }
 ```
 
@@ -330,7 +330,7 @@ function XO(str) {
   return (
     (str.match(/x/gi) && str.match(/x/gi).length) ===
     (str.match(/o/gi) && str.match(/o/gi).length)
-  );
+  )
 }
 ```
 
@@ -364,9 +364,9 @@ However, the arrays can have varying lengths, not just limited to `4`.
 <details><summary>My Solution</summary>
 
 ```js
-const binaryArrayToNumber = (arr) => {
-  return parseInt(arr.join(""), 2);
-};
+const binaryArrayToNumber = arr => {
+  return parseInt(arr.join(''), 2)
+}
 ```
 
 </details>
@@ -388,7 +388,7 @@ Calculate how many years ago the father was twice as old as his son (or in how m
 
 ```js
 function twiceAsOld(d, s) {
-  return Math.abs(s * 2 - d);
+  return Math.abs(s * 2 - d)
 }
 ```
 
@@ -407,23 +407,23 @@ For the purposes of this kata, some tests may have multiple answers; any valid s
 The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
 
 ```js
-twoSum([1, 2, 3], 4); // returns [0, 2] or [2, 0]
+twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 ```
 
 <details><summary>My Solution</summary>
 
 ```js
 function twoSum(nums, target) {
-  const map = new Map();
+  const map = new Map()
 
   for (let i = 0; i < nums.length; i++) {
-    const a = nums[i];
-    const b = target - a;
+    const a = nums[i]
+    const b = target - a
 
     if (map.has(b)) {
-      return [i, map.get(b)];
+      return [i, map.get(b)]
     } else {
-      map.set(a, i);
+      map.set(a, i)
     }
   }
 }
@@ -451,7 +451,7 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 ```js
 class SmallestIntegerFinder {
   findSmallestInt(args) {
-    return Math.min(...args);
+    return Math.min(...args)
   }
 }
 ```
@@ -486,12 +486,12 @@ Don't change the order of the elements that are left.
 
 ```js
 function removeSmallest(nums) {
-  const newNums = [...nums];
-  const min = Math.min(...newNums);
+  const newNums = [...nums]
+  const min = Math.min(...newNums)
 
-  newNums.splice(newNums.indexOf(min), 1);
+  newNums.splice(newNums.indexOf(min), 1)
 
-  return newNums;
+  return newNums
 }
 ```
 
@@ -546,26 +546,26 @@ IP_ADDRESS_REQUIRED - no ip address was suppliedput: [2,2,1,2,1], output = [2,2,
 ```js
 function greet(language) {
   const languagesDB = {
-    english: "Welcome",
-    czech: "Vitejte",
-    danish: "Velkomst",
-    dutch: "Welkom",
-    estonian: "Tere tulemast",
-    finnish: "Tervetuloa",
-    flemish: "Welgekomen",
-    french: "Bienvenue",
-    german: "Willkommen",
-    irish: "Failte",
-    italian: "Benvenuto",
-    latvian: "Gaidits",
-    lithuanian: "Laukiamas",
-    polish: "Witamy",
-    spanish: "Bienvenido",
-    swedish: "Valkommen",
-    welsh: "Croeso",
-  };
+    english: 'Welcome',
+    czech: 'Vitejte',
+    danish: 'Velkomst',
+    dutch: 'Welkom',
+    estonian: 'Tere tulemast',
+    finnish: 'Tervetuloa',
+    flemish: 'Welgekomen',
+    french: 'Bienvenue',
+    german: 'Willkommen',
+    irish: 'Failte',
+    italian: 'Benvenuto',
+    latvian: 'Gaidits',
+    lithuanian: 'Laukiamas',
+    polish: 'Witamy',
+    spanish: 'Bienvenido',
+    swedish: 'Valkommen',
+    welsh: 'Croeso'
+  }
 
-  return languagesDB[language] || languagesDB["english"];
+  return languagesDB[language] || languagesDB['english']
 }
 ```
 
@@ -588,7 +588,7 @@ Complete the solution so that it reverses the string passed into it.
 
 ```js
 function solution(str) {
-  return [...str].reverse().join("");
+  return [...str].reverse().join('')
 }
 ```
 
@@ -624,7 +624,7 @@ printer_error(s) => "8/22"
 
 ```js
 function printerError(s) {
-  return `${s.replace(/[a-m]/g, "").length}/${s.length}`;
+  return `${s.replace(/[a-m]/g, '').length}/${s.length}`
 }
 ```
 
@@ -641,7 +641,7 @@ Write a function that accepts an array of 10 integers (between 0 and 9), that re
 Example
 
 ```js
-createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]); // => returns "(123) 456-7890"
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
 ```
 
 The returned format must be correct in order to complete this challenge.
@@ -653,8 +653,8 @@ Don't forget the space after the closing parentheses!
 ```js
 function createPhoneNumber(numbers) {
   return numbers.reduce((p, c) => {
-    return p.replace("x", c);
-  }, "(xxx) xxx-xxxx");
+    return p.replace('x', c)
+  }, '(xxx) xxx-xxxx')
 }
 ```
 
@@ -674,8 +674,8 @@ Example: The binary representation of `1234` is `10011010010`, so the function s
 
 ```js
 const countBits = function (n) {
-  return n.toString(2).replace(/0/g, "").length;
-};
+  return n.toString(2).replace(/0/g, '').length
+}
 ```
 
 </details>
@@ -702,16 +702,16 @@ The passed in string will only consist of alphabetical characters and spaces(`' 
 ```js
 function toWeirdCase(string) {
   return string
-    .split(" ")
-    .map((word) => {
+    .split(' ')
+    .map(word => {
       return word
-        .split("")
+        .split('')
         .map((char, index) => {
-          return index % 2 === 0 ? char.toUpperCase() : char.toLowerCase();
+          return index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()
         })
-        .join("");
+        .join('')
     })
-    .join(" ");
+    .join(' ')
 }
 ```
 
@@ -742,11 +742,11 @@ If the input string is empty, return an empty string. The words in the input Str
 ```js
 function order(words) {
   return words
-    .split(" ")
+    .split(' ')
     .sort((a, b) => {
-      return a.match(/\d/, "") - b.match(/\d/, "");
+      return a.match(/\d/, '') - b.match(/\d/, '')
     })
-    .join(" ");
+    .join(' ')
 }
 ```
 
@@ -768,9 +768,9 @@ String will never be empty and you do not need to account for different data typ
 function findShort(s) {
   return Math.min(
     ...s
-      .split(" ") // array
-      .map((word) => word.length)
-  );
+      .split(' ') // array
+      .map(word => word.length)
+  )
 }
 ```
 
@@ -791,7 +791,7 @@ Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 i.e.
 
 ```js
-friend[("Ryan", "Kieran", "Mark")]`shouldBe`[("Ryan", "Mark")];
+friend[('Ryan', 'Kieran', 'Mark')]`shouldBe`[('Ryan', 'Mark')]
 ```
 
 Note: keep the original order of the names in the output.
@@ -800,7 +800,7 @@ Note: keep the original order of the names in the output.
 
 ```js
 function friend(friends) {
-  return friends.filter((name) => name.length === 4);
+  return friends.filter(name => name.length === 4)
 }
 ```
 
@@ -823,7 +823,7 @@ If anything in the text isn't a letter, ignore it and don't return it.
 ### Example
 
 ```js
-alphabetPosition("The sunset sets at twelve o' clock.");
+alphabetPosition("The sunset sets at twelve o' clock.")
 ```
 
 Should return `"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"` ( as a string )
@@ -834,10 +834,10 @@ Should return `"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 
 function alphabetPosition(text) {
   return text
     .toUpperCase()
-    .replace(/[^A-Z]/g, "")
-    .split("")
-    .map((char) => char.charCodeAt() - 64)
-    .join(" ");
+    .replace(/[^A-Z]/g, '')
+    .split('')
+    .map(char => char.charCodeAt() - 64)
+    .join(' ')
 }
 ```
 
@@ -862,10 +862,10 @@ function count(string) {
 
   // 3. Go trhough each character in the givin string, ++count if already exist or initialize it (count = 1)
   return [...string].reduce((a, b) => {
-    a[b] ? a[b]++ : (a[b] = 1);
+    a[b] ? a[b]++ : (a[b] = 1)
 
-    return a;
-  }, {});
+    return a
+  }, {})
 }
 ```
 
@@ -897,13 +897,13 @@ Write a function that will return the count of distinct case-insensitive alphabe
 function duplicateCount(text) {
   return [...text.toUpperCase()].reduce(
     (a, b) => {
-      a[b] ? a[b]++ : (a[b] = 1);
-      if (a[b] === 2) a.count++;
+      a[b] ? a[b]++ : (a[b] = 1)
+      if (a[b] === 2) a.count++
 
-      return a;
+      return a
     },
     { count: 0 }
-  ).count;
+  ).count
 }
 ```
 
@@ -929,9 +929,9 @@ Complete the solution so that the function will break up camel casing, using a s
 
 ```js
 function solution(string) {
-  return string.replace(/[A-Z]/g, (a) => {
-    return ` ${a}`;
-  });
+  return string.replace(/[A-Z]/g, a => {
+    return ` ${a}`
+  })
 }
 ```
 
@@ -948,9 +948,9 @@ In this little assignment you are given a string of space separated numbers, and
 ### Examples
 
 ```js
-highAndLow("1 2 3 4 5"); // return "5 1"
-highAndLow("1 2 -3 4 5"); // return "5 -3"
-highAndLow("1 9 3 4 -5"); // return "9 -5"
+highAndLow('1 2 3 4 5') // return "5 1"
+highAndLow('1 2 -3 4 5') // return "5 -3"
+highAndLow('1 9 3 4 -5') // return "9 -5"
 ```
 
 ### Notes
@@ -963,11 +963,11 @@ highAndLow("1 9 3 4 -5"); // return "9 -5"
 
 ```js
 function highAndLow(numbers) {
-  const sortedNumbers = numbers.split(" ").sort((a, b) => {
-    return parseFloat(a) - parseFloat(b);
-  });
+  const sortedNumbers = numbers.split(' ').sort((a, b) => {
+    return parseFloat(a) - parseFloat(b)
+  })
 
-  return `${sortedNumbers[sortedNumbers.length - 1]} ${sortedNumbers[0]}`;
+  return `${sortedNumbers[sortedNumbers.length - 1]} ${sortedNumbers[0]}`
 }
 ```
 
@@ -995,10 +995,10 @@ The array will always have at least `2` elements and all elements will be number
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] - arr[i - 1] !== 1) {
-      return arr[i];
+      return arr[i]
     }
   }
-  return null;
+  return null
 }
 ```
 
@@ -1031,18 +1031,18 @@ input = [
   [61, 12],
   [37, 6],
   [21, 21],
-  [78, 9],
-];
-output = ["Open", "Open", "Senior", "Open", "Open", "Senior"];
+  [78, 9]
+]
+output = ['Open', 'Open', 'Senior', 'Open', 'Open', 'Senior']
 ```
 
 <details><summary>My Solution</summary>
 
 ```js
 function openOrSenior(data) {
-  return data.map((person) => {
-    return person[0] > 54 && person[1] > 7 ? "Senior" : "Open";
-  });
+  return data.map(person => {
+    return person[0] > 54 && person[1] > 7 ? 'Senior' : 'Open'
+  })
 }
 ```
 
@@ -1079,15 +1079,15 @@ Series: 1 + 1/4 + 1/7 + 1/10 + 1/13 + 1/16 +...
 <details><summary>My Solution</summary>
 
 ```js
-const SeriesSum = (n) => {
-  let sum = 0;
+const SeriesSum = n => {
+  let sum = 0
 
   for (let i = 0; i < n; i++) {
-    sum += 1 / (i * 3 + 1);
+    sum += 1 / (i * 3 + 1)
   }
 
-  return sum.toFixed(2);
-};
+  return sum.toFixed(2)
+}
 ```
 
 </details>
@@ -1105,16 +1105,16 @@ Example : `n=5` --> `[5,4,3,2,1]`
 <details><summary>My Solution</summary>
 
 ```js
-const reverseSeq = (n) => {
-  let seq = [];
+const reverseSeq = n => {
+  let seq = []
 
   while (n > 0) {
-    seq.push(n);
-    n--;
+    seq.push(n)
+    n--
   }
 
-  return seq;
-};
+  return seq
+}
 ```
 
 </details>
@@ -1142,13 +1142,13 @@ Tested values are all between 0 and 100. Theres is no need to check for negative
 
 ```js
 function getGrade(s1, s2, s3) {
-  let a = (s1 + s2 + s3) / 3;
+  let a = (s1 + s2 + s3) / 3
 
-  if (a >= 90) return "A";
-  else if (a >= 80) return "B";
-  else if (a >= 70) return "C";
-  else if (a >= 60) return "D";
-  else return "F";
+  if (a >= 90) return 'A'
+  else if (a >= 80) return 'B'
+  else if (a >= 70) return 'C'
+  else if (a >= 60) return 'D'
+  else return 'F'
 }
 ```
 
@@ -1177,7 +1177,7 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 ```js
 function longest(s1, s2) {
-  return [...new Set(s1 + s2)].sort().join("");
+  return [...new Set(s1 + s2)].sort().join('')
 }
 ```
 
@@ -1205,9 +1205,9 @@ Invalid smiley faces: `;( :> :} :]`
 ### Example
 
 ```js
-countSmileys([":)", ";(", ";}", ":-D"]); // should return 2;
-countSmileys([";D", ":-(", ":-)", ";~)"]); // should return 3;
-countSmileys([";]", ":[", ";*", ":$", ";-D"]); // should return 1;
+countSmileys([':)', ';(', ';}', ':-D']) // should return 2;
+countSmileys([';D', ':-(', ':-)', ';~)']) // should return 3;
+countSmileys([';]', ':[', ';*', ':$', ';-D']) // should return 1;
 ```
 
 ### Note
@@ -1218,7 +1218,7 @@ In case of an empty array return 0. You will not be tested with invalid input (i
 
 ```js
 function countSmileys(arr) {
-  return arr.filter((x) => /[:;][-~]?[)D]/.test(x)).length;
+  return arr.filter(x => /[:;][-~]?[)D]/.test(x)).length
 }
 ```
 
@@ -1245,9 +1245,9 @@ Given a random non-negative number, you have to return the digits of this number
 ```js
 function digitize(n) {
   return String(n)
-    .split("")
-    .map((a) => Number(a))
-    .reverse();
+    .split('')
+    .map(a => Number(a))
+    .reverse()
 }
 ```
 
@@ -1292,14 +1292,14 @@ n = 46288; p = 3 ---> 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 
 ```js
 function digPow(n, p) {
   let sum = String(n)
-    .split("")
+    .split('')
     .reduce((a, b, i) => {
-      a += Number(b) ** (p + i);
+      a += Number(b) ** (p + i)
 
-      return a;
-    }, 0);
+      return a
+    }, 0)
 
-  return Number.isInteger(sum / n) ? sum / n : -1;
+  return Number.isInteger(sum / n) ? sum / n : -1
 }
 ```
 
@@ -1350,14 +1350,14 @@ nb_year(1500000, 2.5, 10000, 2000000) -> 10
 
 ```js
 function nbYear(p0, percent, aug, p) {
-  let count = 0;
+  let count = 0
 
   while (p0 < p) {
-    p0 = Math.floor(p0 * (1 + percent / 100) + aug);
-    count++;
+    p0 = Math.floor(p0 * (1 + percent / 100) + aug)
+    count++
   }
 
-  return count;
+  return count
 }
 ```
 
@@ -1387,9 +1387,9 @@ The parameter of accum is a string which includes only letters from `a..z` and `
 function accum(s) {
   return [...s]
     .map((element, index) => {
-      return element.toUpperCase() + element.repeat(index).toLowerCase();
+      return element.toUpperCase() + element.repeat(index).toLowerCase()
     })
-    .join("-");
+    .join('-')
 }
 ```
 
@@ -1436,15 +1436,15 @@ If you are given an array with multiple answers, return the lowest correct index
 <details><summary>My Solution</summary>
 
 ```js
-const findEvenIndex = (arr) => {
+const findEvenIndex = arr => {
   const sum = (from, to) => {
-    return arr.slice(from, to).reduce((a, b) => a + b, 0);
-  };
+    return arr.slice(from, to).reduce((a, b) => a + b, 0)
+  }
 
   return arr.findIndex((el, i) => {
-    return sum(0, i) === sum(i + 1, arr.length);
-  });
-};
+    return sum(0, i) === sum(i + 1, arr.length)
+  })
+}
 ```
 
 </details>
@@ -1467,7 +1467,7 @@ Input: `123456789` Output: `987654321`
 
 ```js
 function descendingOrder(n) {
-  return Number([...String(n)].sort().reverse().join(""));
+  return Number([...String(n)].sort().reverse().join(''))
 }
 ```
 
@@ -1494,12 +1494,12 @@ With list `[20,37,20,21]` and number 1, the result would be `[20,37,21]`.
 
 ```js
 function deleteNth(arr, n) {
-  let map = {};
+  let map = {}
 
-  return arr.filter((e) => {
-    map[e] = map[e] ? map[e] + 1 : 1;
-    return map[e] <= n;
-  });
+  return arr.filter(e => {
+    map[e] = map[e] ? map[e] + 1 : 1
+    return map[e] <= n
+  })
 }
 ```
 
@@ -1516,18 +1516,18 @@ In this kata you will create a function that takes a list of non-negative intege
 ### Example
 
 ```js
-filter_list([1, 2, "a", "b"]) == [1, 2];
-filter_list([1, "a", "b", 0, 15]) == [1, 0, 15];
-filter_list([1, 2, "aasf", "1", "123", 123]) == [1, 2, 123];
+filter_list([1, 2, 'a', 'b']) == [1, 2]
+filter_list([1, 'a', 'b', 0, 15]) == [1, 0, 15]
+filter_list([1, 2, 'aasf', '1', '123', 123]) == [1, 2, 123]
 ```
 
 <details><summary>My Solution</summary>
 
 ```js
 function filter_list(l) {
-  return l.filter((e) => {
-    return typeof e === "number";
-  });
+  return l.filter(e => {
+    return typeof e === 'number'
+  })
 }
 ```
 
@@ -1572,20 +1572,20 @@ consecutive strings : follow one after another without an interruption
 
 ```js
 function longestConsec(arr, k) {
-  if (arr === [] || k > arr.length || k <= 0) return "";
+  if (arr === [] || k > arr.length || k <= 0) return ''
 
-  let consecStr = "";
-  let longestStr = "";
+  let consecStr = ''
+  let longestStr = ''
 
   for (let i = 0; i <= arr.length - k; i++) {
-    consecStr = arr.slice(i, i + k);
+    consecStr = arr.slice(i, i + k)
 
-    if (consecStr.join("").length > longestStr.length) {
-      longestStr = consecStr.join("");
+    if (consecStr.join('').length > longestStr.length) {
+      longestStr = consecStr.join('')
     }
   }
 
-  return longestStr;
+  return longestStr
 }
 ```
 
@@ -1602,15 +1602,15 @@ Complete the solution so that it returns true if the first argument(string) pass
 ### Examples:
 
 ```js
-solution("abc", "bc"); // returns true
-solution("abc", "d"); // returns false
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
 ```
 
 <details><summary>My Solution</summary>
 
 ```js
 function removeChar(str) {
-  return str.slice(1, -1);
+  return str.slice(1, -1)
 }
 ```
 
@@ -1632,14 +1632,14 @@ Given a non-negative integer, `3` for example, return a string with a murmur: `"
 
 ```js
 const countSheep = function (num) {
-  let countSheep = "";
+  let countSheep = ''
 
   for (let i = 1; i < num + 1; i++) {
-    countSheep += `${i} sheep...`;
+    countSheep += `${i} sheep...`
   }
 
-  return countSheep;
-};
+  return countSheep
+}
 ```
 
 </details>
@@ -1665,19 +1665,19 @@ For input `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]`, you should
 ```js
 function countPositivesSumNegatives(input) {
   if (input == null || input.length < 1) {
-    return [];
+    return []
   }
 
-  let positiveCount = input.filter((v) => v > 0).length;
+  let positiveCount = input.filter(v => v > 0).length
   let negativeSum = input.reduce((a, b) => {
     if (b < 0) {
-      a += b;
+      a += b
     }
 
-    return a;
-  }, 0);
+    return a
+  }, 0)
 
-  return [positiveCount, negativeSum];
+  return [positiveCount, negativeSum]
 }
 ```
 
@@ -1703,8 +1703,8 @@ It should look like this:
 
 ```js
 function abbrevName(name) {
-  let nameArray = name.toUpperCase().split(" ");
-  return `${nameArray[0].charAt(0)}.${nameArray[1].charAt(0)}`;
+  let nameArray = name.toUpperCase().split(' ')
+  return `${nameArray[0].charAt(0)}.${nameArray[1].charAt(0)}`
 }
 ```
 
@@ -1732,11 +1732,11 @@ Names given are always valid strings.
 
 ```js
 function areYouPlayingBanjo(name) {
-  if (name.startsWith("R") || name.startsWith("r")) {
-    return `${name} plays banjo`;
+  if (name.startsWith('R') || name.startsWith('r')) {
+    return `${name} plays banjo`
   }
 
-  return `${name} does not play banjo`;
+  return `${name} does not play banjo`
 }
 ```
 
@@ -1767,13 +1767,13 @@ Note you should only return a number, the count of divisors. The numbers between
 
 ```js
 function getDivisorsCnt(n) {
-  let count = 0;
+  let count = 0
 
   for (let i = 1; i <= n; i++) {
-    if (!(n % i)) count++;
+    if (!(n % i)) count++
   }
 
-  return count;
+  return count
 }
 ```
 
@@ -1814,8 +1814,8 @@ The tests will always use some integral number, so don't worry about that in dyn
 
 ```js
 const isSquare = function (n) {
-  return Math.sqrt(n) % 1 === 0;
-};
+  return Math.sqrt(n) % 1 === 0
+}
 ```
 
 </details>
@@ -1836,7 +1836,7 @@ The input string will only consist of lower case letters and/or spaces.
 
 ```js
 function getCount(str) {
-  return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0;
+  return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0
 }
 ```
 
@@ -1866,10 +1866,10 @@ The input array will always be valid! (odd-length >= 3)
 ```js
 function stray(numbers) {
   if (numbers[0] === numbers[1]) {
-    return numbers.find((v) => v !== numbers[0]);
+    return numbers.find(v => v !== numbers[0])
   }
 
-  return numbers[0] === numbers[2] ? numbers[1] : numbers[0];
+  return numbers[0] === numbers[2] ? numbers[1] : numbers[0]
 }
 ```
 
@@ -1915,8 +1915,8 @@ Note
 <details><summary>My Solution</summary>
 
 ```js
-const isValid = (query) =>
-  query.match(/\w+(?=:)/g).every((v) => FILTERS.includes(v));
+const isValid = query =>
+  query.match(/\w+(?=:)/g).every(v => FILTERS.includes(v))
 ```
 
 </details>
@@ -1946,15 +1946,15 @@ Your goal in this kata is to determine which phrase the girls would say at the l
 
 ```js
 let phrases = [
-  "I love you",
-  "a little",
-  "a lot",
-  "passionately",
-  "madly",
-  "not at all",
-];
+  'I love you',
+  'a little',
+  'a lot',
+  'passionately',
+  'madly',
+  'not at all'
+]
 
-const howMuchILoveYou = (nbPetals) => phrases[(nbPetals - 1) % phrases.length];
+const howMuchILoveYou = nbPetals => phrases[(nbPetals - 1) % phrases.length]
 ```
 
 </details>
@@ -1990,9 +1990,9 @@ The middle character(s) of the word represented as a string.
 <details><summary>My Solution</summary>
 
 ```js
-const getMiddle = (s) => {
-  return s.slice(Math.ceil(s.length / 2) - 1, Math.floor(s.length / 2) + 1);
-};
+const getMiddle = s => {
+  return s.slice(Math.ceil(s.length / 2) - 1, Math.floor(s.length / 2) + 1)
+}
 ```
 
 </details>
@@ -2008,7 +2008,7 @@ Given the string representations of two integers, return the string representati
 For example:
 
 ```js
-sumStrings("1", "2"); // => '3'
+sumStrings('1', '2') // => '3'
 ```
 
 A string representation of an integer will contain no characters besides the ten numerals "0" to "9".
@@ -2017,29 +2017,29 @@ A string representation of an integer will contain no characters besides the ten
 
 ```js
 function sumStrings(a, b) {
-  let temp = "";
-  let str = "";
-  let next = 0;
+  let temp = ''
+  let str = ''
+  let next = 0
 
-  a = a.replace(/^0+/, "");
-  b = b.replace(/^0+/, "");
+  a = a.replace(/^0+/, '')
+  b = b.replace(/^0+/, '')
 
-  if (a.length > b.length) b = [a, (a = b)][0];
+  if (a.length > b.length) b = [a, (a = b)][0]
 
   while (a.length < b.length) {
-    a = "0" + a;
+    a = '0' + a
   }
 
   for (var i = a.length - 1; i >= 0; i--) {
     temp =
-      parseInt(a.substring(i, i + 1)) + parseInt(b.substring(i, i + 1)) + next;
-    str = (temp % 10).toString() + str;
-    next = temp <= 9 ? 0 : 1;
+      parseInt(a.substring(i, i + 1)) + parseInt(b.substring(i, i + 1)) + next
+    str = (temp % 10).toString() + str
+    next = temp <= 9 ? 0 : 1
   }
 
-  if (next === 1) str = next + str;
+  if (next === 1) str = next + str
 
-  return str;
+  return str
 }
 ```
 
@@ -2069,14 +2069,14 @@ findNb(91716553919377) --> -1
 
 ```js
 function findNb(m) {
-  let n = 0;
+  let n = 0
 
   while (m > 0) {
-    n = n + 1;
-    m = m - Math.pow(n, 3);
+    n = n + 1
+    m = m - Math.pow(n, 3)
   }
 
-  return m ? -1 : n;
+  return m ? -1 : n
 }
 ```
 
@@ -2112,9 +2112,9 @@ Any input that is NOT a letter should be treated as if it is not there. For exam
 
 ```js
 function autocomplete(input, dictionary) {
-  let output = [];
+  let output = []
 
-  input = input.replace(/[^a-zA-Z-]/g, "");
+  input = input.replace(/[^a-zA-Z-]/g, '')
 
   for (i = 0; i < dictionary.length; i++) {
     if (
@@ -2125,11 +2125,11 @@ function autocomplete(input, dictionary) {
         ) === 0 &&
       output.length < 5
     ) {
-      output.push(dictionary[i]);
+      output.push(dictionary[i])
     }
   }
 
-  return output;
+  return output
 }
 ```
 
@@ -2168,10 +2168,10 @@ Advanced users may find this extremely easy and can easily write this in one lin
 <details><summary>My Solution</summary>
 
 ```js
-const sum = (numbers) =>
+const sum = numbers =>
   numbers.reduce((a, b) => {
-    return (a += b);
-  }, 0);
+    return (a += b)
+  }, 0)
 ```
 
 </details>
