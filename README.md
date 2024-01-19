@@ -4,54 +4,6 @@
 
 This is a collection of [my codewars](https://www.codewars.com/users/TimothyGuo) solutions.
 
-## 1. [How good are you really?](https://www.codewars.com/kata/5601409514fc93442500010b)
-
-There was a test in your class and you passed it. Congratulations!
-
-But you're an ambitious person. You want to know if you're better than the average student in your class.
-
-You receive an array with your peers' test scores. Now calculate the average and compare your score!
-
-Return `True` if you're better, else `False`!
-
-### Note:
-
-Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
-
-<details><summary>My Solution</summary>
-
-```js
-function betterThanAverage(classPoints, yourPoints) {
-  return (
-    yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
-  )
-}
-```
-
-</details>
-
----
-
-**[⬆ Back to Top](#codewars-solutions)**
-
-## 2. [Remove First and Last Character](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0)
-
-It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
-
-<details><summary>My Solution</summary>
-
-```js
-function removeChar(str) {
-  return str.slice(1, -1)
-}
-```
-
-</details>
-
----
-
-**[⬆ Back to Top](#codewars-solutions)**
-
 ## 3. [Remove String Spaces](https://www.codewars.com/kata/57eae20f5500ad98e50002c5)
 
 Write a function that removes the spaces from the string, then return the resultant string.
