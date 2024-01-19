@@ -4,7 +4,7 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 ---
 
-<details><summary>##My Solution</summary>
+<details><summary>My Solution</summary>
 
 ```js
 function removeChar(str) {
