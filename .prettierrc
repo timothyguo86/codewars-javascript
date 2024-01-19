@@ -1,8 +1,8 @@
 {
-  "prettier.arrowParens": "avoid",
-  "prettier.printWidth": 80,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
-  "prettier.useEditorConfig": false
+  "arrowParens": "avoid",
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "useEditorConfig": false
 }

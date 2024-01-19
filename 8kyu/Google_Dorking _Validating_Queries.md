@@ -36,8 +36,7 @@ Note
 <details><summary>My Solution</summary>
 
 ```js
-const isValid = query =>
-  query.match(/\w+(?=:)/g).every(v => FILTERS.includes(v))
+const isValid = query => query.match(/\w+(?=:)/g).every(v => FILTERS.includes(v))
 ```
 
 </details>

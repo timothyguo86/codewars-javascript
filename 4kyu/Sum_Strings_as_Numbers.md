@@ -30,8 +30,7 @@ function sumStrings(a, b) {
   }
 
   for (var i = a.length - 1; i >= 0; i--) {
-    temp =
-      parseInt(a.substring(i, i + 1)) + parseInt(b.substring(i, i + 1)) + next
+    temp = parseInt(a.substring(i, i + 1)) + parseInt(b.substring(i, i + 1)) + next
     str = (temp % 10).toString() + str
     next = temp <= 9 ? 0 : 1
   }

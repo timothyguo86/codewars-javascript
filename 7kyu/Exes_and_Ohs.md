@@ -18,10 +18,7 @@ XO("zzoo") => false
 
 ```js
 function XO(str) {
-  return (
-    (str.match(/x/gi) && str.match(/x/gi).length) ===
-    (str.match(/o/gi) && str.match(/o/gi).length)
-  )
+  return (str.match(/x/gi) && str.match(/x/gi).length) === (str.match(/o/gi) && str.match(/o/gi).length)
 }
 ```
 

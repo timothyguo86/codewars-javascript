@@ -20,14 +20,7 @@ Your goal in this kata is to determine which phrase the girls would say at the l
 <details><summary>My Solution</summary>
 
 ```js
-let phrases = [
-  'I love you',
-  'a little',
-  'a lot',
-  'passionately',
-  'madly',
-  'not at all'
-]
+let phrases = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
 
 const howMuchILoveYou = nbPetals => phrases[(nbPetals - 1) % phrases.length]
 ```

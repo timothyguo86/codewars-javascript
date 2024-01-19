@@ -1,7 +1,5 @@
 # [Pyramid Array](https://www.codewars.com/kata/515f51d438015969f7000013/javascript)
 
-## DESCRIPTION:
-
 Write a function that when given a number >= 0, returns an Array of ascending length subarrays.
 
 ```

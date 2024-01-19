@@ -18,9 +18,7 @@ Your points are not included in the array of your class's points. For calculatin
 
 ```js
 function betterThanAverage(classPoints, yourPoints) {
-  return (
-    yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
-  )
+  return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
 }
 ```
 
