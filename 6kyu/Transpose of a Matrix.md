@@ -20,27 +20,27 @@ Write a prototype transpose to array in JS or add a .transpose method in Ruby or
 
 ```js
 Array.prototype.transpose = function () {
-  // catch edge cases
+  // Catch edge cases: return an empty array for an empty matrix, or a matrix with empty arrays for a matrix with no columns
   if (this.length === 0) return []
   if (this.length !== 0 && this[0].length === 0) return [[]]
 
-  const result = []
-  let preRow = this.length
-  let preCol = this[0].length
+  const result = [] // Initialize an array to store the transposed matrix
+  let preRow = this.length // Number of rows in the original matrix
+  let preCol = this[0].length // Number of columns in the original matrix
 
-  // generate empty array with previous column
+  // Generate empty arrays in the result for each column in the transposed matrix
   for (let i = 0; i < preCol; i++) {
     result.push([])
   }
 
-  // fill the empty array
+  // Fill the transposed matrix by swapping rows with columns
   for (let col = 0; col < preCol; col++) {
     for (let row = 0; row < preRow; row++) {
       result[col][row] = this[row][col]
     }
   }
 
-  return result
+  return result // Return the transposed matrix
 }
 ```
 

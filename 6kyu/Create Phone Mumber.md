@@ -18,8 +18,9 @@ Don't forget the space after the closing parentheses!
 
 ```js
 function createPhoneNumber(numbers) {
-  return numbers.reduce((p, c) => {
-    return p.replace('x', c)
+  return numbers.reduce((partialPhoneNumber, currentDigit) => {
+    // Replace the next 'x' in the partial phone number template with the current digit
+    return partialPhoneNumber.replace('x', currentDigit)
   }, '(xxx) xxx-xxxx')
 }
 ```

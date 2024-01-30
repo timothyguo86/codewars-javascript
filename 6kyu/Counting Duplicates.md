@@ -21,14 +21,17 @@ Write a function that will return the count of distinct case-insensitive alphabe
 ```js
 function duplicateCount(text) {
   return [...text.toUpperCase()].reduce(
-    (a, b) => {
-      a[b] ? a[b]++ : (a[b] = 1)
-      if (a[b] === 2) a.count++
+    (accumulator, currentChar) => {
+      // Check if the character is already counted, and update the count
+      accumulator[currentChar] ? accumulator[currentChar]++ : (accumulator[currentChar] = 1)
 
-      return a
+      // If the count reaches 2, increment the overall count of characters with duplicates
+      if (accumulator[currentChar] === 2) accumulator.count++
+
+      return accumulator // Return the updated accumulator
     },
-    { count: 0 }
-  ).count
+    { count: 0 } // Initialize the accumulator with the overall count of characters with duplicates
+  ).count // Return the final count of characters with duplicates
 }
 ```
 

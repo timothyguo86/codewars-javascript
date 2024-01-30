@@ -21,11 +21,12 @@ If the input string is empty, return an empty string. The words in the input Str
 ```js
 function order(words) {
   return words
-    .split(' ')
+    .split(' ') // Split the input string into an array of words
     .sort((a, b) => {
+      // Sort the words based on the numerical value found in each word
       return a.match(/\d/, '') - b.match(/\d/, '')
     })
-    .join(' ')
+    .join(' ') // Join the sorted words back into a string
 }
 ```
 

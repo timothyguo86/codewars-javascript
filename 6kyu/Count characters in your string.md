@@ -12,7 +12,6 @@ What if the string is empty? Then the result should be empty object literal, `{}
 function count(string) {
   // 1. Create an empty object {}
   // 2. Use character as key, count as value
-
   // 3. Go trhough each character in the givin string, ++count if already exist or initialize it (count = 1)
   return [...string].reduce((a, b) => {
     a[b] ? a[b]++ : (a[b] = 1)

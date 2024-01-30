@@ -35,20 +35,23 @@ consecutive strings : follow one after another without an interruption
 
 ```js
 function longestConsec(arr, k) {
-  if (arr === [] || k > arr.length || k <= 0) return ''
+  // Check for invalid input conditions: empty array, k greater than array length, or non-positive k
+  if (arr.length === 0 || k > arr.length || k <= 0) return ''
 
-  let consecStr = ''
-  let longestStr = ''
+  let consecStr = '' // Variable to store the current consecutive string
+  let longestStr = '' // Variable to store the longest consecutive string
 
+  // Iterate through the array to find the longest consecutive string
   for (let i = 0; i <= arr.length - k; i++) {
     consecStr = arr.slice(i, i + k)
 
+    // Compare the length of the current consecutive string with the longest one found so far
     if (consecStr.join('').length > longestStr.length) {
       longestStr = consecStr.join('')
     }
   }
 
-  return longestStr
+  return longestStr // Return the longest consecutive string
 }
 ```
 

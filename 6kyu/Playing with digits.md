@@ -34,14 +34,15 @@ n = 46288; p = 3 ---> 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 
 
 ```js
 function digPow(n, p) {
+  // Calculate the sum of digits each raised to the power of their position in the number
   let sum = String(n)
     .split('')
-    .reduce((a, b, i) => {
-      a += Number(b) ** (p + i)
-
-      return a
+    .reduce((accumulator, digit, index) => {
+      accumulator += Number(digit) ** (p + index)
+      return accumulator
     }, 0)
 
+  // Check if 'sum / n' is an integer, return the result or -1 accordingly
   return Number.isInteger(sum / n) ? sum / n : -1
 }
 ```

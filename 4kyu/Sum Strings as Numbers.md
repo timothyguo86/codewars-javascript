@@ -16,28 +16,37 @@ A string representation of an integer will contain no characters besides the ten
 
 ```js
 function sumStrings(a, b) {
-  let temp = ''
-  let str = ''
-  let next = 0
+  let temp = '' // Variable to store temporary sum during addition
+  let str = '' // Variable to store the final result
+  let next = 0 // Variable to store the carry during addition
 
+  // Remove leading zeros from both input strings
   a = a.replace(/^0+/, '')
   b = b.replace(/^0+/, '')
 
+  // Ensure both strings have the same length by padding with zeros
   if (a.length > b.length) b = [a, (a = b)][0]
 
   while (a.length < b.length) {
     a = '0' + a
   }
 
+  // Iterate through the strings from right to left and perform addition
   for (var i = a.length - 1; i >= 0; i--) {
+    // Calculate the sum of digits at the current position and the carry
     temp = parseInt(a.substring(i, i + 1)) + parseInt(b.substring(i, i + 1)) + next
+
+    // Append the last digit of the sum to the result string
     str = (temp % 10).toString() + str
+
+    // Update the carry for the next iteration
     next = temp <= 9 ? 0 : 1
   }
 
+  // If there is a carry after the last iteration, append it to the result
   if (next === 1) str = next + str
 
-  return str
+  return str // Return the final sum
 }
 ```
 

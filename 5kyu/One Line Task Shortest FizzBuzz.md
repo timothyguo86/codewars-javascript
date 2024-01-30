@@ -27,6 +27,10 @@ Advice: if your code length is much longer than the limit, giving up is also a g
 <details><summary>My Solution</summary>
 
 ```js
+// Create an array to store the FizzBuzz results
+// Check if the current value is divisible by x
+// Check if the current value is divisible by y
+// If not divisible by x or y, use the original value
 fizzBuzz = (a, b, x, y) => [...Array(b - a + 1)].map((v = a++) => (v % x ? '' : 'Fizz') + (v % y ? '' : 'Buzz') || v)
 ```
 

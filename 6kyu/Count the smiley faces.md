@@ -31,6 +31,8 @@ In case of an empty array return 0. You will not be tested with invalid input (i
 
 ```js
 function countSmileys(arr) {
+  // Use filter to select elements that match the smiley face pattern
+  // Smileys can have eyes (: or ;), an optional nose (- or ~), and a mouth (D or )
   return arr.filter(x => /[:;][-~]?[)D]/.test(x)).length
 }
 ```

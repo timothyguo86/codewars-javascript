@@ -18,16 +18,17 @@ The passed in string will only consist of alphabetical characters and spaces(`' 
 ```js
 function toWeirdCase(string) {
   return string
-    .split(' ')
+    .split(' ') // Split the input string into an array of words
     .map(word => {
       return word
         .split('')
         .map((char, index) => {
+          // Map each character in a word to uppercase or lowercase based on its index
           return index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()
         })
-        .join('')
+        .join('') // Join the characters back into a word
     })
-    .join(' ')
+    .join(' ') // Join the words back into a string
 }
 ```
 

@@ -25,22 +25,23 @@ The input to your function will be an array of matrix rows. You can assume that 
 
 ```js
 function transpose(matrix) {
-  const result = []
-  let preRow = matrix.length
-  let preCol = matrix[0].length
+  const result = [] // Initialize an array to store the transposed matrix
+  let preRow = matrix.length // Number of rows in the original matrix
+  let preCol = matrix[0].length // Number of columns in the original matrix
 
-  // swap row with col, then generate empty []
+  // Create empty arrays in the result for each column in the transposed matrix
   for (let i = 0; i < preCol; i++) {
     result.push([])
   }
 
+  // Iterate through the original matrix and populate the transposed matrix
   for (let col = 0; col < preCol; col++) {
     for (let row = 0; row < preRow; row++) {
-      result[col][row] = matrix[row][col]
+      result[col][row] = matrix[row][col] // Swap rows with columns
     }
   }
 
-  return result
+  return result // Return the transposed matrix
 }
 ```
 

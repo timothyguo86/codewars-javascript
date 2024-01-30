@@ -17,11 +17,11 @@ With list `[20,37,20,21]` and number 1, the result would be `[20,37,21]`.
 
 ```js
 function deleteNth(arr, n) {
-  let map = {}
+  let map = {} // Create a map to track the occurrences of each element
 
   return arr.filter(e => {
-    map[e] = map[e] ? map[e] + 1 : 1
-    return map[e] <= n
+    map[e] = map[e] ? map[e] + 1 : 1 // Increment the count of occurrences for the current element
+    return map[e] <= n // Filter elements based on the specified maximum occurrences (n)
   })
 }
 ```

@@ -16,16 +16,17 @@ twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
 
 ```js
 function twoSum(nums, target) {
-  const map = new Map()
+  const map = new Map() // Create a Map to store values and their corresponding indices
 
   for (let i = 0; i < nums.length; i++) {
-    const a = nums[i]
-    const b = target - a
+    const a = nums[i] // Current element in the array
+    const b = target - a // The complementary value needed to reach the target
 
     if (map.has(b)) {
-      return [i, map.get(b)]
+      // Check if the complementary value has been encountered before
+      return [i, map.get(b)] // If found, return the indices of the two numbers that add up to the target
     } else {
-      map.set(a, i)
+      map.set(a, i) // Store the current element and its index in the Map
     }
   }
 }

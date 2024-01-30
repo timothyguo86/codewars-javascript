@@ -19,11 +19,11 @@ The subarrays should be filled with `1`s
 
 ```js
 function pyramid(n) {
-  const result = []
+  const result = [] // Initialize an array to store the pyramid
   for (let i = 0; i < n; i++) {
-    result.push(Array(i + 1).fill(1))
+    result.push(Array(i + 1).fill(1)) // Fill the array with arrays of consecutive '1's based on the row index
   }
-  return result
+  return result // Return the pyramid as a 2D array
 }
 ```
 
