@@ -10,8 +10,9 @@ For example, when an array is passed like `[19, 5, 42, 2, 77]`, the output shoul
 
 ```js
 function sumTwoSmallestNumbers(numbers) {
-  const sortedNumbers = numbers.sort((a, b) => a - b)
+  const sortedNumbers = numbers.sort((a, b) => a - b) // Sort the numbers in ascending order
 
+  // Return the sum of the two smallest numbers
   return sortedNumbers[0] + sortedNumbers[1]
 }
 ```

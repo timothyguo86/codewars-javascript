@@ -18,6 +18,7 @@ Names given are always valid strings.
 
 ```js
 function areYouPlayingBanjo(name) {
+  // Check if the name starts with 'R' or 'r' and return the appropriate message
   if (name.startsWith('R') || name.startsWith('r')) {
     return `${name} plays banjo`
   }

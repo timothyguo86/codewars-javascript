@@ -33,6 +33,7 @@ output = ['Open', 'Open', 'Senior', 'Open', 'Open', 'Senior']
 ```js
 function openOrSenior(data) {
   return data.map(person => {
+    // Determine if a person is 'Senior' based on age and handicap criteria
     return person[0] > 54 && person[1] > 7 ? 'Senior' : 'Open'
   })
 }

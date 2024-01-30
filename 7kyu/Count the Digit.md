@@ -28,15 +28,17 @@ Note that 121 has twice the digit 1.
 
 ```js
 function nbDig(n, d) {
-  let result = ''
-  let regex = new RegExp(d, 'g')
+  let result = '' // Initialize a string to store squared numbers as strings
+  let regex = new RegExp(d, 'g') // Create a regular expression to match the specified digit 'd'
 
+  // Generate squared numbers and concatenate them to the result string
   for (let i = 0; i <= n; i++) {
     result += i * i
   }
 
-  let matched = result.match(regex)
+  let matched = result.match(regex) // Use the regular expression to find matches in the result string
 
+  // Return the count of matches or 0 if there are no matches
   return matched ? matched.length : 0
 }
 ```

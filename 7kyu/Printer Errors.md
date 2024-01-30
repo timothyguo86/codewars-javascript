@@ -26,6 +26,7 @@ printer_error(s) => "8/22"
 
 ```js
 function printerError(s) {
+  // Replace characters in the range [a-m] with an empty string and return the error ratio
   return `${s.replace(/[a-m]/g, '').length}/${s.length}`
 }
 ```

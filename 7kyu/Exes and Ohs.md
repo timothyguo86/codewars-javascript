@@ -18,6 +18,7 @@ XO("zzoo") => false
 
 ```js
 function XO(str) {
+  // Check if the count of 'x' (case-insensitive) is equal to the count of 'o' (case-insensitive)
   return (str.match(/x/gi) && str.match(/x/gi).length) === (str.match(/o/gi) && str.match(/o/gi).length)
 }
 ```

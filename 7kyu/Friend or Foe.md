@@ -20,6 +20,7 @@ Note: keep the original order of the names in the output.
 
 ```js
 function friend(friends) {
+  // Filter the array to include only names with a length of 4
   return friends.filter(name => name.length === 4)
 }
 ```

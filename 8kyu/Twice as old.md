@@ -13,6 +13,7 @@ Calculate how many years ago the father was twice as old as his son (or in how m
 
 ```js
 function twiceAsOld(d, s) {
+  // Calculate the absolute difference between twice the son's age and the father's age
   return Math.abs(s * 2 - d)
 }
 ```

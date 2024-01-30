@@ -12,8 +12,8 @@ String will never be empty and you do not need to account for different data typ
 function findShort(s) {
   return Math.min(
     ...s
-      .split(' ') // array
-      .map(word => word.length)
+      .split(' ') // Split the input string into an array of words
+      .map(word => word.length) // Map each word to its length
   )
 }
 ```

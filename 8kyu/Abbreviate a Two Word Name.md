@@ -16,6 +16,7 @@ It should look like this:
 
 ```js
 function abbrevName(name) {
+  // Convert the input name to uppercase, split it into an array, and return the abbreviated form
   let nameArray = name.toUpperCase().split(' ')
   return `${nameArray[0].charAt(0)}.${nameArray[1].charAt(0)}`
 }

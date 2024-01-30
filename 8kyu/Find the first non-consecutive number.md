@@ -16,12 +16,13 @@ The array will always have at least `2` elements and all elements will be number
 
 ```js
 function firstNonConsecutive(arr) {
+  // Iterate through the array and return the first non-consecutive element
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] - arr[i - 1] !== 1) {
       return arr[i]
     }
   }
-  return null
+  return null // Return null if all elements are consecutive
 }
 ```
 

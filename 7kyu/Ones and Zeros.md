@@ -25,6 +25,7 @@ However, the arrays can have varying lengths, not just limited to `4`.
 
 ```js
 const binaryArrayToNumber = arr => {
+  // Convert the binary array to a decimal number using parseInt with base 2
   return parseInt(arr.join(''), 2)
 }
 ```

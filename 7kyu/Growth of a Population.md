@@ -42,14 +42,16 @@ nb_year(1500000, 2.5, 10000, 2000000) -> 10
 
 ```js
 function nbYear(p0, percent, aug, p) {
-  let count = 0
+  let count = 0 // Initialize a counter for the number of years
 
+  // Continue iterating while the population is less than the target population
   while (p0 < p) {
+    // Update the population for each year considering the growth percentage and additional population
     p0 = Math.floor(p0 * (1 + percent / 100) + aug)
-    count++
+    count++ // Increment the counter for each year
   }
 
-  return count
+  return count // Return the total number of years
 }
 ```
 

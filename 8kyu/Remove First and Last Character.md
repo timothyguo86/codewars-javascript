@@ -8,6 +8,7 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 
 ```js
 function removeChar(str) {
+  // Return a new string excluding the first and last characters
   return str.slice(1, -1)
 }
 ```

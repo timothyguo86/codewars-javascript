@@ -17,6 +17,7 @@ Input -> Output
 
 ```js
 function noSpace(x) {
+  // Remove all spaces from the input string
   return x.replace(/ /g, '')
 }
 ```

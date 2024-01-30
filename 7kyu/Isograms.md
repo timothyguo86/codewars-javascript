@@ -18,16 +18,21 @@ isIsogram "aba" = false
 
 ```js
 function isIsogram(str) {
-  const strMap = {}
-  const cleanedStr = str.toLowerCase()
+  const strMap = {} // Create an object to track the occurrences of characters
+  const cleanedStr = str.toLowerCase() // Convert the input string to lowercase for case-insensitive comparison
 
   for (let char of cleanedStr) {
+    // Iterate through each character in the cleaned string
     if (strMap[char] === undefined) {
+      // If the character is not in the map, add it with an occurrence count of 1
       strMap[char] = 1
     } else {
+      // If the character is already in the map, the string is not an isogram
       return false
     }
   }
+
+  // If no repeated characters are found, the string is an isogram
   return true
 }
 ```

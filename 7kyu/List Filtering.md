@@ -16,6 +16,7 @@ filter_list([1, 2, 'aasf', '1', '123', 123]) == [1, 2, 123]
 
 ```js
 function filter_list(l) {
+  // Filter the input array to include only elements of type 'number'
   return l.filter(e => {
     return typeof e === 'number'
   })

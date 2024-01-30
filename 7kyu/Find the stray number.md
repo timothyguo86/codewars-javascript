@@ -19,10 +19,13 @@ The input array will always be valid! (odd-length >= 3)
 
 ```js
 function stray(numbers) {
+  // Check if the first two numbers are equal
   if (numbers[0] === numbers[1]) {
+    // If true, find the number that is different from the first two
     return numbers.find(v => v !== numbers[0])
   }
 
+  // If the first two numbers are not equal, check if the first and third numbers are equal
   return numbers[0] === numbers[2] ? numbers[1] : numbers[0]
 }
 ```

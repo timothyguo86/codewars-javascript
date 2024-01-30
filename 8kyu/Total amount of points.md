@@ -25,6 +25,7 @@ Notes:
 
 ```js
 function points(games) {
+  // Calculate the total points based on game results
   return games.reduce((sum, game) => {
     if (game[0] > game[2]) {
       sum += 3

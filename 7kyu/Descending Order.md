@@ -14,6 +14,7 @@ Input: `123456789` Output: `987654321`
 
 ```js
 function descendingOrder(n) {
+  // Convert the number to a string, split its digits, sort them in descending order, and join them back into a number
   return Number([...String(n)].sort().reverse().join(''))
 }
 ```

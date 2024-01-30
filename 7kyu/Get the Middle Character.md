@@ -28,6 +28,7 @@ The middle character(s) of the word represented as a string.
 
 ```js
 const getMiddle = s => {
+  // Return the middle characters of the input string
   return s.slice(Math.ceil(s.length / 2) - 1, Math.floor(s.length / 2) + 1)
 }
 ```

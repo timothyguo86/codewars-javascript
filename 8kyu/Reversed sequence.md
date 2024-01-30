@@ -10,6 +10,7 @@ Example : `n=5` --> `[5,4,3,2,1]`
 
 ```js
 const reverseSeq = n =>
+  // Create an array with values in reverse sequence
   Array(n)
     .fill()
     .map((_, i) => n - i)

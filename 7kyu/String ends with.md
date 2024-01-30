@@ -14,8 +14,14 @@ solution('abc', 'd') // returns false
 <details><summary>My Solution</summary>
 
 ```js
-function removeChar(str) {
-  return str.slice(1, -1)
+function solution(str, ending) {
+  return (
+    // Check if the substring of 'str' matching the length of 'ending' is equal to 'ending'
+    str
+      .split('')
+      .slice(str.split('').length - ending.split('').length)
+      .join('') === ending
+  )
 }
 ```
 

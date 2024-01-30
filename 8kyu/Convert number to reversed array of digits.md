@@ -16,6 +16,7 @@ Given a random non-negative number, you have to return the digits of this number
 
 ```js
 function digitize(n) {
+  // Convert the number to a string, split it into an array of digits, map each digit to a number, and reverse the array
   return String(n)
     .split('')
     .map(a => Number(a))

@@ -63,18 +63,22 @@ function pattern(n) {
   let str = ''
 
   if (n < 1) {
-    return str
+    return str // Return an empty string for n less than 1
   } else {
+    // Loop to construct the pattern based on the input number 'n'
     for (var j = n; j > 0; j--) {
       for (var i = n; i > n - j; i--) {
+        // Concatenate the string with the decreasing numbers
         str = str.concat(i.toString())
       }
+      // Add a newline character after each row of numbers
       str = str.concat('\n')
     }
 
+    // Remove the trailing newline character
     str = str.slice(0, -1)
 
-    return str
+    return str // Return the final pattern string
   }
 }
 ```

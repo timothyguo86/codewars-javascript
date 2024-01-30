@@ -12,13 +12,14 @@ Given a non-negative integer, `3` for example, return a string with a murmur: `"
 
 ```js
 const countSheep = function (num) {
-  let countSheep = ''
+  // Generate a string counting sheep up to the specified number
+  let countSheepString = ''
 
   for (let i = 1; i < num + 1; i++) {
-    countSheep += `${i} sheep...`
+    countSheepString += `${i} sheep...`
   }
 
-  return countSheep
+  return countSheepString
 }
 ```
 

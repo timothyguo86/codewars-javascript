@@ -18,14 +18,17 @@ Examples(Input1, Input2 --> Output):
 
 ```js
 const rps = (p1, p2) => {
+  // Check for a draw
   if (p1 === p2) return 'Draw!'
 
+  // Define winning conditions using a map
   const map = {
     rock: 'scissors',
     paper: 'rock',
     scissors: 'paper'
   }
 
+  // Determine the winner based on the map and player choices
   return map[p1] === p2 ? 'Player 1 won!' : 'Player 2 won!'
 }
 ```

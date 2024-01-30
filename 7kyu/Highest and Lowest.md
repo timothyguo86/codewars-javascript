@@ -23,9 +23,11 @@ highAndLow('1 9 3 4 -5') // return "9 -5"
 ```js
 function highAndLow(numbers) {
   const sortedNumbers = numbers.split(' ').sort((a, b) => {
+    // Sort the numbers in ascending order by converting them to floats
     return parseFloat(a) - parseFloat(b)
   })
 
+  // Return the highest and lowest numbers as a formatted string
   return `${sortedNumbers[sortedNumbers.length - 1]} ${sortedNumbers[0]}`
 }
 ```

@@ -21,13 +21,14 @@ Note you should only return a number, the count of divisors. The numbers between
 
 ```js
 function getDivisorsCnt(n) {
-  let count = 0
+  let count = 0 // Initialize a counter for divisors
 
+  // Iterate through numbers from 1 to n and count divisors
   for (let i = 1; i <= n; i++) {
-    if (!(n % i)) count++
+    if (!(n % i)) count++ // Check if 'i' is a divisor of 'n' and increment the count
   }
 
-  return count
+  return count // Return the count of divisors
 }
 ```
 

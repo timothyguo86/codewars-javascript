@@ -20,9 +20,10 @@ The parameter of accum is a string which includes only letters from `a..z` and `
 function accum(s) {
   return [...s]
     .map((element, index) => {
+      // Create an array of strings with each character repeated and formatted based on its position
       return element.toUpperCase() + element.repeat(index).toLowerCase()
     })
-    .join('-')
+    .join('-') // Join the array into a single string with '-' as a separator
 }
 ```
 

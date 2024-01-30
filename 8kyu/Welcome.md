@@ -44,6 +44,7 @@ IP_ADDRESS_REQUIRED - no ip address was suppliedput: [2,2,1,2,1], output = [2,2,
 
 ```js
 function greet(language) {
+  // Welcome messages in various languages
   const languagesDB = {
     english: 'Welcome',
     czech: 'Vitejte',
@@ -64,6 +65,7 @@ function greet(language) {
     welsh: 'Croeso'
   }
 
+  // Return the greeting in the specified language or default to English
   return languagesDB[language] || languagesDB['english']
 }
 ```

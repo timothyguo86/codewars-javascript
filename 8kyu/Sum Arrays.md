@@ -30,6 +30,7 @@ Advanced users may find this extremely easy and can easily write this in one lin
 
 ```js
 const sum = numbers =>
+  // Calculate the sum of numbers using the reduce method
   numbers.reduce((a, b) => {
     return (a += b)
   }, 0)

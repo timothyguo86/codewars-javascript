@@ -10,6 +10,7 @@ For example, for `[1, 2, 2]` it should return `9` because $`1^2 + 2^2 + 2^2 = 9`
 
 ```js
 function squareSum(numbers) {
+  // Calculate the sum of squares using the reduce method
   return numbers.reduce((sum, n) => {
     return (sum += n ** 2)
   }, 0)
