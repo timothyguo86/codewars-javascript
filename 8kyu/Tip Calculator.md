@@ -21,17 +21,25 @@ You need to consider the following ratings:
 <details><summary>My Solution</summary>
 
 ```js
-function calculateTip(amount, rating) {
-  const tipMap = {
+function calculateTip(amount: number, rating: string): number | string {
+  // Map of ratings to tip percentages
+  const tipMap: { [key: string]: number } = {
     Terrible: 0,
     Poor: 0.05,
     Good: 0.1,
     Great: 0.15,
     Excellent: 0.2
   }
-  let cleanedRating = rating[0].toUpperCase() + rating.substring(1).toLowerCase()
 
-  return tipMap.hasOwnProperty(cleanedRating) ? Math.ceil(amount * tipMap[cleanedRating]) : 'Rating not recognised'
+  // Convert rating to proper case (e.g., "Good" instead of "good" or "GOOD")
+  const cleanedRating = rating[0].toUpperCase() + rating.substring(1).toLowerCase()
+
+  // Check if the rating exists in the tip map and calculate the tip
+  if (tipMap.hasOwnProperty(cleanedRating)) {
+    return Math.ceil(amount * tipMap[cleanedRating])
+  } else {
+    return 'Rating not recognized'
+  }
 }
 ```
 
