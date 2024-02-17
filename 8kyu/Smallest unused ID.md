@@ -1,4 +1,4 @@
-# [Stringy Strings](https://www.codewars.com/kata/563b74ddd19a3ad462000054)
+# [Smallest unused ID](https://www.codewars.com/kata/55eea63119278d571d00006a)
 
 Hey awesome programmer!
 
