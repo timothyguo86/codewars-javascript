@@ -14,7 +14,7 @@
 - [Purpose](#purpose)
 - [Tips](#tips)
 - [Learning Resources](#learning-resources)
-- [More Learning Resources](#more-learning-resources)
+- [More Helpful Resources](#more-helpful-resources)
 - [Similar Platforms](#similar-platforms)
 - [License](#license)
 
@@ -105,7 +105,7 @@ Practicing katas could help you to improve your algorithmic thinking. It could a
 - [JavaScript Algorithms and Data Structures](https://github.com/trekhleb/javascript-algorithms)
 - [A JavaScript optimization handbook](https://mythbusters.js.org)
 
-### Similar Plattforms
+### Similar Platforms
 
 - [Codility](https://codility.com)
 - [Exercism](http://exercism.io)
