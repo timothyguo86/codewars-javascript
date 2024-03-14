@@ -1,4 +1,4 @@
-# JavaScript seems to be broken](https://www.codewars.com/kata/565d6d1696e154b51b000076/)
+# [JavaScript seems to be broken](https://www.codewars.com/kata/565d6d1696e154b51b000076/)
 
 There is some horribly rotten script that is not required in your project anymore, and it is affecting the way your code is supposed to work.
 
