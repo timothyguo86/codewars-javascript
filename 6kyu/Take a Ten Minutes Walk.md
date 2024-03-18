@@ -1,14 +1,8 @@
 # [Take a Ten Minutes Walk](https://www.codewars.com/kata/54da539698b8a2ad76000228)
 
-Write a function that takes in a string of one or more words, and returns the same string, but with all words that have five or more letters reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- every time you press the button it sends you an array of one-letter strings representing directions to walk (e.g., `['n', 's', 'w', 'e']`). You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return **true** if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return **false** otherwise.
 
-Examples:
-
-```
-"Hey fellow warriors"  --> "Hey wollef sroirraw"
-"This is a test        --> "This is a test"
-"This is another test" --> "This is rehtona test"
-```
+**Note**: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
 ---
 
