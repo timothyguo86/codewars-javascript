@@ -15,19 +15,8 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 <details><summary>My Solution</summary>
 
 ```js
-var uniqueInOrder = function(iterable) {
-    // Initialize an empty array to store the result
-    let result = [];
-    // Iterate over the iterable
-    for(let i = 0; i < iterable.length; i++) {
-        // If the current item is not the same as the previous item
-        if(iterable[i] !== iterable[i-1]) {
-            // Push the current item to the result array
-            result.push(iterable[i]);
-        }
-    }
-    // Return the result array
-    return result;
+const uniqueInOrder = function(iterable) {
+  return [...iterable].filter((item, i) => item !== iterable[i - 1])
 }
 ```
 
