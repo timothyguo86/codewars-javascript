@@ -13,8 +13,8 @@ Per Wikipedia, a prime number (or a prime) is a natural number greater than `1` 
 ## Example
 
 ```js
-is_prime(1)  /* false */
-is_prime(2)  /* true  */
+is_prime(1) /* false */
+is_prime(2) /* true  */
 is_prime(-1) /* false */
 ```
 
@@ -24,15 +24,14 @@ is_prime(-1) /* false */
 
 ```js
 function isPrime(num) {
-  if (num < 2) return false;
-  
+  if (num < 2) return false
+
   for (let i = 2; i * i <= num; i++) {
-    if (num % i === 0)
-    	return false
-   }
-   
-   return true;
+    if (num % i === 0) return false
+  }
+
+  return true
 }
-````
+```
 
 </details>
