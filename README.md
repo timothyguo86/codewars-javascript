@@ -4,7 +4,7 @@
   Solutions for Codewars katas
 </h6>
 
-![alt rank](https://www.codewars.com/users/TimothyGuo/badges/large)
+![alt rank](https://www.codewars.com/users/Yuxin%20Guo/badges/large)
 
 ### Table of Contents
 
@@ -20,7 +20,7 @@
 
 ### Introduction
 
-A collection of [my Codewars](https://www.codewars.com/users/TimothyGuo) solutions for <a href="https://www.codewars.com">Codewars</a> katas.
+A collection of [my Codewars](https://www.codewars.com/users/Yuxin%20Guo) solutions for <a href="https://www.codewars.com">Codewars</a> katas.
 
 Most katas offer both a longer, descriptive solution and a shorter, more concise one. In my opinion, a longer, descriptive solution is preferable unless a concise one-liner is easily understandable for your entire team.
 
