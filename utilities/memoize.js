@@ -1,4 +1,9 @@
-// Memoize function to cache results
+/**
+ * Memoizes a function by caching its results.
+ *
+ * @param {Function} fn - The function to be memoized.
+ * @returns {Function} - A memoized version of the function.
+ */
 function memoize(fn) {
   // Cache to store results
   const cache = {}

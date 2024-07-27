@@ -1,3 +1,7 @@
+/**
+ * Renames all files in a directory by replacing underscores with spaces in their filenames.
+ * @param {string} directoryPath - The path to the directory containing the files.
+ */
 const fs = require('fs')
 const path = require('path')
 
