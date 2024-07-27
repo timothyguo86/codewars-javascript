@@ -47,7 +47,7 @@ function dateFilter(date, format) {
   } else if (date instanceof Date) {
     dateObj = new Date(date.getTime())
   }
-
+  // Create an object to store the date components
   const dateMap = {
     y: dateObj.getFullYear(),
     M: dateObj.getMonth() + 1,
@@ -56,9 +56,11 @@ function dateFilter(date, format) {
     m: dateObj.getMinutes(),
     s: dateObj.getSeconds()
   }
+  // Function to pad a number with leading zeros
   const padNumber = (num, length) => {
     return num.toString().padStart(length, '0')
   }
+  // Create an object to store the replacements
   const replacements = {
     yyyy: padNumber(dateMap.y, 4),
     yy: padNumber(dateMap.y % 100, 2),
@@ -73,11 +75,11 @@ function dateFilter(date, format) {
     ss: padNumber(dateMap.s, 2),
     s: dateMap.s
   }
-
+  // Create an array of format specifiers to replace
   const formatSpecifiers = ['yyyy', 'yy', 'MM', 'M', 'dd', 'd', 'HH', 'H', 'mm', 'm', 'ss', 's']
-
+  // Sort the format specifiers by length to parse the longest first
   formatSpecifiers.sort((a, b) => b.length - a.length)
-
+  // Replace the format specifiers with the date components
   for (const specifier of formatSpecifiers) {
     format = format.replace(new RegExp(specifier, 'g'), replacements[specifier])
   }
