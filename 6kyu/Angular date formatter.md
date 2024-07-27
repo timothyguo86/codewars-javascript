@@ -1,4 +1,4 @@
-# [Angular date formatter](https://www.codewars.com/kata/56d2eada54d686d034000516/train/javascript)
+# [Angular date formatter](https://www.codewars.com/kata/56d2eada54d686d034000516)
 
 Angular provides a filter to correctly display the dates.
 

@@ -1,4 +1,4 @@
-# [Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript)
+# [Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9)
 
 Your team is writing a fancy new text editor and you've been tasked with implementing the line numbering.
 

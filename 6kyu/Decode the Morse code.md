@@ -1,4 +1,4 @@
-# [Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e/javascript)
+# [Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e)
 
 ### Part of Series 1/3
 

@@ -1,4 +1,4 @@
-# [Tribonacci Sequence](https://www.codewars.com/kata/556deca17c58da83c00002db/train/javascript)
+# [Tribonacci Sequence](https://www.codewars.com/kata/556deca17c58da83c00002db)
 
 # Tribonacci Sequence
 
