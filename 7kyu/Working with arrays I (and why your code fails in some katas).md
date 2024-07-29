@@ -8,6 +8,8 @@ Hint: watch out for side effects.
 
 ## Some good reading: [MDN Docs about arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
@@ -16,6 +18,7 @@ Hint: watch out for side effects.
 // Some katas use the input after you've processed it
 // (in this case I made that on purpose),
 // mutating it makes the tests fail, so watch out.
+
 function withoutLast(arr) {
   newArray = [...arr]
   newArray.pop()

@@ -6,6 +6,8 @@ Good luck!
 
 Some good reading: [MDN Docs about arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
