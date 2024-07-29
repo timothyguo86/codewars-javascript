@@ -12,6 +12,8 @@ joe.greet('Kate') // should return 'Hello Kate, my name is Joe'
 joe.name // should == 'Joe'
 ```
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
