@@ -13,7 +13,13 @@ If input data is invalid, you should return 0 (as in no breaks are needed if we 
 <details><summary>My Solution</summary>
 
 ```js
+function breakChocolate(n, m) {
+  if ((m !== 0) & (n !== 0)) {
+    return m * n - 1
+  }
 
+  return 0
+}
 ```
 
 </details>
