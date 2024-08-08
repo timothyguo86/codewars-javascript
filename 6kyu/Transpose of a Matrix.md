@@ -4,7 +4,7 @@ Transpose means is to interchange rows and columns of a two-dimensional array ma
 
 ie: Formally, the i th row, j th column element of AT is the j th row, i th column element of A:
 
-![matrix transpose](/images/Matrix_transpose.gif)
+![matrix transpose](/images/matrix_transpose.gif)
 
 ### Example:
 

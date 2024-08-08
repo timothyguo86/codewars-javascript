@@ -10,7 +10,7 @@ Examples(Input1, Input2 --> Output):
 "paper", "paper" --> "Draw!"
 ```
 
-![rock paper scissors](/images/rock-paper-scissors.png)
+![rock paper scissors](/images/rock_paper_scissors.png)
 
 ---
 
