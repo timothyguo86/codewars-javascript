@@ -2,8 +2,9 @@
 name: Bug Report
 about: Use this template for reporting bugs.
 title: 'Bug: '
-labels: bug
+labels: bug, enhancement
 assignees: ''
+
 ---
 
 ### Description of the bug
