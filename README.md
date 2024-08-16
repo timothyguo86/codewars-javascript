@@ -1,5 +1,4 @@
 <h1 align="center">Codewars Katas</h1>
-test
 
 <h6 align="center">
   Solutions for Codewars katas

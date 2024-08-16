@@ -25,7 +25,7 @@ Provide any other context about the PR.
 #### Checklist
 
 - [ ] Test coverage added for new code (80% - 100%)
-- [ ] Zero Sonar issues for new code
+- [ ] Zero eslint issues for new code
 - [ ] This change requires a documentation update
 - [ ] Only necessary file/line changes committed
 - [ ] Meets syntax/styling coding standards
