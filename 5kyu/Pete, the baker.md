@@ -20,7 +20,12 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 
 ```js
 function cakes(recipe, available) {
-  return
+  let amount = []
+  for (ingredient in recipe) {
+    if (!available[ingredient]) return 0
+    amount.push(Math.floor(available[ingredient] / recipe[ingredient]))
+  }
+  return Math.min(...amount)
 }
 ```
 
