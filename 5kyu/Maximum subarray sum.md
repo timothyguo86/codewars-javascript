@@ -17,7 +17,14 @@ Empty list is considered to have zero greatest sum. Note that the empty list or 
 
 ```js
 const maxSequence = function (arr) {
-
+  let max = 0
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+    // Typical Kadane's algorithm
+    sum = Math.max(arr[i], sum + arr[i])
+    max = Math.max(max, sum)
+  }
+  return max
 }
 ```
 
