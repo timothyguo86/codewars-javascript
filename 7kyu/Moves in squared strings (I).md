@@ -61,10 +61,18 @@ The input strings are separated by `,` instead of `\n`. The output strings shoul
 <details><summary>My Solution</summary>
 
 ```js
-function vertMirror(string) {}
-function horMirror(string) {}
-function oper(fct, s) {}
+function vertMirror(strng) {
+  return strng
+    .split('\n')
+    .map(row => [...row].reverse().join(''))
+    .join('\n')
+}
+function horMirror(strng) {
+  return strng.split('\n').reverse().join('\n')
+}
+function oper(fct, s) {
+  return fct(s)
+}
 ```
 
 </details>
-W
