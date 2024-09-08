@@ -13,6 +13,8 @@ E.g:
 
 ## Your function should be case insensitive to the vowels.
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
