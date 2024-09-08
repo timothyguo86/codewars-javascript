@@ -13,7 +13,6 @@ Example:
 ```js
 function solution(value) {
   return `Value is ${value.toString().padStart(5, '0')}`
-  return 'Value is ' + value.toString().padStart(5, '0')
 }
 ```
 
