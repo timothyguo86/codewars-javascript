@@ -1,4 +1,4 @@
-# [Character Counter](https://www.codewars.com/kata/582dace555a1f4d859000058)
+# [Character Counter](https://www.codewars.com/kata/56786a687e9a88d1cf00005d)
 
 You are going to be given a word. Your job will be to make sure that each character in that word has the exact same number of occurrences. You will return `true` if it is valid, or `false` if it is not.
 
