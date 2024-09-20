@@ -16,7 +16,7 @@ All inputs will be arrays of numbers. All character codes are valid lower case l
 
 ````js
 function numObj(s){
-  return s.map(v => ({[v.toString()]: String.fromCharCode(v)}))
+  return s.map(v => ({[v]: String.fromCharCode(v)}))
 }
 ```
 
