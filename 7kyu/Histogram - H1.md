@@ -1,4 +1,4 @@
-# [Histogram - H1)](https://www.codewars.com/kata/5668e3800636a6cd6a000018)
+# [Histogram - H1)](https://www.codewars.com/kata/57d532d2164a67cded0001c7)
 
 **Kata in this series**
 
