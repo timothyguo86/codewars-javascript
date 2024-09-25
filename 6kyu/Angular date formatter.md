@@ -36,6 +36,8 @@ Where there is an odd number of letters, parse the longest first then the remain
 
 When there are more than 2 of MdHms, for example, `dddd` it should be parsed as `[dd][dd]`.
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
