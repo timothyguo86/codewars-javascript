@@ -4,7 +4,7 @@ A genetic algorithm is based in groups of chromosomes, called populations. To st
 
 In this kata you have to implement a function `generate` that receives a `length` and has to return a random binary strings with `length` characters.
 
-![](./../images/generic_algorithm_series_1.gif.crdownload)
+![](./../images/generic_algorithm_series_1.gif)
 
 # Example:
 
