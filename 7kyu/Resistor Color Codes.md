@@ -48,9 +48,11 @@ Have fun! And if you enjoy this kata, check out the sequel: [Resistor Color Code
 
 ```js
 function decodeResistorColors(bands) {
+  const bandColors = bands.split(' ')
   const colors = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet', 'gray', 'white']
-  const ohmValue = (colors.indexOf(bands[0]).toString * 10 + colors.indexOf(bands[1])) * 10 ** colors.indexOf(bands[2])
-  const tolerance = bands[3] === 'gold' ? 5 : bands[3] === 'silver' ? 10 : 20
+  const ohmValue =
+    (colors.indexOf(bandColors[0]) * 10 + colors.indexOf(bandColors[1])) * 10 ** colors.indexOf(bandColors[2])
+  const tolerance = bandColors[3] === 'gold' ? 5 : bandColors[3] === 'silver' ? 10 : 20
 
   return ohmValue < 1000
     ? `${ohmValue} ohms, ${tolerance}%`
