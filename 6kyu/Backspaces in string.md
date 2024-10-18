@@ -1,4 +1,4 @@
-# [Backspaces in string](https://www.codewars.com/kata/526571aae218b8ee490006f4)
+# [Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3)
 
 Assume `"#"` is like a backspace in string. This means that string `"a#bc#d"` actually is `"bd"`
 
