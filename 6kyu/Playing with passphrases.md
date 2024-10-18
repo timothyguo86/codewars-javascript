@@ -1,4 +1,4 @@
-# [The Vowel Code](https://www.codewars.com/kata/53697be005f803751e0015aa)
+# [The Vowel Code](https://www.codewars.com/kata/559536379512a64472000053)
 
 Everyone knows passphrases. One can choose passphrases from poems, songs, movies names and so on but frequently they can be guessed due to common cultural references. You can get your passphrases stronger by different means. One is the following:
 
