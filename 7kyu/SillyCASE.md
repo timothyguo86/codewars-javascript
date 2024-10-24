@@ -1,4 +1,4 @@
-# [SillyCASE](https://www.codewars.com/kata/5d10d53a4b67bb00211ca8af)
+# [SillyCASE](https://www.codewars.com/kata/552ab0a4db0236ff1a00017a)
 
 Create a function that takes a string and returns that string with the first half lowercased and the last half uppercased.
 
