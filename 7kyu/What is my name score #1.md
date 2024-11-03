@@ -32,7 +32,6 @@ In accordance to the above `alpha` object, the name `Mary Jane` will have a name
 function nameScore(name) {
   let score = 0
   name
-    .replace(/[^a-z]/gi, '')
     .split('')
     .forEach(v => {
       for (let key in alpha) {
