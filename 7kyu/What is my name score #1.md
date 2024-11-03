@@ -31,13 +31,12 @@ In accordance to the above `alpha` object, the name `Mary Jane` will have a name
 ```js
 function nameScore(name) {
   let score = 0
-  name
-    .split('')
-    .forEach(v => {
-      for (let key in alpha) {
-        if (key.includes(v.toUpperCase())) score += alpha[key]
-      }
-    })
+
+  for (let i = 0; i < name.length; i++) {
+    for (let key in alpha) {
+      if (key.includes(name[i].toUpperCase())) score += alpha[key]
+    }
+  }
 
   return { [name]: score }
 }
