@@ -31,35 +31,32 @@
 <details><summary>My Solution</summary>
 
 ```js
-function mean(town, str) {
-  if (!str.includes(town)) return -1
+const getTownData = (town, str) => {
+  const townStartIdx = str.indexOf(town + ':')
+  if (townStartIdx === -1) return []
+
+  const townEndIdx = str.indexOf('\n', townStartIdx)
+  const townData = str.slice(townStartIdx, townEndIdx === -1 ? str.length : townEndIdx)
+
+  return townData
+    .replace(/[^0-9,.]/g, '')
+    .split(',')
+    .map(Number)
+}
+
+const mean = (town, str) => {
   const data = getTownData(town, str)
   if (data.length === 0) return -1
 
   return data.reduce((acc, cur) => acc + cur, 0) / 12
 }
 
-function variance(town, str) {
-  if (!str.includes(town)) return -1
+const variance = (town, str) => {
   const data = getTownData(town, str)
   if (data.length === 0) return -1
-
   const meanValue = mean(town, str)
 
   return data.reduce((acc, cur) => acc + (cur - meanValue) ** 2, 0) / data.length
-}
-
-function getTownData(town, str) {
-  const townStartIndex = str.indexOf(town + ':')
-  if (townStartIndex === -1) return []
-
-  const townEndIndex = str.indexOf('\n', townStartIndex)
-  const townData = str.slice(townStartIndex, townEndIndex === -1 ? str.length : townEndIndex)
-
-  return townData
-    .replace(/[^0-9,.]/g, '')
-    .split(',')
-    .map(Number)
 }
 ```
 
