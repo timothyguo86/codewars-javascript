@@ -12,11 +12,10 @@ Go to work!
 
 <details><summary>My Solution</summary>
 
-````js
-function fireFight(s){
+```js
+function fireFight(s) {
   return s.replace(/Fire/g, '~~')
 }
 ```
 
 </details>
-````

@@ -17,11 +17,16 @@ Even better is to replace some of those letters with numbers (e.g., the letter `
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function makePassword(phrase) {
-  return phrase.split(' ').map(v => v[0]).join('').replace(/i/gi, '1').replace(/o/gi, '0').replace(/s/gi, '5')
+  return phrase
+    .split(' ')
+    .map(v => v[0])
+    .join('')
+    .replace(/i/gi, '1')
+    .replace(/o/gi, '0')
+    .replace(/s/gi, '5')
 }
 ```
 
 </details>
-````

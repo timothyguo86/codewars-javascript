@@ -23,15 +23,14 @@ Good luck!
 
 <details><summary>My Solution</summary>
 
-````js
-function scrollingText(text){
+```js
+function scrollingText(text) {
   let output = []
-  for(let i = 0; i < text.length; i++) {
-    output.push(text.toUpperCase().slice(i) + text.toUpperCase().slice(0, i));
+  for (let i = 0; i < text.length; i++) {
+    output.push(text.toUpperCase().slice(i) + text.toUpperCase().slice(0, i))
   }
   return output
 }
 ```
 
 </details>
-````

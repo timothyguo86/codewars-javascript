@@ -29,12 +29,11 @@ When the last vowel in the word is
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function dative(word) {
-  let lastVowel = word.replace(/[^eéiíöőüűaáoóuú]/gi, '').slice(-1);
-  return ['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'].includes(lastVowel)? word + 'nek' : word + 'nak'
+  let lastVowel = word.replace(/[^eéiíöőüűaáoóuú]/gi, '').slice(-1)
+  return ['e', 'é', 'i', 'í', 'ö', 'ő', 'ü', 'ű'].includes(lastVowel) ? word + 'nek' : word + 'nak'
 }
 ```
 
 </details>
-````

@@ -23,19 +23,18 @@ A correctly reordered string.
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function flipNumber(n) {
   let output = ''
   let arr = n.split('')
 
-  while(arr.length > 0) {
+  while (arr.length > 0) {
     output += arr.pop()
     arr.reverse()
   }
 
-  return output;
+  return output
 }
 ```
 
 </details>
-````

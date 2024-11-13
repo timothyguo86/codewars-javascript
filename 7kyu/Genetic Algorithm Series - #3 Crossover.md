@@ -26,14 +26,13 @@ _This kata is a piece of ![2 kyu](http://i.imgur.com/CGlQhDW.png) [Binary Geneti
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 const crossover = (chromosome1, chromosome2, index) => {
   let first = chromosome1.slice(0, index) + chromosome2.slice(index, chromosome2.length)
   let second = chromosome2.slice(0, index) + chromosome1.slice(index, chromosome1.length)
 
   return [first, second]
-};
+}
 ```
 
 </details>
-````

@@ -26,10 +26,8 @@ Example:
 
 <details><summary>My Solution</summary>
 
-````js
-const middleMe = (N, X, Y) => N%2 ? X : Y.repeat(N/2) + X + Y.repeat(N/2)
-
+```js
+const middleMe = (N, X, Y) => (N % 2 ? X : Y.repeat(N / 2) + X + Y.repeat(N / 2))
 ```
 
 </details>
-````

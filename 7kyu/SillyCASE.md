@@ -15,7 +15,7 @@ If it is an odd number then 'round' it up to find which letters to uppercase. Se
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function sillycase(silly) {
   let firstLength = Math.ceil(silly.length / 2)
 
@@ -24,4 +24,3 @@ function sillycase(silly) {
 ```
 
 </details>
-````

@@ -12,19 +12,18 @@ Your task is to write an update for a lottery machine. Its current version produ
 
 <details><summary>My Solution</summary>
 
-````js
-function lottery(str){
+```js
+function lottery(str) {
   let result = ''
   const sanitizedStr = str.replace(/[^0-9]/g, '')
-   for(let i = 0; i < sanitizedStr.length; i++) {
-     if(!result.includes(sanitizedStr[i])) {
-       result += sanitizedStr[i]
-     }
-   }
+  for (let i = 0; i < sanitizedStr.length; i++) {
+    if (!result.includes(sanitizedStr[i])) {
+      result += sanitizedStr[i]
+    }
+  }
 
-  return sanitizedStr.length === 0 ? "One more run!" : result
+  return sanitizedStr.length === 0 ? 'One more run!' : result
 }
 ```
 
 </details>
-````

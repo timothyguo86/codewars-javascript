@@ -54,14 +54,13 @@ The input is any random string. You must then discern what are vowels and what a
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function getCount(words) {
-  if(typeof words !== 'string') return { vowels: 0, consonants: 0 }
+  if (typeof words !== 'string') return { vowels: 0, consonants: 0 }
   const vowels = (words.match(/[aeiou]/gi) || []).length
   const consonants = (words.replace(/[^a-z]/gi, '').match(/[^aeiou]/gi) || []).length
-  return { vowels, consonants}
+  return { vowels, consonants }
 }
 ```
 
 </details>
-````

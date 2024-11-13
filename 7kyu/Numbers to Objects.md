@@ -14,11 +14,10 @@ All inputs will be arrays of numbers. All character codes are valid lower case l
 
 <details><summary>My Solution</summary>
 
-````js
-function numObj(s){
-  return s.map(v => ({[v]: String.fromCharCode(v)}))
+```js
+function numObj(s) {
+  return s.map(v => ({ [v]: String.fromCharCode(v) }))
 }
 ```
 
 </details>
-````

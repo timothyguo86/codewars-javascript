@@ -17,7 +17,7 @@ Fix the code to pass all the tests. Unfortunately, you can only modify **ONE** l
 
 Some examples of modify operations:
 
-````js
+```js
 var hello = "word"   <--- initial code
                  xxx  <--- 3 characters modified
 var hello = "world"  <--- modified code
@@ -35,30 +35,35 @@ var hell = "world"   <--- initial code
 var hello = "world"  <--- bad way
          x            <--- 1 character modified
 var hello= "world"   <--- better way
-
+```
 
 ---
 
 <details><summary>My Solution</summary>
 
 ```js
-function makePizza(pieces) { //Let's make n pieces of Pizza ;-)
-  var result = "";
-  while ( pieces-- ){
-    var needSteps = 5;
-    while ( needSteps-- ) result += make( needSteps+1); // Need to remove the white space in `needSteps+1` to pass the character limit test
+function makePizza(pieces) {
+  //Let's make n pieces of Pizza ;-)
+  var result = ''
+  while (pieces--) {
+    var needSteps = 5
+    while (needSteps--) result += make(needSteps + 1) // Need to remove the white space in `needSteps+1` to pass the character limit test
   }
-  return result;
+  return result
 }
-function make(step){
-  switch ( step ){
-    case 5: return "P";
-    case 4: return "i";
+function make(step) {
+  switch (step) {
+    case 5:
+      return 'P'
+    case 4:
+      return 'i'
     case 3:
-    case 2: return "z";
-    case 1: return "a";
+    case 2:
+      return 'z'
+    case 1:
+      return 'a'
   }
 }
-````
+```
 
 </details>

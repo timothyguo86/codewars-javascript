@@ -11,11 +11,10 @@ example
 
 <details><summary>My Solution</summary>
 
-````js
+```js
 function capMe(names) {
   return names.map(v => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase())
 }
 ```
 
 </details>
-````
