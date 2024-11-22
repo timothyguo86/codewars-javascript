@@ -61,10 +61,9 @@ If you enjoyed this kata then please try [my other katas](https://www.codewars.c
 
 ```js
 function myLanguages(results) {
-  return Object.entries(results)
-    .filter(([_, v]) => v > 59)
-    .sort((a, b) => b[1] - a[1])
-    .map(([v, _]) => v)
+  return Object.keys(results)
+    .filter(v => results[v] > 59)
+    .sort((a, b) => results[b] - results[a])
 }
 ```
 
