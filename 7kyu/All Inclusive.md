@@ -27,6 +27,8 @@ Though not correct in a mathematical sense
 
 ## Ref: [https://en.wikipedia.org/wiki/String\_(computer_science)#Rotations](<https://en.wikipedia.org/wiki/String_(computer_science)#Rotations>)
 
+---
+
 <details><summary>My Solution</summary>
 
 ```js
