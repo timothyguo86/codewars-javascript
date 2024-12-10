@@ -1,4 +1,4 @@
-# [Complete Series](https://www.codewars.com/kata/580a4001d6df740d61000301d)
+# [Complete Series](https://www.codewars.com/kata/580a4001d6df740d61000301)
 
 You are given an array of non-negative integers, your task is to complete the series from 0 to the highest number in the array.
 
