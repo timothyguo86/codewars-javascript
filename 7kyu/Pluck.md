@@ -1,4 +1,4 @@
-# [Pluck](https://www.codewars.com/kata/5784c89be5553370e000061b)
+# [Pluck](https://www.codewars.com/kata/530017aac7c0f49926000084)
 
 Implement a function which takes a sequence of objects and a property name, and returns a sequence containing the named property of each object.
 
