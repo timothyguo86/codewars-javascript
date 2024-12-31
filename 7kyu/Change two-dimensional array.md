@@ -32,17 +32,12 @@ Output array
 
 ```js
 function matrix(array) {
-  const output = [...array]
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array[0].length; j++) {
-      if (i === j) {
-        if (array[i][j] < 0) output[i][j] = 0
-        else output[i][j] = 1
-      }
-    }
-  }
-
-  return output
+  return array.map((row, i) =>
+    row.map((value, j) => {
+      if (i === j) return value < 0 ? 0 : 1
+      else return value
+    })
+  )
 }
 ```
 
