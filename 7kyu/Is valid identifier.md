@@ -26,7 +26,7 @@ Given a string, determine if it's a valid identifier.
 
 ```js
 function isValid(idn) {
-  return /^[a-zA-Z_\$][a-zA-Z0-9_\$]*$/gi.test(idn)
+  return /^[a-z_\$][a-z0-9_\$]*$/gi.test(idn)
 }
 ```
 
