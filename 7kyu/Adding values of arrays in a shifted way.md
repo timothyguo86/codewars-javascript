@@ -52,22 +52,23 @@ I have created other katas. Have a look if you like coding and challenges.
 
 ```js
 function addingShifted(arrayOfArrays, shift) {
-  const arrayLength = arrayOfArrays.length
-  const newArrayLength = arrayOfArrays[0].length + arrayLength * shift
+  const newArrayOfArrays = arrayOfArrays.map((arr, i) => {
+    if (i > 0) {
+      const fillerArray = Array.from({ length: i * shift }, v => 0)
+      return [...fillerArray, ...arr]
+    }
+    return arr
+  })
+  const maxArrayLength = arrayOfArrays[0].length + (arrayOfArrays.length - 1) * shift
+  const output = Array.from({ length: maxArrayLength }, v => 0)
 
-  for (let i = 0; i < arrayLength; i++) {
-    arrayOfArrays[i] = Array.from({ length: newArrayLength }, (v, j) => {
-      if (j < i * shift) return 0
-      else return v
-    })
+  for (let i = 0; i < newArrayOfArrays.length; i++) {
+    for (let j = 0; j < maxArrayLength; j++) {
+      output[j] += newArrayOfArrays[i][j] || 0
+    }
   }
 
-  return arrayOfArrays.reduce(
-    (acc, cur) => {
-      return acc.map((v, i) => v + cur[i])
-    },
-    Array.from({ length: newArrayLength }, () => 0)
-  )
+  return output
 }
 ```
 
