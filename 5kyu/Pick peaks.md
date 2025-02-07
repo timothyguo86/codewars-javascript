@@ -27,10 +27,18 @@ function pickPeaks(arr) {
     peaks: []
   }
 
-  for (let i = 1; i < arr.length - 2; i++) {
-    if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
-      output.pos.push(i)
-      output.peaks.push(arr[i])
+  let candidate = -1
+
+  for (let i = 1; i < arr.length - 1; i++) {\
+    if (arr[i] > arr[i - 1]) {
+      candidate = i
+    }
+
+    if (arr[i] > arr[i + 1] && candidate !== -1) {
+      output.pos.push(candidate)
+      output.peaks.push(arr[candidate])
+
+      candidate = -1
     }
   }
 
