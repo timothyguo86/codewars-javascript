@@ -25,24 +25,24 @@ The example above would return:
 
 ```js
 function removeParentheses(s) {
-  let result = ''
-  let openParentheses = 0
+  let result = "";
+  let openParentheses = 0;
 
   for (let char of s) {
-    if (char === '(') {
-      openParentheses++
-    } else if (char === ')') {
+    if (char === "(") {
+      openParentheses++;
+    } else if (char === ")") {
       if (openParentheses > 0) {
-        openParentheses--
+        openParentheses--;
       } else {
-        result += char
+        result += char;
       }
     } else if (openParentheses === 0) {
-      result += char
+      result += char;
     }
   }
 
-  return result
+  return result;
 }
 ```
 

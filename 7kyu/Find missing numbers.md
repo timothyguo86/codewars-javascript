@@ -18,8 +18,11 @@ Your task is to return an array of those missing numbers:
 
 ```js
 function findMissingNumbers(arr) {
-  const fullArr = Array.from({ length: Math.max(...arr) - Math.min(...arr) }, (_, i) => Math.min(...arr) + i)
-  return fullArr.filter(v => !arr.includes(v))
+  const fullArr = Array.from(
+    { length: Math.max(...arr) - Math.min(...arr) },
+    (_, i) => Math.min(...arr) + i,
+  );
+  return fullArr.filter((v) => !arr.includes(v));
 }
 ```
 

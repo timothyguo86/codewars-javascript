@@ -23,13 +23,13 @@ Examples
 ```js
 function decipherThis(str) {
   return str
-    .split(' ')
-    .map(v => {
-      v = v.replace(/[0-9]+/g, m => String.fromCharCode(m))
-      if (v.length < 3) return v
-      else return v.slice(0, 1) + v[v.length - 1] + v.slice(2, -1) + v[1]
+    .split(" ")
+    .map((v) => {
+      v = v.replace(/[0-9]+/g, (m) => String.fromCharCode(m));
+      if (v.length < 3) return v;
+      else return v.slice(0, 1) + v[v.length - 1] + v.slice(2, -1) + v[1];
     })
-    .join(' ')
+    .join(" ");
 }
 ```
 

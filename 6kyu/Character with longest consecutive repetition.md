@@ -19,20 +19,20 @@ Happy coding! :)
 
 ```js
 function longestRepetition(s) {
-  if (s === '') return ['', 0]
+  if (s === "") return ["", 0];
 
-  const cArr = s.match(/(.)\1*/g)
-  let maxC = ''
-  let maxLength = 0
+  const cArr = s.match(/(.)\1*/g);
+  let maxC = "";
+  let maxLength = 0;
 
-  cArr.forEach(v => {
+  cArr.forEach((v) => {
     if (v.length > maxLength) {
-      maxC = v[0]
-      maxLength = v.length
+      maxC = v[0];
+      maxLength = v.length;
     }
-  })
+  });
 
-  return [maxC, maxLength]
+  return [maxC, maxLength];
 }
 ```
 

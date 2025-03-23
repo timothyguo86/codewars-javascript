@@ -23,12 +23,19 @@ of petals. The number of petals is always greater than 0.
 <details><summary>My Solution</summary>
 
 ```js
-let phrases = ['I love you', 'a little', 'a lot', 'passionately', 'madly', 'not at all']
+let phrases = [
+  "I love you",
+  "a little",
+  "a lot",
+  "passionately",
+  "madly",
+  "not at all",
+];
 
-const howMuchILoveYou = nbPetals => {
+const howMuchILoveYou = (nbPetals) => {
   // Return the corresponding phrase based on the number of petals
-  return phrases[(nbPetals - 1) % phrases.length]
-}
+  return phrases[(nbPetals - 1) % phrases.length];
+};
 ```
 
 </details>

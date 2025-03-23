@@ -42,17 +42,17 @@ If you are given an array with multiple answers, return the lowest correct index
 <details><summary>My Solution</summary>
 
 ```js
-const findEvenIndex = arr => {
+const findEvenIndex = (arr) => {
   // Helper function to calculate the sum of elements in a subarray
   const sum = (from, to) => {
-    return arr.slice(from, to).reduce((a, b) => a + b, 0)
-  }
+    return arr.slice(from, to).reduce((a, b) => a + b, 0);
+  };
 
   // Find the index where the sum of elements before and after the index are equal
   return arr.findIndex((el, i) => {
-    return sum(0, i) === sum(i + 1, arr.length)
-  })
-}
+    return sum(0, i) === sum(i + 1, arr.length);
+  });
+};
 ```
 
 </details>

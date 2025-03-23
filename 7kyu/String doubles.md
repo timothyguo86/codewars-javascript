@@ -27,9 +27,9 @@ Good luck!
 ```js
 function doubles(s) {
   return [...s].reduce((acc, cur) => {
-    if (acc[acc.length - 1] === cur) return acc.slice(0, -1)
-    else return acc + cur
-  }, '')
+    if (acc[acc.length - 1] === cur) return acc.slice(0, -1);
+    else return acc + cur;
+  }, "");
 }
 ```
 

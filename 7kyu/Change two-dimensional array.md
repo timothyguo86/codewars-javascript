@@ -35,10 +35,10 @@ Output array
 function matrix(array) {
   return array.map((row, i) =>
     row.map((value, j) => {
-      if (i === j) return value < 0 ? 0 : 1
-      else return value
-    })
-  )
+      if (i === j) return value < 0 ? 0 : 1;
+      else return value;
+    }),
+  );
 }
 ```
 

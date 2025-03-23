@@ -17,12 +17,12 @@ Array will always be valid (odd-length >= 3)
 
 ```js
 function meanVsMedian(numbers) {
-  const mean = numbers.reduce((total, cur) => total + cur) / numbers.length
-  const median = [...numbers].sort((a, b) => a - b)[(numbers.length - 1) / 2]
+  const mean = numbers.reduce((total, cur) => total + cur) / numbers.length;
+  const median = [...numbers].sort((a, b) => a - b)[(numbers.length - 1) / 2];
 
-  if (mean > median) return 'mean'
-  else if (mean < median) return 'median'
-  else return 'same'
+  if (mean > median) return "mean";
+  else if (mean < median) return "median";
+  else return "same";
 }
 ```
 

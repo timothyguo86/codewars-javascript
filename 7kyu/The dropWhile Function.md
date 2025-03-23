@@ -24,8 +24,8 @@ there are a whole host of useful functions, many of which can be implemented in 
 
 ```js
 function dropWhile(array, predicate) {
-  const idx = array.findIndex(v => !predicate(v))
-  return idx < 0 ? [] : array.slice(idx)
+  const idx = array.findIndex((v) => !predicate(v));
+  return idx < 0 ? [] : array.slice(idx);
 }
 ```
 

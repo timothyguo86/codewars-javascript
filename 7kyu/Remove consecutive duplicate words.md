@@ -16,9 +16,9 @@ words) is a valid input.
 ```js
 function removeConsecutiveDuplicates(string) {
   return string
-    .split(' ')
+    .split(" ")
     .filter((el, i, arr) => el !== arr[i + 1])
-    .join(' ')
+    .join(" ");
 }
 ```
 

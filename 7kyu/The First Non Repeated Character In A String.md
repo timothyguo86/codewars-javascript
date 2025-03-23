@@ -22,10 +22,10 @@ You can assume, that the input string has always non-zero length.
 function firstNonRepeated(s) {
   for (let i = 0; i < s.length; i++) {
     if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
-      return s[i]
+      return s[i];
     }
   }
-  return null
+  return null;
 }
 ```
 

@@ -24,16 +24,16 @@ The function should return an integer, the total time required.
 ## Examples
 
 ```javascript
-queueTime([5, 3, 4], 1)
+queueTime([5, 3, 4], 1);
 // should return 12
 // because when there is 1 till, the total time is just the sum of the times
 
-queueTime([10, 2, 3, 3], 2)
+queueTime([10, 2, 3, 3], 2);
 // should return 10
 // because here n=2 and the 2nd, 3rd, and 4th people in the
 // queue finish before the 1st person has finished.
 
-queueTime([2, 3, 10], 2)
+queueTime([2, 3, 10], 2);
 // should return 12
 ```
 
@@ -55,14 +55,14 @@ to running multiple processes at the same time: [Thread Pool](https://en.wikiped
 
 ```js
 function queueTime(customers, n) {
-  const tills = Array(n).fill(0)
+  const tills = Array(n).fill(0);
 
   for (let customer of customers) {
-    tills.sort((a, b) => a - b)
-    tills[0] += customer
+    tills.sort((a, b) => a - b);
+    tills[0] += customer;
   }
 
-  return Math.max(...tills)
+  return Math.max(...tills);
 }
 ```
 

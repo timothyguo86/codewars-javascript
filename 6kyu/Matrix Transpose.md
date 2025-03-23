@@ -27,23 +27,23 @@ the height and width of the matrix are both positive.
 
 ```js
 function transpose(matrix) {
-  const result = [] // Initialize an array to store the transposed matrix
-  let preRow = matrix.length // Number of rows in the original matrix
-  let preCol = matrix[0].length // Number of columns in the original matrix
+  const result = []; // Initialize an array to store the transposed matrix
+  let preRow = matrix.length; // Number of rows in the original matrix
+  let preCol = matrix[0].length; // Number of columns in the original matrix
 
   // Create empty arrays in the result for each column in the transposed matrix
   for (let i = 0; i < preCol; i++) {
-    result.push([])
+    result.push([]);
   }
 
   // Iterate through the original matrix and populate the transposed matrix
   for (let col = 0; col < preCol; col++) {
     for (let row = 0; row < preRow; row++) {
-      result[col][row] = matrix[row][col] // Swap rows with columns
+      result[col][row] = matrix[row][col]; // Swap rows with columns
     }
   }
 
-  return result // Return the transposed matrix
+  return result; // Return the transposed matrix
 }
 ```
 

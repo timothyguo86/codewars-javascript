@@ -18,9 +18,9 @@ Examples:
 ```js
 function vowelOne(s) {
   return s
-    .split('')
-    .map(x => (/[aeiouAEIOU]/.test(x) ? '1' : '0'))
-    .join('')
+    .split("")
+    .map((x) => (/[aeiouAEIOU]/.test(x) ? "1" : "0"))
+    .join("");
 }
 ```
 

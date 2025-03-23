@@ -20,7 +20,7 @@ If the array is empty or the array has only one element the result should be `0`
 
 ```js
 function sumOfDifferences(arr) {
-  return arr.length === 0 ? 0 : Math.max(...arr) - Math.min(...arr)
+  return arr.length === 0 ? 0 : Math.max(...arr) - Math.min(...arr);
 }
 ```
 

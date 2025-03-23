@@ -16,15 +16,15 @@ string, in their order of first appearance. If there are no integers in the stri
 
 ```js
 function lottery(str) {
-  let result = ''
-  const sanitizedStr = str.replace(/[^0-9]/g, '')
+  let result = "";
+  const sanitizedStr = str.replace(/[^0-9]/g, "");
   for (let i = 0; i < sanitizedStr.length; i++) {
     if (!result.includes(sanitizedStr[i])) {
-      result += sanitizedStr[i]
+      result += sanitizedStr[i];
     }
   }
 
-  return sanitizedStr.length === 0 ? 'One more run!' : result
+  return sanitizedStr.length === 0 ? "One more run!" : result;
 }
 ```
 

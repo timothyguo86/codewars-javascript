@@ -36,8 +36,11 @@ The trick to counting kookaburras is to listen carefully
 
 ```js
 var kookaCounter = function (laughing) {
-  return (laughing.match(/(ha)+/g) || []).length + (laughing.match(/(Ha)+/g) || []).length
-}
+  return (
+    (laughing.match(/(ha)+/g) || []).length +
+    (laughing.match(/(Ha)+/g) || []).length
+  );
+};
 ```
 
 </details>

@@ -39,17 +39,17 @@ language's equivalent).
  * 5. If all elements are 9, the function returns a new array with a leading 1 followed by zeros.
  */
 function upArray(arr) {
-  if (arr.some(v => v > 9 || v < 0) || arr.length === 0) return null
+  if (arr.some((v) => v > 9 || v < 0) || arr.length === 0) return null;
 
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] < 9) {
-      arr[i]++
-      return arr
+      arr[i]++;
+      return arr;
     }
-    arr[i] = 0
+    arr[i] = 0;
   }
 
-  return [1, ...arr]
+  return [1, ...arr];
 }
 ```
 

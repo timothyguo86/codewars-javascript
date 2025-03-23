@@ -30,14 +30,14 @@ play and the type of the play. Have your function let you know if you won or not
 
 ```js
 function didWeWin(plays) {
-  let total = 0
-  plays.forEach(v => {
-    if (v[1] === 'turnover') return false
-    else if (v[1] === 'pass' || v[1] === 'run') total += v[0]
-    else if (v[1] === 'sack') total -= v[0]
-  })
+  let total = 0;
+  plays.forEach((v) => {
+    if (v[1] === "turnover") return false;
+    else if (v[1] === "pass" || v[1] === "run") total += v[0];
+    else if (v[1] === "sack") total -= v[0];
+  });
 
-  return total > 10
+  return total > 10;
 }
 ```
 

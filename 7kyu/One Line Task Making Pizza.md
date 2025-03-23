@@ -10,8 +10,8 @@ Fix the code to pass all the tests. Unfortunately, you can only modify **ONE** l
   because this is a `bugfix` kata. Also, don't complain that the initial code is too messy. That's why you need to do
   the task ;-)
 - You can do the following operations:
-    1. Replace the existing characters.
-    2. Add the character at the end of the line.
+  1. Replace the existing characters.
+  2. Add the character at the end of the line.
 - You should not Add a new line or Delete a line.
 - The overall difference of the modified code is less than 5 characters.
 
@@ -46,25 +46,25 @@ var hello= "world"   <--- better way
 ```js
 function makePizza(pieces) {
   //Let's make n pieces of Pizza ;-)
-  var result = ''
+  var result = "";
   while (pieces--) {
-    var needSteps = 5
-    while (needSteps--) result += make(needSteps + 1) // Need to remove the white space in `needSteps+1` to pass the character limit test
+    var needSteps = 5;
+    while (needSteps--) result += make(needSteps + 1); // Need to remove the white space in `needSteps+1` to pass the character limit test
   }
-  return result
+  return result;
 }
 
 function make(step) {
   switch (step) {
     case 5:
-      return 'P'
+      return "P";
     case 4:
-      return 'i'
+      return "i";
     case 3:
     case 2:
-      return 'z'
+      return "z";
     case 1:
-      return 'a'
+      return "a";
   }
 }
 ```

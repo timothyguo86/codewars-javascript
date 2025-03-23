@@ -12,9 +12,9 @@ Ouput :: "Position of alphabet: 1"
 
 ```js
 function position(letter) {
-  const position = letter.charCodeAt(0) - 'a'.charCodeAt(0) + 1
+  const position = letter.charCodeAt(0) - "a".charCodeAt(0) + 1;
 
-  return `Position of alphabet: ${position}`
+  return `Position of alphabet: ${position}`;
 }
 ```
 

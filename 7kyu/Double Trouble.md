@@ -25,14 +25,14 @@ function trouble(x, t) {
   return x.reduce(
     (obj, cur, i) => {
       if (obj.prevNum + cur !== t && i > 0) {
-        obj.result.push(cur)
-        obj.prevNum = cur
+        obj.result.push(cur);
+        obj.prevNum = cur;
       }
 
-      return obj
+      return obj;
     },
-    { result: [x[0]], prevNum: x[0] }
-  ).result
+    { result: [x[0]], prevNum: x[0] },
+  ).result;
 }
 ```
 

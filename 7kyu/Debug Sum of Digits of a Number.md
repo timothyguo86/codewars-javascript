@@ -19,12 +19,12 @@ argument is an integer.
 
 ```js
 function getSumOfDigits(integer) {
-  let sum = 0
-  let digits = integer.toString()
+  let sum = 0;
+  let digits = integer.toString();
   for (let ix = 0; ix < digits.length; ix++) {
-    sum = sum + +digits[ix]
+    sum = sum + +digits[ix];
   }
-  return sum
+  return sum;
 }
 ```
 

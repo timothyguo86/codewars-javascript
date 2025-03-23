@@ -10,7 +10,7 @@ Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 i.e.
 
 ```js
-friend[('Ryan', 'Kieran', 'Mark')]`shouldBe`[('Ryan', 'Mark')]
+friend[("Ryan", "Kieran", "Mark")]`shouldBe`[("Ryan", "Mark")];
 ```
 
 Note: keep the original order of the names in the output.
@@ -22,7 +22,7 @@ Note: keep the original order of the names in the output.
 ```js
 function friend(friends) {
   // Filter the array to include only names with a length of 4
-  return friends.filter(name => name.length === 4)
+  return friends.filter((name) => name.length === 4);
 }
 ```
 

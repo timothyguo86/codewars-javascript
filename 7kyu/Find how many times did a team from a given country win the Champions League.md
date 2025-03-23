@@ -22,7 +22,7 @@ For example if the input array is as follows:
 
 ```js
 function countWins(winnerList, country) {
-  return winnerList.filter(winner => country === winner.country).length
+  return winnerList.filter((winner) => country === winner.country).length;
 }
 ```
 

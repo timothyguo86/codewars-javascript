@@ -14,14 +14,14 @@ will always be valid, i.e. no negative integers.
 ```js
 const countSheep = function (num) {
   // Generate a string counting sheep up to the specified number
-  let countSheepString = ''
+  let countSheepString = "";
 
   for (let i = 1; i < num + 1; i++) {
-    countSheepString += `${i} sheep...`
+    countSheepString += `${i} sheep...`;
   }
 
-  return countSheepString
-}
+  return countSheepString;
+};
 ```
 
 </details>

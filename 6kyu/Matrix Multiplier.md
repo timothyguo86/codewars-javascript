@@ -49,17 +49,17 @@ contain only numbers. The numbers may include integers and/or decimal points.
 ```js
 const getMatrixProduct = (a, b) => {
   // Check if matrices can be multiplied
-  if (a[0].length !== b.length) return null
+  if (a[0].length !== b.length) return null;
 
   // Initialize a result matrix with the same number of rows as matrix 'a' and the same number of columns as matrix 'b'
-  return a.map(rowA =>
+  return a.map((rowA) =>
     // For each row in matrix 'a', map over each column in matrix 'b'
     b[0].map((_, colIdx) =>
       // Calculate the dot product of the current row from matrix 'a' and the current column from matrix 'b'
-      rowA.reduce((sum, valueA, i) => sum + valueA * b[i][colIdx], 0)
-    )
-  )
-}
+      rowA.reduce((sum, valueA, i) => sum + valueA * b[i][colIdx], 0),
+    ),
+  );
+};
 ```
 
 </details>

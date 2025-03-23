@@ -29,9 +29,9 @@ customer has to pay when they ask for the bill. The current price for the dishes
 
 ```js
 function totalBill(str) {
-  let plates = str.replace(/\s+/g, '').length
+  let plates = str.replace(/\s+/g, "").length;
 
-  return 2 * (plates - Math.floor(plates / 5))
+  return 2 * (plates - Math.floor(plates / 5));
 }
 ```
 

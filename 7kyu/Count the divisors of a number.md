@@ -22,14 +22,14 @@ see which numbers are counted in each case.
 
 ```js
 function getDivisorsCnt(n) {
-  let count = 0 // Initialize a counter for divisors
+  let count = 0; // Initialize a counter for divisors
 
   // Iterate through numbers from 1 to n and count divisors
   for (let i = 1; i <= n; i++) {
-    if (!(n % i)) count++ // Check if 'i' is a divisor of 'n' and increment the count
+    if (!(n % i)) count++; // Check if 'i' is a divisor of 'n' and increment the count
   }
 
-  return count // Return the count of divisors
+  return count; // Return the count of divisors
 }
 ```
 

@@ -33,15 +33,15 @@ y=5 + J=2 + a=1 + n=3 + e=1
 
 ```js
 function nameScore(name) {
-  let score = 0
+  let score = 0;
 
   for (let i = 0; i < name.length; i++) {
     for (let key in alpha) {
-      if (key.includes(name[i].toUpperCase())) score += alpha[key]
+      if (key.includes(name[i].toUpperCase())) score += alpha[key];
     }
   }
 
-  return { [name]: score }
+  return { [name]: score };
 }
 ```
 

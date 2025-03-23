@@ -19,10 +19,10 @@ The collections can contain any character and can contain duplicates.
 
 ```js
 function diff(a, b) {
-  const filteredA = a.filter(v => b.indexOf(v) === -1)
-  const filteredB = b.filter(v => a.indexOf(v) === -1)
+  const filteredA = a.filter((v) => b.indexOf(v) === -1);
+  const filteredB = b.filter((v) => a.indexOf(v) === -1);
 
-  return [...new Set([...filteredA, ...filteredB])].sort()
+  return [...new Set([...filteredA, ...filteredB])].sort();
 }
 ```
 

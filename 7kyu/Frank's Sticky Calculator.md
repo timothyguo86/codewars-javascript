@@ -47,10 +47,10 @@ Although 127 / 7 = 18.1428 ; 18 is outputted instead.
 
 ```js
 function stickyCalc(operation, val1, val2) {
-  const v1 = Math.round(val1)
-  const v2 = Math.round(val2)
+  const v1 = Math.round(val1);
+  const v2 = Math.round(val2);
 
-  return Math.round(eval(`${v1}${v2}${operation}${v2}`))
+  return Math.round(eval(`${v1}${v2}${operation}${v2}`));
 }
 ```
 

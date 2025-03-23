@@ -27,14 +27,14 @@ I have also created other katas. Take a look if you enjoyed this kata!
 ```js
 function findMissingLetter(array) {
   // Get the character code of the first element in the array
-  const startCharCode = array[0].charCodeAt(0)
+  const startCharCode = array[0].charCodeAt(0);
 
   // Loop through character codes from the startCharCode to the character code of the last element in the array
   for (let i = startCharCode; i < array[array.length - 1].charCodeAt(0); i++) {
     // Convert the current character code to its corresponding character and compare it with the array element
     if (String.fromCharCode(i) !== array[i - startCharCode]) {
       // If they don't match, return the missing character
-      return String.fromCharCode(i)
+      return String.fromCharCode(i);
     }
   }
 }

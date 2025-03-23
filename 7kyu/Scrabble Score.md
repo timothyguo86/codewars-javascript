@@ -47,9 +47,9 @@ the scrabble score only of the letters in that string.
 
 ```js
 function scrabbleScore(str) {
-  return [...str.replace(/[^a-z]/gi, '')].reduce((acc, cur) => {
-    return (acc = acc + ($dict[cur.toUpperCase()] || 0))
-  }, 0)
+  return [...str.replace(/[^a-z]/gi, "")].reduce((acc, cur) => {
+    return (acc = acc + ($dict[cur.toUpperCase()] || 0));
+  }, 0);
 }
 ```
 

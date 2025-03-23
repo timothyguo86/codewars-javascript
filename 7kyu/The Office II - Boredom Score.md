@@ -46,13 +46,16 @@ function boredom(staff) {
     IS: 8,
     retail: 5,
     cleaning: 4,
-    'pissing about': 25
-  }
-  const total = Object.values(staff).reduce((acc, cur) => acc + department[cur], 0)
+    "pissing about": 25,
+  };
+  const total = Object.values(staff).reduce(
+    (acc, cur) => acc + department[cur],
+    0,
+  );
 
-  if (total > 100) return 'party time!!'
-  else if (total > 80) return 'i can handle this'
-  else return 'kill me now'
+  if (total > 100) return "party time!!";
+  else if (total > 80) return "i can handle this";
+  else return "kill me now";
 }
 ```
 

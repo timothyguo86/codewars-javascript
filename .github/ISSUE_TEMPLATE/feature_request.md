@@ -1,10 +1,9 @@
 ---
 name: Feature Request
 about: Use this template for feature requests.
-title: 'Feature Request: '
+title: "Feature Request: "
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 ### Describe the feature or problem you'd like to solve

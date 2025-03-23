@@ -28,14 +28,14 @@ one: [Last Survivors Ep.2](https://www.codewars.com/kata/60a1aac7d5a5fc0046c8965
 
 ```js
 function lastSurvivor(letters, coords) {
-  let lettersArray = letters.split('')
+  let lettersArray = letters.split("");
 
   for (let i = 0; i < coords.length; i++) {
-    const idx = coords[i]
-    lettersArray.splice(coords[i], 1)
+    const idx = coords[i];
+    lettersArray.splice(coords[i], 1);
   }
 
-  return lettersArray.join('')
+  return lettersArray.join("");
 }
 ```
 

@@ -26,11 +26,11 @@ characters, where `n` is the letter's alphabet position `1-26`.
 function alphaSeq(str) {
   return [...str.toLowerCase()]
     .sort()
-    .map(v => {
-      const position = v.charCodeAt(0) - 96
-      return v.toUpperCase() + v.toLowerCase().repeat(position - 1)
+    .map((v) => {
+      const position = v.charCodeAt(0) - 96;
+      return v.toUpperCase() + v.toLowerCase().repeat(position - 1);
     })
-    .join(',')
+    .join(",");
 }
 ```
 

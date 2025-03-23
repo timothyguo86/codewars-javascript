@@ -17,15 +17,15 @@ For more information: [Binding](http://alistapart.com/article/getoutbindingsitua
 <details><summary>My Solution</summary>
 
 ```js
-const name = 'The Window'
+const name = "The Window";
 
 let alpha = {
-  name: 'My Alpha',
+  name: "My Alpha",
 
   getNameFunc: function () {
-    return () => this.name
-  }
-}
+    return () => this.name;
+  },
+};
 ```
 
 </details>

@@ -18,16 +18,16 @@ You task is to initialize the middle names (if there is any).
 
 ```js
 function initializeNames(name) {
-  let names = name.split(' ')
+  let names = name.split(" ");
   if (names.length < 3) {
-    return name
+    return name;
   } else {
     return names
       .map((x, i) => {
-        if (i === 0 || i === names.length - 1) return x
-        else return `${x[0]}.`
+        if (i === 0 || i === names.length - 1) return x;
+        else return `${x[0]}.`;
       })
-      .join(' ')
+      .join(" ");
   }
 }
 ```

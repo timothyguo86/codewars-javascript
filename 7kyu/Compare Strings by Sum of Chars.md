@@ -24,24 +24,26 @@ Your method should return `true`, if the strings are equal and `false` if they a
 
 ```js
 function compare(s1, s2) {
-  let filteredS1 = s1 === null ? '' : s1.toUpperCase().replace(/[^a-zA-Z]/g, '')
-  let filteredS2 = s2 === null ? '' : s2.toUpperCase().replace(/[^a-zA-Z]/g, '')
+  let filteredS1 =
+    s1 === null ? "" : s1.toUpperCase().replace(/[^a-zA-Z]/g, "");
+  let filteredS2 =
+    s2 === null ? "" : s2.toUpperCase().replace(/[^a-zA-Z]/g, "");
 
   let s1Total =
-    filteredS1 === '' || s1.length !== filteredS1.length
+    filteredS1 === "" || s1.length !== filteredS1.length
       ? 0
-      : filteredS1.split('').reduce((acc, cur) => {
-          return acc + cur.charCodeAt(0)
-        }, 0)
+      : filteredS1.split("").reduce((acc, cur) => {
+          return acc + cur.charCodeAt(0);
+        }, 0);
 
   let s2Total =
-    filteredS2 === '' || s2.length !== filteredS2.length
+    filteredS2 === "" || s2.length !== filteredS2.length
       ? 0
-      : filteredS2.split('').reduce((acc, cur) => {
-          return acc + cur.charCodeAt(0)
-        }, 0)
+      : filteredS2.split("").reduce((acc, cur) => {
+          return acc + cur.charCodeAt(0);
+        }, 0);
 
-  return s1Total === s2Total
+  return s1Total === s2Total;
 }
 ```
 

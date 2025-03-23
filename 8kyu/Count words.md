@@ -7,10 +7,10 @@ You have to ensure that spaces in string is a whitespace for real.
 Let's take a look on some examples:
 
 ```js
-countWords('Hello') // returns 1 as int
-countWords('Hello, World!') // returns 2
-countWords('No results for search term `s`') // returns 6
-countWords(' Hello') // returns 1
+countWords("Hello"); // returns 1 as int
+countWords("Hello, World!"); // returns 2
+countWords("No results for search term `s`"); // returns 6
+countWords(" Hello"); // returns 1
 // ... and so on
 ```
 
@@ -35,7 +35,7 @@ function countWords(str) {
   return str
     .trim() // Trim leading and trailing whitespaces
     .split(/\s+/) // Split the string into an array of words using whitespace as delimiter
-    .filter(word => word !== '').length // Filter out empty strings and return the number of words
+    .filter((word) => word !== "").length; // Filter out empty strings and return the number of words
 }
 ```
 

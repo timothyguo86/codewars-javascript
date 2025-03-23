@@ -15,9 +15,9 @@ reading: [MDN Docs about arrays](https://developer.mozilla.org/en-US/docs/Web/Ja
 
 ```js
 function removeNthElement(arr, n) {
-  let arrCopy = [...arr]
-  arrCopy.splice(n, 1)
-  return arrCopy
+  let arrCopy = [...arr];
+  arrCopy.splice(n, 1);
+  return arrCopy;
 }
 ```
 

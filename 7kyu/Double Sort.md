@@ -14,10 +14,10 @@ Note that numbers written as strings are strings and must be sorted with the oth
 
 ```js
 function dbSort(a) {
-  let numArr = a.filter(x => typeof x === 'number').sort((a, b) => a - b)
-  let strArr = a.filter(x => typeof x === 'string').sort()
+  let numArr = a.filter((x) => typeof x === "number").sort((a, b) => a - b);
+  let strArr = a.filter((x) => typeof x === "string").sort();
 
-  return [...numArr, ...strArr]
+  return [...numArr, ...strArr];
 }
 ```
 

@@ -26,13 +26,13 @@ This is set of example outputs based on the input sequence.
 
 ```js
 function completeSeries(arr) {
-  const sorted = [...arr].sort((a, b) => a - b)
-  let hasDup = false
+  const sorted = [...arr].sort((a, b) => a - b);
+  let hasDup = false;
   for (let i = 1; i < sorted.length; i++) {
-    if (sorted[i] === sorted[i - 1]) hasDup = true
+    if (sorted[i] === sorted[i - 1]) hasDup = true;
   }
 
-  return hasDup ? [0] : Array.from({ length: sorted.pop() + 1 }, (_, i) => i)
+  return hasDup ? [0] : Array.from({ length: sorted.pop() + 1 }, (_, i) => i);
 }
 ```
 

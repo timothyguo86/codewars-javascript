@@ -11,7 +11,7 @@ different characters.
 
 ```js
 function hasUniqueChars(str) {
-  return str.length === new Set(str).size
+  return str.length === new Set(str).size;
 }
 ```
 

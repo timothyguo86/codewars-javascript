@@ -32,11 +32,13 @@ All distance should be calculated to two decimal places.
 
 ```js
 function iTri(s) {
-  if (s === 0) return 'Starting Line... Good Luck!'
-  if (s >= 140.6) return "You're done! Stop running!"
-  if (s < 2.4) return { Swim: `${(140.6 - s).toFixed(2)} to go!` }
-  if (s < 114.4) return { Bike: `${(140.6 - s).toFixed(2)} to go!` }
-  return { Run: s < 130.6 ? `${(140.6 - s).toFixed(2)} to go!` : 'Nearly there!' }
+  if (s === 0) return "Starting Line... Good Luck!";
+  if (s >= 140.6) return "You're done! Stop running!";
+  if (s < 2.4) return { Swim: `${(140.6 - s).toFixed(2)} to go!` };
+  if (s < 114.4) return { Bike: `${(140.6 - s).toFixed(2)} to go!` };
+  return {
+    Run: s < 130.6 ? `${(140.6 - s).toFixed(2)} to go!` : "Nearly there!",
+  };
 }
 ```
 

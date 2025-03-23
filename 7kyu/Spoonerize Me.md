@@ -25,8 +25,8 @@ here: [http://www.codewars.com/kata/56dbed3a13c2f61ae3000bcd](http://www.codewar
 
 ```js
 function spoonerize(words) {
-  const [first, second] = words.split(' ')
-  return `${second[0] + first.slice(1)} ${first[0] + second.slice(1)}`
+  const [first, second] = words.split(" ");
+  return `${second[0] + first.slice(1)} ${first[0] + second.slice(1)}`;
 }
 ```
 

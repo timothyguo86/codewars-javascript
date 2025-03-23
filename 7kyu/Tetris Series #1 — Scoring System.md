@@ -140,17 +140,17 @@ If you like the idea: leave feedback, and there will be more katas in the Tetris
 
 ```js
 function getScore(arr) {
-  let score = 0
-  let totalLines = 0
-  let lv = 0
+  let score = 0;
+  let totalLines = 0;
+  let lv = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    lv = Math.floor(totalLines / 10)
-    score += [0, 40, 100, 300, 1200][arr[i]] * (lv + 1)
-    totalLines += arr[i]
+    lv = Math.floor(totalLines / 10);
+    score += [0, 40, 100, 300, 1200][arr[i]] * (lv + 1);
+    totalLines += arr[i];
   }
 
-  return score
+  return score;
 }
 ```
 

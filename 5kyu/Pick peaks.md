@@ -32,25 +32,25 @@ Have fun!
 function pickPeaks(arr) {
   const output = {
     pos: [],
-    peaks: []
-  }
+    peaks: [],
+  };
 
-  let candidate = -1
+  let candidate = -1;
 
   for (let i = 1; i < arr.length - 1; i++) {
     if (arr[i] > arr[i - 1]) {
-      candidate = i
+      candidate = i;
     }
 
     if (arr[i] > arr[i + 1] && candidate !== -1) {
-      output.pos.push(candidate)
-      output.peaks.push(arr[candidate])
+      output.pos.push(candidate);
+      output.peaks.push(arr[candidate]);
 
-      candidate = -1
+      candidate = -1;
     }
   }
 
-  return output
+  return output;
 }
 ```
 

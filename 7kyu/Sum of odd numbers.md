@@ -24,11 +24,11 @@ Calculate the sum of the numbers in the nth row of this triangle (starting at in
 
 ```js
 function rowSumOddNumbers(n) {
-  const firstNumber = n ** 2 - n + 1 // First number in the nth row
-  const lastNumber = n ** 2 + n - 1 // Last number in the nth row
+  const firstNumber = n ** 2 - n + 1; // First number in the nth row
+  const lastNumber = n ** 2 + n - 1; // Last number in the nth row
 
   // Sum of an arithmetic series: (n/2) * (firstNumber + lastNumber)
-  return (n / 2) * (firstNumber + lastNumber) // => (n / 2) * (n ** 2 - n + 1 + n ** 2 + n - 1) => N **#
+  return (n / 2) * (firstNumber + lastNumber); // => (n / 2) * (n ** 2 - n + 1 + n ** 2 + n - 1) => N **#
 }
 ```
 

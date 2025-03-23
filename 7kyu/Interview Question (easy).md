@@ -25,21 +25,21 @@ More examples:
 
 ```js
 function getStrings(city) {
-  let charMap = {}
-  let charArr = []
+  let charMap = {};
+  let charArr = [];
   city
     .toLowerCase()
-    .split(' ')
-    .join('')
-    .split('')
-    .forEach(x => {
-      charMap[x] = charMap[x] ? charMap[x] + '*' : '*'
-    })
+    .split(" ")
+    .join("")
+    .split("")
+    .forEach((x) => {
+      charMap[x] = charMap[x] ? charMap[x] + "*" : "*";
+    });
 
-  Object.keys(charMap).forEach(key => {
-    charArr.push(`${key}:${charMap[key]}`)
-  })
-  return charArr.join(',')
+  Object.keys(charMap).forEach((key) => {
+    charArr.push(`${key}:${charMap[key]}`);
+  });
+  return charArr.join(",");
 }
 ```
 

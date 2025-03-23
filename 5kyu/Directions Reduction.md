@@ -67,20 +67,20 @@ directions removed (W<->E or S<->N _side by side_).
 ```js
 function dirReduc(arr) {
   const dirPairs = {
-    NORTH: 'SOUTH',
-    SOUTH: 'NORTH',
-    EAST: 'WEST',
-    WEST: 'EAST'
-  }
+    NORTH: "SOUTH",
+    SOUTH: "NORTH",
+    EAST: "WEST",
+    WEST: "EAST",
+  };
 
   for (let i = 0; i < arr.length - 1; i++) {
     if (dirPairs[arr[i]] === arr[i + 1]) {
-      const reducedDirections = [...arr.slice(0, i), ...arr.slice(i + 2)]
-      return dirReduc(reducedDirections)
+      const reducedDirections = [...arr.slice(0, i), ...arr.slice(i + 2)];
+      return dirReduc(reducedDirections);
     }
   }
 
-  return arr
+  return arr;
 }
 ```
 

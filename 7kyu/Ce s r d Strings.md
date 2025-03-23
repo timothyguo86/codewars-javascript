@@ -29,10 +29,10 @@ the hard work automatically.
 ```js
 function uncensor(infected, discovered) {
   return [...infected]
-    .map(v => {
-      return v === '*' ? [...discovered].shift() : v
+    .map((v) => {
+      return v === "*" ? [...discovered].shift() : v;
     })
-    .join('')
+    .join("");
 }
 ```
 

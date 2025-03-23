@@ -45,25 +45,27 @@ For
 ```js
 function matrixElementsSum(matrix) {
   // Create an empty matrix with swapped dimensions
-  const result = Array.from({ length: matrix[0].length }, () => Array.from({ length: matrix.length }))
-  let totalPrice = 0
+  const result = Array.from({ length: matrix[0].length }, () =>
+    Array.from({ length: matrix.length }),
+  );
+  let totalPrice = 0;
 
   // Fill the transposed matrix
   for (let r = 0; r < matrix.length; r++) {
     for (let c = 0; c < matrix[0].length; c++) {
-      result[c][r] = matrix[r][c]
+      result[c][r] = matrix[r][c];
     }
   }
 
   // Calculate the total sum of non-zero elements in the transposed matrix
   for (let r = 0; r < result.length; r++) {
     for (let c = 0; c < result[0].length; c++) {
-      if (result[r][c] === 0) break
-      else totalPrice += result[r][c]
+      if (result[r][c] === 0) break;
+      else totalPrice += result[r][c];
     }
   }
 
-  return totalPrice
+  return totalPrice;
 }
 ```
 

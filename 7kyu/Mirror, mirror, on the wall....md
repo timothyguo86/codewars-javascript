@@ -30,8 +30,8 @@ Good luck!
 
 ```js
 function mirror(data) {
-  const sorted = [...data].sort((a, b) => a - b)
-  return [...sorted, ...sorted.reverse().slice(1)]
+  const sorted = [...data].sort((a, b) => a - b);
+  return [...sorted, ...sorted.reverse().slice(1)];
 }
 ```
 

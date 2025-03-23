@@ -38,14 +38,14 @@ into consideration that if Desired Principal 'D' is equal to Principal 'P' this 
 
 ```js
 function calculateYears(principal, interest, tax, desired) {
-  let years = 0
+  let years = 0;
 
   while (principal < desired) {
-    principal += principal * interest * (1 - tax)
-    years++
+    principal += principal * interest * (1 - tax);
+    years++;
   }
 
-  return years
+  return years;
 }
 ```
 

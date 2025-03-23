@@ -17,17 +17,17 @@ Passing \[2, 6, 3\] should return 18, the product of \[6, 3\].
 
 ```js
 function maxProduct(a) {
-  let max = Math.max(a[0], a[1])
-  let secondMax = Math.min(a[0], a[1])
+  let max = Math.max(a[0], a[1]);
+  let secondMax = Math.min(a[0], a[1]);
 
   for (let i = 0; i < a.length; i++) {
     if (a[i] > max) {
-      secondMax = max
-      max = a[i]
-    } else if (a[i] > secondMax) secondMax = a[i]
+      secondMax = max;
+      max = a[i];
+    } else if (a[i] > secondMax) secondMax = a[i];
   }
 
-  return max * secondMax
+  return max * secondMax;
 }
 ```
 

@@ -31,8 +31,15 @@ If all the stops appear in the given `list / array`, return `Smell my cheese you
 
 ```js
 function alan(x) {
-  const stops = ['Rejection', 'Disappointment', 'Backstabbing Central', 'Shattered Dreams Parkway']
-  return stops.every(v => x.includes(v)) ? 'Smell my cheese you mother!' : 'No, seriously, run. You will miss it.'
+  const stops = [
+    "Rejection",
+    "Disappointment",
+    "Backstabbing Central",
+    "Shattered Dreams Parkway",
+  ];
+  return stops.every((v) => x.includes(v))
+    ? "Smell my cheese you mother!"
+    : "No, seriously, run. You will miss it.";
 }
 ```
 

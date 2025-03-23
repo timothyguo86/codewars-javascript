@@ -16,11 +16,11 @@ The function should return `0` if `num` doesn't contain a binary gap.
 
 ```js
 function gap(num) {
-  let binary = num.toString(2)
-  let binaryWithGap = binary.slice(0, binary.lastIndexOf('1'))
-  const gaps = binaryWithGap.split(/1+/g).filter(v => v)
+  let binary = num.toString(2);
+  let binaryWithGap = binary.slice(0, binary.lastIndexOf("1"));
+  const gaps = binaryWithGap.split(/1+/g).filter((v) => v);
 
-  return gaps.reduce((max, gap) => Math.max(max, gap.length), 0)
+  return gaps.reduce((max, gap) => Math.max(max, gap.length), 0);
 }
 ```
 

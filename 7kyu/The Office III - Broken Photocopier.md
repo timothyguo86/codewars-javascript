@@ -17,7 +17,7 @@ Given a string of binary, return the version the photocopier gives you as a stri
 
 ```js
 function broken(x) {
-  return x.replace(/[01]/g, c => (c === '0' ? '1' : '0'))
+  return x.replace(/[01]/g, (c) => (c === "0" ? "1" : "0"));
 }
 ```
 

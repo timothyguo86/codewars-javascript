@@ -21,9 +21,12 @@ always be lowercase, except optionally their first letter.
 ```js
 function initials(n) {
   return n
-    .split(' ')
-    .map((v, i, arr) => v.slice(0, 1).toUpperCase() + (i === arr.length - 1 ? v.slice(1) : ''))
-    .join('.')
+    .split(" ")
+    .map(
+      (v, i, arr) =>
+        v.slice(0, 1).toUpperCase() + (i === arr.length - 1 ? v.slice(1) : ""),
+    )
+    .join(".");
 }
 ```
 

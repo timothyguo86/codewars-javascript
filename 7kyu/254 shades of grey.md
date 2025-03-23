@@ -26,15 +26,15 @@ Have fun!
 ```js
 function shadesOfGrey(n) {
   if (n < 0) {
-    return []
+    return [];
   }
 
-  let output = []
+  let output = [];
   for (let i = 1; i < (n > 254 ? 255 : n + 1); i++) {
-    output.push('#' + i.toString(16).padStart(2, '0').repeat(3))
+    output.push("#" + i.toString(16).padStart(2, "0").repeat(3));
   }
 
-  return output
+  return output;
 }
 ```
 

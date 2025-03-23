@@ -22,8 +22,10 @@ You are asked to write a `myParseInt` method with the following rules:
 
 ```js
 function myParseInt(str) {
-  let trimmedStr = str.trim()
-  return trimmedStr.replace(/[^0-9]/g, '') === trimmedStr ? parseInt(trimmedStr) : 'NaN'
+  let trimmedStr = str.trim();
+  return trimmedStr.replace(/[^0-9]/g, "") === trimmedStr
+    ? parseInt(trimmedStr)
+    : "NaN";
 }
 ```
 

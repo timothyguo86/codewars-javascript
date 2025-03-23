@@ -17,12 +17,12 @@ Your task is to process a string with `"#"` symbols.
 
 ```js
 function cleanString(s) {
-  let result = []
+  let result = [];
   for (let i = 0; i < s.length; i++) {
-    s[i] === '#' ? result.pop() : result.push(s[i])
+    s[i] === "#" ? result.pop() : result.push(s[i]);
   }
 
-  return result.join('')
+  return result.join("");
 }
 ```
 

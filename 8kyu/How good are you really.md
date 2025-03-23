@@ -20,7 +20,9 @@ point to the given array!
 ```js
 function betterThanAverage(classPoints, yourPoints) {
   // Compare your points to the average class points and return the result
-  return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
+  return (
+    yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
+  );
 }
 ```
 

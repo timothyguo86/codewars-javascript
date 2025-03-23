@@ -41,7 +41,7 @@ _Courtesy of rosettacode.org_
 
 ```js
 function solution(roman) {
-  let result = 0
+  let result = 0;
   const romanToNum = {
     I: 1,
     IV: 4,
@@ -55,19 +55,19 @@ function solution(roman) {
     CD: 400,
     D: 500,
     CM: 900,
-    M: 1000
-  }
+    M: 1000,
+  };
 
   for (let i = 0; i < roman.length; i++) {
     if (romanToNum[roman[i] + roman[i + 1]]) {
-      result += romanToNum[roman[i] + roman[i + 1]]
-      i++
+      result += romanToNum[roman[i] + roman[i + 1]];
+      i++;
     } else {
-      result += romanToNum[roman[i]]
+      result += romanToNum[roman[i]];
     }
   }
 
-  return result
+  return result;
 }
 ```
 

@@ -25,9 +25,9 @@ function squareDigits(num) {
   // Convert the resulting string to a number using the unary plus operator
   return +num
     .toString()
-    .split('')
-    .map(el => el ** 2)
-    .join('')
+    .split("")
+    .map((el) => el ** 2)
+    .join("");
 }
 ```
 

@@ -15,7 +15,7 @@ C...m returns 'Caught!' <-- as there are three characters between the two, the c
 
 ```js
 function catMouse(x) {
-  return x.indexOf('m') - x.indexOf('C') < 5 ? 'Caught!' : 'Escaped!'
+  return x.indexOf("m") - x.indexOf("C") < 5 ? "Caught!" : "Escaped!";
 }
 ```
 

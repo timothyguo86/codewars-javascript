@@ -23,11 +23,11 @@ The second value in the first pair in the array is 0, since the bus is empty in 
 ```js
 var number = function (busStops) {
   return busStops
-    .map(stop => stop[0] - stop[1])
+    .map((stop) => stop[0] - stop[1])
     .reduce((remain, diff) => {
-      return (remain += diff)
-    }, 0)
-}
+      return (remain += diff);
+    }, 0);
+};
 ```
 
 </details>

@@ -19,12 +19,12 @@ For instance:
 
 ```js
 function change(string) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-  return alphabet.replace(/[a-z]/g, match => {
-    if (string.toLowerCase().includes(match)) return '1'
-    return '0'
-  })
+  return alphabet.replace(/[a-z]/g, (match) => {
+    if (string.toLowerCase().includes(match)) return "1";
+    return "0";
+  });
 }
 ```
 

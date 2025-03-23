@@ -26,12 +26,12 @@ Note: In the C and NASM languages you are given the third parameter which is the
 
 ```js
 function dataReverse(data) {
-  const result = []
+  const result = [];
   for (let i = data.length; i - 8 >= 0; i -= 8) {
-    result.push(...data.slice(i - 8, i))
+    result.push(...data.slice(i - 8, i));
   }
 
-  return result
+  return result;
 }
 ```
 

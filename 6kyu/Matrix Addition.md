@@ -5,8 +5,9 @@ matrices being passed into the function will be of size `N x N` (square), contai
 
 How to sum two matrices:
 
-Take each cell `[n][m]` from the first matrix, and add it with the same [n][m] cell from the second matrix. This will be
-cell [n][m] of the solution matrix. (Except for C where solution matrix will be a 1d pseudo-multidimensional array).
+Take each cell `[n][m]` from the first matrix, and add it with the same `[n][m]` cell from the second matrix. This will
+be
+cell `[n][m]` of the solution matrix. (Except for C where solution matrix will be a 1d pseudo-multidimensional array).
 
 ### Visualization:
 
@@ -23,18 +24,18 @@ matrixAddition(
   [
     [1, 2, 3],
     [3, 2, 1],
-    [1, 1, 1]
+    [1, 1, 1],
   ],
   // +
   [
     [2, 2, 1],
     [3, 2, 3],
-    [1, 1, 3]
-  ]
+    [1, 1, 3],
+  ],
 )[
   // returns:
   ([3, 4, 4], [6, 4, 4], [2, 2, 4])
-]
+];
 ```
 
 ---
@@ -46,8 +47,8 @@ function matrixAddition(a, b) {
   // Iterate over each row of matrix 'a'
   return a.map((aRow, i) =>
     // For each element in the row, add the corresponding element from matrix 'b'
-    aRow.map((aElement, j) => aElement + b[i][j])
-  )
+    aRow.map((aElement, j) => aElement + b[i][j]),
+  );
 }
 ```
 

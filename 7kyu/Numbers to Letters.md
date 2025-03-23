@@ -12,7 +12,10 @@ All inputs will be valid.
 
 ```js
 function switcher(x) {
-  return x.reduce((str, cur) => (str = str + ' zyxwvutsrqponmlkjihgfedcba!? '[cur]), '')
+  return x.reduce(
+    (str, cur) => (str = str + " zyxwvutsrqponmlkjihgfedcba!? "[cur]),
+    "",
+  );
 }
 ```
 

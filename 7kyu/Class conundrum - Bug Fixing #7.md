@@ -8,7 +8,7 @@ When timmy calls the Count property of the list it still remains at 0 when addin
 Also it fails when timmy trys to chain the adds e.g.
 
 ```js
-myList.add(0).add(1)
+myList.add(0).add(1);
 ```
 
 ---
@@ -18,20 +18,20 @@ myList.add(0).add(1)
 ```js
 class List {
   constructor(type) {
-    this.type = type
-    this.items = []
-    this.count = this.items.length
+    this.type = type;
+    this.items = [];
+    this.count = this.items.length;
   }
 
   add(item) {
     if (typeof item !== this.type) {
-      return `This item is not of type: ${this.type}`
+      return `This item is not of type: ${this.type}`;
     }
 
-    this.items.push(item)
-    this.count++
+    this.items.push(item);
+    this.count++;
 
-    return this
+    return this;
   }
 }
 ```

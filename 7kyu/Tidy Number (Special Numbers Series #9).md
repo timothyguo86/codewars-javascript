@@ -99,7 +99,7 @@ tidyNumber (2335) ==> return (true)
 
 ```js
 function tidyNumber(n) {
-  return +[...n.toString()].sort().join('') === n
+  return +[...n.toString()].sort().join("") === n;
 }
 ```
 

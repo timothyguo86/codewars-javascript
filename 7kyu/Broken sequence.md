@@ -28,18 +28,18 @@ Return:
 
 ```js
 function findMissingNumber(sequence) {
-  if (!sequence) return 0
+  if (!sequence) return 0;
 
-  let arr = sequence.split(' ')
-  if (arr.some(v => isNaN(Number(v)))) return 1
+  let arr = sequence.split(" ");
+  if (arr.some((v) => isNaN(Number(v)))) return 1;
 
-  let sortedArr = arr.map(Number).sort((a, b) => a - b)
-  if (sortedArr[0] !== 1) return 1
+  let sortedArr = arr.map(Number).sort((a, b) => a - b);
+  if (sortedArr[0] !== 1) return 1;
   for (let i = 0; i < sortedArr.length - 1; i++) {
-    if (sortedArr[i] !== sortedArr[i + 1] - 1) return sortedArr[i] + 1
+    if (sortedArr[i] !== sortedArr[i + 1] - 1) return sortedArr[i] + 1;
   }
 
-  return 0
+  return 0;
 }
 ```
 

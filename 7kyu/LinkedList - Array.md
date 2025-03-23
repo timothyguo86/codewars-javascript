@@ -20,13 +20,13 @@ numbers, strings, or Booleans.
 
 ```js
 function listToArray(list) {
-  const array = []
+  const array = [];
   while (list) {
-    array.push(list.value)
-    list = list.next
+    array.push(list.value);
+    list = list.next;
   }
 
-  return array
+  return array;
 }
 ```
 

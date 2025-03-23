@@ -39,11 +39,11 @@ The two strings will be the same length.
 ```js
 function neutralise(s1, s2) {
   return s1
-    .split('')
+    .split("")
     .map((el1, i) => {
-      return el1 === s2.split('')[i] ? el1 : '0'
+      return el1 === s2.split("")[i] ? el1 : "0";
     })
-    .join('')
+    .join("");
 }
 ```
 

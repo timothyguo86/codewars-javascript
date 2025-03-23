@@ -21,14 +21,14 @@ _Inspired by [https://adriann.github.io/programming_problems.html](https://adria
 
 ```js
 function mergeArrays(a, b) {
-  const length = Math.max(a.length, b.length)
-  const result = []
+  const length = Math.max(a.length, b.length);
+  const result = [];
 
   for (let i = 0; i < length; i++) {
-    result.push(a[i], b[i])
+    result.push(a[i], b[i]);
   }
 
-  return result.filter(v => v)
+  return result.filter((v) => v);
 }
 ```
 

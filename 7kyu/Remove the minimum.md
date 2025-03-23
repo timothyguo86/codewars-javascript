@@ -28,12 +28,12 @@ Don't change the order of the elements that are left.
 
 ```js
 function removeSmallest(nums) {
-  const newNums = [...nums] // Create a copy of the input array to avoid modifying the original array
-  const min = Math.min(...newNums) // Find the minimum value in the copied array
+  const newNums = [...nums]; // Create a copy of the input array to avoid modifying the original array
+  const min = Math.min(...newNums); // Find the minimum value in the copied array
 
-  newNums.splice(newNums.indexOf(min), 1) // Remove the first occurrence of the minimum value from the copied array
+  newNums.splice(newNums.indexOf(min), 1); // Remove the first occurrence of the minimum value from the copied array
 
-  return newNums // Return the modified array without the smallest element
+  return newNums; // Return the modified array without the smallest element
 }
 ```
 

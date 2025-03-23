@@ -19,12 +19,12 @@ Fix the bug so we can all go home early.
 ```js
 class Dinglemouse {
   constructor(firstName, lastName) {
-    this.firstName = firstName
-    this.lastName = lastName
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 
   getFullName() {
-    return (this.firstName + ' ' + this.lastName).trim()
+    return (this.firstName + " " + this.lastName).trim();
   }
 }
 ```

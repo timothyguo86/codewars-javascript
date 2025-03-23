@@ -10,7 +10,7 @@ For this first React Kata, we'll be exploring how to create elements with React.
 purpose. Its usage is as simple as:
 
 ```js
-React.createElement('div', { prop: 'value' }, 'Hello world!')
+React.createElement("div", { prop: "value" }, "Hello world!");
 ```
 
 Where the first argument is the element tag, the second argument is the element's properties, and the third tag is the
@@ -45,15 +45,17 @@ For more general information about React [check out the docs](https://facebook.g
 <details><summary>My Solution</summary>
 
 ```js
-var React = require('react')
+var React = require("react");
 
-function createElement(content, tag = 'div', props = {}) {
-  return React.createElement(tag, props, content)
+function createElement(content, tag = "div", props = {}) {
+  return React.createElement(tag, props, content);
 }
 
 function createUnorderedList(list) {
-  const listItems = list.map((item, index) => React.createElement('li', { key: index }, item))
-  return React.createElement('ul', null, listItems)
+  const listItems = list.map((item, index) =>
+    React.createElement("li", { key: index }, item),
+  );
+  return React.createElement("ul", null, listItems);
 }
 ```
 

@@ -17,24 +17,27 @@ Note: no empty arrays will be given.
 
 ```js
 function highestRank(arr) {
-  const dict = {}
-  let highestCount = 0
-  let highestNumb = arr[0]
+  const dict = {};
+  let highestCount = 0;
+  let highestNumb = arr[0];
 
-  arr.forEach(v => {
+  arr.forEach((v) => {
     if (dict[v]) {
-      dict[v]++
+      dict[v]++;
     } else {
-      dict[v] = 1
+      dict[v] = 1;
     }
 
-    if (dict[v] > highestCount || (dict[v] === highestCount && v > highestNumb)) {
-      highestCount = dict[v]
-      highestNumb = v
+    if (
+      dict[v] > highestCount ||
+      (dict[v] === highestCount && v > highestNumb)
+    ) {
+      highestCount = dict[v];
+      highestNumb = v;
     }
-  })
+  });
 
-  return highestNumb
+  return highestNumb;
 }
 ```
 

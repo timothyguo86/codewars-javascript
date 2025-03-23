@@ -10,7 +10,7 @@ All values in the array will be integers. Return the good values in the order th
 
 ```js
 function noOdds(values) {
-  return values.filter(v => !(v % 2))
+  return values.filter((v) => !(v % 2));
 }
 ```
 

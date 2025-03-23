@@ -35,13 +35,13 @@ Do not expect any negative or invalid inputs.
 
 ```js
 function save(sizes, hd) {
-  let size = sizes.length
+  let size = sizes.length;
   for (let i = 0; i < sizes.length; i++) {
-    hd -= sizes[i]
-    if (hd < 0) return i
+    hd -= sizes[i];
+    if (hd < 0) return i;
   }
 
-  return size
+  return size;
 }
 ```
 

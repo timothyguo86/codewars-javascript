@@ -39,9 +39,9 @@ In the case of more than one array sharing the same sum, place them in the same 
 ```js
 function cantBeatSoJoin(numbers) {
   return numbers
-    .filter(v => v.length)
+    .filter((v) => v.length)
     .sort((a, b) => b.reduce((t, c) => t + c) - a.reduce((t, c) => t + c))
-    .flat()
+    .flat();
 }
 ```
 

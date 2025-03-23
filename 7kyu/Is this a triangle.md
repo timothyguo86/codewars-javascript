@@ -26,11 +26,11 @@ Input -> Output
 function isTriangle(a, b, c) {
   // Check if all sides are positive
   if (a <= 0 || b <= 0 || c <= 0) {
-    return false
+    return false;
   }
 
   // Check triangle inequality
-  return a + b > c && a + c > b && b + c > a
+  return a + b > c && a + c > b && b + c > a;
 }
 ```
 

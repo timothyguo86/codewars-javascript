@@ -48,21 +48,21 @@ Note: an extra line feed character is needed at the end of the string. Case `n=0
 ```js
 function pyramid(n) {
   if (n === 0) {
-    return '\n' // Return a newline character for an empty pyramid
+    return "\n"; // Return a newline character for an empty pyramid
   }
 
-  let str = ''
+  let str = "";
   for (let i = 1; i <= n; i++) {
     if (i < n) {
       // Construct the upper part of the pyramid with slashes, spaces, and backslashes
-      str += ' '.repeat(n - i) + '/' + ' '.repeat(2 * i - 2) + '\\\n'
+      str += " ".repeat(n - i) + "/" + " ".repeat(2 * i - 2) + "\\\n";
     } else {
       // Construct the bottom part of the pyramid with a top border of slashes, underscores, and backslashes
-      str += '/' + '_'.repeat(2 * n - 2) + '\\\n'
+      str += "/" + "_".repeat(2 * n - 2) + "\\\n";
     }
   }
 
-  return str
+  return str;
 }
 ```
 

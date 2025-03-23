@@ -14,9 +14,9 @@ Example: replaceAll \[1,2,2\] 1 2 -> in list \[1,2,2\] we replace 1 with 2 to ge
 
 ```js
 function replaceAll(seq, find, replace) {
-  return typeof seq === 'string'
-    ? [...seq].map(v => (v === find ? replace : v)).join('')
-    : [...seq].map(v => (v === find ? replace : v))
+  return typeof seq === "string"
+    ? [...seq].map((v) => (v === find ? replace : v)).join("")
+    : [...seq].map((v) => (v === find ? replace : v));
 }
 ```
 

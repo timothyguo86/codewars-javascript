@@ -34,12 +34,12 @@ passed into the function.
 function narcissistic(value) {
   const nums = value
     .toString()
-    .split('')
-    .map(str => +str)
+    .split("")
+    .map((str) => +str);
 
-  const total = nums.reduce((acc, cur) => acc + cur ** nums.length, 0)
+  const total = nums.reduce((acc, cur) => acc + cur ** nums.length, 0);
 
-  return total === value
+  return total === value;
 }
 ```
 

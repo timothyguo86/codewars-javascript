@@ -41,41 +41,43 @@ where hh, mm, ss are integers (represented by strings) with _each 2 digits_.
 
 ```js
 function stat(strg) {
-  if (!strg) return ''
-  let range = ''
-  let average = ''
-  let median = ''
-  const times = []
+  if (!strg) return "";
+  let range = "";
+  let average = "";
+  let median = "";
+  const times = [];
 
-  strg.split(', ').forEach(t => {
-    const [hours, minutes, seconds] = t.split('|').map(Number)
-    times.push(hours * 3600 + minutes * 60 + seconds)
-  })
+  strg.split(", ").forEach((t) => {
+    const [hours, minutes, seconds] = t.split("|").map(Number);
+    times.push(hours * 3600 + minutes * 60 + seconds);
+  });
 
-  times.sort((a, b) => a - b)
+  times.sort((a, b) => a - b);
 
-  range = Math.max(...times) - Math.min(...times)
-  average = Math.floor(times.reduce((total, cur) => total + cur, 0) / times.length)
+  range = Math.max(...times) - Math.min(...times);
+  average = Math.floor(
+    times.reduce((total, cur) => total + cur, 0) / times.length,
+  );
   median =
     times.length % 2
       ? times[(times.length - 1) / 2]
-      : Math.floor((times[times.length / 2 - 1] + times[times.length / 2]) / 2)
+      : Math.floor((times[times.length / 2 - 1] + times[times.length / 2]) / 2);
 
   return `Range: ${convertToTimeString(range)} Average: ${convertToTimeString(average)} Median: ${convertToTimeString(
-    median
-  )}`
+    median,
+  )}`;
 }
 
 function convertToTimeString(totalSeconds) {
-  const hours = Math.floor(totalSeconds / 3600)
-  const minutes = Math.floor((totalSeconds % 3600) / 60)
-  const seconds = totalSeconds % 60
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
 
-  const formattedHours = String(hours).padStart(2, '0')
-  const formattedMinutes = String(minutes).padStart(2, '0')
-  const formattedSeconds = String(seconds).padStart(2, '0')
+  const formattedHours = String(hours).padStart(2, "0");
+  const formattedMinutes = String(minutes).padStart(2, "0");
+  const formattedSeconds = String(seconds).padStart(2, "0");
 
-  return `${formattedHours}|${formattedMinutes}|${formattedSeconds}`
+  return `${formattedHours}|${formattedMinutes}|${formattedSeconds}`;
 }
 ```
 

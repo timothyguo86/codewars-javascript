@@ -24,18 +24,18 @@ the "XXX" is the expected result, not the input!
 
 ```js
 function duplicateEncode(word) {
-  const lowerCaseWord = word.toLowerCase()
-  const wordMap = {}
+  const lowerCaseWord = word.toLowerCase();
+  const wordMap = {};
 
   // Count the occurrence of each character in the word
-  Array.from(lowerCaseWord).map(char => {
-    return (wordMap[char] = wordMap[char] ? wordMap[char] + 1 : 1)
-  })
+  Array.from(lowerCaseWord).map((char) => {
+    return (wordMap[char] = wordMap[char] ? wordMap[char] + 1 : 1);
+  });
 
   // Map each character in the lowercase word to '(' if it appears only once, or ')' if it appears more than once
   return Array.from(lowerCaseWord)
-    .map(char => (wordMap[char] > 1 ? ')' : '('))
-    .join('')
+    .map((char) => (wordMap[char] > 1 ? ")" : "("))
+    .join("");
 }
 ```
 

@@ -28,19 +28,19 @@ The solution to the example above should therefore appear like `'1, 2: Bob made 
 
 ```js
 function solve(a, b) {
-  let aWin = 0
-  let bWin = 0
-  let whoWin = ''
+  let aWin = 0;
+  let bWin = 0;
+  let whoWin = "";
 
   const result = a.forEach((v, i) => {
-    if (v > b[i]) aWin++
-    else if (v < b[i]) bWin++
-  })
-  if (aWin > bWin) whoWin = 'Alice made "Kurt" proud!'
-  else if (aWin < bWin) whoWin = 'Bob made "Jeff" proud!'
-  else whoWin = 'that looks like a "draw"! Rock on!'
+    if (v > b[i]) aWin++;
+    else if (v < b[i]) bWin++;
+  });
+  if (aWin > bWin) whoWin = 'Alice made "Kurt" proud!';
+  else if (aWin < bWin) whoWin = 'Bob made "Jeff" proud!';
+  else whoWin = 'that looks like a "draw"! Rock on!';
 
-  return `${aWin}, ${bWin}: ${whoWin}`
+  return `${aWin}, ${bWin}: ${whoWin}`;
 }
 ```
 

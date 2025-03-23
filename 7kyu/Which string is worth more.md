@@ -14,11 +14,11 @@ In the event of a tie, you should return the first string, i.e. `a`.
 
 ```js
 function highestValue(a, b) {
-  return getStringValue(a) >= getStringValue(b) ? a : b
+  return getStringValue(a) >= getStringValue(b) ? a : b;
 }
 
 function getStringValue(str) {
-  return [...str].reduce((sum, char) => sum + char.charCodeAt(0), 0)
+  return [...str].reduce((sum, char) => sum + char.charCodeAt(0), 0);
 }
 ```
 

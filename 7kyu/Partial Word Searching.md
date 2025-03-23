@@ -19,9 +19,11 @@ return ["home", "Mercury"].
 
 ```js
 function wordSearch(query, seq) {
-  let filteredSeq = seq.filter(v => v.toLowerCase().includes(query.toLowerCase()))
+  let filteredSeq = seq.filter((v) =>
+    v.toLowerCase().includes(query.toLowerCase()),
+  );
 
-  return filteredSeq.length === 0 ? ['Empty'] : filteredSeq
+  return filteredSeq.length === 0 ? ["Empty"] : filteredSeq;
 }
 ```
 

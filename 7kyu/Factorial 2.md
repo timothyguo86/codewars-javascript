@@ -8,7 +8,7 @@ Your task is to write function `factorial`.
 
 ```js
 function factorial(n) {
-  return n ? n * factorial(n - 1) : 1
+  return n ? n * factorial(n - 1) : 1;
 }
 ```
 

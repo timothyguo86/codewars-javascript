@@ -23,8 +23,8 @@ If the second string isn't a valid rotation of the first string, the method retu
 
 ```js
 function shiftedDiff(first, second) {
-  if (first.length != second.length) return -1
-  return (second + second).indexOf(first)
+  if (first.length != second.length) return -1;
+  return (second + second).indexOf(first);
 }
 ```
 

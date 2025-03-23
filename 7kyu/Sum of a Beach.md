@@ -16,7 +16,7 @@ Beaches are filled with sand, water, fish, and sun. Given a string, calculate ho
 
 ```js
 function sumOfABeach(beach) {
-  return (beach.match(/sand|water|fish|sun/gi) || []).length
+  return (beach.match(/sand|water|fish|sun/gi) || []).length;
 }
 ```
 

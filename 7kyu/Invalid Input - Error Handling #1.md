@@ -61,10 +61,11 @@ Example section for a more visual representation of which inputs you could recei
 
 ```js
 function getCount(words) {
-  if (typeof words !== 'string') return { vowels: 0, consonants: 0 }
-  const vowels = (words.match(/[aeiou]/gi) || []).length
-  const consonants = (words.replace(/[^a-z]/gi, '').match(/[^aeiou]/gi) || []).length
-  return { vowels, consonants }
+  if (typeof words !== "string") return { vowels: 0, consonants: 0 };
+  const vowels = (words.match(/[aeiou]/gi) || []).length;
+  const consonants = (words.replace(/[^a-z]/gi, "").match(/[^aeiou]/gi) || [])
+    .length;
+  return { vowels, consonants };
 }
 ```
 

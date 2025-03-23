@@ -9,10 +9,10 @@ extrapolation of ppg per 48 minutes rounded to the nearest tenth. Return 0 if 0.
 ### Examples:
 
 ```js
-pointsPer48(12, 20) // 28.8
-pointsPer48(10, 10) // 48
-pointsPer48(5, 17) // 14.1
-pointsPer48(0, 0) // 0
+pointsPer48(12, 20); // 28.8
+pointsPer48(10, 10); // 48
+pointsPer48(5, 17); // 14.1
+pointsPer48(0, 0); // 0
 ```
 
 Notes:
@@ -25,7 +25,7 @@ Follow your dreams!
 
 ```js
 function pointsPer48(ppg, mpg) {
-  return ppg ? +((ppg / mpg) * 48).toFixed(1) : 0
+  return ppg ? +((ppg / mpg) * 48).toFixed(1) : 0;
 }
 ```
 

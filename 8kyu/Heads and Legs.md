@@ -42,14 +42,14 @@ Happy coding!
 
 ```js
 function animals(heads, legs) {
-  let cow = (legs - 2 * heads) / 2
-  let ch = heads - cow
+  let cow = (legs - 2 * heads) / 2;
+  let ch = heads - cow;
 
   if (ch >= 0 && cow >= 0 && Number.isInteger(ch) && Number.isInteger(cow)) {
-    return [ch, cow]
+    return [ch, cow];
   }
 
-  return 'No solutions'
+  return "No solutions";
 }
 ```
 

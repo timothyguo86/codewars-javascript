@@ -65,17 +65,30 @@ sequel: [Resistor Color Codes, Part 2](https://www.codewars.com/kata/5855777bb45
 
 ```js
 function decodeResistorColors(bands) {
-  const bandColors = bands.split(' ')
-  const colors = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet', 'gray', 'white']
+  const bandColors = bands.split(" ");
+  const colors = [
+    "black",
+    "brown",
+    "red",
+    "orange",
+    "yellow",
+    "green",
+    "blue",
+    "violet",
+    "gray",
+    "white",
+  ];
   const ohmValue =
-    (colors.indexOf(bandColors[0]) * 10 + colors.indexOf(bandColors[1])) * 10 ** colors.indexOf(bandColors[2])
-  const tolerance = bandColors[3] === 'gold' ? 5 : bandColors[3] === 'silver' ? 10 : 20
+    (colors.indexOf(bandColors[0]) * 10 + colors.indexOf(bandColors[1])) *
+    10 ** colors.indexOf(bandColors[2]);
+  const tolerance =
+    bandColors[3] === "gold" ? 5 : bandColors[3] === "silver" ? 10 : 20;
 
   return ohmValue < 1000
     ? `${ohmValue} ohms, ${tolerance}%`
     : ohmValue < 1000000
       ? `${ohmValue / 1000}k ohms, ${tolerance}%`
-      : `${ohmValue / 1000000}M ohms, ${tolerance}%`
+      : `${ohmValue / 1000000}M ohms, ${tolerance}%`;
 }
 ```
 

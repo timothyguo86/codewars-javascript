@@ -32,14 +32,14 @@ I have also created other katas. Take a look if you enjoyed this kata!
 function sortByValueAndIndex(array) {
   const withIndex = array.map((v, i) => ({
     value: v,
-    index: i + 1
-  }))
+    index: i + 1,
+  }));
 
   return withIndex
     .sort((a, b) => {
-      return a.value * a.index - b.value * b.index
+      return a.value * a.index - b.value * b.index;
     })
-    .map(v => v.value)
+    .map((v) => v.value);
 }
 ```
 

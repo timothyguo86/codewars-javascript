@@ -19,13 +19,13 @@ divisors(13); // should return "13 is prime"
 
 ```js
 function divisors(integer) {
-  const result = []
+  const result = [];
 
   for (let i = 2; i < integer; i++) {
-    if (integer % i === 0) result.push(i)
+    if (integer % i === 0) result.push(i);
   }
 
-  return result.length === 0 ? `${integer} is prime` : result
+  return result.length === 0 ? `${integer} is prime` : result;
 }
 ```
 

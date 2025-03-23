@@ -22,7 +22,7 @@ Translations and comments (and upvotes) welcome!
 
 ```js
 function factory(x) {
-  return arr => arr.map(v => v * x)
+  return (arr) => arr.map((v) => v * x);
 }
 ```
 

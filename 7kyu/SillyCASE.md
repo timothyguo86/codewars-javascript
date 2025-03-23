@@ -18,9 +18,12 @@ If it is an odd number then 'round' it up to find which letters to uppercase. Se
 
 ```js
 function sillycase(silly) {
-  let firstLength = Math.ceil(silly.length / 2)
+  let firstLength = Math.ceil(silly.length / 2);
 
-  return silly.slice(0, firstLength).toLowerCase() + silly.slice(firstLength).toUpperCase()
+  return (
+    silly.slice(0, firstLength).toLowerCase() +
+    silly.slice(firstLength).toUpperCase()
+  );
 }
 ```
 

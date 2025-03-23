@@ -51,22 +51,22 @@ return an empty object `{}` (empty Dictionary in C#).
 <details><summary>My Solution</summary>
 
 ```js
-const whosOnline = friends => {
+const whosOnline = (friends) => {
   return friends.reduce((status, friend) => {
-    if (friend.status === 'offline') {
-      status.offline = status.offline || []
-      status.offline.push(friend.username)
+    if (friend.status === "offline") {
+      status.offline = status.offline || [];
+      status.offline.push(friend.username);
     } else if (friend.lastActivity > 10) {
-      status.away = status.away || []
-      status.away.push(friend.username)
+      status.away = status.away || [];
+      status.away.push(friend.username);
     } else {
-      status.online = status.online || []
-      status.online.push(friend.username)
+      status.online = status.online || [];
+      status.online.push(friend.username);
     }
 
-    return status
-  }, {})
-}
+    return status;
+  }, {});
+};
 ```
 
 </details>

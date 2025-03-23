@@ -18,7 +18,7 @@ with `size` 12 should return : `'101010101010'`.
 
 ```js
 function stringy(size) {
-  return ''.padStart(size, '10')
+  return "".padStart(size, "10");
 }
 ```
 

@@ -19,8 +19,8 @@ For example (Input -> Output):
 
 ```js
 var summation = function (num) {
-  return ((1 + num) * num) / 2
-}
+  return ((1 + num) * num) / 2;
+};
 ```
 
 </details>

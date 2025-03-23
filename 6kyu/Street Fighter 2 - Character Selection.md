@@ -17,7 +17,7 @@ Such screen looks like this:
 
 Screen:
 
-![screen](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1 'Character Selection Screen for Street Fighter 2')
+![screen](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1 "Character Selection Screen for Street Fighter 2")
 
 Selection Grid Layout in text:
 
@@ -56,30 +56,30 @@ list of moves change.
 
 **Examples**
 
-1.         fighters = [
-          ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
-          ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
-        ]
-        initial_position = (0,0)
-        moves = ['up', 'left', 'right', 'left', 'left']
+1.                                      fighters = [
+               ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
+               ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
+             ]
+             initial_position = (0,0)
+             moves = ['up', 'left', 'right', 'left', 'left']
 
-   then I should get:
+    then I should get:
 
-        ['Ryu', 'Vega', 'Ryu', 'Vega', 'Balrog']
+             ['Ryu', 'Vega', 'Ryu', 'Vega', 'Balrog']
 
-   as the characters I've been hovering with the selection cursor during my moves. Notice: Ryu is the first just because
-   it "fails" the first `up` See test cases for more examples.
+    as the characters I've been hovering with the selection cursor during my moves. Notice: Ryu is the first just because
+    it "fails" the first `up` See test cases for more examples.
 
-2.         fighters = [
-          ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
-          ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
-        ]
-        initial_position = (0,0)
-        moves = ['right', 'down', 'left', 'left', 'left', 'left', 'right']
+2.                                      fighters = [
+               ["Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"],
+               ["Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"]
+             ]
+             initial_position = (0,0)
+             moves = ['right', 'down', 'left', 'left', 'left', 'left', 'right']
 
-   Result:
+    Result:
 
-        ['E.Honda', 'Chun Li', 'Ken', 'M.Bison', 'Sagat', 'Dhalsim', 'Sagat']
+             ['E.Honda', 'Chun Li', 'Ken', 'M.Bison', 'Sagat', 'Dhalsim', 'Sagat']
 
 **OFF-TOPIC**
 
@@ -93,30 +93,30 @@ Some music to get in the mood for this kata :
 
 ```js
 function streetFighterSelection(fighters, position, moves) {
-  let x = position[1]
-  let y = position[0]
-  const result = []
+  let x = position[1];
+  let y = position[0];
+  const result = [];
 
   for (let move of moves) {
     switch (move) {
-      case 'right':
-        x = x + 1 > 5 ? 0 : x + 1
-        break
-      case 'left':
-        x = x - 1 < 0 ? 5 : x - 1
-        break
-      case 'up':
-        y = 0
-        break
+      case "right":
+        x = x + 1 > 5 ? 0 : x + 1;
+        break;
+      case "left":
+        x = x - 1 < 0 ? 5 : x - 1;
+        break;
+      case "up":
+        y = 0;
+        break;
       default:
-        y = 1
-        break
+        y = 1;
+        break;
     }
 
-    result.push(fighters[y][x])
+    result.push(fighters[y][x]);
   }
 
-  return result
+  return result;
 }
 ```
 

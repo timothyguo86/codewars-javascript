@@ -17,11 +17,11 @@ other vowel should become '\*'.
 function gordon(a) {
   return a
     .toUpperCase()
-    .replace(/A/g, '@')
-    .replace(/[EIOU]/g, '*')
-    .split(' ')
-    .map(v => v + '!!!!')
-    .join(' ')
+    .replace(/A/g, "@")
+    .replace(/[EIOU]/g, "*")
+    .split(" ")
+    .map((v) => v + "!!!!")
+    .join(" ");
 }
 ```
 

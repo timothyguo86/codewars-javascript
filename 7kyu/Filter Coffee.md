@@ -18,9 +18,9 @@ to be sorted in ascending order.
 ```js
 function search(budget, prices) {
   return prices
-    .filter(p => p <= budget)
+    .filter((p) => p <= budget)
     .sort((a, b) => a - b)
-    .join(',')
+    .join(",");
 }
 ```
 

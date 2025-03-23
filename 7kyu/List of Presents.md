@@ -22,14 +22,14 @@ Should return `4`.
 
 ```js
 function howManyGifts(maxBudget, gifts) {
-  const sortedGifts = gifts.sort((a, b) => a - b)
-  let [remainingBudget, count] = [maxBudget, 0]
+  const sortedGifts = gifts.sort((a, b) => a - b);
+  let [remainingBudget, count] = [maxBudget, 0];
   for (let i = 0; i < sortedGifts.length; i++) {
-    remainingBudget = remainingBudget - sortedGifts[i]
-    if (remainingBudget >= 0) count++
+    remainingBudget = remainingBudget - sortedGifts[i];
+    if (remainingBudget >= 0) count++;
   }
 
-  return count
+  return count;
 }
 ```
 

@@ -37,11 +37,11 @@ function logicalCalc(array, op) {
   const operators = {
     AND: (a, b) => a && b,
     OR: (a, b) => a || b,
-    XOR: (a, b) => a !== b
-  }
+    XOR: (a, b) => a !== b,
+  };
 
   // Apply the specified operator to the array of Boolean values
-  return array.reduce(operators[op])
+  return array.reduce(operators[op]);
 }
 ```
 

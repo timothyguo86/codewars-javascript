@@ -77,24 +77,24 @@ confident and learning a few tricks of your preferred language.
 
 - Regular Expressions / RegEx
 
-    - [Awesome RegEx](https://github.com/aloisdg/awesome-regex)
-    - [Regular Expressions - Eloquent JavaScript](https://eloquentjavascript.net/09_regexp.html)
-    - [Regular Expressions - The Modern JavaScript Tutorial](https://javascript.info/regexp-introduction)
-    - [Breaking the Ice With Regular Expressions - CodeSchool](https://www.pluralsight.com/courses/code-school-breaking-the-ice-with-regular-expressions)
-    - [RegExp The Ultra Basics in JavaScript](https://www.youtube.com/watch?v=VrT3TRDDE4M)
+  - [Awesome RegEx](https://github.com/aloisdg/awesome-regex)
+  - [Regular Expressions - Eloquent JavaScript](https://eloquentjavascript.net/09_regexp.html)
+  - [Regular Expressions - The Modern JavaScript Tutorial](https://javascript.info/regexp-introduction)
+  - [Breaking the Ice With Regular Expressions - CodeSchool](https://www.pluralsight.com/courses/code-school-breaking-the-ice-with-regular-expressions)
+  - [RegExp The Ultra Basics in JavaScript](https://www.youtube.com/watch?v=VrT3TRDDE4M)
 
 * ES6 / ES2015
 
-    - [ES6 Katas - TDDbin](http://es6katas.org)
-    - [ES6 for Everyone - Wes Bos](https://es6.io)
-    - [Modern JavaScript Cheatsheet - Beaudru Manuel](https://github.com/mbeaudru/modern-js-cheatsheet)
+  - [ES6 Katas - TDDbin](http://es6katas.org)
+  - [ES6 for Everyone - Wes Bos](https://es6.io)
+  - [Modern JavaScript Cheatsheet - Beaudru Manuel](https://github.com/mbeaudru/modern-js-cheatsheet)
 
 - Array & Objects
-    - [Array Explorer - Sarah Drasner](https://sdras.github.io/array-explorer)
-    - [Object Explorer - Sarah Drasner](https://sdras.github.io/object-explorer)
+  - [Array Explorer - Sarah Drasner](https://sdras.github.io/array-explorer)
+  - [Object Explorer - Sarah Drasner](https://sdras.github.io/object-explorer)
 
 * Good Practices
-    - [Clean Code JavaScript - Ryan McDermott](https://github.com/ryanmcdermott/clean-code-javascript)
+  - [Clean Code JavaScript - Ryan McDermott](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ### More Helpful Resources
 

@@ -19,7 +19,12 @@ The input will always be made of only lowercase letters and will never be empty.
 
 ```js
 function wordsToMarks(string) {
-  return string.split('').reduce((acc, cur) => (acc += cur.charCodeAt(0) - 'a'.charCodeAt(0) + 1), 0)
+  return string
+    .split("")
+    .reduce(
+      (acc, cur) => (acc += cur.charCodeAt(0) - "a".charCodeAt(0) + 1),
+      0,
+    );
 }
 ```
 

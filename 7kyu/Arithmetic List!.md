@@ -19,8 +19,8 @@ Don't forget about the indexing pitfall ;)
 
 ```js
 var seqlist = function (first, c, l) {
-  return Array.from({ length: l }, (_, i) => first + i * c)
-}
+  return Array.from({ length: l }, (_, i) => first + i * c);
+};
 ```
 
 </details>

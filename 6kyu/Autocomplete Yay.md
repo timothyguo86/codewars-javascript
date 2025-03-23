@@ -32,24 +32,28 @@ as "" and an input of "ab\*&1cd" should be treated as "abcd".
 
 ```js
 function autocomplete(input, dictionary) {
-  let output = [] // Array to store autocomplete suggestions
+  let output = []; // Array to store autocomplete suggestions
 
   // Remove non-alphabetic characters from the input
-  input = input.replace(/[^a-zA-Z-]/g, '')
+  input = input.replace(/[^a-zA-Z-]/g, "");
 
   // Iterate through the dictionary to find matches for the input
   for (let i = 0; i < dictionary.length; i++) {
     // Compare the input with the beginning of each dictionary entry (case-insensitive)
     if (
-      input.toUpperCase().localeCompare(dictionary[i].substring(0, input.length).toUpperCase()) === 0 &&
+      input
+        .toUpperCase()
+        .localeCompare(
+          dictionary[i].substring(0, input.length).toUpperCase(),
+        ) === 0 &&
       output.length < 5
     ) {
       // If there is a match and the output array is not full, add the entry to the output
-      output.push(dictionary[i])
+      output.push(dictionary[i]);
     }
   }
 
-  return output // Return the array of autocomplete suggestions
+  return output; // Return the array of autocomplete suggestions
 }
 ```
 

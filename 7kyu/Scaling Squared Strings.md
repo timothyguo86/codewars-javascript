@@ -82,9 +82,11 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function orderFood(list) {
-  let output = {}
-  list.forEach(dev => (output[dev.meal] = output[dev.meal] ? output[dev.meal] + 1 : 1))
-  return output
+  let output = {};
+  list.forEach(
+    (dev) => (output[dev.meal] = output[dev.meal] ? output[dev.meal] + 1 : 1),
+  );
+  return output;
 }
 ```
 

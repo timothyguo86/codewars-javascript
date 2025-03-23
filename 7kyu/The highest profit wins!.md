@@ -29,7 +29,7 @@ will always get an array or a list, you don't have to check for `null`, `undefin
 
 ```js
 function minMax(arr) {
-  return [Math.min(...arr), Math.max(...arr)]
+  return [Math.min(...arr), Math.max(...arr)];
 }
 ```
 

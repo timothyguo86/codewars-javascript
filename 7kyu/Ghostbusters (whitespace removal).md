@@ -20,8 +20,10 @@ If the building contains no ghosts, return the string:
 
 ```js
 function semicolonSeparationToCommaSeparation(input) {
-  let arr = building.split(/\s+/g)
-  return arr.length === 1 ? "You just wanted my autograph didn't you?" : arr.join('')
+  let arr = building.split(/\s+/g);
+  return arr.length === 1
+    ? "You just wanted my autograph didn't you?"
+    : arr.join("");
 }
 ```
 

@@ -19,7 +19,7 @@ Example:
 
 ```js
 function countLettersAndDigits(input) {
-  return (input.match(/[a-zA-Z0-9]/g) || []).length
+  return (input.match(/[a-zA-Z0-9]/g) || []).length;
 }
 ```
 

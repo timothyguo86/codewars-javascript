@@ -15,7 +15,7 @@ For example:
 
 ```js
 function evenNumbers(array, number) {
-  return array.filter(v => !(v % 2)).slice(-number)
+  return array.filter((v) => !(v % 2)).slice(-number);
 }
 ```
 

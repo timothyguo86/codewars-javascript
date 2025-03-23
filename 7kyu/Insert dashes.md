@@ -11,7 +11,7 @@ Note that the number will always be non-negative (>= 0).
 
 ```js
 function insertDash(num) {
-  return `${num}`.replace(/([13579])(?=[13579])/g, '$1-')
+  return `${num}`.replace(/([13579])(?=[13579])/g, "$1-");
 }
 ```
 

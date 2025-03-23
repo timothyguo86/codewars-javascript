@@ -15,10 +15,10 @@ You should return the duplicate value as a single integer.
 
 ```js
 function findDup(arr) {
-  const sortedArr = arr.sort((a, b) => a - b)
+  const sortedArr = arr.sort((a, b) => a - b);
 
   for (let i = 0; i < sortedArr.length; i++) {
-    if (sortedArr[i] !== i + 1) return sortedArr[i]
+    if (sortedArr[i] !== i + 1) return sortedArr[i];
   }
 }
 ```

@@ -13,7 +13,9 @@ example
 
 ```js
 function capMe(names) {
-  return names.map(v => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase())
+  return names.map(
+    (v) => v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase(),
+  );
 }
 ```
 

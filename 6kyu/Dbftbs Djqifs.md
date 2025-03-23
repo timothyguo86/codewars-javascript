@@ -27,34 +27,38 @@ A message `'Caesar Cipher'` and a key of `-1` returns `'Bzdrzq Bhogdq'`.
 
 ```js
 function encryptor(key, message) {
-  const charCodeA = 'A'.charCodeAt(0)
-  const charCodeZ = 'Z'.charCodeAt(0)
-  const charCodea = 'a'.charCodeAt(0)
-  const charCodez = 'z'.charCodeAt(0)
-  const newKey = key % 26
+  const charCodeA = "A".charCodeAt(0);
+  const charCodeZ = "Z".charCodeAt(0);
+  const charCodea = "a".charCodeAt(0);
+  const charCodez = "z".charCodeAt(0);
+  const newKey = key % 26;
 
   return message
-    .split('')
-    .map(char => {
+    .split("")
+    .map((char) => {
       if (/[a-zA-Z]/.test(char)) {
-        const charCode = char.charCodeAt(0)
-        const newCharCode = charCode + newKey
+        const charCode = char.charCodeAt(0);
+        const newCharCode = charCode + newKey;
 
         // Check if the character is uppercase or lowercase
         if (charCodeA <= charCode && charCode <= charCodeZ) {
-          if (newCharCode < charCodeA) return String.fromCharCode(newCharCode + 26)
-          if (newCharCode > charCodeZ) return String.fromCharCode(newCharCode - 26)
-          return String.fromCharCode(newCharCode)
+          if (newCharCode < charCodeA)
+            return String.fromCharCode(newCharCode + 26);
+          if (newCharCode > charCodeZ)
+            return String.fromCharCode(newCharCode - 26);
+          return String.fromCharCode(newCharCode);
         } else {
-          if (newCharCode < charCodea) return String.fromCharCode(newCharCode + 26)
-          if (newCharCode > charCodez) return String.fromCharCode(newCharCode - 26)
-          return String.fromCharCode(newCharCode)
+          if (newCharCode < charCodea)
+            return String.fromCharCode(newCharCode + 26);
+          if (newCharCode > charCodez)
+            return String.fromCharCode(newCharCode - 26);
+          return String.fromCharCode(newCharCode);
         }
       } else {
-        return char
+        return char;
       }
     })
-    .join('')
+    .join("");
 }
 ```
 

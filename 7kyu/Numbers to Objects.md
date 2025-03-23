@@ -17,7 +17,7 @@ empty.
 
 ```js
 function numObj(s) {
-  return s.map(v => ({ [v]: String.fromCharCode(v) }))
+  return s.map((v) => ({ [v]: String.fromCharCode(v) }));
 }
 ```
 

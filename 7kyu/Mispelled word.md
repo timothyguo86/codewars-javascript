@@ -27,19 +27,19 @@ let mispelled = function (word1, word2) {
     word2.slice(1) === word1 ||
     word2.slice(0, -1) === word1
   ) {
-    return true
+    return true;
   }
   if (word1.length === word2.length) {
-    let diffCount = 0
+    let diffCount = 0;
     for (let i = 0; i < word1.length; i++) {
-      if (word1[i] !== word2[i]) diffCount++
-      if (diffCount === 2) return false
+      if (word1[i] !== word2[i]) diffCount++;
+      if (diffCount === 2) return false;
     }
-    return true
+    return true;
   }
 
-  return false
-}
+  return false;
+};
 ```
 
 </details>

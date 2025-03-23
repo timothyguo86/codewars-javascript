@@ -24,7 +24,7 @@ ENJOY CODING :)
 
 ```js
 function sumOfMinimums(arr) {
-  return arr.reduce((sum, array) => sum + Math.min(...array), 0)
+  return arr.reduce((sum, array) => sum + Math.min(...array), 0);
 }
 ```
 

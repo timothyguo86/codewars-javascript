@@ -27,7 +27,7 @@ Your task is to implement a function that would take the morse code as input and
 For example:
 
 ```javascript
-decodeMorse('.... . -.--   .--- ..- -.. .')
+decodeMorse(".... . -.--   .--- ..- -.. .");
 //should return "HEY JUDE"
 ```
 
@@ -58,19 +58,19 @@ The Morse code table is preloaded for you as a dictionary, feel free to use it:
 ```js
 decodeMorse = function (morseCode) {
   // Trim the input and split the Morse code into words
-  let words = morseCode.trim().split('   ')
+  let words = morseCode.trim().split("   ");
 
   // Map each word to a sequence of characters
-  let decodedWords = words.map(word => {
+  let decodedWords = words.map((word) => {
     // Split the word into characters and decode each character
-    let chars = word.split(' ').map(char => MORSE_CODE[char])
+    let chars = word.split(" ").map((char) => MORSE_CODE[char]);
     // Join the characters into a word
-    return chars.join('')
-  })
+    return chars.join("");
+  });
 
   // Join the words into a sentence and return it
-  return decodedWords.join(' ')
-}
+  return decodedWords.join(" ");
+};
 ```
 
 </details>

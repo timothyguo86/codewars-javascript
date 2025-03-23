@@ -19,17 +19,17 @@ time.
 
 ```js
 function stantonMeasure(a) {
-  let oneCount = 0
-  let stantonCount = 0
+  let oneCount = 0;
+  let stantonCount = 0;
 
-  a.forEach(v => {
-    if (v === 1) oneCount++
-  })
-  a.forEach(v => {
-    if (v === oneCount) stantonCount++
-  })
+  a.forEach((v) => {
+    if (v === 1) oneCount++;
+  });
+  a.forEach((v) => {
+    if (v === oneCount) stantonCount++;
+  });
 
-  return stantonCount
+  return stantonCount;
 }
 ```
 

@@ -17,9 +17,9 @@ Notes:
 ```js
 function kebabize(str) {
   return str
-    .replace(/[^a-z]/gi, '')
-    .replace(/[A-Z]/g, v => '-' + v.toLowerCase())
-    .replace(/^-/, '')
+    .replace(/[^a-z]/gi, "")
+    .replace(/[A-Z]/g, (v) => "-" + v.toLowerCase())
+    .replace(/^-/, "");
 }
 ```
 

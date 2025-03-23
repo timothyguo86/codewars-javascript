@@ -24,17 +24,17 @@ findNb(91716553919377) --> -1
 
 ```js
 function findNb(m) {
-  let n = 0 // Initialize a variable to represent the cube number
+  let n = 0; // Initialize a variable to represent the cube number
 
   // Keep subtracting the cube of the increasing n from m until m becomes non-positive
   while (m > 0) {
-    n = n + 1 // Increment n to check the next cube
-    m = m - Math.pow(n, 3) // Subtract the cube of n from m
+    n = n + 1; // Increment n to check the next cube
+    m = m - Math.pow(n, 3); // Subtract the cube of n from m
   }
 
   // If m is still positive after the loop, return -1 (indicating no such cube exists)
   // Otherwise, return the value of n (the cube number found)
-  return m ? -1 : n
+  return m ? -1 : n;
 }
 ```
 

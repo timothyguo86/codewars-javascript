@@ -31,7 +31,8 @@ _This kata is a piece of [Binary Genetic Algorithm](http://www.codewars.com/kata
 <details><summary>My Solution</summary>
 
 ```js
-const generate = length => Array.from({ length }, () => (Math.random() > 0.5 ? '1' : '0')).join('')
+const generate = (length) =>
+  Array.from({ length }, () => (Math.random() > 0.5 ? "1" : "0")).join("");
 ```
 
 </details>

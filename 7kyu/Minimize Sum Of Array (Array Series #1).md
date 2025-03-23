@@ -72,15 +72,15 @@ product_ .
 
 ```js
 function minSum(arr) {
-  const sortedArr = [...arr].sort((a, b) => a - b)
-  const n = sortedArr.length
-  let minSum = 0
+  const sortedArr = [...arr].sort((a, b) => a - b);
+  const n = sortedArr.length;
+  let minSum = 0;
 
   for (let i = 0; i < n / 2; i++) {
-    minSum += sortedArr[i] * sortedArr[n - 1 - i]
+    minSum += sortedArr[i] * sortedArr[n - 1 - i];
   }
 
-  return minSum
+  return minSum;
 }
 ```
 

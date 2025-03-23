@@ -24,17 +24,17 @@ Program `"iiisdosodddddiso"` should return numbers `[8, 64, 3600]`.
 
 ```js
 function parse(data) {
-  const output = []
-  let num = 0
+  const output = [];
+  let num = 0;
 
   for (let i = 0; i < data.length; i++) {
-    if (data[i] === 'i') num++
-    if (data[i] === 'd') num--
-    if (data[i] === 's') num = num ** 2
-    if (data[i] === 'o') output.push(num)
+    if (data[i] === "i") num++;
+    if (data[i] === "d") num--;
+    if (data[i] === "s") num = num ** 2;
+    if (data[i] === "o") output.push(num);
   }
 
-  return output
+  return output;
 }
 ```
 

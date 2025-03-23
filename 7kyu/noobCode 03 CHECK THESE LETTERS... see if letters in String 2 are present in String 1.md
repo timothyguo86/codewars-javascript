@@ -17,7 +17,9 @@ argument** in the form of an array.
 
 ```js
 function letterCheck(arr) {
-  return [...arr[1]].every(v => arr[0].toLowerCase().includes(v.toLowerCase()))
+  return [...arr[1]].every((v) =>
+    arr[0].toLowerCase().includes(v.toLowerCase()),
+  );
 }
 ```
 

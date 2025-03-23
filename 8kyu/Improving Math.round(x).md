@@ -20,8 +20,8 @@ You may find the following `Math` methods useful:
 
 ```js
 Math.roundTo = function (number, precision) {
-  return this.round(number * 10 ** precision) / 10 ** precision
-}
+  return this.round(number * 10 ** precision) / 10 ** precision;
+};
 ```
 
 </details>

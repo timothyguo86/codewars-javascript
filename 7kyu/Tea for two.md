@@ -18,7 +18,7 @@ every '2' charcter or digit has been replaced with a t.
 
 ```js
 function tea42(input) {
-  return input.toString().replace(/2/g, 't')
+  return input.toString().replace(/2/g, "t");
 }
 ```
 

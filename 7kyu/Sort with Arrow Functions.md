@@ -24,8 +24,8 @@ Reference: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fu
 
 ```js
 var OrderPeople = function (people) {
-  return people.sort((a, b) => a.age - b.age)
-}
+  return people.sort((a, b) => a.age - b.age);
+};
 ```
 
 </details>

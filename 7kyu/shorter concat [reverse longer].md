@@ -13,17 +13,17 @@ If `a` and `b` have the same length treat `a` as the longer producing `b+reverse
 
 ```js
 function shorterReverseLonger(a, b) {
-  let short = ''
-  let long = ''
+  let short = "";
+  let long = "";
   if (a.length >= b.length) {
-    long = a
-    short = b
+    long = a;
+    short = b;
   } else {
-    long = b
-    short = a
+    long = b;
+    short = a;
   }
 
-  return short + long.split('').reverse().join('') + short
+  return short + long.split("").reverse().join("") + short;
 }
 ```
 

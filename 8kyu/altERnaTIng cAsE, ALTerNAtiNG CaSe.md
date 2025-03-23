@@ -23,11 +23,13 @@ As usual, your function/method should be pure, i.e. it should not mutate the ori
 ```js
 String.prototype.toAlternatingCase = function () {
   return Array.from(this)
-    .map(char => {
-      return char.toLowerCase() === char ? char.toUpperCase() : char.toLowerCase()
+    .map((char) => {
+      return char.toLowerCase() === char
+        ? char.toUpperCase()
+        : char.toLowerCase();
     })
-    .join('')
-}
+    .join("");
+};
 ```
 
 </details>

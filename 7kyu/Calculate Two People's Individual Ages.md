@@ -14,9 +14,9 @@ a pair of values (oldest age first) if those exist or `null/None` or `{-1, -1} i
 ```js
 function getAges(sum, difference) {
   if (sum < 0 || difference < 0 || sum < difference) {
-    return null
+    return null;
   }
-  return [(sum + difference) / 2, (sum - difference) / 2]
+  return [(sum + difference) / 2, (sum - difference) / 2];
 }
 ```
 

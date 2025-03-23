@@ -18,21 +18,23 @@ Write a method that takes the array as an argument and returns this "outlier" `N
 
 ```js
 function findOutlier(integers) {
-  let evenCount = 0
-  let oddCount = 0
-  let isEvenArray = false
+  let evenCount = 0;
+  let oddCount = 0;
+  let isEvenArray = false;
 
   // Count the first 3 integers
   for (let i = 0; i < 3; i++) {
-    if (integers[i] % 2 === 0) evenCount++
-    else oddCount++
+    if (integers[i] % 2 === 0) evenCount++;
+    else oddCount++;
   }
 
   // Check if the majority is even or odd
-  isEvenArray = evenCount > oddCount
+  isEvenArray = evenCount > oddCount;
 
   // Filter the array based on the majority parity and return the first element
-  return integers.filter(integer => (isEvenArray ? integer % 2 !== 0 : integer % 2 === 0))[0]
+  return integers.filter((integer) =>
+    isEvenArray ? integer % 2 !== 0 : integer % 2 === 0,
+  )[0];
 }
 ```
 

@@ -18,16 +18,16 @@ nextItem("testing", "t") # "e"
 
 ```js
 function nextItem(xs, item) {
-  let found = false
+  let found = false;
 
   // Iterate over each element in the array
   for (let el of xs) {
     // If the desired item is found, set 'found' to true.
     // Return the current element, which is the next item after the specified item
-    if (found) return el
+    if (found) return el;
     // Check if the current element is equal to the specified item
     // Mark that the item has been found
-    if (el === item) found = true
+    if (el === item) found = true;
   }
   // If the specified item is not found or it's the last element in the array, return undefined
 }

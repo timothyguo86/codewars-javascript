@@ -25,17 +25,17 @@ _Attention: If the number has leading zeros the amount of digits should be consi
 
 ```js
 function incrementString(strng) {
-  const endNumMatch = strng.match(/[0-9]+$/)
-  let endStr = '1'
+  const endNumMatch = strng.match(/[0-9]+$/);
+  let endStr = "1";
   if (endNumMatch) {
-    const endNum = endNumMatch[0]
-    const digits = endNum.length
-    endStr = (+endNum + 1).toString().padStart(digits, '0')
+    const endNum = endNumMatch[0];
+    const digits = endNum.length;
+    endStr = (+endNum + 1).toString().padStart(digits, "0");
 
-    return strng.slice(0, -digits) + endStr
+    return strng.slice(0, -digits) + endStr;
   }
 
-  return strng + endStr
+  return strng + endStr;
 }
 ```
 

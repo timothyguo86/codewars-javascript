@@ -22,12 +22,12 @@ has length greater than 2, leaving smaller words as they are.
 ```js
 function dropCap(n) {
   return n
-    .split(' ')
-    .map(v => {
-      if (v.length > 2) return v[0].toUpperCase() + v.slice(1).toLowerCase()
-      return v
+    .split(" ")
+    .map((v) => {
+      if (v.length > 2) return v[0].toUpperCase() + v.slice(1).toLowerCase();
+      return v;
     })
-    .join(' ')
+    .join(" ");
 }
 ```
 

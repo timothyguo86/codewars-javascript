@@ -31,7 +31,7 @@ The values will always be numbers, and the properties will always exist.
 
 ```js
 function sortList(sortBy, list) {
-  return list.sort((a, b) => b[sortBy] - a[sortBy])
+  return list.sort((a, b) => b[sortBy] - a[sortBy]);
 }
 ```
 

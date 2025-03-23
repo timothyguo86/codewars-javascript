@@ -27,9 +27,9 @@ The function `dateFilter` should take two arguments: `date` and `format`.
 - `format` is the format of the output. Here are some examples:
 
 ```js
-'HH:mm' // Can return something like '12:04'
-'dd/MM/yyyy' // Can return something like '01/02/1995'
-'d/M/yy H%m' // Can return something like '1/31/14 1%59'
+"HH:mm"; // Can return something like '12:04'
+"dd/MM/yyyy"; // Can return something like '01/02/1995'
+"d/M/yy H%m"; // Can return something like '1/31/14 1%59'
 ```
 
 Where there is an odd number of letters, parse the longest first then the remaining if needed. For example, `yyy` should
@@ -44,11 +44,11 @@ When there are more than 2 of MdHms, for example, `dddd` it should be parsed as 
 ```js
 function dateFilter(date, format) {
   // Check the input type and convert to Date object if necessary
-  let dateObj
-  if (typeof date === 'string' || typeof date === 'number') {
-    dateObj = new Date(Number(date))
+  let dateObj;
+  if (typeof date === "string" || typeof date === "number") {
+    dateObj = new Date(Number(date));
   } else if (date instanceof Date) {
-    dateObj = new Date(date.getTime())
+    dateObj = new Date(date.getTime());
   }
   // Create an object to store the date components
   const dateMap = {
@@ -57,12 +57,12 @@ function dateFilter(date, format) {
     d: dateObj.getDate(),
     H: dateObj.getHours(),
     m: dateObj.getMinutes(),
-    s: dateObj.getSeconds()
-  }
+    s: dateObj.getSeconds(),
+  };
   // Function to pad a number with leading zeros
   const padNumber = (num, length) => {
-    return num.toString().padStart(length, '0')
-  }
+    return num.toString().padStart(length, "0");
+  };
   // Create an object to store the replacements
   const replacements = {
     yyyy: padNumber(dateMap.y, 4),
@@ -76,18 +76,34 @@ function dateFilter(date, format) {
     mm: padNumber(dateMap.m, 2),
     m: dateMap.m,
     ss: padNumber(dateMap.s, 2),
-    s: dateMap.s
-  }
+    s: dateMap.s,
+  };
   // Create an array of format specifiers to replace
-  const formatSpecifiers = ['yyyy', 'yy', 'MM', 'M', 'dd', 'd', 'HH', 'H', 'mm', 'm', 'ss', 's']
+  const formatSpecifiers = [
+    "yyyy",
+    "yy",
+    "MM",
+    "M",
+    "dd",
+    "d",
+    "HH",
+    "H",
+    "mm",
+    "m",
+    "ss",
+    "s",
+  ];
   // Sort the format specifiers by length to parse the longest first
-  formatSpecifiers.sort((a, b) => b.length - a.length)
+  formatSpecifiers.sort((a, b) => b.length - a.length);
   // Replace the format specifiers with the date components
   for (const specifier of formatSpecifiers) {
-    format = format.replace(new RegExp(specifier, 'g'), replacements[specifier])
+    format = format.replace(
+      new RegExp(specifier, "g"),
+      replacements[specifier],
+    );
   }
 
-  return format
+  return format;
 }
 ```
 

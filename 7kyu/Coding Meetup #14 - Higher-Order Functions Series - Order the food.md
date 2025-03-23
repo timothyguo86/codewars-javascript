@@ -42,15 +42,15 @@ k and v will be positive integers. If <code>strng == ""</code> return <code>""</
 
 ```js
 function scale(strng, k, n) {
-  if (strng === '') return ''
+  if (strng === "") return "";
 
-  let rows = strng.split('\n').map(row =>
+  let rows = strng.split("\n").map((row) =>
     row
-      .split('')
-      .map(el => el.repeat(k))
-      .join('')
-  )
-  return rows.map(row => Array(n).fill(row).join('\n')).join('\n')
+      .split("")
+      .map((el) => el.repeat(k))
+      .join(""),
+  );
+  return rows.map((row) => Array(n).fill(row).join("\n")).join("\n");
 }
 ```
 

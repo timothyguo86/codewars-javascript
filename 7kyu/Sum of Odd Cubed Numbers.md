@@ -9,13 +9,13 @@ if any of the values aren't numbers.
 
 ```js
 function cubeOdd(arr) {
-  let sum = 0
+  let sum = 0;
   for (let v of arr) {
-    if (isNaN(v)) return undefined
-    if (v % 2) sum += v ** 3
+    if (isNaN(v)) return undefined;
+    if (v % 2) sum += v ** 3;
   }
 
-  return sum
+  return sum;
 }
 ```
 

@@ -28,22 +28,22 @@ A string of braces is considered valid if all braces are matched with the correc
 
 ```js
 function validBraces(braces) {
-  const stack = []
+  const stack = [];
   const pairs = {
-    '(': ')',
-    '[': ']',
-    '{': '}'
-  }
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
 
   for (let brace of braces) {
     if (pairs[brace]) {
-      stack.push(brace)
+      stack.push(brace);
     } else {
-      if (brace !== pairs[stack.pop()]) return false
+      if (brace !== pairs[stack.pop()]) return false;
     }
   }
 
-  return stack.length === 0
+  return stack.length === 0;
 }
 ```
 

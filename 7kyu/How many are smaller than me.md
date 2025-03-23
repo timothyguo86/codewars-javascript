@@ -17,7 +17,7 @@ tougher version [How many are smaller than me II?](http://www.codewars.com/kata/
 
 ```js
 function smaller(nums) {
-  return nums.map((v, i) => nums.slice(i).filter(w => v > w).length)
+  return nums.map((v, i) => nums.slice(i).filter((w) => v > w).length);
 }
 ```
 

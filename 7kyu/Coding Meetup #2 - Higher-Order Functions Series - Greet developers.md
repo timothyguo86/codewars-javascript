@@ -12,44 +12,65 @@ For example, given the following input array:
 
 ```js
 var list1 = [
-  { firstName: 'Sofia', lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java' },
-  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: 'Python' },
-  { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' }
-]
+  {
+    firstName: "Sofia",
+    lastName: "I.",
+    country: "Argentina",
+    continent: "Americas",
+    age: 35,
+    language: "Java",
+  },
+  {
+    firstName: "Lukas",
+    lastName: "X.",
+    country: "Croatia",
+    continent: "Europe",
+    age: 35,
+    language: "Python",
+  },
+  {
+    firstName: "Madison",
+    lastName: "U.",
+    country: "United States",
+    continent: "Americas",
+    age: 32,
+    language: "Ruby",
+  },
+];
 ```
 
 your function should return the following array:
 
 ```js
-;[
+[
   {
-    firstName: 'Sofia',
-    lastName: 'I.',
-    country: 'Argentina',
-    continent: 'Americas',
+    firstName: "Sofia",
+    lastName: "I.",
+    country: "Argentina",
+    continent: "Americas",
     age: 35,
-    language: 'Java',
-    greeting: 'Hi Sofia, what do you like the most about Java?'
+    language: "Java",
+    greeting: "Hi Sofia, what do you like the most about Java?",
   },
   {
-    firstName: 'Lukas',
-    lastName: 'X.',
-    country: 'Croatia',
-    continent: 'Europe',
+    firstName: "Lukas",
+    lastName: "X.",
+    country: "Croatia",
+    continent: "Europe",
     age: 35,
-    language: 'Python',
-    greeting: 'Hi Lukas, what do you like the most about Python?'
+    language: "Python",
+    greeting: "Hi Lukas, what do you like the most about Python?",
   },
   {
-    firstName: 'Madison',
-    lastName: 'U.',
-    country: 'United States',
-    continent: 'Americas',
+    firstName: "Madison",
+    lastName: "U.",
+    country: "United States",
+    continent: "Americas",
     age: 32,
-    language: 'Ruby',
-    greeting: 'Hi Madison, what do you like the most about Ruby?'
-  }
-]
+    language: "Ruby",
+    greeting: "Hi Madison, what do you like the most about Ruby?",
+  },
+];
 ```
 
 Notes:
@@ -100,10 +121,10 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function greetDevelopers(list) {
-  return list.map(dev => ({
+  return list.map((dev) => ({
     ...dev,
-    greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`
-  }))
+    greeting: `Hi ${dev.firstName}, what do you like the most about ${dev.language}?`,
+  }));
 }
 ```
 

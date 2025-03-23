@@ -21,12 +21,12 @@ Even better is to replace some of those letters with numbers (e.g., the letter `
 ```js
 function makePassword(phrase) {
   return phrase
-    .split(' ')
-    .map(v => v[0])
-    .join('')
-    .replace(/i/gi, '1')
-    .replace(/o/gi, '0')
-    .replace(/s/gi, '5')
+    .split(" ")
+    .map((v) => v[0])
+    .join("")
+    .replace(/i/gi, "1")
+    .replace(/o/gi, "0")
+    .replace(/s/gi, "5");
 }
 ```
 

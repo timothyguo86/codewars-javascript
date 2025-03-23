@@ -29,11 +29,11 @@ function checkExam(array1, array2) {
   return Math.max(
     0,
     array2.reduce((acc, cur, i) => {
-      if (cur === '') return acc
-      if (cur === array1[i]) return (acc += 4)
-      else return (acc -= 1)
-    }, 0)
-  )
+      if (cur === "") return acc;
+      if (cur === array1[i]) return (acc += 4);
+      else return (acc -= 1);
+    }, 0),
+  );
 }
 ```
 

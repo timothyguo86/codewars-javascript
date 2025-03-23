@@ -11,7 +11,7 @@ Write a function that removes every lone `9` that is inbetween `7`s.
 
 ```js
 function sevenAte9(str) {
-  return str.replace(/79(?=7)/g, '7');
+  return str.replace(/79(?=7)/g, "7");
 }
 ```
 

@@ -27,7 +27,7 @@ Good Luck!
 
 ```js
 function throwRigged() {
-  return Math.random() <= 0.22 ? 6 : Math.ceil(Math.random() * 5)
+  return Math.random() <= 0.22 ? 6 : Math.ceil(Math.random() * 5);
 }
 ```
 

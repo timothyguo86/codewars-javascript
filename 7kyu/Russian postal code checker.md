@@ -29,8 +29,8 @@ Invalid postcodes:
 
 ```js
 function zipvalidate(postcode) {
-  let regext = new RegExp(/^[1,2,3,4,6][0-9]{5}$/)
-  return regext.test(postcode)
+  let regext = new RegExp(/^[1,2,3,4,6][0-9]{5}$/);
+  return regext.test(postcode);
 }
 ```
 

@@ -11,7 +11,7 @@ If anything in the text isn't a letter, ignore it and don't return it.
 ### Example
 
 ```js
-alphabetPosition("The sunset sets at twelve o' clock.")
+alphabetPosition("The sunset sets at twelve o' clock.");
 ```
 
 Should return `"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"` ( as a string )
@@ -24,10 +24,10 @@ Should return `"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 
 function alphabetPosition(text) {
   return text
     .toUpperCase()
-    .replace(/[^A-Z]/g, '') // Remove non-alphabetic characters and convert to uppercase
-    .split('')
-    .map(char => char.charCodeAt() - 64) // Map each character to its position in the alphabet
-    .join(' ') // Join the array of positions into a space-separated string
+    .replace(/[^A-Z]/g, "") // Remove non-alphabetic characters and convert to uppercase
+    .split("")
+    .map((char) => char.charCodeAt() - 64) // Map each character to its position in the alphabet
+    .join(" "); // Join the array of positions into a space-separated string
 }
 ```
 

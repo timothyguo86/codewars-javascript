@@ -22,9 +22,9 @@ without leading/trailing spaces.
 ```js
 function remove(string) {
   return string
-    .split(' ')
-    .filter(v => !v.includes('!') || v.match(/!/g).length !== 1)
-    .join(' ')
+    .split(" ")
+    .filter((v) => !v.includes("!") || v.match(/!/g).length !== 1)
+    .join(" ");
 }
 ```
 

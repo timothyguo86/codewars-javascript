@@ -13,10 +13,10 @@ Ignore all other types of values.
 ```js
 function arraySum(arr) {
   return arr.reduce((total, cur) => {
-    if (typeof cur === 'number' && !isNaN(cur)) return total + cur
-    else if (Array.isArray(cur)) return total + arraySum(cur)
-    return total
-  }, 0)
+    if (typeof cur === "number" && !isNaN(cur)) return total + cur;
+    else if (Array.isArray(cur)) return total + arraySum(cur);
+    return total;
+  }, 0);
 }
 ```
 

@@ -22,7 +22,7 @@ won't need to worry about capitals.
 
 ```js
 function absentVowel(x) {
-  return 'aeiou'.split('').findIndex(v => !x.includes(v))
+  return "aeiou".split("").findIndex((v) => !x.includes(v));
 }
 ```
 

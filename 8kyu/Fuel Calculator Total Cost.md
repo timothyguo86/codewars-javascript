@@ -19,13 +19,13 @@ will not be negative or non-numeric inputs.
 
 ```js
 function fuelPrice(litres, pricePerLitre) {
-  let discount = 0
+  let discount = 0;
 
   if (litres >= 2) {
-    discount = Math.min(Math.floor(litres / 2) * 0.05, 0.25)
+    discount = Math.min(Math.floor(litres / 2) * 0.05, 0.25);
   }
 
-  return +(litres * (pricePerLitre - discount)).toFixed(2)
+  return +(litres * (pricePerLitre - discount)).toFixed(2);
 }
 ```
 

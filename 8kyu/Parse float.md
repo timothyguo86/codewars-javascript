@@ -9,7 +9,7 @@ be one of many different types so be aware.
 
 ```js
 function parseF(s) {
-  return isNaN(parseFloat(s)) ? null : parseFloat(s)
+  return isNaN(parseFloat(s)) ? null : parseFloat(s);
 }
 ```
 

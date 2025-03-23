@@ -18,19 +18,19 @@ Good luck!
 
 ```js
 function solve(arr) {
-  const reversedArr = [...arr].reverse()
-  let max = reversedArr[0]
+  const reversedArr = [...arr].reverse();
+  let max = reversedArr[0];
 
   return reversedArr.reduce(
     (dominantArr, cur) => {
       if (cur > max) {
-        dominantArr.unshift(cur)
-        max = cur
+        dominantArr.unshift(cur);
+        max = cur;
       }
-      return dominantArr
+      return dominantArr;
     },
-    [reversedArr[0]]
-  )
+    [reversedArr[0]],
+  );
 }
 ```
 

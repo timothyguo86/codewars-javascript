@@ -6,9 +6,9 @@
 
 ```js
 function objectType(obj) {
-  if (arguments.length === 0) return '[object Null]'
+  if (arguments.length === 0) return "[object Null]";
 
-  return Object.prototype.toString.call(obj)
+  return Object.prototype.toString.call(obj);
 }
 ```
 

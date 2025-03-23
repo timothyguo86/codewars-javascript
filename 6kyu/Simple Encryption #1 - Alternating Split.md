@@ -33,45 +33,45 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 ```js
 function encrypt(text, n) {
   // Base case: If n is less than or equal to 0, or text is empty or null, return the original text
-  if (n <= 0 || !text) return text
+  if (n <= 0 || !text) return text;
 
   for (let i = 0; i < n; i++) {
-    let odd = ''
-    let even = ''
+    let odd = "";
+    let even = "";
 
     // Split the text into even and odd character strings
     for (let j = 0; j < text.length; j++) {
       if (j % 2 === 0) {
-        even += text[j]
+        even += text[j];
       } else {
-        odd += text[j]
+        odd += text[j];
       }
     }
 
-    text = odd + even
+    text = odd + even;
   }
 
-  return text
+  return text;
 }
 
 function decrypt(encryptedText, n) {
   // Base case: If n is less than or equal to 0, or the encrypted text is empty or null, return the original text
-  if (n <= 0 || !encryptedText) return encryptedText
+  if (n <= 0 || !encryptedText) return encryptedText;
 
   // Split the encrypted text into two halves
-  let firstHalf = encryptedText.slice(0, Math.floor(encryptedText.length / 2))
-  let secondHalf = encryptedText.slice(Math.floor(encryptedText.length / 2))
+  let firstHalf = encryptedText.slice(0, Math.floor(encryptedText.length / 2));
+  let secondHalf = encryptedText.slice(Math.floor(encryptedText.length / 2));
 
-  let text = ''
+  let text = "";
 
   // Interleave characters from both halves to form the decrypted text
   for (let i = 0; i < Math.max(firstHalf.length, secondHalf.length); i++) {
-    if (secondHalf[i]) text += secondHalf[i]
-    if (firstHalf[i]) text += firstHalf[i]
+    if (secondHalf[i]) text += secondHalf[i];
+    if (firstHalf[i]) text += firstHalf[i];
   }
 
   // Recursively decrypt the text for the remaining iterations
-  return decrypt(text, n - 1)
+  return decrypt(text, n - 1);
 }
 ```
 

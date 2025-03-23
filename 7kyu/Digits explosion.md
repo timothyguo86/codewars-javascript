@@ -16,7 +16,7 @@ value.
 
 ```js
 function explode(s) {
-  return [...s].map(d => d.repeat(d)).join('')
+  return [...s].map((d) => d.repeat(d)).join("");
 }
 ```
 

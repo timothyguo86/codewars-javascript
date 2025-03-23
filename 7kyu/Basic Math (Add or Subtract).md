@@ -15,7 +15,7 @@ Examples
 
 ```js
 function calculate(str) {
-  return eval(str.replace(/plus/g, '+').replace(/minus/g, '-')).toString()
+  return eval(str.replace(/plus/g, "+").replace(/minus/g, "-")).toString();
 }
 ```
 

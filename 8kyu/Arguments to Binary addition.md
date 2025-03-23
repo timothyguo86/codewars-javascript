@@ -23,9 +23,9 @@ function arr2bin(arr) {
   return arr
     .reduce((acc, cur) => {
       // Check if the current element is a number
-      return typeof cur === 'number' ? acc + cur : acc
+      return typeof cur === "number" ? acc + cur : acc;
     }, 0)
-    .toString(2) // Convert the sum to its binary representation
+    .toString(2); // Convert the sum to its binary representation
 }
 ```
 

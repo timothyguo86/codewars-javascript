@@ -19,18 +19,18 @@ Should the last donation be a non positive number `(<= 0)` John wants us:
 
 - to return:
 
-    - Nothing in Haskell, Elm
-    - None in F#, Ocaml, Rust, Scala
-    - `-1` in C, D, Fortran, Nim, PowerShell, Go, Pascal, Prolog, Lua, Perl, Erlang
+  - Nothing in Haskell, Elm
+  - None in F#, Ocaml, Rust, Scala
+  - `-1` in C, D, Fortran, Nim, PowerShell, Go, Pascal, Prolog, Lua, Perl, Erlang
 
 - or to throw an error (some **examples** for such a case):
 
-    - IllegalArgumentException() in Clojure, Java, Kotlin
-    - ArgumentException() in C#
-    - echo `ERROR` in Shell
-    - argument-error in Racket
-    - std::invalid_argument in C++
-    - ValueError in Python
+  - IllegalArgumentException() in Clojure, Java, Kotlin
+  - ArgumentException() in C#
+  - echo `ERROR` in Shell
+  - argument-error in Racket
+  - std::invalid_argument in C++
+  - ValueError in Python
 
 So, he will clearly see that his expectations are not great enough. _In "Sample Tests" you can see what to return._
 
@@ -50,10 +50,11 @@ So, he will clearly see that his expectations are not great enough. _In "Sample 
 
 ```js
 function newAvg(arr, newavg) {
-  const donation = newavg * (arr.length + 1) - arr.reduce((total, cur) => total + cur, 0)
+  const donation =
+    newavg * (arr.length + 1) - arr.reduce((total, cur) => total + cur, 0);
 
-  if (donation > 0) return Math.ceil(donation)
-  else throw new Error('Expected New Average is too low')
+  if (donation > 0) return Math.ceil(donation);
+  else throw new Error("Expected New Average is too low");
 }
 ```
 

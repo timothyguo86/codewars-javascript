@@ -33,23 +33,23 @@ Note: the original array **must not** be changed in any case!
 
 ```js
 Array.prototype.square = function () {
-  return this.map(v => v ** 2)
-}
+  return this.map((v) => v ** 2);
+};
 Array.prototype.cube = function () {
-  return this.map(v => v ** 3)
-}
+  return this.map((v) => v ** 3);
+};
 Array.prototype.average = function () {
-  return this.length ? this.sum() / this.length : NaN
-}
+  return this.length ? this.sum() / this.length : NaN;
+};
 Array.prototype.sum = function () {
-  return this.reduce((acc, cur) => (acc += cur))
-}
+  return this.reduce((acc, cur) => (acc += cur));
+};
 Array.prototype.even = function () {
-  return this.filter(v => v % 2 === 0)
-}
+  return this.filter((v) => v % 2 === 0);
+};
 Array.prototype.odd = function () {
-  return this.filter(v => v % 2)
-}
+  return this.filter((v) => v % 2);
+};
 ```
 
 </details>

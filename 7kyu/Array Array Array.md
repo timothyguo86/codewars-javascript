@@ -18,12 +18,12 @@ if (x) == ['a', 3] you should return [['a', 3], ['a', 3], ['a', 3]].
 
 ```js
 function explode(x) {
-  if (typeof x[0] === 'number' && typeof x[1] === 'number') {
-    return Array(x[0] + x[1]).fill(x)
-  } else if (typeof x[0] === 'number' || typeof x[1] === 'number') {
-    return typeof x[0] === 'number' ? Array(x[0]).fill(x) : Array(x[1]).fill(x)
+  if (typeof x[0] === "number" && typeof x[1] === "number") {
+    return Array(x[0] + x[1]).fill(x);
+  } else if (typeof x[0] === "number" || typeof x[1] === "number") {
+    return typeof x[0] === "number" ? Array(x[0]).fill(x) : Array(x[1]).fill(x);
   } else {
-    return 'Void!'
+    return "Void!";
   }
 }
 ```

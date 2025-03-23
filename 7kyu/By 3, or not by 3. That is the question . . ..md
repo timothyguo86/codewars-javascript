@@ -22,7 +22,7 @@ Try to avoid using the % (modulo) operator.
 
 ```js
 function divisibleByThree(str) {
-  return str.split('').reduce((t, x) => (t = t + +x), 0) % 3 === 0
+  return str.split("").reduce((t, x) => (t = t + +x), 0) % 3 === 0;
 }
 ```
 

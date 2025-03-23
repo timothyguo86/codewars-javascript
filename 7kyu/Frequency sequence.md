@@ -16,12 +16,12 @@ character(s).
 
 ```js
 function freqSeq(str, sep) {
-  let strMap = {}
-  let strArr = str.split('')
-  strArr.forEach(char => {
-    strMap[char] = strMap[char] ? strMap[char] + 1 : 1
-  })
-  return strArr.map(char => char.replace(char, strMap[char])).join(sep)
+  let strMap = {};
+  let strArr = str.split("");
+  strArr.forEach((char) => {
+    strMap[char] = strMap[char] ? strMap[char] + 1 : 1;
+  });
+  return strArr.map((char) => char.replace(char, strMap[char])).join(sep);
 }
 ```
 

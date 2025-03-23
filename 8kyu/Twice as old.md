@@ -15,7 +15,7 @@ answer is always greater or equal to 0, no matter if it was in the past or it is
 ```js
 function twiceAsOld(d, s) {
   // Calculate the absolute difference between twice the son's age and the father's age
-  return Math.abs(s * 2 - d)
+  return Math.abs(s * 2 - d);
 }
 ```
 

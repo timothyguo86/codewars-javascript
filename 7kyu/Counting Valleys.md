@@ -29,19 +29,19 @@ So here we passed one valley
 
 ```js
 function countingValleys(s) {
-  let level = 0
-  let count = 0
-  s.split('').forEach(v => {
-    if (v === 'D') {
-      level--
-      if (level === -1) count++
-    } else if (v === 'U') {
-      level++
-      if (level === 0) count++
+  let level = 0;
+  let count = 0;
+  s.split("").forEach((v) => {
+    if (v === "D") {
+      level--;
+      if (level === -1) count++;
+    } else if (v === "U") {
+      level++;
+      if (level === 0) count++;
     }
-  })
+  });
 
-  return Math.floor(count / 2)
+  return Math.floor(count / 2);
 }
 ```
 

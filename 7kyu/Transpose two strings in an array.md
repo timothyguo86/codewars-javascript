@@ -25,16 +25,16 @@ A few things to note:
 
 ```js
 function transposeTwoStrings(array) {
-  let maxLength = Math.max(array[0].length, array[1].length)
-  let first = array[0].padEnd(maxLength, ' ')
-  let second = array[1].padEnd(maxLength, ' ')
-  let output = []
+  let maxLength = Math.max(array[0].length, array[1].length);
+  let first = array[0].padEnd(maxLength, " ");
+  let second = array[1].padEnd(maxLength, " ");
+  let output = [];
 
   for (let i = 0; i < maxLength; i++) {
-    output.push(`${first[i]} ${second[i]}`)
+    output.push(`${first[i]} ${second[i]}`);
   }
 
-  return output.join('\n')
+  return output.join("\n");
 }
 ```
 

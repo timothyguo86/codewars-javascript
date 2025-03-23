@@ -18,13 +18,13 @@ Examples:
 
 ```js
 function digitalRoot(n) {
-  if (n < 10) return n
+  if (n < 10) return n;
   let m = n
     .toString()
-    .split('')
-    .reduce((total, current) => (total = total + Number(current)), 0)
+    .split("")
+    .reduce((total, current) => (total = total + Number(current)), 0);
 
-  return digitalRoot(m)
+  return digitalRoot(m);
 }
 ```
 

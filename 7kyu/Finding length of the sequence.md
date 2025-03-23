@@ -15,11 +15,11 @@ If there are less or more than two occurrences of the number to search for, retu
 
 ```js
 var lengthOfSequence = function (arr, n) {
-  const appearanceOfN = arr.filter(v => v === n).length
-  if (appearanceOfN === 2) return arr.lastIndexOf(n) - arr.indexOf(n) + 1
+  const appearanceOfN = arr.filter((v) => v === n).length;
+  if (appearanceOfN === 2) return arr.lastIndexOf(n) - arr.indexOf(n) + 1;
 
-  return 0
-}
+  return 0;
+};
 ```
 
 </details>

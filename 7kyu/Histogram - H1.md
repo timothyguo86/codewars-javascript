@@ -38,27 +38,27 @@ histogram, so that when it is printed it has the same format as the example.
 
 ```js
 function histogram(results) {
-  let [one, two, three, four, five, six] = results
+  let [one, two, three, four, five, six] = results;
   return (
-    '6|' +
-    (six ? `${'#'.repeat(six)} ${six}` : '') +
-    '\n' +
-    '5|' +
-    (five ? `${'#'.repeat(five)} ${five}` : '') +
-    '\n' +
-    '4|' +
-    (four ? `${'#'.repeat(four)} ${four}` : '') +
-    '\n' +
-    '3|' +
-    (three ? `${'#'.repeat(three)} ${three}` : '') +
-    '\n' +
-    '2|' +
-    (two ? `${'#'.repeat(two)} ${two}` : '') +
-    '\n' +
-    '1|' +
-    (one ? `${'#'.repeat(one)} ${one}` : '') +
-    '\n'
-  )
+    "6|" +
+    (six ? `${"#".repeat(six)} ${six}` : "") +
+    "\n" +
+    "5|" +
+    (five ? `${"#".repeat(five)} ${five}` : "") +
+    "\n" +
+    "4|" +
+    (four ? `${"#".repeat(four)} ${four}` : "") +
+    "\n" +
+    "3|" +
+    (three ? `${"#".repeat(three)} ${three}` : "") +
+    "\n" +
+    "2|" +
+    (two ? `${"#".repeat(two)} ${two}` : "") +
+    "\n" +
+    "1|" +
+    (one ? `${"#".repeat(one)} ${one}` : "") +
+    "\n"
+  );
 }
 ```
 

@@ -18,7 +18,7 @@ Note :
 
 ```js
 function tripleX(str) {
-  return str[str.indexOf('x') + 1] === 'x'
+  return str[str.indexOf("x") + 1] === "x";
 }
 ```
 

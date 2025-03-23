@@ -21,9 +21,9 @@ Hint: watch out for side effects.
 // mutating it makes the tests fail, so watch out.
 
 function withoutLast(arr) {
-  newArray = [...arr]
-  newArray.pop()
-  return newArray
+  newArray = [...arr];
+  newArray.pop();
+  return newArray;
 }
 ```
 

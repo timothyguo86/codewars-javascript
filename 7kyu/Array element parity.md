@@ -25,14 +25,14 @@ Good luck!
 
 ```js
 function solve(arr) {
-  const dict = {}
-  arr.forEach(v => {
-    if (dict[v] === undefined && dict[-v] === undefined) dict[v] = false
-    else if (dict[-v] === false) dict[-v] = true
-  })
+  const dict = {};
+  arr.forEach((v) => {
+    if (dict[v] === undefined && dict[-v] === undefined) dict[v] = false;
+    else if (dict[-v] === false) dict[-v] = true;
+  });
 
   for (const key in dict) {
-    if (dict[key] === false) return Number(key)
+    if (dict[key] === false) return Number(key);
   }
 }
 ```

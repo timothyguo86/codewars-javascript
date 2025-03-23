@@ -26,11 +26,11 @@ function calc(x) {
   return (
     [...x]
       .reduce((acc, cur) => {
-        return `${acc}${cur.charCodeAt(0)}`
-      }, '')
-      .split('')
-      .filter(el => el === '7').length * 6
-  )
+        return `${acc}${cur.charCodeAt(0)}`;
+      }, "")
+      .split("")
+      .filter((el) => el === "7").length * 6
+  );
 }
 ```
 

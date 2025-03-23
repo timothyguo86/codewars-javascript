@@ -24,13 +24,13 @@ The `minimumAbsent` is the smallest number between the largest and the smallest 
 
 ```js
 function minMinMax(array) {
-  let minimumAbsent = Math.min(...array)
+  let minimumAbsent = Math.min(...array);
 
   for (let i = 0; i < array.length; i++) {
     if (array.includes(minimumAbsent)) {
-      minimumAbsent++
+      minimumAbsent++;
     } else {
-      return [Math.min(...array), minimumAbsent, Math.max(...array)]
+      return [Math.min(...array), minimumAbsent, Math.max(...array)];
     }
   }
 }

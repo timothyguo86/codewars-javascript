@@ -27,12 +27,12 @@ If you like this Kata, please try:
 
 ```js
 function solve(arr) {
-  return arr.map(el =>
+  return arr.map((el) =>
     [...el.toLowerCase()].reduce((sum, cur, i) => {
-      if (cur.charCodeAt(0) === 97 + i) return (sum = sum + 1)
-      return sum
-    }, 0)
-  )
+      if (cur.charCodeAt(0) === 97 + i) return (sum = sum + 1);
+      return sum;
+    }, 0),
+  );
 }
 ```
 

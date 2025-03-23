@@ -61,10 +61,10 @@ only once (ignore duplicates).
 
 ```js
 function minValue(values) {
-  const uniqueValues = [...new Set(values)]
+  const uniqueValues = [...new Set(values)];
 
   // Sort the unique values in ascending order and join them into a string, then convert the string to a number
-  return +uniqueValues.sort((a, b) => a - b).join('')
+  return +uniqueValues.sort((a, b) => a - b).join("");
 }
 ```
 

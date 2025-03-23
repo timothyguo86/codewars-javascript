@@ -33,13 +33,13 @@ Though not correct in a mathematical sense
 
 ```js
 function containAllRots(strng, arr) {
-  if (strng === '') return true
+  if (strng === "") return true;
   for (let i = 0; i < strng.length; i++) {
-    if (!arr.includes(strng)) return false
-    strng = `${strng.slice(1)}${strng[0]}`
+    if (!arr.includes(strng)) return false;
+    strng = `${strng.slice(1)}${strng[0]}`;
   }
 
-  return true
+  return true;
 }
 ```
 

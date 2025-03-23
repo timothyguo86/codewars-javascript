@@ -16,8 +16,13 @@ Example:
 
 ```js
 const greet = function (name) {
-  return 'Hello ' + name[0].toUpperCase() + name.slice(1, name.length).toLowerCase() + '!'
-}
+  return (
+    "Hello " +
+    name[0].toUpperCase() +
+    name.slice(1, name.length).toLowerCase() +
+    "!"
+  );
+};
 ```
 
 </details>

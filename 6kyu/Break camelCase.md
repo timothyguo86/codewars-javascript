@@ -17,9 +17,9 @@ Complete the solution so that the function will break up camel casing, using a s
 ```js
 function solution(string) {
   // Replace each uppercase letter in the string with a space followed by the uppercase letter
-  return string.replace(/[A-Z]/g, a => {
-    return ` ${a}`
-  })
+  return string.replace(/[A-Z]/g, (a) => {
+    return ` ${a}`;
+  });
 }
 ```
 

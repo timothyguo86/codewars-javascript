@@ -44,37 +44,37 @@ For example, a birthday of November 18 would return `"The Terrifying Teaspoon"`
 ```js
 function getVillainName(birthday) {
   const m = [
-    'Evil',
-    'Vile',
-    'Cruel',
-    'Trashy',
-    'Despicable',
-    'Embarrassing',
-    'Disreputable',
-    'Atrocious',
-    'Twirling',
-    'Orange',
-    'Terrifying',
-    'Awkward'
-  ]
+    "Evil",
+    "Vile",
+    "Cruel",
+    "Trashy",
+    "Despicable",
+    "Embarrassing",
+    "Disreputable",
+    "Atrocious",
+    "Twirling",
+    "Orange",
+    "Terrifying",
+    "Awkward",
+  ];
   const d = [
-    'Mustache',
-    'Pickle',
-    'Hood Ornament',
-    'Raisin',
-    'Recycling Bin',
-    'Potato',
-    'Tomato',
-    'House Cat',
-    'Teaspoon',
-    'Laundry Basket'
-  ]
-  const bM = birthday.getMonth()
-  const bD = birthday.getDate() % 10
-  const firstName = m[bM]
-  const lastName = d[bD]
+    "Mustache",
+    "Pickle",
+    "Hood Ornament",
+    "Raisin",
+    "Recycling Bin",
+    "Potato",
+    "Tomato",
+    "House Cat",
+    "Teaspoon",
+    "Laundry Basket",
+  ];
+  const bM = birthday.getMonth();
+  const bD = birthday.getDate() % 10;
+  const firstName = m[bM];
+  const lastName = d[bD];
 
-  return `The ${firstName} ${lastName}`
+  return `The ${firstName} ${lastName}`;
 }
 ```
 

@@ -22,7 +22,10 @@ Please upvote and enjoy!
 
 ```js
 function binaryCleaner(arr) {
-  return [arr.filter(v => v < 2), arr.map((v, i) => (v > 1 ? i : -1)).filter(v => v !== -1)]
+  return [
+    arr.filter((v) => v < 2),
+    arr.map((v, i) => (v > 1 ? i : -1)).filter((v) => v !== -1),
+  ];
 }
 ```
 

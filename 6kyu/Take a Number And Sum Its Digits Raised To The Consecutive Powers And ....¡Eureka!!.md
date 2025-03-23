@@ -36,22 +36,22 @@ Enjoy it!!
 
 ```js
 function sumDigPow(a, b) {
-  let result = []
+  let result = [];
 
   for (let i = a; i <= b; i++) {
     let sum = i
       .toString()
-      .split('')
+      .split("")
       .reduce((acc, cur, index) => {
-        return (acc = acc + cur ** (index + 1))
-      })
+        return (acc = acc + cur ** (index + 1));
+      });
 
     if (i === sum) {
-      result.push(i)
+      result.push(i);
     }
   }
 
-  return result
+  return result;
 }
 ```
 

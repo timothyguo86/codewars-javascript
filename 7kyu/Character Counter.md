@@ -21,15 +21,15 @@ The input is a string (with no spaces) containing `[a-z],[A-Z],[0-9]` and common
 
 ```js
 function validateWord(s) {
-  let charMap = {}
+  let charMap = {};
   s.toLowerCase()
-    .split('')
-    .forEach(x => {
-      charMap[x] ? (charMap[x] = charMap[x] + 1) : (charMap[x] = 1)
-    })
+    .split("")
+    .forEach((x) => {
+      charMap[x] ? (charMap[x] = charMap[x] + 1) : (charMap[x] = 1);
+    });
 
-  let wordKeys = Object.keys(charMap)
-  return wordKeys.every(key => charMap[key] === charMap[wordKeys[0]])
+  let wordKeys = Object.keys(charMap);
+  return wordKeys.every((key) => charMap[key] === charMap[wordKeys[0]]);
 }
 ```
 

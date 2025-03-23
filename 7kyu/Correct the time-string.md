@@ -26,21 +26,21 @@ I have created other katas. Have a look if you like coding and challenges.
 
 ```js
 function timeCorrect(timestring) {
-  if (!timestring) return timestring
+  if (!timestring) return timestring;
   if (timestring.match(/\d{2}:\d{2}:\d{2}/)) {
-    let [h, m, s] = timestring.split(':').map(Number)
+    let [h, m, s] = timestring.split(":").map(Number);
 
-    m = m + Math.floor(s / 60)
-    h = h + Math.floor(m / 60)
+    m = m + Math.floor(s / 60);
+    h = h + Math.floor(m / 60);
 
-    let newS = (s % 60).toString().padStart(2, '0')
-    let newM = (m % 60).toString().padStart(2, '0')
-    let newH = (h % 24).toString().padStart(2, '0')
+    let newS = (s % 60).toString().padStart(2, "0");
+    let newM = (m % 60).toString().padStart(2, "0");
+    let newH = (h % 24).toString().padStart(2, "0");
 
-    return `${newH}:${newM}:${newS}`
+    return `${newH}:${newM}:${newS}`;
   }
 
-  return null
+  return null;
 }
 ```
 

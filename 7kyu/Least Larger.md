@@ -22,7 +22,7 @@ The given array will, therefore, never be empty.
 
 ```js
 function leastLarger(a, i) {
-  return a.indexOf(Math.min(...[...a].filter(v => v > a[i])))
+  return a.indexOf(Math.min(...[...a].filter((v) => v > a[i])));
 }
 ```
 

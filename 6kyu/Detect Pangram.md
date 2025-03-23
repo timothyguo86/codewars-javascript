@@ -13,10 +13,10 @@ punctuation.
 
 ```js
 function isPangram(string) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  let lowerCaseString = string.toLowerCase()
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let lowerCaseString = string.toLowerCase();
 
-  return alphabet.split('').every(char => lowerCaseString.includes(char))
+  return alphabet.split("").every((char) => lowerCaseString.includes(char));
 }
 ```
 

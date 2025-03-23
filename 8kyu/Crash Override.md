@@ -36,13 +36,13 @@ Happy hacking!
 
 ```js
 function aliasGen(first, sur) {
-  let capFirst = first.toUpperCase()
-  let capSur = sur.toUpperCase()
+  let capFirst = first.toUpperCase();
+  let capSur = sur.toUpperCase();
 
   // Check if both capitalized names start with uppercase letters
   return /^[A-Z]/.test(capFirst) && /^[A-Z]/.test(capSur)
     ? `${firstName[capFirst[0]]} ${surname[capSur[0]]}` // Return the generated alias
-    : 'Your name must start with a letter from A - Z.' // Return an error message
+    : "Your name must start with a letter from A - Z."; // Return an error message
 }
 ```
 

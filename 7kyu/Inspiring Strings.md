@@ -13,10 +13,10 @@ Examples
 
 ```js
 function longestWord(stringOfWords) {
-  return stringOfWords.split(' ').reduce((longest, cur) => {
-    if (longest.length <= cur.length) return cur
-    return longest
-  }, '')
+  return stringOfWords.split(" ").reduce((longest, cur) => {
+    if (longest.length <= cur.length) return cur;
+    return longest;
+  }, "");
 }
 ```
 

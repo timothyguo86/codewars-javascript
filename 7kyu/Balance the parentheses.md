@@ -23,15 +23,15 @@ Enjoy!
 <details><summary>My Solution</summary>
 
 ```js
-const fixParentheses = str => {
+const fixParentheses = (str) => {
   let openCount = 0;
   let closeCount = 0;
 
   // First pass: count unmatched closing parentheses
   for (let char of str) {
-    if (char === '(') {
+    if (char === "(") {
       openCount++;
-    } else if (char === ')') {
+    } else if (char === ")") {
       if (openCount > 0) {
         openCount--;
       } else {
@@ -41,10 +41,10 @@ const fixParentheses = str => {
   }
 
   // Appending parenthesis to the beginning or end of the string
-  const prefix = '('.repeat(closeCount);
-  const suffix = ')'.repeat(openCount);
+  const prefix = "(".repeat(closeCount);
+  const suffix = ")".repeat(openCount);
   return prefix + str + suffix;
-}
+};
 ```
 
 </details>

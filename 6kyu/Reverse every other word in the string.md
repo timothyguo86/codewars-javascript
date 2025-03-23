@@ -11,13 +11,13 @@ word in this kata.
 ```js
 function reverse(str) {
   return str
-    .split(' ')
+    .split(" ")
     .map((w, i) => {
-      if (i % 2) return w.split('').reverse().join('')
-      else return w
+      if (i % 2) return w.split("").reverse().join("");
+      else return w;
     })
-    .join(' ')
-    .trim()
+    .join(" ")
+    .trim();
 }
 ```
 

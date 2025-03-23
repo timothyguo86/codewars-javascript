@@ -19,11 +19,11 @@ If no number was deleted from the starting array, your function should return th
 
 ```js
 function findDeletedNumber(arr, mixArr) {
-  if (arr.length === mixArr.length) return 0
-  const getSum = a => {
-    return a.reduce((total, cur) => (total += cur), 0)
-  }
-  return getSum(arr) - getSum(mixArr)
+  if (arr.length === mixArr.length) return 0;
+  const getSum = (a) => {
+    return a.reduce((total, cur) => (total += cur), 0);
+  };
+  return getSum(arr) - getSum(mixArr);
 }
 ```
 

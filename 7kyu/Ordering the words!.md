@@ -28,8 +28,8 @@ Also, you should validate that the given string is not empty or null. If so, the
 
 ```js
 function orderWord(s) {
-  if (!s) return 'Invalid String!'
-  return [...s].sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0)).join('')
+  if (!s) return "Invalid String!";
+  return [...s].sort((a, b) => a.charCodeAt(0) - b.charCodeAt(0)).join("");
 }
 ```
 

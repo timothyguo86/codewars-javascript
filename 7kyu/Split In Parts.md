@@ -24,14 +24,14 @@ Assumptions:
 
 ```js
 var splitInParts = function (s, partLength) {
-  let result = []
+  let result = [];
   while (s) {
-    result.push(s.slice(0, partLength))
-    s = s.slice(partLength)
+    result.push(s.slice(0, partLength));
+    s = s.slice(partLength);
   }
 
-  return result.join(' ')
-}
+  return result.join(" ");
+};
 ```
 
 </details>

@@ -23,15 +23,15 @@ Note that if the range is given in _capital letters_, return the string in capit
 
 ```js
 function gimmeTheLetters(sp) {
-  let startIndex = sp[0].charCodeAt(0)
-  let endIndex = sp[2].charCodeAt(0)
-  let output = ''
+  let startIndex = sp[0].charCodeAt(0);
+  let endIndex = sp[2].charCodeAt(0);
+  let output = "";
 
   for (let i = startIndex; i <= endIndex; i++) {
-    output += String.fromCharCode(i)
+    output += String.fromCharCode(i);
   }
 
-  return output
+  return output;
 }
 ```
 

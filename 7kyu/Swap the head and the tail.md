@@ -22,9 +22,14 @@ For example:
 
 ```js
 function swapHeadAndTail(arr) {
-  const midIndex = Math.floor(arr.length / 2)
-  if (arr.length % 2) return [...arr.slice(midIndex + 1), arr[midIndex], ...arr.slice(0, midIndex)]
-  else return [...arr.slice(midIndex), ...arr.slice(0, midIndex)]
+  const midIndex = Math.floor(arr.length / 2);
+  if (arr.length % 2)
+    return [
+      ...arr.slice(midIndex + 1),
+      arr[midIndex],
+      ...arr.slice(0, midIndex),
+    ];
+  else return [...arr.slice(midIndex), ...arr.slice(0, midIndex)];
 }
 ```
 

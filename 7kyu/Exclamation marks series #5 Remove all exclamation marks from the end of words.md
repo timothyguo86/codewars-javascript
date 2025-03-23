@@ -21,9 +21,9 @@ marks within a word.
 ```js
 function remove(string) {
   return string
-    .split(' ')
-    .map(v => v.replace(/[a-z]!+/g, match => match[0]))
-    .join(' ')
+    .split(" ")
+    .map((v) => v.replace(/[a-z]!+/g, (match) => match[0]))
+    .join(" ");
 }
 ```
 

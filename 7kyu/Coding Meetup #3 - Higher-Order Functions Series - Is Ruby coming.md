@@ -12,10 +12,31 @@ For example, given the following input array:
 
 ```js
 list1 = [
-  { firstName: 'Sofia', lastName: 'I.', country: 'Argentina', continent: 'Americas', age: 35, language: 'Java' },
-  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: 'Python' },
-  { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' }
-]
+  {
+    firstName: "Sofia",
+    lastName: "I.",
+    country: "Argentina",
+    continent: "Americas",
+    age: 35,
+    language: "Java",
+  },
+  {
+    firstName: "Lukas",
+    lastName: "X.",
+    country: "Croatia",
+    continent: "Europe",
+    age: 35,
+    language: "Python",
+  },
+  {
+    firstName: "Madison",
+    lastName: "U.",
+    country: "United States",
+    continent: "Americas",
+    age: 32,
+    language: "Ruby",
+  },
+];
 ```
 
 your function should return `true`.
@@ -69,7 +90,7 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function isRubyComing(list) {
-  return list.some(dev => dev.language === 'Ruby')
+  return list.some((dev) => dev.language === "Ruby");
 }
 ```
 

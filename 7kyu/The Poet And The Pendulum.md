@@ -15,7 +15,7 @@ Pendulum_
 
 - **_The Smallest element_** of the list of integers , must come _in center position of array/list_.
 
-    - **_The Higher than smallest_** , _goes to the right_ .
+  - **_The Higher than smallest_** , _goes to the right_ .
 
 - **_The Next higher_** number goes _to the left of minimum number_ and So on , in a to-and-fro manner similar to that
   of a Pendulum.
@@ -27,8 +27,7 @@ Pendulum_
 # Notes
 
 - **_Array/list_** size is _at least \*\*\_3_\*\*\_ .
-- In **_Even array size_** , _The minimum element should be moved to (n-1)/2 index_ (considering that indexes start from
-    0)
+- In **_Even array size_** , _The minimum element should be moved to (n-1)/2 index_ (considering that indexes start from 0)
 - **_Repetition_** of numbers in _the array/list could occur_ , So **_(duplications are included when Arranging)_**.
 
   ***
@@ -55,8 +54,7 @@ Pendulum_
   array/list_
 - **_The Higher than smallest_** is `-9` _goes to the right_ of it .
 - **_The Next higher_** number goes _to the left of_ `-10` , and So on .
-- Remeber , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start from
-    0) .
+- Remeber , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start from 0) .
 
   ***
 
@@ -99,15 +97,15 @@ Pendulum_
 
 ```js
 function pendulum(values) {
-  const result = []
-  const sorted = values.sort((a, b) => a - b)
+  const result = [];
+  const sorted = values.sort((a, b) => a - b);
 
   for (let i = 0; i < sorted.length; i++) {
-    if (i % 2) result.push(sorted[i])
-    else result.unshift(sorted[i])
+    if (i % 2) result.push(sorted[i]);
+    else result.unshift(sorted[i]);
   }
 
-  return result
+  return result;
 }
 ```
 

@@ -23,10 +23,10 @@ If none of the condition is true, return the string `"mocha_missing!"`
 
 ```js
 function caffeineBuzz(n) {
-  if (n % 12 === 0) return 'CoffeeScript'
-  else if (n % 6 === 0) return 'JavaScript'
-  else if (n % 3 === 0) return 'Java'
-  else return 'mocha_missing!'
+  if (n % 12 === 0) return "CoffeeScript";
+  else if (n % 6 === 0) return "JavaScript";
+  else if (n % 3 === 0) return "Java";
+  else return "mocha_missing!";
 }
 ```
 

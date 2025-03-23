@@ -10,7 +10,7 @@ If two numbers in the argument array have the same number of digits, return the 
 
 ```js
 function findLongest(array) {
-  return array.sort((a, b) => b.toString().length - a.toString().length)[0]
+  return array.sort((a, b) => b.toString().length - a.toString().length)[0];
 }
 ```
 

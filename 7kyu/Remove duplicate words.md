@@ -18,7 +18,7 @@ Output:
 
 ```js
 function removeDuplicateWords(s) {
-  return [...new Set(s.split(' '))].join(' ')
+  return [...new Set(s.split(" "))].join(" ");
 }
 ```
 

@@ -56,21 +56,21 @@ evil wins, or `"Battle Result: No victor on this battle field"` if it ends in a 
 
 ```js
 function goodVsEvil(good, evil) {
-  good = good.split(' ').map(Number)
-  evil = evil.split(' ').map(Number)
-  const goodPower = [1, 2, 3, 3, 4, 10]
-  const evilPower = [1, 2, 2, 2, 3, 5, 10]
-  const goodTotal = good.reduce((acc, cur, i) => acc + cur * goodPower[i], 0)
-  const evilTotal = evil.reduce((acc, cur, i) => acc + cur * evilPower[i], 0)
+  good = good.split(" ").map(Number);
+  evil = evil.split(" ").map(Number);
+  const goodPower = [1, 2, 3, 3, 4, 10];
+  const evilPower = [1, 2, 2, 2, 3, 5, 10];
+  const goodTotal = good.reduce((acc, cur, i) => acc + cur * goodPower[i], 0);
+  const evilTotal = evil.reduce((acc, cur, i) => acc + cur * evilPower[i], 0);
 
   return (
-    'Battle Result: ' +
+    "Battle Result: " +
     (goodTotal === evilTotal
-      ? 'No victor on this battle field'
+      ? "No victor on this battle field"
       : goodTotal > evilTotal
-      ? 'Good triumphs over Evil'
-      : 'Evil eradicates all trace of Good')
-  )
+        ? "Good triumphs over Evil"
+        : "Evil eradicates all trace of Good")
+  );
 }
 ```
 

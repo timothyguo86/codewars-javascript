@@ -24,13 +24,13 @@ For `str = "ultr53o?n"`, the output should be `"nortlu"`.
 
 ```js
 function reverseLetter(str) {
-  const regex = /[a-z]/
+  const regex = /[a-z]/;
 
   return str
-    .split('')
+    .split("")
     .reverse()
-    .filter(char => char.match(regex))
-    .join('')
+    .filter((char) => char.match(regex))
+    .join("");
 }
 ```
 

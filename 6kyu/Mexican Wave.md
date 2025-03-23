@@ -37,14 +37,14 @@ Good luck and enjoy!
 
 ```js
 function wave(str) {
-  const result = []
+  const result = [];
 
-  str.split('').forEach((char, i) => {
-    if (char === ' ') return
-    result.push(str.slice(0, i) + char.toUpperCase() + str.slice(i + 1))
-  })
+  str.split("").forEach((char, i) => {
+    if (char === " ") return;
+    result.push(str.slice(0, i) + char.toUpperCase() + str.slice(i + 1));
+  });
 
-  return result
+  return result;
 }
 ```
 

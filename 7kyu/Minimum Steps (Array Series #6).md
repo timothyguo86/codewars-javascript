@@ -2,8 +2,8 @@
 
 # Task
 
-**_Given_** _an array of N integers, you have to find_ **_how many times_** _you have to_ *
-*_add up the smallest numbers_** _in the array until_ **_their Sum_** _becomes greater or equal to_ **_K_**.
+**_Given_** _an array of N integers, you have to find_ **_how many times_** _you have to_ \* \*_add up the smallest
+numbers_** _in the array until_ **_their Sum_** _becomes greater or equal to_ **_K_\*\*.
 
 ---
 
@@ -80,12 +80,12 @@
 
 ```js
 function minimumSteps(numbers, value) {
-  let total = 0
-  const sortedNums = numbers.sort((a, b) => a - b)
+  let total = 0;
+  const sortedNums = numbers.sort((a, b) => a - b);
 
   for (let i = 0; i < sortedNums.length; i++) {
-    total += sortedNums[i]
-    if (total >= value) return i
+    total += sortedNums[i];
+    if (total >= value) return i;
   }
 }
 ```

@@ -16,9 +16,9 @@ Ex:
 function dashatize(num) {
   return num
     .toString()
-    .replace(/[13579]/g, v => `-${v}-`)
-    .replace(/--/g, '-')
-    .replace(/^-|-$/g, '')
+    .replace(/[13579]/g, (v) => `-${v}-`)
+    .replace(/--/g, "-")
+    .replace(/^-|-$/g, "");
 }
 ```
 

@@ -49,14 +49,13 @@ function reducePyramid(base) {
     if (k === 0) {
       combination = 1n; // C(n-1, 0) = 1
     } else {
-      combination = combination * BigInt(n - k) / BigInt(k);
+      combination = (combination * BigInt(n - k)) / BigInt(k);
     }
     result += base[k] * combination;
   }
 
   return result;
 }
-
 ```
 
 </details>

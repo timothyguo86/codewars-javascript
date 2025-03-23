@@ -16,13 +16,13 @@ Good luck!
 
 ```js
 function alternate(n, firstValue, secondValue) {
-  const result = []
+  const result = [];
   for (let i = 0; i < n; i++) {
-    if (i % 2) result.push(secondValue)
-    else result.push(firstValue)
+    if (i % 2) result.push(secondValue);
+    else result.push(firstValue);
   }
 
-  return result
+  return result;
 }
 ```
 

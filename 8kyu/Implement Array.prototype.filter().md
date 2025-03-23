@@ -25,20 +25,20 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 // Extend the filter method of the Array prototype
 Array.prototype.filter = function (func) {
   // Initialize an empty array to store the filtered elements
-  let result = []
+  let result = [];
 
   // Iterate through each element in the array
-  this.forEach(el => {
+  this.forEach((el) => {
     // Check if the element satisfies the condition defined by the provided function
     if (func(el)) {
       // If the condition is true, add the element to the result array
-      result.push(el)
+      result.push(el);
     }
-  })
+  });
 
   // Return the array containing the filtered elements
-  return result
-}
+  return result;
+};
 ```
 
 </details>

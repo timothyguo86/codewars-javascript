@@ -32,15 +32,15 @@ Notes:
 
 ```js
 function sortVowels(s) {
-  return typeof s === 'string'
+  return typeof s === "string"
     ? s
-        .split('')
-        .map(v => {
-          if (/[aeiou]/i.test(v)) return `|${v}`
-          else return `${v}|`
+        .split("")
+        .map((v) => {
+          if (/[aeiou]/i.test(v)) return `|${v}`;
+          else return `${v}|`;
         })
-        .join('\n')
-    : ''
+        .join("\n")
+    : "";
 }
 ```
 

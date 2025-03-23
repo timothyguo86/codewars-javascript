@@ -19,20 +19,20 @@ For input `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]`, you should
 function countPositivesSumNegatives(input) {
   // Check if the input array is null or empty, and return an empty array in such cases
   if (input == null || input.length < 1) {
-    return []
+    return [];
   }
 
   // Count the number of positive elements and calculate the sum of negative elements
-  let positiveCount = input.filter(v => v > 0).length
+  let positiveCount = input.filter((v) => v > 0).length;
   let negativeSum = input.reduce((a, b) => {
     if (b < 0) {
-      a += b
+      a += b;
     }
 
-    return a
-  }, 0)
+    return a;
+  }, 0);
 
-  return [positiveCount, negativeSum]
+  return [positiveCount, negativeSum];
 }
 ```
 

@@ -94,13 +94,13 @@ An **_element is leader_** _if it is greater than The Sum all the elements to it
 
 ```js
 function arrayLeaders(numbers) {
-  const result = []
+  const result = [];
   numbers.reverse().reduce((total, cur) => {
-    if (cur > total) result.unshift(cur)
-    return (total += cur)
-  }, 0)
+    if (cur > total) result.unshift(cur);
+    return (total += cur);
+  }, 0);
 
-  return result
+  return result;
 }
 ```
 

@@ -16,12 +16,12 @@ Examples: **(Input --> output)**
 
 ```js
 function sumCubes(n) {
-  let total = 0
+  let total = 0;
   for (let i = 1; i < n + 1; i++) {
-    total += i ** 3
+    total += i ** 3;
   }
 
-  return total
+  return total;
 }
 ```
 

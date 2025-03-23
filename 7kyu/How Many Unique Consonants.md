@@ -29,10 +29,10 @@ function countConsonants(str) {
   return new Set(
     str
       .toLowerCase()
-      .replace(/[^a-z]/g, '')
-      .split('')
-      .filter(c => !'aeiou'.includes(c))
-  ).size
+      .replace(/[^a-z]/g, "")
+      .split("")
+      .filter((c) => !"aeiou".includes(c)),
+  ).size;
 }
 ```
 

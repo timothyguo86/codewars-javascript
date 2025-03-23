@@ -22,14 +22,14 @@ Good luck!
 
 ```js
 function solve(arr) {
-  const result = []
-  const sorted = [...arr].sort((a, b) => a - b)
+  const result = [];
+  const sorted = [...arr].sort((a, b) => a - b);
   for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) result.push(sorted.pop())
-    else result.push(sorted.shift())
+    if (i % 2 === 0) result.push(sorted.pop());
+    else result.push(sorted.shift());
   }
 
-  return result
+  return result;
 }
 ```
 

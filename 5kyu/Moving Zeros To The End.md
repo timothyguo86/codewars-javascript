@@ -13,10 +13,10 @@ moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 
 ```js
 function moveZeros(arr) {
-  const noZeroArr = arr.filter(item => item !== 0)
-  const zeroArr = arr.filter(item => item === 0)
+  const noZeroArr = arr.filter((item) => item !== 0);
+  const zeroArr = arr.filter((item) => item === 0);
 
-  return [...noZeroArr, ...zeroArr]
+  return [...noZeroArr, ...zeroArr];
 }
 ```
 

@@ -19,34 +19,34 @@ All letters will be lowercase and all inputs will be valid.
 ```js
 function high(sentence) {
   // Create a mapping of characters to their corresponding numerical values.
-  const charToNumMap = {}
+  const charToNumMap = {};
 
   for (let i = 0; i < 26; i++) {
-    const char = String.fromCharCode('a'.charCodeAt(0) + i)
-    charToNumMap[char] = i + 1
+    const char = String.fromCharCode("a".charCodeAt(0) + i);
+    charToNumMap[char] = i + 1;
   }
 
   // Split the sentence into an array of words.
-  const words = sentence.split(' ')
+  const words = sentence.split(" ");
 
-  let highestScore = 0
-  let highestScoreWord = ''
+  let highestScore = 0;
+  let highestScoreWord = "";
 
   // Iterate through each word in the sentence.
-  words.forEach(word => {
+  words.forEach((word) => {
     // Calculate the score for the current word by summing the numerical values of its characters.
-    let currentScore = word.split('').reduce((acc, char) => {
-      return acc + charToNumMap[char]
-    }, 0)
+    let currentScore = word.split("").reduce((acc, char) => {
+      return acc + charToNumMap[char];
+    }, 0);
 
     // Update the highest score and highest scoring word if the current word has a higher score.
     if (currentScore > highestScore) {
-      highestScore = currentScore
-      highestScoreWord = word
+      highestScore = currentScore;
+      highestScoreWord = word;
     }
-  })
+  });
 
-  return highestScoreWord
+  return highestScoreWord;
 }
 ```
 

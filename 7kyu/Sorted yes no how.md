@@ -14,16 +14,16 @@ You can assume the array will always be valid, and there will always be one corr
 
 ```js
 function isSortedAndHow(array) {
-  let ascending = true
-  let descending = true
+  let ascending = true;
+  let descending = true;
 
   for (let i = 1; i < array.length; i++) {
-    if (array[i] < array[i - 1]) ascending = false
-    if (array[i] > array[i - 1]) descending = false
-    if (!ascending && !descending) return 'no'
+    if (array[i] < array[i - 1]) ascending = false;
+    if (array[i] > array[i - 1]) descending = false;
+    if (!ascending && !descending) return "no";
   }
 
-  return ascending ? 'yes, ascending' : 'yes, descending'
+  return ascending ? "yes, ascending" : "yes, descending";
 }
 ```
 

@@ -17,8 +17,8 @@ fruits should returns an array of strings where all the rotten fruits are replac
 
 ```js
 function removeRotten(bagOfFruits) {
-  if (!bagOfFruits) return []
-  return bagOfFruits.map(fruit => fruit.replace('rotten', '').toLowerCase())
+  if (!bagOfFruits) return [];
+  return bagOfFruits.map((fruit) => fruit.replace("rotten", "").toLowerCase());
 }
 ```
 

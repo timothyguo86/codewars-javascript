@@ -30,10 +30,10 @@ The middle character(s) of the word represented as a string.
 <details><summary>My Solution</summary>
 
 ```js
-const getMiddle = s => {
+const getMiddle = (s) => {
   // Return the middle characters of the input string
-  return s.slice(Math.ceil(s.length / 2) - 1, Math.floor(s.length / 2) + 1)
-}
+  return s.slice(Math.ceil(s.length / 2) - 1, Math.floor(s.length / 2) + 1);
+};
 ```
 
 </details>

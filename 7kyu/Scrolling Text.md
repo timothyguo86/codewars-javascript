@@ -26,11 +26,11 @@ Good luck!
 
 ```js
 function scrollingText(text) {
-  let output = []
+  let output = [];
   for (let i = 0; i < text.length; i++) {
-    output.push(text.toUpperCase().slice(i) + text.toUpperCase().slice(0, i))
+    output.push(text.toUpperCase().slice(i) + text.toUpperCase().slice(0, i));
   }
-  return output
+  return output;
 }
 ```
 

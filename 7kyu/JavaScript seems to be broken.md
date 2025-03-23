@@ -21,7 +21,7 @@ function semicolonSeparationToCommaSeparation(input) {
   //   return this._join(";");
   // }
   // So just use ._join instead of the default .join method
-  return input.split(';')._join(',')
+  return input.split(";")._join(",");
 }
 ```
 

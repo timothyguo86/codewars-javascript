@@ -19,10 +19,10 @@ The first array will always have at least one element.
 
 ```js
 function findMissing(arr1, arr2) {
-  const sorted1 = arr1.sort((a, b) => a - b)
-  const sorted2 = arr2.sort((a, b) => a - b)
+  const sorted1 = arr1.sort((a, b) => a - b);
+  const sorted2 = arr2.sort((a, b) => a - b);
   for (let i = 0; i < sorted1.length; i++) {
-    if (sorted1[i] !== sorted2[i]) return sorted1[i]
+    if (sorted1[i] !== sorted2[i]) return sorted1[i];
   }
 }
 ```

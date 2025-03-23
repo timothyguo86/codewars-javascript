@@ -35,12 +35,12 @@ You can see other examples for each language in "Your test cases"
 
 ```js
 function partlist(arr) {
-  const result = []
+  const result = [];
   for (let i = 1; i < arr.length; i++) {
-    result.push([arr.slice(0, i).join(' '), arr.slice(i).join(' ')])
+    result.push([arr.slice(0, i).join(" "), arr.slice(i).join(" ")]);
   }
 
-  return result
+  return result;
 }
 ```
 

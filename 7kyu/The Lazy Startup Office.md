@@ -44,8 +44,8 @@ As an output you would expect in this case:
 ```js
 function binRota(arr) {
   return arr.reduce((result, cur, i) => {
-    return [...result, ...(i % 2 ? cur.reverse() : cur)]
-  }, [])
+    return [...result, ...(i % 2 ? cur.reverse() : cur)];
+  }, []);
 }
 ```
 

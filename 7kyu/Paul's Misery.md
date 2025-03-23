@@ -25,15 +25,15 @@ The Misery Score is the total points gained from the array. Once you have the to
 function paul(x) {
   const scoreDict = {
     kata: 5,
-    'Petes kata': 10,
+    "Petes kata": 10,
     life: 0,
-    eating: 1
-  }
-  const total = x.reduce((t, c) => (t += scoreDict[c]), 0)
-  if (total < 40) return 'Super happy!'
-  else if (total < 70) return 'Happy!'
-  else if (total < 100) return 'Sad!'
-  else return 'Miserable!'
+    eating: 1,
+  };
+  const total = x.reduce((t, c) => (t += scoreDict[c]), 0);
+  if (total < 40) return "Super happy!";
+  else if (total < 70) return "Happy!";
+  else if (total < 100) return "Sad!";
+  else return "Miserable!";
 }
 ```
 

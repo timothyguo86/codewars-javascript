@@ -18,13 +18,13 @@ Don't forget to rate this kata! Thanks :)
 
 ```js
 String.prototype.camelCase = function () {
-  return this.split(' ')
-    .map(word => {
-      if (this.length === 0) return ''
-      return word[0].toUpperCase() + word.slice(1)
+  return this.split(" ")
+    .map((word) => {
+      if (this.length === 0) return "";
+      return word[0].toUpperCase() + word.slice(1);
     })
-    .join('')
-}
+    .join("");
+};
 ```
 
 </details>

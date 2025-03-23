@@ -26,8 +26,8 @@ strings and will always not be empty.
 function sentence(arrayOfObjects) {
   return arrayOfObjects
     .sort((a, b) => Object.keys(a) - Object.keys(b))
-    .map(v => Object.values(v)[0])
-    .join(' ')
+    .map((v) => Object.values(v)[0])
+    .join(" ");
 }
 ```
 

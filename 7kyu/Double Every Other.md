@@ -19,9 +19,9 @@ the function should return :
 ```js
 function doubleEveryOther(a) {
   return a.map((v, i) => {
-    if (i % 2) return v * 2
-    else return v
-  })
+    if (i % 2) return v * 2;
+    else return v;
+  });
 }
 ```
 

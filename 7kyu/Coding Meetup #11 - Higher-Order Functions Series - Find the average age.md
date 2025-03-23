@@ -61,7 +61,9 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function getAverageAge(list) {
-  return Math.round(list.reduce((acc, dev) => (acc = acc + dev.age), 0) / list.length)
+  return Math.round(
+    list.reduce((acc, dev) => (acc = acc + dev.age), 0) / list.length,
+  );
 }
 ```
 

@@ -11,7 +11,10 @@ Return as a number.
 
 ```js
 function divCon(x) {
-  return x.reduce((acc, cur) => acc + (typeof cur === 'number'? cur: -cur), 0)
+  return x.reduce(
+    (acc, cur) => acc + (typeof cur === "number" ? cur : -cur),
+    0,
+  );
 }
 ```
 

@@ -23,17 +23,33 @@ To avoid problems with image availability, here's the lists of letters for each 
 <details><summary>My Solution</summary>
 
 ```js
-const comfortableWord = word => {
-  const left = ['q', 'w', 'e', 'r', 't', 'a', 's', 'd', 'f', 'g', 'z', 'x', 'c', 'v', 'b']
-  const right = ['y', 'u', 'i', 'o', 'p', 'h', 'j', 'k', 'l', 'n', 'm']
+const comfortableWord = (word) => {
+  const left = [
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "a",
+    "s",
+    "d",
+    "f",
+    "g",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+  ];
+  const right = ["y", "u", "i", "o", "p", "h", "j", "k", "l", "n", "m"];
 
   for (let i = 0; i < word.length - 1; i++) {
-    if (left.includes(word[i]) && left.includes(word[i + 1])) return false
-    if (right.includes(word[i]) && right.includes(word[i + 1])) return false
+    if (left.includes(word[i]) && left.includes(word[i + 1])) return false;
+    if (right.includes(word[i]) && right.includes(word[i + 1])) return false;
   }
 
-  return true
-}
+  return true;
+};
 ```
 
 </details>

@@ -11,7 +11,7 @@ You may need to think laterally!
 ```js
 // Log the content of the givin function blackBox to reveal the content
 //console.log(blackBox.toString());
-JSopenSesame()
+JSopenSesame();
 ```
 
 </details>

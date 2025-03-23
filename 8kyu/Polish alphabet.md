@@ -31,18 +31,21 @@ For example:
 ```js
 function correctPolishLetters(string) {
   const diacriticMap = {
-    ą: 'a',
-    ć: 'c',
-    ę: 'e',
-    ł: 'l',
-    ń: 'n',
-    ó: 'o',
-    ś: 's',
-    ź: 'z',
-    ż: 'z'
-  }
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z",
+  };
   // Use regex to replace diacritic characters with their non-diacritic counterparts
-  return string.replace(/[ąćęłńóśźż]/g, match => diacriticMap[match] || match)
+  return string.replace(
+    /[ąćęłńóśźż]/g,
+    (match) => diacriticMap[match] || match,
+  );
 }
 ```
 

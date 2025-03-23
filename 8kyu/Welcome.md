@@ -50,27 +50,27 @@ IP_ADDRESS_REQUIRED - no ip address was suppliedput: [2,2,1,2,1], output = [2,2,
 function greet(language) {
   // Welcome messages in various languages
   const languagesDB = {
-    english: 'Welcome',
-    czech: 'Vitejte',
-    danish: 'Velkomst',
-    dutch: 'Welkom',
-    estonian: 'Tere tulemast',
-    finnish: 'Tervetuloa',
-    flemish: 'Welgekomen',
-    french: 'Bienvenue',
-    german: 'Willkommen',
-    irish: 'Failte',
-    italian: 'Benvenuto',
-    latvian: 'Gaidits',
-    lithuanian: 'Laukiamas',
-    polish: 'Witamy',
-    spanish: 'Bienvenido',
-    swedish: 'Valkommen',
-    welsh: 'Croeso'
-  }
+    english: "Welcome",
+    czech: "Vitejte",
+    danish: "Velkomst",
+    dutch: "Welkom",
+    estonian: "Tere tulemast",
+    finnish: "Tervetuloa",
+    flemish: "Welgekomen",
+    french: "Bienvenue",
+    german: "Willkommen",
+    irish: "Failte",
+    italian: "Benvenuto",
+    latvian: "Gaidits",
+    lithuanian: "Laukiamas",
+    polish: "Witamy",
+    spanish: "Bienvenido",
+    swedish: "Valkommen",
+    welsh: "Croeso",
+  };
 
   // Return the greeting in the specified language or default to English
-  return languagesDB[language] || languagesDB['english']
+  return languagesDB[language] || languagesDB["english"];
 }
 ```
 

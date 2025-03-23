@@ -16,10 +16,10 @@ only non-alphanumeric characters in the string are apostrophes `'` or the punctu
 
 ```js
 function areaCode(text) {
-  const openBracketIdx = text.indexOf('(')
-  const closeBracketIdx = text.indexOf(')')
+  const openBracketIdx = text.indexOf("(");
+  const closeBracketIdx = text.indexOf(")");
 
-  return text.slice(openBracketIdx + 1, closeBracketIdx)
+  return text.slice(openBracketIdx + 1, closeBracketIdx);
 }
 ```
 

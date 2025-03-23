@@ -23,8 +23,8 @@ Complete the function which accepts two strings and calculates the golf score of
 ```js
 function golfScoreCalculator(parList, scoreList) {
   return [...parList].reduce((acc, cur, i) => {
-    return acc + parseInt([...scoreList][i]) - parseInt(cur)
-  }, 0)
+    return acc + parseInt([...scoreList][i]) - parseInt(cur);
+  }, 0);
 }
 ```
 

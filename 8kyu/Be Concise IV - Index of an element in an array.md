@@ -13,7 +13,7 @@ are unique.**
 
 ```js
 // 71 characters
-const find = (a, e) => (a.indexOf(e) > -1 ? a.indexOf(e) : 'Not found')
+const find = (a, e) => (a.indexOf(e) > -1 ? a.indexOf(e) : "Not found");
 ```
 
 </details>

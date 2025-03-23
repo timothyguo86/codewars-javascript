@@ -12,7 +12,9 @@ Input will be a string with length > 0.
 
 ```js
 function moveTen(s) {
-  return s.replace(/[a-z]/g, v => String.fromCharCode(((v.charCodeAt(0) - 97 + 10) % 26) + 97))
+  return s.replace(/[a-z]/g, (v) =>
+    String.fromCharCode(((v.charCodeAt(0) - 97 + 10) % 26) + 97),
+  );
 }
 ```
 

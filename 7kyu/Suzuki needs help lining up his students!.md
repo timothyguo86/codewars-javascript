@@ -46,13 +46,13 @@ Please also try the other Kata in this series..
 
 ```js
 function lineupStudents(students) {
-  return students.split(' ').sort((a, b) => {
+  return students.split(" ").sort((a, b) => {
     if (a.length !== b.length) {
-      return b.length - a.length
+      return b.length - a.length;
     }
 
-    return b.localeCompare(a)
-  })
+    return b.localeCompare(a);
+  });
 }
 ```
 

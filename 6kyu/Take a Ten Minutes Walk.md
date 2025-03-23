@@ -18,36 +18,36 @@ w' only). It will never give you an empty array (that's not a walk, that's stand
 ```js
 function isValidWalk(walk) {
   if (walk.length !== 10) {
-    return false // The walk should take exactly ten minutes
+    return false; // The walk should take exactly ten minutes
   }
 
-  let north = 0
-  let south = 0
-  let east = 0
-  let west = 0
+  let north = 0;
+  let south = 0;
+  let east = 0;
+  let west = 0;
 
   // Count the number of steps in each direction
-  walk.forEach(direction => {
+  walk.forEach((direction) => {
     switch (direction) {
-      case 'n':
-        north++
-        break
-      case 's':
-        south++
-        break
-      case 'e':
-        east++
-        break
-      case 'w':
-        west++
-        break
+      case "n":
+        north++;
+        break;
+      case "s":
+        south++;
+        break;
+      case "e":
+        east++;
+        break;
+      case "w":
+        west++;
+        break;
       default:
-        break
+        break;
     }
-  })
+  });
 
   // Check if the total number of steps in each direction cancels out
-  return north === south && east === west
+  return north === south && east === west;
 }
 ```
 

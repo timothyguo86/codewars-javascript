@@ -10,7 +10,7 @@ You're given one parameter, the original string. You don't have to worry with st
 ```js
 function removeChar(str) {
   // Return a new string excluding the first and last characters
-  return str.slice(1, -1)
+  return str.slice(1, -1);
 }
 ```
 

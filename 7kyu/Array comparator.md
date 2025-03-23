@@ -9,13 +9,13 @@ elements in the first array which are also present in the second array.
 
 ```js
 function matchArrays(v, r) {
-  let count = 0
+  let count = 0;
 
-  v.forEach(el => {
-    if (r.includes(el)) count++
-  })
+  v.forEach((el) => {
+    if (r.includes(el)) count++;
+  });
 
-  return count
+  return count;
 }
 ```
 

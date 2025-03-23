@@ -17,9 +17,9 @@ Invalid smiley faces: `;( :> :} :]`
 ### Example
 
 ```js
-countSmileys([':)', ';(', ';}', ':-D']) // should return 2;
-countSmileys([';D', ':-(', ':-)', ';~)']) // should return 3;
-countSmileys([';]', ':[', ';*', ':$', ';-D']) // should return 1;
+countSmileys([":)", ";(", ";}", ":-D"]); // should return 2;
+countSmileys([";D", ":-(", ":-)", ";~)"]); // should return 3;
+countSmileys([";]", ":[", ";*", ":$", ";-D"]); // should return 1;
 ```
 
 ### Note
@@ -35,7 +35,7 @@ the face (eyes, nose, mouth) elements will always be the same.
 function countSmileys(arr) {
   // Use filter to select elements that match the smiley face pattern
   // Smileys can have eyes (: or ;), an optional nose (- or ~), and a mouth (D or )
-  return arr.filter(x => /[:;][-~]?[)D]/.test(x)).length
+  return arr.filter((x) => /[:;][-~]?[)D]/.test(x)).length;
 }
 ```
 

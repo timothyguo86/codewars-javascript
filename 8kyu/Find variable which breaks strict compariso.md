@@ -4,8 +4,8 @@ In JavaScript, there is a special case where strict comparison of the same varia
 must be done to get such result!
 
 ```js
-var x = something
-x === x // returns false!
+var x = something;
+x === x; // returns false!
 ```
 
 Write a function which will return value for which strict comparison will give false!
@@ -16,7 +16,7 @@ Write a function which will return value for which strict comparison will give f
 
 ```js
 function findStrangeValue() {
-  return NaN
+  return NaN;
 }
 ```
 

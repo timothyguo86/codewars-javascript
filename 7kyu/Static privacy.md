@@ -4,20 +4,20 @@ I wrote a class `Class`, with a private `static` property `foo` and a getter to 
 
 ```javascript
 class Class {
-  static #foo = 42
+  static #foo = 42;
 
   static get foo() {
-    return this.#foo
+    return this.#foo;
   }
 }
-Class.foo // 42
+Class.foo; // 42
 ```
 
 However, when I create a class `Subclass` that inherits from `Class`, the code breaks:
 
 ```js
 class Subclass extends Class {}
-Subclass.foo // Error !
+Subclass.foo; // Error !
 ```
 
 Can you fix the code ?
@@ -27,7 +27,7 @@ Modify `Class` so that `Subclass.foo` will work correctly. This should also work
 
 ```js
 class Deepclass extends Subclass {}
-Deepclass.foo // should return 42
+Deepclass.foo; // should return 42
 ```
 
 ---
@@ -36,10 +36,10 @@ Deepclass.foo // should return 42
 
 ```js
 class Class {
-  static #foo = 42
+  static #foo = 42;
 
   static get foo() {
-    return Class.#foo
+    return Class.#foo;
   }
 }
 ```

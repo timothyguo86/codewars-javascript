@@ -25,8 +25,8 @@ of towns are separated by `\n`. The name of each town is followed by `:`.
   `abs((your_result - test_result) / test_result) <= 1e-6` depending on the language.
 - Shell
 
-    1. Shell tests only variance.
-    2. In "function "variance" $1 is "data", $2 is "town".
+  1. Shell tests only variance.
+  2. In "function "variance" $1 is "data", $2 is "town".
 
 - A
   ref: [http://www.mathsisfun.com/data/standard-deviation.html](http://www.mathsisfun.com/data/standard-deviation.html)
@@ -39,32 +39,37 @@ of towns are separated by `\n`. The name of each town is followed by `:`.
 
 ```js
 const getTownData = (town, str) => {
-  const townStartIdx = str.indexOf(town + ':')
-  if (townStartIdx === -1) return []
+  const townStartIdx = str.indexOf(town + ":");
+  if (townStartIdx === -1) return [];
 
-  const townEndIdx = str.indexOf('\n', townStartIdx)
-  const townData = str.slice(townStartIdx, townEndIdx === -1 ? str.length : townEndIdx)
+  const townEndIdx = str.indexOf("\n", townStartIdx);
+  const townData = str.slice(
+    townStartIdx,
+    townEndIdx === -1 ? str.length : townEndIdx,
+  );
 
   return townData
-    .replace(/[^0-9,.]/g, '')
-    .split(',')
-    .map(Number)
-}
+    .replace(/[^0-9,.]/g, "")
+    .split(",")
+    .map(Number);
+};
 
 const mean = (town, str) => {
-  const data = getTownData(town, str)
-  if (data.length === 0) return -1
+  const data = getTownData(town, str);
+  if (data.length === 0) return -1;
 
-  return data.reduce((acc, cur) => acc + cur, 0) / 12
-}
+  return data.reduce((acc, cur) => acc + cur, 0) / 12;
+};
 
 const variance = (town, str) => {
-  const data = getTownData(town, str)
-  if (data.length === 0) return -1
-  const meanValue = mean(town, str)
+  const data = getTownData(town, str);
+  if (data.length === 0) return -1;
+  const meanValue = mean(town, str);
 
-  return data.reduce((acc, cur) => acc + (cur - meanValue) ** 2, 0) / data.length
-}
+  return (
+    data.reduce((acc, cur) => acc + (cur - meanValue) ** 2, 0) / data.length
+  );
+};
 ```
 
 </details>

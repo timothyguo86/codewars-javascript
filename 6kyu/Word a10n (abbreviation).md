@@ -32,19 +32,19 @@ greater** into an abbreviation, following these rules:
 function abbreviate(string) {
   return string
     .split(/\b/)
-    .map(word => {
-      if (word.includes('-')) {
-        return word.split('-').map(convertStr).join('-')
+    .map((word) => {
+      if (word.includes("-")) {
+        return word.split("-").map(convertStr).join("-");
       }
 
-      return convertStr(word)
+      return convertStr(word);
     })
-    .join('')
+    .join("");
 }
 
 function convertStr(str) {
-  if (str.length > 3) return `${str[0]}${str.length - 2}${str[str.length - 1]}`
-  return str
+  if (str.length > 3) return `${str[0]}${str.length - 2}${str[str.length - 1]}`;
+  return str;
 }
 ```
 

@@ -21,7 +21,7 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 ```js
 function longest(s1, s2) {
   // Combine the unique characters from both strings, sort them, and join into a single string
-  return [...new Set(s1 + s2)].sort().join('')
+  return [...new Set(s1 + s2)].sort().join("");
 }
 ```
 

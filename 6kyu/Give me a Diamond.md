@@ -45,21 +45,21 @@ A size 5 diamond:
 
 ```js
 function diamond(n) {
-  if (n < 0 || n % 2 === 0) return null
+  if (n < 0 || n % 2 === 0) return null;
 
-  let diamond = ''
+  let diamond = "";
 
   // Construct the top half of the diamond (including the middle line)
   for (let i = 0; i < Math.ceil(n / 2); i++) {
-    diamond += ' '.repeat((n - (2 * i + 1)) / 2) + '*'.repeat(2 * i + 1) + '\n'
+    diamond += " ".repeat((n - (2 * i + 1)) / 2) + "*".repeat(2 * i + 1) + "\n";
   }
 
   // Construct the bottom half of the diamond
   for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
-    diamond += ' '.repeat((n - (2 * i + 1)) / 2) + '*'.repeat(2 * i + 1) + '\n'
+    diamond += " ".repeat((n - (2 * i + 1)) / 2) + "*".repeat(2 * i + 1) + "\n";
   }
 
-  return diamond
+  return diamond;
 }
 ```
 

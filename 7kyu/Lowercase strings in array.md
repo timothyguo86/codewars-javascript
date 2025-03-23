@@ -17,7 +17,7 @@ Create a function to lowercase all **strings** in an array. Non-string items sho
 
 ```js
 function arrayLowerCase(arr) {
-  return arr.map(v => (typeof v === 'string' ? v.toLowerCase() : v))
+  return arr.map((v) => (typeof v === "string" ? v.toLowerCase() : v));
 }
 ```
 

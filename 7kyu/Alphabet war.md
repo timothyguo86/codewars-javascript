@@ -35,10 +35,10 @@ The other letters don't have power and are only victims.
 # Example
 
 ```js
-alphabetWar('z') //=> Right side wins!
-alphabetWar('zdqmwpbs') //=> Let's fight again!
-alphabetWar('zzzzs') //=> Right side wins!
-alphabetWar('wwwwwwz') //=> Left side wins!
+alphabetWar("z"); //=> Right side wins!
+alphabetWar("zdqmwpbs"); //=> Let's fight again!
+alphabetWar("zzzzs"); //=> Right side wins!
+alphabetWar("wwwwwwz"); //=> Left side wins!
 ```
 
 ---
@@ -47,9 +47,15 @@ alphabetWar('wwwwwwz') //=> Left side wins!
 
 ```js
 function alphabetWar(fight) {
-  const fightMap = { w: -4, p: -3, b: -2, s: -1, m: 4, q: 3, d: 2, z: 1 }
-  let total = fight.split('').reduce((acc, cur) => acc + (fightMap[cur] || 0), 0)
-  return total > 0 ? 'Right side wins!' : total < 0 ? 'Left side wins!' : "Let's fight again!"
+  const fightMap = { w: -4, p: -3, b: -2, s: -1, m: 4, q: 3, d: 2, z: 1 };
+  let total = fight
+    .split("")
+    .reduce((acc, cur) => acc + (fightMap[cur] || 0), 0);
+  return total > 0
+    ? "Right side wins!"
+    : total < 0
+      ? "Left side wins!"
+      : "Let's fight again!";
 }
 ```
 

@@ -22,7 +22,9 @@ String are case sensitive.
 
 ```js
 function encode(str) {
-  return str.replace(/[a-z]/gi, v => (v.charCodeAt(0) > 96 ? v.charCodeAt(0) - 96 : v.charCodeAt(0) - 64))
+  return str.replace(/[a-z]/gi, (v) =>
+    v.charCodeAt(0) > 96 ? v.charCodeAt(0) - 96 : v.charCodeAt(0) - 64,
+  );
 }
 ```
 

@@ -17,7 +17,7 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     // Use Math.min with the spread operator to find the smallest integer in the array
-    return Math.min(...args)
+    return Math.min(...args);
   }
 }
 ```

@@ -17,7 +17,7 @@ Note: all provided input strings are lowercase.
 
 ```js
 function moveVowel(input) {
-  return input.replace(/[aeiou]/gi, '') + input.replace(/[^aeiou]/gi, '')
+  return input.replace(/[aeiou]/gi, "") + input.replace(/[^aeiou]/gi, "");
 }
 ```
 

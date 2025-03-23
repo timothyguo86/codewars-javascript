@@ -18,10 +18,10 @@ matrix = [
   [1, 2, 3, 4],
   [5, 6, 7, 8],
   [9, 10, 11, 12],
-  [13, 14, 15, 16]
-]
+  [13, 14, 15, 16],
+];
 
-times_to_turn = 1
+times_to_turn = 1;
 ```
 
 It should return this:
@@ -46,16 +46,17 @@ Happy coding!
 ```js
 function rotateAgainstClockwise(matrix, times) {
   // Calculate the effective rotation
-  const rotation = times % 4
+  const rotation = times % 4;
   // Function to rotate a matrix counter-clockwise once
-  const rotateOnce = mat => mat[0].map((_, i) => mat.map(row => row[i])).reverse()
+  const rotateOnce = (mat) =>
+    mat[0].map((_, i) => mat.map((row) => row[i])).reverse();
 
   // Perform the rotation 'times' times
   for (let i = 0; i < rotation; i++) {
-    matrix = rotateOnce(matrix)
+    matrix = rotateOnce(matrix);
   }
 
-  return matrix
+  return matrix;
 }
 ```
 

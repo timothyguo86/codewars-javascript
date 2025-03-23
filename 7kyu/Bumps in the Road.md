@@ -12,7 +12,9 @@ are able to reach home safely by encountering `15 bumps or less`, return `Woohoo
 
 ```js
 function bump(x) {
-  return x.split('').filter(char => char === 'n').length > 15 ? 'Car Dead' : 'Woohoo!'
+  return x.split("").filter((char) => char === "n").length > 15
+    ? "Car Dead"
+    : "Woohoo!";
 }
 ```
 

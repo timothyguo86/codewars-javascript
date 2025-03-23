@@ -36,7 +36,7 @@ function strangeMath(n, k) {
     Array.from({ length: n }, (v, i) => i + 1)
       .sort()
       .indexOf(k) + 1
-  )
+  );
 }
 ```
 

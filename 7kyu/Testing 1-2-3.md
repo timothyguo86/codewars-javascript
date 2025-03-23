@@ -20,9 +20,9 @@ The numbering starts at 1. The format is `n: string`. Notice the colon and space
 ```js
 const number = function (array) {
   return array.map((item, index) => {
-    return `${index + 1}: ${item}`
-  })
-}
+    return `${index + 1}: ${item}`;
+  });
+};
 ```
 
 </details>

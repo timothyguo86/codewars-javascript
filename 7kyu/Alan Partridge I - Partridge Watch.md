@@ -36,13 +36,24 @@ If you don't find any related terms, return `Lynn, I've pierced my foot on a spi
 
 ```js
 function part(x) {
-  const terms = ['Partridge', 'PearTree', 'Chat', 'Dan', 'Toblerone', 'Lynn', 'AlphaPapa', 'Nomad']
-  let match = 0
+  const terms = [
+    "Partridge",
+    "PearTree",
+    "Chat",
+    "Dan",
+    "Toblerone",
+    "Lynn",
+    "AlphaPapa",
+    "Nomad",
+  ];
+  let match = 0;
   for (let w of x) {
-    if (terms.includes(w)) match++
+    if (terms.includes(w)) match++;
   }
 
-  return match ? `Mine's a Pint${'!'.repeat(match)}` : `Lynn, I've pierced my foot on a spike!!`
+  return match
+    ? `Mine's a Pint${"!".repeat(match)}`
+    : `Lynn, I've pierced my foot on a spike!!`;
 }
 ```
 

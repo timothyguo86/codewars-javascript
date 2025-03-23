@@ -26,27 +26,27 @@ You do not need to worry about the data supplied, it will be an array at all tim
 ```js
 Array.prototype.all = function (predicate) {
   for (let i = 0; i < this.length; i++) {
-    if (!predicate(this[i])) return false
+    if (!predicate(this[i])) return false;
   }
 
-  return true
-}
+  return true;
+};
 
 Array.prototype.none = function (predicate) {
   for (let i = 0; i < this.length; i++) {
-    if (predicate(this[i])) return false
+    if (predicate(this[i])) return false;
   }
 
-  return true
-}
+  return true;
+};
 
 Array.prototype.any = function (predicate) {
   for (let i = 0; i < this.length; i++) {
-    if (predicate(this[i])) return true
+    if (predicate(this[i])) return true;
   }
 
-  return false
-}
+  return false;
+};
 ```
 
 </details>

@@ -58,21 +58,26 @@ We don't take care of a deposit of savings in a bank:-)
 <details><summary>My Solution</summary>
 
 ```js
-function nbMonths(startPriceOld, startPriceNew, savingPerMonth, percentLossByMonth) {
-  let months = 0
-  let savings = 0
+function nbMonths(
+  startPriceOld,
+  startPriceNew,
+  savingPerMonth,
+  percentLossByMonth,
+) {
+  let months = 0;
+  let savings = 0;
 
   while (startPriceNew > startPriceOld + savings) {
-    months++
+    months++;
     if (months % 2 === 0) {
-      percentLossByMonth += 0.5
+      percentLossByMonth += 0.5;
     }
-    startPriceOld -= startPriceOld * (percentLossByMonth / 100)
-    startPriceNew -= startPriceNew * (percentLossByMonth / 100)
-    savings += savingPerMonth
+    startPriceOld -= startPriceOld * (percentLossByMonth / 100);
+    startPriceNew -= startPriceNew * (percentLossByMonth / 100);
+    savings += savingPerMonth;
   }
 
-  return [months, Math.round(startPriceOld + savings - startPriceNew)]
+  return [months, Math.round(startPriceOld + savings - startPriceNew)];
 }
 ```
 

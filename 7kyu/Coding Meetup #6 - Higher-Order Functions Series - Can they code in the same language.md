@@ -70,7 +70,7 @@ mine
 
 ```js
 function isSameLanguage(list) {
-  return list.every(dev => dev.language === list[0].language)
+  return list.every((dev) => dev.language === list[0].language);
 }
 ```
 

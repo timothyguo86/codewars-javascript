@@ -30,11 +30,11 @@ Advanced users may find this extremely easy and can easily write this in one lin
 <details><summary>My Solution</summary>
 
 ```js
-const sum = numbers =>
+const sum = (numbers) =>
   // Calculate the sum of numbers using the reduce method
   numbers.reduce((a, b) => {
-    return (a += b)
-  }, 0)
+    return (a += b);
+  }, 0);
 ```
 
 </details>

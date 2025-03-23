@@ -33,19 +33,19 @@ Note
 - A search query will contain `0 < n < 100` filters
 - Your function should return `true` for valid and `false` for invalid
 - Each filter follows the` <filter-name>:<value>` syntax
-    - Filters are seperated by a space (\s)
+  - Filters are seperated by a space (\s)
 - You only need to check if the filter-name is valid
-    - For a filter-name to be valid, the FILTERS array must contain this filter-name.
+  - For a filter-name to be valid, the FILTERS array must contain this filter-name.
 
 ---
 
 <details><summary>My Solution</summary>
 
 ```js
-const isValid = query => {
+const isValid = (query) => {
   // Check if all query parameters before ':' are included in the FILTERS array
-  return query.match(/\w+(?=:)/g).every(v => FILTERS.includes(v))
-}
+  return query.match(/\w+(?=:)/g).every((v) => FILTERS.includes(v));
+};
 ```
 
 </details>

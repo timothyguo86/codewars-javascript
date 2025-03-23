@@ -22,7 +22,7 @@ In practice, you should implement this function:
 
 ```js
 function eliminateUnsetBits(number) {
-  return parseInt(number.replace(/0/g, ''), 2) || 0
+  return parseInt(number.replace(/0/g, ""), 2) || 0;
 }
 ```
 

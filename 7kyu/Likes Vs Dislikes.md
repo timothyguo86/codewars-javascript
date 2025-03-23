@@ -30,7 +30,10 @@ Create a function that takes in a list of button inputs and returns the final st
 
 ```js
 function likeOrDislike(buttons) {
-  return buttons.reduce((result, cur) => (result === cur ? 'Nothing' : cur), 'Nothing')
+  return buttons.reduce(
+    (result, cur) => (result === cur ? "Nothing" : cur),
+    "Nothing",
+  );
 }
 ```
 

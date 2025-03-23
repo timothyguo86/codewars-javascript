@@ -22,12 +22,12 @@ If you liked this kata, check out [part 2](https://www.codewars.com/kata/write-n
 function expandedForm(num) {
   return num
     .toString()
-    .split('')
+    .split("")
     .map((digit, index) => {
-      return digit * Math.pow(10, num.toString().length - index - 1)
+      return digit * Math.pow(10, num.toString().length - index - 1);
     })
-    .filter(digit => digit > 0)
-    .join(' + ')
+    .filter((digit) => digit > 0)
+    .join(" + ");
 }
 ```
 

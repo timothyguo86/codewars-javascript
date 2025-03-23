@@ -26,13 +26,13 @@ I have also created other katas. Take a look if you enjoyed this kata!
 
 ```js
 function dontGiveMeFive(start, end) {
-  const result = []
+  const result = [];
 
   for (let i = start; i <= end; i++) {
-    if (i.toString().indexOf('5') === -1) result.push(i)
+    if (i.toString().indexOf("5") === -1) result.push(i);
   }
 
-  return result.length
+  return result.length;
 }
 ```
 

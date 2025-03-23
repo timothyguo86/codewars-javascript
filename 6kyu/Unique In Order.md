@@ -16,9 +16,9 @@ uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 <details><summary>My Solution</summary>
 
 ```js
-const uniqueInOrder = function(iterable) {
-  return [...iterable].filter((item, i) => item !== iterable[i - 1])
-}
+const uniqueInOrder = function (iterable) {
+  return [...iterable].filter((item, i) => item !== iterable[i - 1]);
+};
 ```
 
 </details>

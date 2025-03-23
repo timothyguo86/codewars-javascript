@@ -15,7 +15,9 @@ The string has the following conditions to be alphanumeric:
 
 ```js
 function alphanumeric(string) {
-  return string.length > 0 && string.replace(/[a-z0-9]/gi, v => '').length === 0
+  return (
+    string.length > 0 && string.replace(/[a-z0-9]/gi, (v) => "").length === 0
+  );
 }
 ```
 

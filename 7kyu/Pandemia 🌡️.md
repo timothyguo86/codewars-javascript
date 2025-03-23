@@ -41,13 +41,15 @@ other but infected people have spread before the warning. ⚠️
 
 ```js
 function infected(s) {
-  if (!s.includes('0') && !s.includes('1')) return 0
+  if (!s.includes("0") && !s.includes("1")) return 0;
 
-  let continents = s.split('X')
-  let totalPopulation = continents.join('').length
-  let infectedPopulation = continents.filter(c => c.includes('1')).join('').length
+  let continents = s.split("X");
+  let totalPopulation = continents.join("").length;
+  let infectedPopulation = continents
+    .filter((c) => c.includes("1"))
+    .join("").length;
 
-  return (infectedPopulation / totalPopulation) * 100
+  return (infectedPopulation / totalPopulation) * 100;
 }
 ```
 

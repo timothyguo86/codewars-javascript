@@ -23,12 +23,12 @@ All inputs will be in the correct format. Strings on tickets are not always the 
 
 ```js
 function bingo(ticket, win) {
-  let miniWin = 0
-  ticket.forEach(t => {
-    if (t[0].split('').some(v => v.charCodeAt(0) === t[1])) miniWin++
-  })
+  let miniWin = 0;
+  ticket.forEach((t) => {
+    if (t[0].split("").some((v) => v.charCodeAt(0) === t[1])) miniWin++;
+  });
 
-  return miniWin < win ? 'Loser!' : 'Winner!'
+  return miniWin < win ? "Loser!" : "Winner!";
 }
 ```
 

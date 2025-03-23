@@ -79,12 +79,12 @@
 
 ```js
 function extraPerfect(n) {
-  const result = []
+  const result = [];
   for (let i = 0; i < Math.ceil(n / 2); i++) {
-    result.push(1 + 2 * i)
+    result.push(1 + 2 * i);
   }
 
-  return result
+  return result;
 }
 ```
 

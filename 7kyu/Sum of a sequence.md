@@ -24,10 +24,10 @@ This is the first kata in the series:
 
 ```js
 const sequenceSum = (begin, end, step) => {
-  let sum = 0
-  for (let i = begin; i <= end; i += step) sum += i
-  return sum
-}
+  let sum = 0;
+  for (let i = begin; i <= end; i += step) sum += i;
+  return sum;
+};
 ```
 
 </details>

@@ -14,7 +14,7 @@ Complete the solution so that it reverses the string passed into it.
 ```js
 function solution(str) {
   // Reverse the characters in the input string and join them back
-  return [...str].reverse().join('')
+  return [...str].reverse().join("");
 }
 ```
 

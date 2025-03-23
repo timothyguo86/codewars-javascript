@@ -21,11 +21,11 @@ or 0-9).
 
 ```js
 function scramble(str, arr) {
-  let strArr = new Array(str.length)
+  let strArr = new Array(str.length);
   for (let i = 0; i < str.length; i++) {
-    strArr[arr[i]] = str[i]
+    strArr[arr[i]] = str[i];
   }
-  return strArr.join('')
+  return strArr.join("");
 }
 ```
 

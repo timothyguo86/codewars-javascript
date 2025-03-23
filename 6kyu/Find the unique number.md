@@ -15,11 +15,11 @@ It’s guaranteed that array contains at least 3 numbers.
 
 ```js
 function findUniq(arr) {
-  const a = [...new Set(arr)][0]
-  const b = [...new Set(arr)][1]
+  const a = [...new Set(arr)][0];
+  const b = [...new Set(arr)][1];
 
-  if (arr.filter(item => item === a).length > 1) return b
-  return a
+  if (arr.filter((item) => item === a).length > 1) return b;
+  return a;
 }
 ```
 

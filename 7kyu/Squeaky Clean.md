@@ -20,7 +20,7 @@ the solution you write should return this:
 
 ```js
 function squeakyClean(arr) {
-  return arr.filter(v => v)
+  return arr.filter((v) => v);
 }
 ```
 

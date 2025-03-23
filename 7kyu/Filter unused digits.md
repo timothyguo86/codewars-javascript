@@ -15,10 +15,10 @@ Example:
 
 ```js
 function unusedDigits(...args) {
-  const usedDigitsSet = new Set(args.join('').split(''))
-  const digits = Array.from({ length: 10 }, (_, i) => i.toString())
+  const usedDigitsSet = new Set(args.join("").split(""));
+  const digits = Array.from({ length: 10 }, (_, i) => i.toString());
 
-  return digits.filter(v => ![...usedDigitsSet].includes(v)).join('')
+  return digits.filter((v) => ![...usedDigitsSet].includes(v)).join("");
 }
 ```
 

@@ -18,7 +18,7 @@ If you like substring Katas, please try:
 
 ```js
 function solve(s) {
-  return Math.max(...s.split(/[^aeiou]/gi).map(el => el.length))
+  return Math.max(...s.split(/[^aeiou]/gi).map((el) => el.length));
 }
 ```
 

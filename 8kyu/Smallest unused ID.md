@@ -16,11 +16,11 @@ Go on and code some pure awesomeness!
 <details><summary>My Solution</summary>
 
 ```js
-const nextId = ids => {
-  let x = 0
-  while (ids.includes(x)) x++
-  return x
-}
+const nextId = (ids) => {
+  let x = 0;
+  while (ids.includes(x)) x++;
+  return x;
+};
 ```
 
 </details>

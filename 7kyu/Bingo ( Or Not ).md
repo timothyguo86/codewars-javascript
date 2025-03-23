@@ -13,8 +13,8 @@ you will lose. Your outputs should be `"WIN"` or `"LOSE"` respectively.
 
 ```js
 function bingo(a) {
-  const bingoArr = [2, 7, 9, 14, 15]
-  return bingoArr.every(v => a.includes(v)) ? 'WIN' : 'LOSE'
+  const bingoArr = [2, 7, 9, 14, 15];
+  return bingoArr.every((v) => a.includes(v)) ? "WIN" : "LOSE";
 }
 ```
 

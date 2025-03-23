@@ -24,7 +24,9 @@ able to determine that constant offset.
 
 ```js
 function startingMark(bodyHeight) {
-  return Number(((1.22 / 0.31) * bodyHeight + 9.45 - (1.52 * 1.22) / 0.31).toFixed(2))
+  return Number(
+    ((1.22 / 0.31) * bodyHeight + 9.45 - (1.52 * 1.22) / 0.31).toFixed(2),
+  );
 }
 ```
 

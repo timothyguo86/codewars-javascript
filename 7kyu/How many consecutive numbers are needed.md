@@ -21,11 +21,11 @@ the values of the array consecutive from the lowest number to the highest number
 ```js
 function consecutive(array) {
   if (array.length < 1) {
-    return 0
+    return 0;
   }
-  const sorted = [...array].sort((a, b) => a - b)
+  const sorted = [...array].sort((a, b) => a - b);
 
-  return sorted.slice(-1) - sorted[0] - sorted.length + 1
+  return sorted.slice(-1) - sorted[0] - sorted.length + 1;
 }
 ```
 

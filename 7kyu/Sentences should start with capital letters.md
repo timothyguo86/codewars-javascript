@@ -28,10 +28,10 @@ You may assume:
 function fix(paragraph) {
   return paragraph
     ? paragraph
-        .split('. ')
-        .map(v => v[0].toUpperCase() + v.slice(1))
-        .join('. ')
-    : ''
+        .split(". ")
+        .map((v) => v[0].toUpperCase() + v.slice(1))
+        .join(". ")
+    : "";
 }
 ```
 

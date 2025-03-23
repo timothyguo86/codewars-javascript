@@ -24,10 +24,10 @@ However, the arrays can have varying lengths, not just limited to `4`.
 <details><summary>My Solution</summary>
 
 ```js
-const binaryArrayToNumber = arr => {
+const binaryArrayToNumber = (arr) => {
   // Convert the binary array to a decimal number using parseInt with base 2
-  return parseInt(arr.join(''), 2)
-}
+  return parseInt(arr.join(""), 2);
+};
 ```
 
 </details>

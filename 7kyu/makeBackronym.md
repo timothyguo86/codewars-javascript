@@ -48,10 +48,10 @@ example:
 
 var makeBackronym = function (string) {
   return string
-    .split('')
-    .map(x => dict[x.toUpperCase()])
-    .join(' ')
-}
+    .split("")
+    .map((x) => dict[x.toUpperCase()])
+    .join(" ");
+};
 ```
 
 </details>

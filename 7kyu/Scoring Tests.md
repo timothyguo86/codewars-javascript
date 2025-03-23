@@ -45,10 +45,10 @@ because: `4*3 + 3*-1 - 3*2 = 3`
 ```js
 function scoreTest(str, right, omit, wrong) {
   return str.reduce((total, cur) => {
-    if (cur === 0) return total + right
-    else if (cur === 1) return total + omit
-    else return total - wrong
-  }, 0)
+    if (cur === 0) return total + right;
+    else if (cur === 1) return total + omit;
+    else return total - wrong;
+  }, 0);
 }
 ```
 

@@ -18,7 +18,9 @@ referred to as Pascal case). The next words should be always capitalized.
 
 ```js
 function toCamelCase(str) {
-  return str.replace(/([-_][a-z])/gi, match => match.replace('-', '').replace('_', '').toUpperCase())
+  return str.replace(/([-_][a-z])/gi, (match) =>
+    match.replace("-", "").replace("_", "").toUpperCase(),
+  );
 }
 ```
 

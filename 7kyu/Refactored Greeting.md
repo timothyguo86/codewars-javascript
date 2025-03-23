@@ -11,9 +11,9 @@ call.
 Here is how the final refactored code would be used:
 
 ```javascript
-var joe = new Person('Joe')
-joe.greet('Kate') // should return 'Hello Kate, my name is Joe'
-joe.name // should == 'Joe'
+var joe = new Person("Joe");
+joe.greet("Kate"); // should return 'Hello Kate, my name is Joe'
+joe.name; // should == 'Joe'
 ```
 
 ---
@@ -23,10 +23,10 @@ joe.name // should == 'Joe'
 ```js
 class Person {
   constructor(name) {
-    this.name = name
+    this.name = name;
   }
   greet(yourName) {
-    return `Hello ${yourName}, my name is ${this.name}`
+    return `Hello ${yourName}, my name is ${this.name}`;
   }
 }
 ```

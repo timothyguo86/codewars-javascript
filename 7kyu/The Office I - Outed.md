@@ -26,11 +26,14 @@ person!).
 
 ```js
 function outed(meet, boss) {
-  const attendants = Object.keys(meet)
+  const attendants = Object.keys(meet);
   const averageRating =
-    attendants.reduce((acc, cur) => (cur === boss ? acc + meet[cur] * 2 : acc + meet[cur]), 0) / attendants.length
+    attendants.reduce(
+      (acc, cur) => (cur === boss ? acc + meet[cur] * 2 : acc + meet[cur]),
+      0,
+    ) / attendants.length;
 
-  return averageRating > 5 ? 'Nice Work Champ!' : 'Get Out Now!'
+  return averageRating > 5 ? "Nice Work Champ!" : "Get Out Now!";
 }
 ```
 

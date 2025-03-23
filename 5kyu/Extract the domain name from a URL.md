@@ -13,7 +13,11 @@ example:
 
 ```js
 function domainName(url) {
-  return url.replace('www.', '').replace('http://', '').replace('https://', '').split('.')[0]
+  return url
+    .replace("www.", "")
+    .replace("http://", "")
+    .replace("https://", "")
+    .split(".")[0];
 }
 ```
 

@@ -17,7 +17,7 @@ Note: Both arrays have the same dimensions.
 
 ```js
 function getLargerNumbers(a, b) {
-  return a.map((v, i) => Math.max(a[i], b[i]))
+  return a.map((v, i) => Math.max(a[i], b[i]));
 }
 ```
 

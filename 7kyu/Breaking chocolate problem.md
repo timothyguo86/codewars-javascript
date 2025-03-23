@@ -18,10 +18,10 @@ Input will always be a non-negative integer.
 ```js
 function breakChocolate(n, m) {
   if ((m !== 0) & (n !== 0)) {
-    return m * n - 1
+    return m * n - 1;
   }
 
-  return 0
+  return 0;
 }
 ```
 

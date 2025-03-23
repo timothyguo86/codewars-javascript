@@ -15,10 +15,10 @@ function count(string) {
   // 2. Use character as key, count as value
   // 3. Go trhough each character in the givin string, ++count if already exist or initialize it (count = 1)
   return [...string].reduce((a, b) => {
-    a[b] ? a[b]++ : (a[b] = 1)
+    a[b] ? a[b]++ : (a[b] = 1);
 
-    return a
-  }, {})
+    return a;
+  }, {});
 }
 ```
 

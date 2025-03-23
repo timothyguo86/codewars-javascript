@@ -11,7 +11,7 @@ You can assume all values in the array are numbers.
 
 ```js
 function smallEnough(a, limit) {
-  return a.every(n => n <= limit)
+  return a.every((n) => n <= limit);
 }
 ```
 

@@ -23,10 +23,10 @@ Good luck!
 
 ```js
 function grabscrab(anagram, dictionary) {
-  anagram = anagram.split('').sort().join('')
-  return dictionary.filter(v => {
-    return v.split('').sort().join('') === anagram
-  })
+  anagram = anagram.split("").sort().join("");
+  return dictionary.filter((v) => {
+    return v.split("").sort().join("") === anagram;
+  });
 }
 ```
 

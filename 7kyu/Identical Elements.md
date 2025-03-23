@@ -12,10 +12,10 @@ empty (which is a `false` result, as there are no duplicated elements).
 
 ```js
 function duplicateElements(m, n) {
-  const setM = new Set(m)
-  const setN = new Set(n)
+  const setM = new Set(m);
+  const setN = new Set(n);
 
-  return [...setM, ...setN].length !== new Set([...setM, ...setN]).size
+  return [...setM, ...setN].length !== new Set([...setM, ...setN]).size;
 }
 ```
 

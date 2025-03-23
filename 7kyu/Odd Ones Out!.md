@@ -33,11 +33,11 @@ Are you up to the challenge?
 
 ```js
 function oddOnesOut(nums) {
-  const dict = {}
+  const dict = {};
   for (let n of nums) {
-    dict[n] ? dict[n]++ : (dict[n] = 1)
+    dict[n] ? dict[n]++ : (dict[n] = 1);
   }
-  return nums.filter(n => dict[n] % 2 === 0)
+  return nums.filter((n) => dict[n] % 2 === 0);
 }
 ```
 

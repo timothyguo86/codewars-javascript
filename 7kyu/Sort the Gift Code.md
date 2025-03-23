@@ -28,7 +28,7 @@ alphabetical characters, and returns a string containing the same characters in 
 
 ```js
 function sortGiftCode(code) {
-  return code.split('').sort().join('')
+  return code.split("").sort().join("");
 }
 ```
 

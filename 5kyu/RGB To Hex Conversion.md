@@ -21,14 +21,14 @@ Note: Your answer should always be 6 characters long, the shorthand with 3 will 
 
 ```js
 const rgb = (r, g, b) => {
-  return convert(r) + convert(g) + convert(b)
-}
+  return convert(r) + convert(g) + convert(b);
+};
 
-const convert = n => {
-  if (n <= 0) return '00'
-  if (n >= 255) return 'FF'
-  return n.toString(16).padStart(2, '0').toUpperCase()
-}
+const convert = (n) => {
+  if (n <= 0) return "00";
+  if (n >= 255) return "FF";
+  return n.toString(16).padStart(2, "0").toUpperCase();
+};
 ```
 
 </details>

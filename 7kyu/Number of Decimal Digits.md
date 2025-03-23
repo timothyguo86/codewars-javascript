@@ -9,7 +9,7 @@ All inputs will be valid.
 
 ```js
 function digits(n) {
-  return n.toString().length
+  return n.toString().length;
 }
 ```
 

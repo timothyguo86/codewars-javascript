@@ -18,13 +18,13 @@ PS: The input is guaranteed to be an integer in the range `[0, 1000000]`
 
 ```js
 function createArrayOfTiers(num) {
-  let output = []
+  let output = [];
 
   for (let i = 0; i < `${num}`.length; i++) {
-    output.push(`${num}`.slice(0, i + 1))
+    output.push(`${num}`.slice(0, i + 1));
   }
 
-  return output
+  return output;
 }
 ```
 

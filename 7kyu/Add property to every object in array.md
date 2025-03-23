@@ -36,9 +36,9 @@ The `questions` array is already defined for you and is not the same as the one 
 <details><summary>My Solution</summary>
 
 ```js
-questions.forEach(q => {
-  q.usersAnswer = null
-})
+questions.forEach((q) => {
+  q.usersAnswer = null;
+});
 ```
 
 </details>

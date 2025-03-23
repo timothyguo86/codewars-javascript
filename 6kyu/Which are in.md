@@ -33,14 +33,14 @@ returns []
 
 ```js
 function inArray(array1, array2) {
-  const result = []
-  array1.map(str1 => {
-    if (array2.some(str2 => str2.includes(str1))) {
-      result.push(str1)
+  const result = [];
+  array1.map((str1) => {
+    if (array2.some((str2) => str2.includes(str1))) {
+      result.push(str1);
     }
-  })
+  });
 
-  return result.sort()
+  return result.sort();
 }
 ```
 

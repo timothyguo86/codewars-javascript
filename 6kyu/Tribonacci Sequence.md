@@ -42,19 +42,19 @@ _[Personal thanks to Professor [Jim Fowler](https://www.coursera.org/instructor/
 ```js
 function tribonacci(signature, n) {
   // Initialize the result array with the signature
-  let result = [...signature]
+  let result = [...signature];
 
   // If n is less than the length of the signature, slice the result array to n elements
   if (n < signature.length) {
-    return result.slice(0, n)
+    return result.slice(0, n);
   }
 
   // Generate the tribonacci sequence
   for (let i = 3; i < n; i++) {
-    result[i] = result[i - 1] + result[i - 2] + result[i - 3]
+    result[i] = result[i - 1] + result[i - 2] + result[i - 3];
   }
 
-  return result
+  return result;
 }
 ```
 

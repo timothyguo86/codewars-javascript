@@ -18,8 +18,8 @@ A few examples:
 
 ```js
 function averageLength(arr) {
-  const length = Math.round(arr.join('').length / arr.length)
-  return arr.map(v => v[0].repeat(length))
+  const length = Math.round(arr.join("").length / arr.length);
+  return arr.map((v) => v[0].repeat(length));
 }
 ```
 

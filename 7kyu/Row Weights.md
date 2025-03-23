@@ -31,7 +31,9 @@ You must return the minimum number of waterbombs it would take to extinguish the
 
 ```js
 function waterbombs(fire, w) {
-  return fire.split('Y').reduce((bombs, v) => bombs + Math.ceil(v.length / w), 0)
+  return fire
+    .split("Y")
+    .reduce((bombs, v) => bombs + Math.ceil(v.length / w), 0);
 }
 ```
 

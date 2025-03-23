@@ -33,19 +33,23 @@ If
 
 ```js
 function revrot(str, sz) {
-  if (sz <= 0 || str === '' || sz > str.length) return ''
+  if (sz <= 0 || str === "" || sz > str.length) return "";
 
-  let chunks = []
+  let chunks = [];
   for (let i = 0; i < Math.floor(str.length / sz); i++) {
-    chunks.push(str.slice(i * sz, (i + 1) * sz))
+    chunks.push(str.slice(i * sz, (i + 1) * sz));
   }
 
   return chunks
-    .map(chunk => {
-      let chunkSum = chunk.split('').reduce((total, value) => (total += +value), 0)
-      return chunkSum % 2 ? chunk.slice(1) + chunk[0] : [...chunk].reverse().join('')
+    .map((chunk) => {
+      let chunkSum = chunk
+        .split("")
+        .reduce((total, value) => (total += +value), 0);
+      return chunkSum % 2
+        ? chunk.slice(1) + chunk[0]
+        : [...chunk].reverse().join("");
     })
-    .join('')
+    .join("");
 }
 ```
 

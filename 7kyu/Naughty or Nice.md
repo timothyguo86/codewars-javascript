@@ -42,11 +42,11 @@ The objects in the passed will represent people. Each object contains two proper
 
 ```js
 function getNiceNames(people) {
-  return people.filter(v => v.wasNice).map(v => v.name)
+  return people.filter((v) => v.wasNice).map((v) => v.name);
 }
 
 function getNaughtyNames(people) {
-  return people.filter(v => !v.wasNice).map(v => v.name)
+  return people.filter((v) => !v.wasNice).map((v) => v.name);
 }
 ```
 

@@ -29,8 +29,10 @@ Examples:
 
 ```js
 var isSquare = function (arr) {
-  return arr.length ? arr.every(v => Number.isInteger(Math.sqrt(v))) : undefined
-}
+  return arr.length
+    ? arr.every((v) => Number.isInteger(Math.sqrt(v)))
+    : undefined;
+};
 ```
 
 </details>

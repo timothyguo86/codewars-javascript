@@ -20,7 +20,7 @@ string, no need to verify it.
 
 ```js
 function remove(string) {
-  return string.slice(-1) === '!' ? string.slice(0, -1) : string
+  return string.slice(-1) === "!" ? string.slice(0, -1) : string;
 }
 ```
 

@@ -19,13 +19,13 @@ You can find some examples in the test fixtures.
 function humanReadable(seconds) {
   let hour = Math.floor(seconds / 3600)
     .toString()
-    .padStart(2, '0')
+    .padStart(2, "0");
   let min = Math.floor((seconds % 3600) / 60)
     .toString()
-    .padStart(2, '0')
-  let sec = (seconds - 3600 * hour - min * 60).toString().padStart(2, '0')
+    .padStart(2, "0");
+  let sec = (seconds - 3600 * hour - min * 60).toString().padStart(2, "0");
 
-  return `${hour}:${min}:${sec}`
+  return `${hour}:${min}:${sec}`;
 }
 ```
 

@@ -40,9 +40,9 @@ Collatz conjecture wikipedia page: https://en.wikipedia.org/wiki/Collatz_conject
 
 ```js
 const hotpo = function (n, counter = 0) {
-  if (n === 1) return counter
-  return hotpo(n % 2 === 0 ? n / 2 : 3 * n + 1, (counter = counter + 1))
-}
+  if (n === 1) return counter;
+  return hotpo(n % 2 === 0 ? n / 2 : 3 * n + 1, (counter = counter + 1));
+};
 ```
 
 </details>

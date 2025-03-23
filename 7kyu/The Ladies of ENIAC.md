@@ -18,7 +18,7 @@ Result should be all in uppercase.
 
 ```js
 function radLadies(name) {
-  return name.replace(/[^a-z !]/gi, '').toUpperCase()
+  return name.replace(/[^a-z !]/gi, "").toUpperCase();
 }
 ```
 

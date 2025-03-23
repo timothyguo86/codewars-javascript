@@ -28,8 +28,8 @@ desk, boy.'.
 ```js
 function sabb(s, val, happiness) {
   return (s.match(/[sabbatical]/gi) || []).length + val + happiness > 22
-    ? 'Sabbatical! Boom!'
-    : 'Back to your desk, boy.'
+    ? "Sabbatical! Boom!"
+    : "Back to your desk, boy.";
 }
 ```
 

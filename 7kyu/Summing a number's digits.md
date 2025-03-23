@@ -17,11 +17,11 @@ Let's assume that all numbers in the input will be integer values.
 
 ```js
 function sumDigits(number) {
-  if (number === 0) return 0
+  if (number === 0) return 0;
   return Math.abs(number)
     .toString()
-    .split('')
-    .reduce((a, b) => +a + +b)
+    .split("")
+    .reduce((a, b) => +a + +b);
 }
 ```
 

@@ -16,9 +16,9 @@ Number.prototype.times = function (f) {
   // Loop from 0 to the value of the number (exclusive)
   for (let i = 0; i < this; i++) {
     // Execute the provided callback function with the current iteration variable i
-    f(i)
+    f(i);
   }
-}
+};
 ```
 
 </details>

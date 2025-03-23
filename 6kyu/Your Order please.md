@@ -23,12 +23,12 @@ numbers.
 ```js
 function order(words) {
   return words
-    .split(' ') // Split the input string into an array of words
+    .split(" ") // Split the input string into an array of words
     .sort((a, b) => {
       // Sort the words based on the numerical value found in each word
-      return a.match(/\d/, '') - b.match(/\d/, '')
+      return a.match(/\d/, "") - b.match(/\d/, "");
     })
-    .join(' ') // Join the sorted words back into a string
+    .join(" "); // Join the sorted words back into a string
 }
 ```
 

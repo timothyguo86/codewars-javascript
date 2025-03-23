@@ -25,10 +25,21 @@ So for this head: "------/------" you shoud return:
 
 ```js
 function bald(x) {
-  let hairStr = ['Clean!', 'Unicorn!', 'Homer!', 'Careless!', 'Careless!', 'Careless!', 'Hobo!']
-  let hairCount = (x.match(/\//g) || []).length
+  let hairStr = [
+    "Clean!",
+    "Unicorn!",
+    "Homer!",
+    "Careless!",
+    "Careless!",
+    "Careless!",
+    "Hobo!",
+  ];
+  let hairCount = (x.match(/\//g) || []).length;
 
-  return [x.replace(/\//g, '-'), hairCount > 5 ? hairStr[6] : hairStr[hairCount]]
+  return [
+    x.replace(/\//g, "-"),
+    hairCount > 5 ? hairStr[6] : hairStr[hairCount],
+  ];
 }
 ```
 

@@ -39,17 +39,17 @@ The ball can only be seen if the height of the rebounding ball is strictly _grea
 
 ```js
 function bouncingBall(h, bounce, window) {
-  if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) return -1
+  if (h <= 0 || bounce <= 0 || bounce >= 1 || window >= h) return -1;
 
-  let count = 0
+  let count = 0;
 
   while (h > window) {
-    count++
-    h *= bounce
-    if (h > window) count++
+    count++;
+    h *= bounce;
+    if (h > window) count++;
   }
 
-  return count
+  return count;
 }
 ```
 

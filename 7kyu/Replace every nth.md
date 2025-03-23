@@ -36,12 +36,12 @@ at the first!
 
 ```js
 function replaceNth(text, n, oldValue, newValue) {
-  if (n < 1) return text
-  let matchCount = 0
-  return text.replace(new RegExp(oldValue, 'g'), match => {
-    matchCount++
-    return matchCount % n === 0 ? newValue : match
-  })
+  if (n < 1) return text;
+  let matchCount = 0;
+  return text.replace(new RegExp(oldValue, "g"), (match) => {
+    matchCount++;
+    return matchCount % n === 0 ? newValue : match;
+  });
 }
 ```
 

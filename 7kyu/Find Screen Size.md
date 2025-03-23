@@ -18,8 +18,8 @@ written as `WIDTHxHEIGHT`.
 
 ```js
 function findScreenHeight(width, ratio) {
-  let [w, h] = ratio.split(':')
-  return width + 'x' + width / w * h
+  let [w, h] = ratio.split(":");
+  return width + "x" + (width / w) * h;
 }
 ```
 

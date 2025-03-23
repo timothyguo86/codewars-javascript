@@ -22,7 +22,10 @@ from start to stop (inclusive) in increments of step.
 
 ```js
 function generateRange(min, max, step) {
-  return Array.from({ length: Math.floor((max - min) / step) + 1 }, (_, i) => min + i * step)
+  return Array.from(
+    { length: Math.floor((max - min) / step) + 1 },
+    (_, i) => min + i * step,
+  );
 }
 ```
 

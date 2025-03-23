@@ -22,9 +22,9 @@ Return the resulting `lamps` string. See example tests for more clarity.
 
 ```js
 function flyBy(lamps, drone) {
-  if (lamps.length < drone.length) return 'o'.repeat(lamps.length)
+  if (lamps.length < drone.length) return "o".repeat(lamps.length);
 
-  return 'o'.repeat(drone.length) + 'x'.repeat(lamps.length - drone.length)
+  return "o".repeat(drone.length) + "x".repeat(lamps.length - drone.length);
 }
 ```
 

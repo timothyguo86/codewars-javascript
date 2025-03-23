@@ -43,15 +43,20 @@ appear in the bottom row as a string. In the case of the example above, you woul
 ```js
 function triangle(row) {
   while (row.length > 1) {
-    let nextRow = ''
+    let nextRow = "";
     for (let i = 0; i < row.length - 1; i++) {
-      nextRow += row[i] === row[i + 1] ? row[i] : ['R', 'G', 'B'].filter(el => el !== row[i] && el !== row[i + 1])[0]
+      nextRow +=
+        row[i] === row[i + 1]
+          ? row[i]
+          : ["R", "G", "B"].filter(
+              (el) => el !== row[i] && el !== row[i + 1],
+            )[0];
     }
 
-    row = nextRow
+    row = nextRow;
   }
 
-  return row
+  return row;
 }
 ```
 

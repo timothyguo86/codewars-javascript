@@ -16,7 +16,7 @@ If an object is missing the property, you should just leave it as `undefined/Non
 
 ```js
 function pluck(objs, name) {
-  return objs.map(obj => obj[name])
+  return objs.map((obj) => obj[name]);
 }
 ```
 

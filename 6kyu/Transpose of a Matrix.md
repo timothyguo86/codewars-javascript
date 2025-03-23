@@ -22,27 +22,27 @@ so that any matrix of order ixj 2-D array returns transposed Matrix of jxi.
 ```js
 Array.prototype.transpose = function () {
   // Catch edge cases: return an empty array for an empty matrix, or a matrix with empty arrays for a matrix with no columns
-  if (this.length === 0) return []
-  if (this.length !== 0 && this[0].length === 0) return [[]]
+  if (this.length === 0) return [];
+  if (this.length !== 0 && this[0].length === 0) return [[]];
 
-  const result = [] // Initialize an array to store the transposed matrix
-  let preRow = this.length // Number of rows in the original matrix
-  let preCol = this[0].length // Number of columns in the original matrix
+  const result = []; // Initialize an array to store the transposed matrix
+  let preRow = this.length; // Number of rows in the original matrix
+  let preCol = this[0].length; // Number of columns in the original matrix
 
   // Generate empty arrays in the result for each column in the transposed matrix
   for (let i = 0; i < preCol; i++) {
-    result.push([])
+    result.push([]);
   }
 
   // Fill the transposed matrix by swapping rows with columns
   for (let col = 0; col < preCol; col++) {
     for (let row = 0; row < preRow; row++) {
-      result[col][row] = this[row][col]
+      result[col][row] = this[row][col];
     }
   }
 
-  return result // Return the transposed matrix
-}
+  return result; // Return the transposed matrix
+};
 ```
 
 </details>

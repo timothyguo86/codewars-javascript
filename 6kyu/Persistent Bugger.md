@@ -18,19 +18,19 @@ For example (**Input** --> **Output**):
 ```js
 function persistence(num, count = 0) {
   // Check if num is less than 10, if so, return the count
-  if (num < 10) return count
+  if (num < 10) return count;
 
   // Convert num to string, split it into an array of digits, and reduce it by multiplying each digit
   const newNum = num
     .toString()
-    .split('')
-    .reduce((acc, cur) => (acc = acc * cur), 1)
+    .split("")
+    .reduce((acc, cur) => (acc = acc * cur), 1);
 
   // Increment the count
-  count++
+  count++;
 
   // Recursively call persistence with the newNum and updated count
-  return persistence(newNum, count)
+  return persistence(newNum, count);
 }
 ```
 

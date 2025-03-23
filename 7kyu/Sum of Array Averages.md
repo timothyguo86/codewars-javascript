@@ -12,27 +12,29 @@ The example given: `sumAverage([[3, 4, 1, 3, 5, 1, 4], [21, 54, 33, 21, 77]])`, 
 
 1. Calculate the average of each individual array:
 
-       [3, 4, 1, 3, 5, 1, 4] = (3 + 4 + 1 + 3 + 5 + 1 + 4) / 7 = 3
-       [21, 54, 33, 21, 77] = (21 + 54 + 33 + 21 + 77) / 5 = 41.2
+   [3, 4, 1, 3, 5, 1, 4] = (3 + 4 + 1 + 3 + 5 + 1 + 4) / 7 = 3
+   [21, 54, 33, 21, 77] = (21 + 54 + 33 + 21 + 77) / 5 = 41.2
 
 2. Add the average of each array together:
 
-       3 + 41.2 = 44.2
+   3 + 41.2 = 44.2
 
 3. Round the final average down:
 
-       floor(44.2) = 44
+   floor(44.2) = 44
 
 ---
 
 <details><summary>My Solution</summary>
 
 ```js
-const sumAverage = arr => {
-  const averages = arr.map(a => a.reduce((total, cur) => total + cur) / a.length)
+const sumAverage = (arr) => {
+  const averages = arr.map(
+    (a) => a.reduce((total, cur) => total + cur) / a.length,
+  );
 
-  return Math.floor(averages.reduce((total, cur) => total + cur))
-}
+  return Math.floor(averages.reduce((total, cur) => total + cur));
+};
 ```
 
 </details>

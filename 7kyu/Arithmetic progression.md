@@ -18,12 +18,12 @@ The result should be a string of numbers, separated by comma and space.
 
 ```js
 function arithmeticSequenceElements(a, d, n) {
-  const result = []
+  const result = [];
   for (let i = 0; i < n; i++) {
-    result.push(a + i * d)
+    result.push(a + i * d);
   }
 
-  return result.join(', ')
+  return result.join(", ");
 }
 ```
 

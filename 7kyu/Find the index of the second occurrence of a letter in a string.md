@@ -17,7 +17,7 @@ Good luck ;) And don't forget to rate this Kata if you liked it.
 
 ```js
 function secondSymbol(s, symbol) {
-  return s.indexOf(symbol, s.indexOf(symbol) + 1)
+  return s.indexOf(symbol, s.indexOf(symbol) + 1);
 }
 ```
 

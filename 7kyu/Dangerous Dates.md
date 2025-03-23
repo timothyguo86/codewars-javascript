@@ -15,23 +15,23 @@ There's a hard way to do this and there's a right way.
 // Function to get the next five days from a given date
 var nextFiveDays = function (date) {
   // Array to store the next five days
-  const dates = []
+  const dates = [];
 
   // Loop to calculate the next five days
   for (var i = 1; i < 6; i++) {
     // Calculate the date by adding 24 hours * i to the given date
-    let newDate = new Date(Date.parse(date) + 3600000 * 24 * i)
+    let newDate = new Date(Date.parse(date) + 3600000 * 24 * i);
     // Extract day, month, and year from the new date
-    let d = newDate.getDate()
-    let m = newDate.getMonth() + 1 // Months are zero-based, so add 1
-    let y = newDate.getFullYear()
+    let d = newDate.getDate();
+    let m = newDate.getMonth() + 1; // Months are zero-based, so add 1
+    let y = newDate.getFullYear();
     // Push the formatted date (mm/dd/yyyy) to the dates array
-    dates.push(m + '/' + d + '/' + y)
+    dates.push(m + "/" + d + "/" + y);
   }
 
   // Join the dates array elements with a comma and space
-  return dates.join(', ')
-}
+  return dates.join(", ");
+};
 ```
 
 </details>

@@ -18,7 +18,7 @@ Note: Meta programming is not allowed in this kata. So, the size of your solutio
 <details><summary>My Solution</summary>
 
 ```js
-const STRANGE_STRING = 'ß'
+const STRANGE_STRING = "ß";
 ```
 
 </details>

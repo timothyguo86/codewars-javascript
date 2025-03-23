@@ -20,18 +20,18 @@ For the given example, the return value should be:
 <details><summary>My Solution</summary>
 
 ```js
-const multiplicationTable = size => {
-  const result = []
+const multiplicationTable = (size) => {
+  const result = [];
   for (let col = 1; col <= size; col++) {
-    const row = []
+    const row = [];
     for (let i = 1; i <= size; i++) {
-      row.push(i * col)
+      row.push(i * col);
     }
 
-    result.push(row)
+    result.push(row);
   }
-  return result
-}
+  return result;
+};
 ```
 
 </details>

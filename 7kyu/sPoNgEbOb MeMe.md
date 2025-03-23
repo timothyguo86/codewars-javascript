@@ -19,9 +19,9 @@ Example:
 ```js
 function spongeMeme(sentence) {
   return sentence
-    .split('')
+    .split("")
     .map((char, i) => (i % 2 ? char.toLowerCase() : char.toUpperCase()))
-    .join('')
+    .join("");
 }
 ```
 

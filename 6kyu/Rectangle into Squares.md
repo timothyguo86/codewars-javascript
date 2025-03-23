@@ -46,14 +46,14 @@ string) with the size of each of the squares.
 
 ```js
 function sqInRect(l, w) {
-  if (l === w) return null
-  const squares = []
+  if (l === w) return null;
+  const squares = [];
   while (l > 0 && w > 0) {
-    squares.push(l > w ? w : l)
-    l > w ? (l -= w) : (w -= l)
+    squares.push(l > w ? w : l);
+    l > w ? (l -= w) : (w -= l);
   }
 
-  return squares
+  return squares;
 }
 ```
 

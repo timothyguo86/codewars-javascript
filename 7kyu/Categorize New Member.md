@@ -25,9 +25,9 @@ input = [
   [61, 12],
   [37, 6],
   [21, 21],
-  [78, 9]
-]
-output = ['Open', 'Open', 'Senior', 'Open', 'Open', 'Senior']
+  [78, 9],
+];
+output = ["Open", "Open", "Senior", "Open", "Open", "Senior"];
 ```
 
 ---
@@ -36,10 +36,10 @@ output = ['Open', 'Open', 'Senior', 'Open', 'Open', 'Senior']
 
 ```js
 function openOrSenior(data) {
-  return data.map(person => {
+  return data.map((person) => {
     // Determine if a person is 'Senior' based on age and handicap criteria
-    return person[0] > 54 && person[1] > 7 ? 'Senior' : 'Open'
-  })
+    return person[0] > 54 && person[1] > 7 ? "Senior" : "Open";
+  });
 }
 ```
 

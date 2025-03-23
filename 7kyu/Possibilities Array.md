@@ -23,7 +23,7 @@ Examples:
 
 ```js
 function isAllPossibilities(x) {
-  return [...x].sort((a, b) => a - b).every((el, i) => el === i)
+  return [...x].sort((a, b) => a - b).every((el, i) => el === i);
 }
 ```
 

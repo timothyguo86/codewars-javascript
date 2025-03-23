@@ -20,7 +20,7 @@ element.
 
 ```js
 function getMissingElement(superImportantArray) {
-  return superImportantArray.reduce((t, c) => t - c, (9 * 10) / 2)
+  return superImportantArray.reduce((t, c) => t - c, (9 * 10) / 2);
 }
 ```
 

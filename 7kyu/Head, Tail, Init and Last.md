@@ -40,13 +40,13 @@ overall. No empty arrays will be given. Haskell has QuickCheck tests_
 <details><summary>My Solution</summary>
 
 ```js
-const head = arr => arr[0]
+const head = (arr) => arr[0];
 
-const tail = arr => arr.slice(1)
+const tail = (arr) => arr.slice(1);
 
-const init = arr => arr.slice(0, arr.length - 1)
+const init = (arr) => arr.slice(0, arr.length - 1);
 
-const last = arr => arr[arr.length - 1]
+const last = (arr) => arr[arr.length - 1];
 ```
 
 </details>

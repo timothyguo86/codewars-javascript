@@ -25,10 +25,10 @@ Should be a nice little kata for you :)
 
 ```js
 function calculate(string) {
-  let num1 = Number(string.split(' ')[2])
-  let num2 = Number(string.split(' ')[6])
+  let num1 = Number(string.split(" ")[2]);
+  let num2 = Number(string.split(" ")[6]);
 
-  return string.split(' ')[5] === 'gains' ? num1 + num2 : num1 - num2
+  return string.split(" ")[5] === "gains" ? num1 + num2 : num1 - num2;
 }
 ```
 

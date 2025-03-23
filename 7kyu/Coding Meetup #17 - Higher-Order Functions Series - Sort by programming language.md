@@ -75,9 +75,10 @@ Here is the full list of the katas in the **Coding Meetup** series:
 ```js
 function sortByLanguage(list) {
   return list.sort((a, b) => {
-    if (a.language === b.language) return a.firstName.localeCompare(b.firstName)
-    return a.language.localeCompare(b.language)
-  })
+    if (a.language === b.language)
+      return a.firstName.localeCompare(b.firstName);
+    return a.language.localeCompare(b.language);
+  });
 }
 ```
 

@@ -75,7 +75,9 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function findAdmin(list, lang) {
-  return list.filter(dev => dev.language === lang && dev.githubAdmin === 'yes')
+  return list.filter(
+    (dev) => dev.language === lang && dev.githubAdmin === "yes",
+  );
 }
 ```
 

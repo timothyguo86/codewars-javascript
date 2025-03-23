@@ -37,8 +37,8 @@ version as a string that replaces the characters `@` and `.` with `[at]` and `[d
 
 ```js
 const obfuscate = function (email) {
-  return email.replace(/@/g, ' [at] ').replace(/\./g, ' [dot] ')
-}
+  return email.replace(/@/g, " [at] ").replace(/\./g, " [dot] ");
+};
 ```
 
 </details>

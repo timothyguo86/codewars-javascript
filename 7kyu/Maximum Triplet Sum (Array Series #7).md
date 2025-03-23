@@ -67,11 +67,11 @@
 
 ```js
 function maxTriSum(numbers) {
-  const set = new Set(numbers)
+  const set = new Set(numbers);
   return [...set]
     .sort((a, b) => b - a)
     .slice(0, 3)
-    .reduce((acc, cur) => acc + cur)
+    .reduce((acc, cur) => acc + cur);
 }
 ```
 

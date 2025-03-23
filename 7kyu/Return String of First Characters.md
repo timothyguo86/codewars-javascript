@@ -15,9 +15,9 @@ For example:
 ```js
 function makeString(s) {
   return s
-    .split(' ')
-    .map(w => w[0])
-    .join('')
+    .split(" ")
+    .map((w) => w[0])
+    .join("");
 }
 ```
 

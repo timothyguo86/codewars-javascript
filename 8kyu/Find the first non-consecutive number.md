@@ -21,10 +21,10 @@ function firstNonConsecutive(arr) {
   // Iterate through the array and return the first non-consecutive element
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] - arr[i - 1] !== 1) {
-      return arr[i]
+      return arr[i];
     }
   }
-  return null // Return null if all elements are consecutive
+  return null; // Return null if all elements are consecutive
 }
 ```
 

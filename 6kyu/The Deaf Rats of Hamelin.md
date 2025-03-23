@@ -39,17 +39,17 @@ How many deaf rats are there?
 
 ```js
 const countDeafRats = function (town) {
-  let deafMice = 0
+  let deafMice = 0;
 
   town
-    .replace(/\s/g, '')
-    .split('')
+    .replace(/\s/g, "")
+    .split("")
     .forEach((v, i) => {
-      if (v === 'O' && i % 2 === 0) deafMice++
-    })
+      if (v === "O" && i % 2 === 0) deafMice++;
+    });
 
-  return deafMice
-}
+  return deafMice;
+};
 ```
 
 </details>

@@ -39,16 +39,17 @@ Good Luck!
 
 ```js
 function babySharkLyrics() {
-  const g = name => `${name}, doo doo doo doo doo doo\n`.repeat(3) + `${name}!\n`
+  const g = (name) =>
+    `${name}, doo doo doo doo doo doo\n`.repeat(3) + `${name}!\n`;
   return (
-    g('Baby shark') +
-    g('Mommy shark') +
-    g('Daddy shark') +
-    g('Grandma shark') +
-    g('Grandpa shark') +
+    g("Baby shark") +
+    g("Mommy shark") +
+    g("Daddy shark") +
+    g("Grandma shark") +
+    g("Grandpa shark") +
     g("Let's go hunt") +
-    'Run away,…'
-  )
+    "Run away,…"
+  );
 }
 ```
 

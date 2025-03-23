@@ -19,17 +19,19 @@ numbers at their original positions.
 
 ```js
 function sortArray(array) {
-  const sortedOddNums = array.filter(num => num % 2 !== 0).sort((a, b) => a - b)
+  const sortedOddNums = array
+    .filter((num) => num % 2 !== 0)
+    .sort((a, b) => a - b);
 
-  let oddNumsIndex = 0
+  let oddNumsIndex = 0;
 
-  return array.map(num => {
+  return array.map((num) => {
     if (num % 2 !== 0) {
-      return sortedOddNums[oddNumsIndex++]
+      return sortedOddNums[oddNumsIndex++];
     }
 
-    return num
-  })
+    return num;
+  });
 }
 ```
 

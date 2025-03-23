@@ -33,16 +33,16 @@ next: [https://www.codewars.com/kata/represent-array-of-numbers-as-ranges](https
 
 ```js
 function allNonConsecutive(arr) {
-  const result = []
+  const result = [];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] !== arr[i - 1] + 1) {
       result.push({
         i,
-        n: arr[i]
-      })
+        n: arr[i],
+      });
     }
   }
-  return result
+  return result;
 }
 ```
 

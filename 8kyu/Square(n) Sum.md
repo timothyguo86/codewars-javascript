@@ -12,8 +12,8 @@ For example, for `[1, 2, 2]` it should return `9` because 1<sup>2</sup> + 2<sup>
 function squareSum(numbers) {
   // Calculate the sum of squares using the reduce method
   return numbers.reduce((sum, n) => {
-    return (sum += n ** 2)
-  }, 0)
+    return (sum += n ** 2);
+  }, 0);
 }
 ```
 

@@ -4,7 +4,7 @@ This time no story, no theory. The examples below show you how to write function
 
 ### Examples:
 
-```js
+```
 accum("abcd") -> "A-Bb-Ccc-Dddd"
 accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 accum("cwAt") -> "C-Ww-Aaa-Tttt"
@@ -21,9 +21,9 @@ function accum(s) {
   return [...s]
     .map((element, index) => {
       // Create an array of strings with each character repeated and formatted based on its position
-      return element.toUpperCase() + element.repeat(index).toLowerCase()
+      return element.toUpperCase() + element.repeat(index).toLowerCase();
     })
-    .join('-') // Join the array into a single string with '-' as a separator
+    .join("-"); // Join the array into a single string with '-' as a separator
 }
 ```
 

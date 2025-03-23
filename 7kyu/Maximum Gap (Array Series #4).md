@@ -83,11 +83,11 @@ in its sorted form_.
 
 ```js
 function maxGap(numbers) {
-  const sortedNum = numbers.sort((a, b) => a - b)
+  const sortedNum = numbers.sort((a, b) => a - b);
   return sortedNum.reduce((maxGap, cur, i, arr) => {
-    if (arr[i + 1] - arr[i] > maxGap) maxGap = arr[i + 1] - arr[i]
-    return maxGap
-  }, sortedNum[1] - sortedNum[0])
+    if (arr[i + 1] - arr[i] > maxGap) maxGap = arr[i + 1] - arr[i];
+    return maxGap;
+  }, sortedNum[1] - sortedNum[0]);
 }
 ```
 

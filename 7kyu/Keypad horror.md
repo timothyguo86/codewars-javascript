@@ -38,15 +38,15 @@ function computerToPhone(numbers) {
     1: 7,
     2: 8,
     3: 9,
-    0: 0
-  }
+    0: 0,
+  };
 
   return numbers
     ? numbers
-        .split('')
-        .map(v => keypadDic[v])
-        .join('')
-    : ''
+        .split("")
+        .map((v) => keypadDic[v])
+        .join("")
+    : "";
 }
 ```
 

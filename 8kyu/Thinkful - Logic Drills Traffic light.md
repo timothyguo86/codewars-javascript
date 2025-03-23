@@ -14,11 +14,11 @@ For example, when the input is `green`, output should be `yellow`.
 
 ```js
 function updateLight(current) {
-  const lights = ['green', 'yellow', 'red']
-  const currentIndex = lights.indexOf(current)
-  const nextIndex = (currentIndex + 1) % lights.length
+  const lights = ["green", "yellow", "red"];
+  const currentIndex = lights.indexOf(current);
+  const nextIndex = (currentIndex + 1) % lights.length;
 
-  return lights[nextIndex]
+  return lights[nextIndex];
 }
 ```
 

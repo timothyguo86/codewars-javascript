@@ -6,8 +6,8 @@ untouched.
 ## Example
 
 ```js
-pigIt('Pig latin is cool') // igPay atinlay siay oolcay
-pigIt('Hello world !') // elloHay orldway !
+pigIt("Pig latin is cool"); // igPay atinlay siay oolcay
+pigIt("Hello world !"); // elloHay orldway !
 ```
 
 ---
@@ -17,15 +17,15 @@ pigIt('Hello world !') // elloHay orldway !
 ```js
 function pigIt(str) {
   return str
-    .split(' ')
-    .map(word => {
+    .split(" ")
+    .map((word) => {
       if (word.match(/[a-zA-Z]/g)) {
-        return word.slice(1) + word[0] + 'ay'
+        return word.slice(1) + word[0] + "ay";
       } else {
-        return word
+        return word;
       }
     })
-    .join(' ')
+    .join(" ");
 }
 ```
 

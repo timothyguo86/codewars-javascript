@@ -14,7 +14,7 @@ Pak should not be the first or last word. Strings of just spaces should return a
 
 ```js
 function pak(s) {
-  return s.trim() ? s.trim().split(' ').join(' pak ') : ''
+  return s.trim() ? s.trim().split(" ").join(" pak ") : "";
 }
 ```
 

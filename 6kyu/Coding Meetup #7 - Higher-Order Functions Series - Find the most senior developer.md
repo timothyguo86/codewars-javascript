@@ -71,9 +71,9 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function findSenior(list) {
-  let oldestAge = list.sort((a, b) => b.age - a.age)[0].age
+  let oldestAge = list.sort((a, b) => b.age - a.age)[0].age;
 
-  return list.filter(v => v.age === oldestAge)
+  return list.filter((v) => v.age === oldestAge);
 }
 ```
 

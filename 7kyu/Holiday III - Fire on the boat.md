@@ -15,7 +15,7 @@ Go to work!
 
 ```js
 function fireFight(s) {
-  return s.replace(/Fire/g, '~~')
+  return s.replace(/Fire/g, "~~");
 }
 ```
 

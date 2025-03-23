@@ -21,7 +21,7 @@ objects). For extra style, can you get your method to check for objects that ext
 
 ```js
 function keysAndValues(data) {
-  return [Object.keys(data), Object.values(data)]
+  return [Object.keys(data), Object.values(data)];
 }
 ```
 

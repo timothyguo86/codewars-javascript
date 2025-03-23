@@ -29,7 +29,7 @@ array._
 
 ```js
 function inAscOrder(arr) {
-  return arr.join('') === arr.sort((a, b) => a - b).join('')
+  return arr.join("") === arr.sort((a, b) => a - b).join("");
 }
 ```
 

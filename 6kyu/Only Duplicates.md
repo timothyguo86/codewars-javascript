@@ -14,10 +14,10 @@ output: "cceee"
 
 ```js
 function onlyDuplicates(str) {
-  return str.replace(/./g, v => {
-    if (str.indexOf(v) === str.lastIndexOf(v)) return ''
-    return v
-  })
+  return str.replace(/./g, (v) => {
+    if (str.indexOf(v) === str.lastIndexOf(v)) return "";
+    return v;
+  });
 }
 ```
 

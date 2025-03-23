@@ -11,7 +11,7 @@ You task to pass only this tests :
 <details><summary>My Solution</summary>
 
 ```js
-const a = '0'
+const a = "0";
 ```
 
 </details>

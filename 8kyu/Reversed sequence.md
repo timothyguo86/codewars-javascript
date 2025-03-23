@@ -9,11 +9,11 @@ Example : `n=5` --> `[5,4,3,2,1]`
 <details><summary>My Solution</summary>
 
 ```js
-const reverseSeq = n =>
+const reverseSeq = (n) =>
   // Create an array with values in reverse sequence
   Array(n)
     .fill()
-    .map((_, i) => n - i)
+    .map((_, i) => n - i);
 ```
 
 </details>

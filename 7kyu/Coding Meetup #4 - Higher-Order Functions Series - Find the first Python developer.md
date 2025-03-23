@@ -12,10 +12,31 @@ For example, given the following input array:
 
 ```js
 var list1 = [
-  { firstName: 'Mark', lastName: 'G.', country: 'Scotland', continent: 'Europe', age: 22, language: 'JavaScript' },
-  { firstName: 'Victoria', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 30, language: 'Python' },
-  { firstName: 'Emma', lastName: 'B.', country: 'Norway', continent: 'Europe', age: 19, language: 'Clojure' }
-]
+  {
+    firstName: "Mark",
+    lastName: "G.",
+    country: "Scotland",
+    continent: "Europe",
+    age: 22,
+    language: "JavaScript",
+  },
+  {
+    firstName: "Victoria",
+    lastName: "T.",
+    country: "Puerto Rico",
+    continent: "Americas",
+    age: 30,
+    language: "Python",
+  },
+  {
+    firstName: "Emma",
+    lastName: "B.",
+    country: "Norway",
+    continent: "Europe",
+    age: 19,
+    language: "Clojure",
+  },
+];
 ```
 
 your function should return `Victoria, Puerto Rico`.
@@ -67,9 +88,11 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function getFirstPython(list) {
-  let pythonDev = list.find(dev => dev.language === 'Python')
+  let pythonDev = list.find((dev) => dev.language === "Python");
 
-  return pythonDev ? `${pythonDev.firstName}, ${pythonDev.country}` : 'There will be no Python developers'
+  return pythonDev
+    ? `${pythonDev.firstName}, ${pythonDev.country}`
+    : "There will be no Python developers";
 }
 ```
 

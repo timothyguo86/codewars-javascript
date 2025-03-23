@@ -17,11 +17,11 @@ strings.
 
 ```js
 function well(x) {
-  let goodIdeasCount = (x.flat().join('').match(/good/gi) || []).length
+  let goodIdeasCount = (x.flat().join("").match(/good/gi) || []).length;
 
-  if (goodIdeasCount > 2) return 'I smell a series!'
-  else if (!goodIdeasCount) return 'Fail!'
-  return 'Publish!'
+  if (goodIdeasCount > 2) return "I smell a series!";
+  else if (!goodIdeasCount) return "Fail!";
+  return "Publish!";
 }
 ```
 

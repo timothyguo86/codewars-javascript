@@ -35,13 +35,13 @@ include all numbers that come before it, going back to 0.
 
 ```js
 function counterEffect(hitCount) {
-  const digits = hitCount.split('').map(Number)
-  const result = []
+  const digits = hitCount.split("").map(Number);
+  const result = [];
   for (d of digits) {
-    result.push(Array.from({ length: d + 1 }, (_, i) => i))
+    result.push(Array.from({ length: d + 1 }, (_, i) => i));
   }
 
-  return result
+  return result;
 }
 ```
 

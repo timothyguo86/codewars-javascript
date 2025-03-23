@@ -19,13 +19,13 @@ numberToPower(10, 6) // -> 1000000
 
 ```js
 function numberToPower(number, power) {
-  let result = 1
+  let result = 1;
 
   for (let i = 0; i < power; i++) {
-    result *= number
+    result *= number;
   }
 
-  return result
+  return result;
 }
 ```
 

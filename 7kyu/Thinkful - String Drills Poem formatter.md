@@ -27,7 +27,7 @@ about trailing whitespace in your solution.
 
 ```js
 function formatPoem(poem) {
-  return poem.split('. ').join('.\n')
+  return poem.split(". ").join(".\n");
 }
 ```
 

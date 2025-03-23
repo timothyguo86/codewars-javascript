@@ -34,10 +34,10 @@ The tests will always use some integral number, so don't worry about that in dyn
 <details><summary>My Solution</summary>
 
 ```js
-const isSquare = n => {
+const isSquare = (n) => {
   // Check if the square root of the number is an integer
-  return Math.sqrt(n) % 1 === 0
-}
+  return Math.sqrt(n) % 1 === 0;
+};
 ```
 
 </details>

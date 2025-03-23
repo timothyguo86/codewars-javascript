@@ -24,21 +24,21 @@ Here's the deal:
 
 ```js
 function generateHashtag(str) {
-  if (!str.trim()) return false
+  if (!str.trim()) return false;
 
-  let result = ''
+  let result = "";
 
   str
     .trim()
-    .replace(/\s+/g, ' ') // Replace multiple spaces with a single space
-    .split(' ')
-    .forEach(word => {
-      result += word[0].toUpperCase() + word.slice(1)
-    })
+    .replace(/\s+/g, " ") // Replace multiple spaces with a single space
+    .split(" ")
+    .forEach((word) => {
+      result += word[0].toUpperCase() + word.slice(1);
+    });
 
-  if (('#' + result).length > 140) return false
+  if (("#" + result).length > 140) return false;
 
-  return '#' + result
+  return "#" + result;
 }
 ```
 

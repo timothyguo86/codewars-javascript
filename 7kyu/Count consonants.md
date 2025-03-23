@@ -10,7 +10,7 @@ Consonants are all letters used to write English excluding the vowels `a, e, i, 
 
 ```js
 function consonantCount(str) {
-  return str.replace(/[^a-z]|[aeiou]/gi, '').length
+  return str.replace(/[^a-z]|[aeiou]/gi, "").length;
 }
 ```
 

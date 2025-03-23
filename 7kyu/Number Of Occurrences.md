@@ -19,11 +19,11 @@ on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Globa
 <details><summary>My Solution</summary>
 
 ```js
-Object.defineProperty(Array.prototype, 'numberOfOccurrences', {
+Object.defineProperty(Array.prototype, "numberOfOccurrences", {
   value: function numberOfOccurrences(element) {
-    return this.filter(v => v === element).length
-  }
-})
+    return this.filter((v) => v === element).length;
+  },
+});
 ```
 
 </details>

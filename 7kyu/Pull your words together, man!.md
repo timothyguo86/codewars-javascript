@@ -49,8 +49,8 @@ Output
 
 ```js
 function sentencify(words) {
-  let sentence = words.join(' ')
-  return sentence[0].toUpperCase() + sentence.slice(1) + '.'
+  let sentence = words.join(" ");
+  return sentence[0].toUpperCase() + sentence.slice(1) + ".";
 }
 ```
 

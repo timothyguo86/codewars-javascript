@@ -23,7 +23,7 @@ For example:
 
 ```js
 function double(array) {
-  return array.map(v => v * 2)
+  return array.map((v) => v * 2);
 }
 ```
 

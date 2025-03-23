@@ -21,17 +21,17 @@ there are multiple words. Words will be separated by a single space(`' '`).
 ```js
 function toWeirdCase(string) {
   return string
-    .split(' ') // Split the input string into an array of words
-    .map(word => {
+    .split(" ") // Split the input string into an array of words
+    .map((word) => {
       return word
-        .split('')
+        .split("")
         .map((char, index) => {
           // Map each character in a word to uppercase or lowercase based on its index
-          return index % 2 === 0 ? char.toUpperCase() : char.toLowerCase()
+          return index % 2 === 0 ? char.toUpperCase() : char.toLowerCase();
         })
-        .join('') // Join the characters back into a word
+        .join(""); // Join the characters back into a word
     })
-    .join(' ') // Join the words back into a string
+    .join(" "); // Join the words back into a string
 }
 ```
 

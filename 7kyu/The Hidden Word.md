@@ -35,21 +35,21 @@ Maya won't forget to thank you at the end of her article :)
 ```js
 function hiddenWord(num) {
   const dict = {
-    6: 'a',
-    1: 'b',
-    7: 'd',
-    4: 'e',
-    3: 'i',
-    2: 'l',
-    9: 'm',
-    8: 'n',
-    0: 'o',
-    5: 't'
-  }
+    6: "a",
+    1: "b",
+    7: "d",
+    4: "e",
+    3: "i",
+    2: "l",
+    9: "m",
+    8: "n",
+    0: "o",
+    5: "t",
+  };
   return num
     .toString()
-    .split('')
-    .reduce((word, cur) => word + dict[cur], '')
+    .split("")
+    .reduce((word, cur) => word + dict[cur], "");
 }
 ```
 

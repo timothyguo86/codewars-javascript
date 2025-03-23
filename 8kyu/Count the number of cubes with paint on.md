@@ -23,7 +23,7 @@ If we cut the cube 4 times, the function should return 98
 
 ```js
 function countSquares(cuts) {
-  return cuts === 0 ? 1 : (cuts + 1) ** 3 - (cuts - 1) ** 3
+  return cuts === 0 ? 1 : (cuts + 1) ** 3 - (cuts - 1) ** 3;
 }
 ```
 

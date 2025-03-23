@@ -22,12 +22,12 @@ Please also try [Simple time difference](https://www.codewars.com/kata/5b76a34ff
 
 ```js
 function pairs(ar) {
-  let result = 0
+  let result = 0;
   for (let i = 0; i < ar.length - 1; i = i + 2) {
-    if (ar[i] - ar[i + 1] === 1 || ar[i] - ar[i + 1] === -1) result++
+    if (ar[i] - ar[i + 1] === 1 || ar[i] - ar[i + 1] === -1) result++;
   }
 
-  return result
+  return result;
 }
 ```
 

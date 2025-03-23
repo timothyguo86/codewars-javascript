@@ -33,15 +33,15 @@ Explanation: Only one meeting occurs.
 
 ```js
 function countSalutes(hallway) {
-  let salutes = 0
+  let salutes = 0;
 
   for (let i = 0; i < hallway.length; i++) {
-    if (hallway[i] === '>') {
-      salutes += hallway.slice(i).replace(/[^<]/g, '').length * 2
+    if (hallway[i] === ">") {
+      salutes += hallway.slice(i).replace(/[^<]/g, "").length * 2;
     }
   }
 
-  return salutes
+  return salutes;
 }
 ```
 

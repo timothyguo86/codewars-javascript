@@ -22,12 +22,12 @@ Example: input: \[5, 0, 3\], "I Love You" output: "ivy" (0 = "i", 3 = "v", 5 = "
 
 ```js
 function missingWord(nums, str) {
-  let [a, b, c] = nums.sort((a, b) => a - b)
-  let sanitizedStr = str.replace(/\s/g, '').toLowerCase()
+  let [a, b, c] = nums.sort((a, b) => a - b);
+  let sanitizedStr = str.replace(/\s/g, "").toLowerCase();
 
   return sanitizedStr[a] && sanitizedStr[b] && sanitizedStr[c]
     ? sanitizedStr[a] + sanitizedStr[b] + sanitizedStr[c]
-    : 'No mission today'
+    : "No mission today";
 }
 ```
 

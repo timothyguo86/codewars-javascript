@@ -29,9 +29,10 @@ return --> 'Clean'
 
 ```js
 function crap(x, bags, cap) {
-  s = x.flat()
-  if (s.includes('D')) return 'Dog!!'
-  else return s.filter(el => el === '@').length > bags * cap ? 'Cr@p' : 'Clean'
+  s = x.flat();
+  if (s.includes("D")) return "Dog!!";
+  else
+    return s.filter((el) => el === "@").length > bags * cap ? "Cr@p" : "Clean";
 }
 ```
 

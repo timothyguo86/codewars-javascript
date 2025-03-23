@@ -26,9 +26,9 @@ You have to create the function `fibonacci` that receives `n` and returns `f(n)`
 <details><summary>My Solution</summary>
 
 ```js
-const fibonacci = n => {
-  return n === 1 || n === 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2)
-}
+const fibonacci = (n) => {
+  return n === 1 || n === 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
 ```
 
 </details>

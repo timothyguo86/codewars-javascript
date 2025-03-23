@@ -24,7 +24,7 @@ If you like this Kata, please try:
 
 ```js
 function dup(s) {
-  return s.map(v => v.replace(/(.)\1*/gi, match => match[0]))
+  return s.map((v) => v.replace(/(.)\1*/gi, (match) => match[0]));
 }
 ```
 

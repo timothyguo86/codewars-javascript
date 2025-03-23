@@ -23,7 +23,9 @@ Please also try [Simple remove duplicates](https://www.codewars.com/kata/5ba38ba
 
 ```js
 function solve(a, b) {
-  return [...(a + b)].filter(el => !a.includes(el) || !b.includes(el)).join('')
+  return [...(a + b)]
+    .filter((el) => !a.includes(el) || !b.includes(el))
+    .join("");
 }
 ```
 

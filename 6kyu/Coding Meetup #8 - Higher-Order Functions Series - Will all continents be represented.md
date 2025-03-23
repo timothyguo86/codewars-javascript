@@ -71,7 +71,7 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function allContinents(list) {
-  return new Set(list.map(v => v.continent)).size === 5
+  return new Set(list.map((v) => v.continent)).size === 5;
 }
 ```
 

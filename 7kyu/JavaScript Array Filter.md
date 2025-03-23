@@ -13,7 +13,7 @@ The solution would work like the following:
 
 ```js
 function getEvenNumbers(numbersArray) {
-  return numbersArray.filter(v => !(v % 2))
+  return numbersArray.filter((v) => !(v % 2));
 }
 ```
 

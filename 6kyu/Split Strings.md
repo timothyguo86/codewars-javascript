@@ -18,12 +18,12 @@ For
 
 ```js
 function solution(str) {
-  const pairs = []
+  const pairs = [];
   for (let i = 0; i < str.length; i += 2) {
-    const pair = str.slice(i, i + 2).padEnd(2, '_')
-    pairs.push(pair)
+    const pair = str.slice(i, i + 2).padEnd(2, "_");
+    pairs.push(pair);
   }
-  return pairs
+  return pairs;
 }
 ```
 

@@ -27,11 +27,14 @@ Enjoy it!!
 
 ```js
 function nextPal(val) {
-  let nextPalindrome = val + 1
-  while (nextPalindrome.toString() !== [...nextPalindrome.toString()].reverse().join('')) {
-    nextPalindrome++
+  let nextPalindrome = val + 1;
+  while (
+    nextPalindrome.toString() !==
+    [...nextPalindrome.toString()].reverse().join("")
+  ) {
+    nextPalindrome++;
   }
-  return nextPalindrome
+  return nextPalindrome;
 }
 ```
 

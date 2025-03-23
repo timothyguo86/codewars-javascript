@@ -16,7 +16,7 @@ Change the input text `s` to new borrower speak. Help save the next generation!
 
 ```js
 function borrow(s) {
-  return s.toLowerCase().replace(/[^a-z]/g, '')
+  return s.toLowerCase().replace(/[^a-z]/g, "");
 }
 ```
 

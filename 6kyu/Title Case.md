@@ -62,16 +62,20 @@ of the minor words string -- it should behave in the same way even if the case o
 
 ```js
 function titleCase(title, minorWords) {
-  if (!title) return title
+  if (!title) return title;
 
-  let titleArr = title.split(' ')
-  let minorWordsArr = minorWords ? minorWords.split(' ') : []
+  let titleArr = title.split(" ");
+  let minorWordsArr = minorWords ? minorWords.split(" ") : [];
   return titleArr
     .map((v, i) => {
-      if (i !== 0 && minorWordsArr.some(mv => mv.toLowerCase() === v.toLowerCase())) return v.toLowerCase()
-      else return v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase()
+      if (
+        i !== 0 &&
+        minorWordsArr.some((mv) => mv.toLowerCase() === v.toLowerCase())
+      )
+        return v.toLowerCase();
+      else return v.slice(0, 1).toUpperCase() + v.slice(1).toLowerCase();
     })
-    .join(' ')
+    .join(" ");
 }
 ```
 

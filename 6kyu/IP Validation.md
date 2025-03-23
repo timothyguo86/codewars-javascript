@@ -27,15 +27,21 @@ consist of four octets, with values between `0` and `255`, inclusive.
 
 ```js
 function isValidIP(str) {
-  const arr = str.split('.')
-  if (arr.length !== 4) return false
+  const arr = str.split(".");
+  if (arr.length !== 4) return false;
 
   for (let i = 0; i < 4; i++) {
-    const num = Number(arr[i])
-    if (isNaN(num) || num < 0 || num > 255 || num.toString().length !== arr[i].length) return false
+    const num = Number(arr[i]);
+    if (
+      isNaN(num) ||
+      num < 0 ||
+      num > 255 ||
+      num.toString().length !== arr[i].length
+    )
+      return false;
   }
 
-  return true
+  return true;
 }
 ```
 

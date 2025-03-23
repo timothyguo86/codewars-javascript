@@ -25,7 +25,9 @@ No implicit type casting is allowed. A subarray \[1, '2'\] would be considered i
 
 ```js
 function filterHomogenous(arrays) {
-  return arrays.filter(a => a.length && a.every(v => typeof v === typeof a[0]))
+  return arrays.filter(
+    (a) => a.length && a.every((v) => typeof v === typeof a[0]),
+  );
 }
 ```
 

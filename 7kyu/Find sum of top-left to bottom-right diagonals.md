@@ -24,11 +24,11 @@ second value of the second array, the third value of the third array, and so on.
 
 ```js
 function diagonalSum(matrix) {
-  let total = 0
+  let total = 0;
   for (let i = 0; i < matrix.length; i++) {
-    total += matrix[i][i]
+    total += matrix[i][i];
   }
-  return total
+  return total;
 }
 ```
 

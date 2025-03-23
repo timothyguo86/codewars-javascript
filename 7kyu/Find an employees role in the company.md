@@ -27,11 +27,13 @@ and last name i.e. Jane Doe or just a name.
 
 ```js
 function findEmployeesRole(name) {
-  const employee = employees.filter(v => {
-    return (v.firstName === name.split(' ')[0]) & (v.lastName === name.split(' ')[1])
-  })[0]
+  const employee = employees.filter((v) => {
+    return (
+      (v.firstName === name.split(" ")[0]) & (v.lastName === name.split(" ")[1])
+    );
+  })[0];
 
-  return employee ? employee.role : 'Does not work here!'
+  return employee ? employee.role : "Does not work here!";
 }
 ```
 

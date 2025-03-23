@@ -19,9 +19,9 @@ The result should also be ordered from highest to lowest.
 
 ```js
 function twoHighest(arr) {
-  const uniqueArr = [...new Set(arr)]
+  const uniqueArr = [...new Set(arr)];
 
-  return uniqueArr.sort((a, b) => b - a).slice(0, 2)
+  return uniqueArr.sort((a, b) => b - a).slice(0, 2);
 }
 ```
 

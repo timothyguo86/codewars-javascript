@@ -20,15 +20,15 @@ The combine function should be a good citizen, so should not mutate the input ob
 
 ```js
 function combine(...objs) {
-  const combinedObj = {}
+  const combinedObj = {};
 
-  objs.forEach(obj => {
-    Object.keys(obj).forEach(key => {
-      combinedObj[key] = (combinedObj[key] || 0) + obj[key]
-    })
-  })
+  objs.forEach((obj) => {
+    Object.keys(obj).forEach((key) => {
+      combinedObj[key] = (combinedObj[key] || 0) + obj[key];
+    });
+  });
 
-  return combinedObj
+  return combinedObj;
 }
 ```
 

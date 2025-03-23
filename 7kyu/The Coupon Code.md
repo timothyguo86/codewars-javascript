@@ -16,8 +16,8 @@ A coupon is no more valid on the day **AFTER** the expiration date. All dates wi
 ## Examples:
 
 ```javascript
-checkCoupon('123', '123', 'July 9, 2015', 'July 9, 2015') === true
-checkCoupon('123', '123', 'July 9, 2015', 'July 2, 2015') === false
+checkCoupon("123", "123", "July 9, 2015", "July 9, 2015") === true;
+checkCoupon("123", "123", "July 9, 2015", "July 2, 2015") === false;
 ```
 
 ---
@@ -26,7 +26,10 @@ checkCoupon('123', '123', 'July 9, 2015', 'July 2, 2015') === false
 
 ```js
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
-  return enteredCode === correctCode && new Date(currentDate) <= new Date(expirationDate)
+  return (
+    enteredCode === correctCode &&
+    new Date(currentDate) <= new Date(expirationDate)
+  );
 }
 ```
 

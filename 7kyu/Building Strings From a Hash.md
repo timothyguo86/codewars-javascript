@@ -19,8 +19,8 @@ Example:
 ```js
 function solution(pairs) {
   return Object.keys(pairs)
-    .map(key => result + `${key} = ${pairs[key]}`)
-    .join(',')
+    .map((key) => result + `${key} = ${pairs[key]}`)
+    .join(",");
 }
 ```
 

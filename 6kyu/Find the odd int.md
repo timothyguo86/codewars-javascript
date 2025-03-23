@@ -18,16 +18,16 @@ There will always be only one integer that appears an odd number of times.
 
 ```js
 function findOdd(A) {
-  const map = {}
+  const map = {};
 
   // Count occurrences of each element in the array
-  A.forEach(element => {
-    map[element] = (map[element] || 0) + 1
-  })
+  A.forEach((element) => {
+    map[element] = (map[element] || 0) + 1;
+  });
 
   // Find the element with odd occurrence
   for (let key in map) {
-    if (map[key] % 2 !== 0) return Number(key)
+    if (map[key] % 2 !== 0) return Number(key);
   }
 }
 ```

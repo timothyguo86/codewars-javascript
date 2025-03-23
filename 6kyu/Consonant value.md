@@ -30,43 +30,42 @@ If you like this Kata, please try:
 ```js
 function solve(s) {
   let alphabetics = [
-    '',
-    '',
-    'b',
-    'c',
-    'd',
-    '',
-    'f',
-    'g',
-    'h',
-    '',
-    'j',
-    'k',
-    'l',
-    'm',
-    'n',
-    '',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    '',
-    'v',
-    'w',
-    'x',
-    'y',
-    'z'
-  ]
+    "",
+    "",
+    "b",
+    "c",
+    "d",
+    "",
+    "f",
+    "g",
+    "h",
+    "",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
   return s.split(/[aeiou]/).reduce((maxValue, cur) => {
-    let curValue = 0
+    let curValue = 0;
     for (let i = 0; i < cur.length; i++) {
-      curValue += alphabetics.indexOf(cur[i])
+      curValue += alphabetics.indexOf(cur[i]);
     }
-    return Math.max(maxValue, curValue)
-  }, 0)
+    return Math.max(maxValue, curValue);
+  }, 0);
 }
 ```
 
 </details>
-

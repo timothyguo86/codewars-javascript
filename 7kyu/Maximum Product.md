@@ -75,11 +75,11 @@ in the array_.
 function adjacentElementsProduct(array) {
   return array.reduce((max, cur, i, arr) => {
     if (i > 0) {
-      const product = arr[i] * arr[i - 1]
-      max = product > max ? product : max
+      const product = arr[i] * arr[i - 1];
+      max = product > max ? product : max;
     }
-    return max
-  }, array[0] * array[1])
+    return max;
+  }, array[0] * array[1]);
 }
 ```
 

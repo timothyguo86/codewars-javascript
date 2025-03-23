@@ -28,12 +28,12 @@ here!! [http://www.codewars.com/kata/555b73a81a6285b6ce000047](http://www.codewa
 
 ```js
 function add() {
-  let result = 0
+  let result = 0;
   for (let i = 0; i < arguments.length; i++) {
-    result += arguments[i] / (i + 1)
+    result += arguments[i] / (i + 1);
   }
 
-  return Math.round(result)
+  return Math.round(result);
 }
 ```
 

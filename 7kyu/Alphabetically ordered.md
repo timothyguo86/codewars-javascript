@@ -26,7 +26,7 @@ Check my other katas:
 
 ```js
 function alphabetic(s) {
-  return s === s.split('').sort().join('')
+  return s === s.split("").sort().join("");
 }
 ```
 

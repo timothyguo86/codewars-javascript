@@ -15,18 +15,18 @@ should be shifted, like in the original Rot13 "implementation".
 function rot13(message) {
   // charCode for A-Z: 65-90, a-z: 97-122
   return message
-    .split('')
-    .map(char => {
-      const charCode = char.charCodeAt()
+    .split("")
+    .map((char) => {
+      const charCode = char.charCodeAt();
       if (charCode >= 65 && charCode <= 90) {
-        return String.fromCharCode(((charCode + 13 - 65) % 26) + 65)
+        return String.fromCharCode(((charCode + 13 - 65) % 26) + 65);
       } else if (charCode >= 97 && charCode <= 122) {
-        return String.fromCharCode(((charCode + 13 - 97) % 26) + 97)
+        return String.fromCharCode(((charCode + 13 - 97) % 26) + 97);
       } else {
-        return char
+        return char;
       }
     })
-    .join('')
+    .join("");
 }
 ```
 

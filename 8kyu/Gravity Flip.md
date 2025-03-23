@@ -41,11 +41,11 @@ switches the gravity.
 ```js
 const flip = (d, a) => {
   // Define a comparison function for sorting
-  const compare = (a, b) => a - b
+  const compare = (a, b) => a - b;
 
   // Return the sorted array in ascending or descending order based on the direction 'd'
-  return d === 'R' ? a.sort(compare) : a.sort(compare).reverse()
-}
+  return d === "R" ? a.sort(compare) : a.sort(compare).reverse();
+};
 ```
 
 </details>

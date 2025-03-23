@@ -70,13 +70,13 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 ```js
 function countLanguages(list) {
-  const result = {}
-  list.forEach(guest => {
-    if (result[guest.language]) result[guest.language]++
-    else result[guest.language] = 1
-  })
+  const result = {};
+  list.forEach((guest) => {
+    if (result[guest.language]) result[guest.language]++;
+    else result[guest.language] = 1;
+  });
 
-  return result
+  return result;
 }
 ```
 

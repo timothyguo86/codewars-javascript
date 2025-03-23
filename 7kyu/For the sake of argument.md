@@ -19,8 +19,8 @@ Example usage:
 
 ```js
 const numbers = (...args) => {
-  return args.every(v => typeof v === 'number')
-}
+  return args.every((v) => typeof v === "number");
+};
 ```
 
 </details>

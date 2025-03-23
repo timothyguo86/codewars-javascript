@@ -17,11 +17,11 @@ function deleteValues(array, pred) {
     // Check if the predicate returns true for the current element
     if (pred(array[i])) {
       // If the predicate returns true, remove the element from the array
-      array.splice(i, 1)
+      array.splice(i, 1);
     }
   }
   // Return the modified array
-  return array
+  return array;
 }
 ```
 

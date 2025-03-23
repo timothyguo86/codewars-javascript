@@ -24,11 +24,11 @@ For the sake of simplicity, you can assume that any numbers passed into the func
 
 ```js
 function encode(string) {
-  return string.replace(/[aeiou]/g, v => 'aeiou'.indexOf(v) + 1)
+  return string.replace(/[aeiou]/g, (v) => "aeiou".indexOf(v) + 1);
 }
 
 function decode(string) {
-  return string.replace(/[1-5]/g, v => 'aeiou'[v - 1])
+  return string.replace(/[1-5]/g, (v) => "aeiou"[v - 1]);
 }
 ```
 

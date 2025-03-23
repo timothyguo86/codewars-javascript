@@ -15,15 +15,15 @@ Haskell), check if the array contains three and two of the same values.
 
 ```js
 function checkThreeAndTwo(array) {
-  const dict = {}
-  array.forEach(v => {
-    if (!dict[v]) dict[v] = 1
-    else dict[v]++
-  })
-  const [a, b] = Object.values(dict)
-  if ((a === 3 && b === 2) || (a === 2 && b === 3)) return true
+  const dict = {};
+  array.forEach((v) => {
+    if (!dict[v]) dict[v] = 1;
+    else dict[v]++;
+  });
+  const [a, b] = Object.values(dict);
+  if ((a === 3 && b === 2) || (a === 2 && b === 3)) return true;
 
-  return false
+  return false;
 }
 ```
 

@@ -19,11 +19,11 @@ Have fun!
 ```js
 function maxDiff(list) {
   if (list.length < 2) {
-    return 0
+    return 0;
   }
-  let min = Math.min(...list)
-  let max = Math.max(...list)
-  return max - min
+  let min = Math.min(...list);
+  let max = Math.max(...list);
+  return max - min;
 }
 ```
 

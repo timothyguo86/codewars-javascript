@@ -20,12 +20,12 @@ letters.
 
 ```js
 function nthChar(words) {
-  let output = ''
+  let output = "";
   words.forEach((v, i) => {
-    output += v[i]
-  })
+    output += v[i];
+  });
 
-  return output
+  return output;
 }
 ```
 

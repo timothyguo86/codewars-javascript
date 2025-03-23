@@ -22,9 +22,9 @@ Your task is correct the errors in the digitised text. You only have to handle t
 // Replaces '5' with 'S', '0' with 'O', and '1' with 'I'.
 function correct(string) {
   return string
-    .replace(/5/g, 'S') // Replace all occurrences of '5' with 'S'
-    .replace(/0/g, 'O') // Replace all occurrences of '0' with 'O'
-    .replace(/1/g, 'I') // Replace all occurrences of '1' with 'I'
+    .replace(/5/g, "S") // Replace all occurrences of '5' with 'S'
+    .replace(/0/g, "O") // Replace all occurrences of '0' with 'O'
+    .replace(/1/g, "I"); // Replace all occurrences of '1' with 'I'
 }
 ```
 

@@ -12,13 +12,13 @@ int array with numbers of both arrays shuffled one by one.
 
 ```js
 function compoundArray(a, b) {
-  const output = []
+  const output = [];
   for (let i = 0; i < Math.max(a.length, b.length); i++) {
-    if (a[i] !== undefined) output.push(a[i])
-    if (b[i] !== undefined) output.push(b[i])
+    if (a[i] !== undefined) output.push(a[i]);
+    if (b[i] !== undefined) output.push(b[i]);
   }
 
-  return output
+  return output;
 }
 ```
 

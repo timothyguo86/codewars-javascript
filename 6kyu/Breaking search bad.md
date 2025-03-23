@@ -4,7 +4,7 @@ The function must return the sequence of titles that match the string passed as 
 
 TITLES is a preloaded sequence of strings.
 
-```js
+```
 TITLES = ['Rocky 1', 'Rocky 2', 'My Little Poney']
 search('ock') --> ['Rocky 1', 'Rocky 2']
 ```
@@ -22,7 +22,7 @@ Let's figure out !
 ```js
 function search(searchTerm) {
   // A new regular expression object is created inside the filter function for each title in the TITLES array.
-  return TITLES.filter(title => new RegExp(searchTerm, 'gi').test(title))
+  return TITLES.filter((title) => new RegExp(searchTerm, "gi").test(title));
 }
 ```
 

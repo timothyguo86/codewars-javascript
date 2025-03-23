@@ -33,8 +33,8 @@ square of 12 and 14
 ```js
 function alternateSqSum(arr) {
   return arr.reduce((total, cur, i) => {
-    return total + (i % 2 ? cur ** 2 : cur)
-  }, 0)
+    return total + (i % 2 ? cur ** 2 : cur);
+  }, 0);
 }
 ```
 

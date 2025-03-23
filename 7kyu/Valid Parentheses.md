@@ -29,18 +29,18 @@ editor, and let the code highlighting show you!_
 
 ```js
 function validParentheses(parenStr) {
-  const stack = []
+  const stack = [];
 
   for (let paren of parenStr) {
-    if (paren === '(') {
-      stack.push(paren)
+    if (paren === "(") {
+      stack.push(paren);
     } else {
-      if (stack.length === 0) return false
-      stack.pop()
+      if (stack.length === 0) return false;
+      stack.pop();
     }
   }
 
-  return stack.length === 0
+  return stack.length === 0;
 }
 ```
 

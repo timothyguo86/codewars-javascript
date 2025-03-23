@@ -10,7 +10,7 @@ Implement a function which filters out array values which satisfy the given pred
 
 ```js
 function reject(array, predicate) {
-  return array.filter(v => !predicate(v))
+  return array.filter((v) => !predicate(v));
 }
 ```
 

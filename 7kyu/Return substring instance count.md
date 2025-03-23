@@ -18,8 +18,8 @@ Usage example:
 
 ```js
 function solution(fullText, searchText) {
-  let regex = new RegExp(searchText, 'g')
-  return (fullText.match(regex) || []).length
+  let regex = new RegExp(searchText, "g");
+  return (fullText.match(regex) || []).length;
 }
 ```
 

@@ -20,16 +20,16 @@ Unicode character.
 
 ```js
 function firstNonRepeatingLetter(s) {
-  const lStr = s.toLowerCase()
+  const lStr = s.toLowerCase();
 
   for (let i = 0; i < s.length; i++) {
-    const char = lStr[i]
+    const char = lStr[i];
     if (lStr.indexOf(char) === lStr.lastIndexOf(char)) {
-      return s[i]
+      return s[i];
     }
   }
 
-  return ''
+  return "";
 }
 ```
 

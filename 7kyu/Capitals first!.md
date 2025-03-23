@@ -16,10 +16,10 @@ For an input String: "hey You, Sort me Already!" the function should return: "Yo
 
 ```js
 function capitalsFirst(str) {
-  let upperCaseArr = str.split(' ').filter(v => /[A-Z]/.test(v[0]))
-  let lowerCaseArr = str.split(' ').filter(v => /[a-z]/.test(v[0]))
+  let upperCaseArr = str.split(" ").filter((v) => /[A-Z]/.test(v[0]));
+  let lowerCaseArr = str.split(" ").filter((v) => /[a-z]/.test(v[0]));
 
-  return [...upperCaseArr, ...lowerCaseArr].join(' ')
+  return [...upperCaseArr, ...lowerCaseArr].join(" ");
 }
 ```
 

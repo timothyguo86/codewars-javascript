@@ -14,7 +14,7 @@ E.g.
 
 ```js
 function arrMultiply(arr) {
-  return (arr[0] * arr[1]).toString()
+  return (arr[0] * arr[1]).toString();
 }
 ```
 

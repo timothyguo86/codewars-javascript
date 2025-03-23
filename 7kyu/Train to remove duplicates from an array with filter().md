@@ -25,7 +25,7 @@ unique(arr); // should return \[1,2,3\]
 
 ```js
 function unique(arr) {
-  return arr.filter((v, i) => arr.indexOf(v) === i)
+  return arr.filter((v, i) => arr.indexOf(v) === i);
 }
 ```
 

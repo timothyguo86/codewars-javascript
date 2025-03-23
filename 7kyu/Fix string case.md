@@ -22,16 +22,16 @@ More examples in test cases. Good luck!
 
 ```js
 function solve(s) {
-  let uppercaseCount = 0
-  let lowercaseCount = 0
-  s.split('').forEach(char => {
+  let uppercaseCount = 0;
+  let lowercaseCount = 0;
+  s.split("").forEach((char) => {
     if (char === char.toUpperCase()) {
-      uppercaseCount++
+      uppercaseCount++;
     }
-  })
-  lowercaseCount = s.length - uppercaseCount
+  });
+  lowercaseCount = s.length - uppercaseCount;
 
-  return uppercaseCount > lowercaseCount ? s.toUpperCase() : s.toLowerCase()
+  return uppercaseCount > lowercaseCount ? s.toUpperCase() : s.toLowerCase();
 }
 ```
 

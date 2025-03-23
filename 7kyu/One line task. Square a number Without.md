@@ -1,4 +1,4 @@
-# [One line task: Square a number Without *, + or Math.pow()](https://www.codewars.com/kata/5a9d8cfb5084d79178000150)
+# [One line task: Square a number Without \*, + or Math.pow()](https://www.codewars.com/kata/5a9d8cfb5084d79178000150)
 
 Your objective is simple: In fewer than 40 characters (and with a few restrictions), write a function that returns the
 square of a number passed in. This number may be anywhere between -32,768 and 32,768, and may include decimals (you will

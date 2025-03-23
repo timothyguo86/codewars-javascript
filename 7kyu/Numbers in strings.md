@@ -15,7 +15,7 @@ Please also try [Simple remove duplicates](https://www.codewars.com/kata/5ba38ba
 
 ```js
 function solve(s) {
-  return Math.max(...s.match(/[0-9]+/g))
+  return Math.max(...s.match(/[0-9]+/g));
 }
 ```
 

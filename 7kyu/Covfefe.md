@@ -12,9 +12,9 @@ the test cases.
 
 ```js
 function covfefe(str) {
-  let reg = /coverage/g
-  if (!reg.test(str)) return str + ' covfefe'
-  else return str.replace(reg, 'covfefe')
+  let reg = /coverage/g;
+  if (!reg.test(str)) return str + " covfefe";
+  else return str.replace(reg, "covfefe");
 }
 ```
 

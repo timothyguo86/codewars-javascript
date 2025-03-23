@@ -9,8 +9,8 @@ lexicographical order.
 
 ```js
 const sortme = function (names) {
-  return names.sort()
-}
+  return names.sort();
+};
 ```
 
 </details>

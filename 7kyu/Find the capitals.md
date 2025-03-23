@@ -17,14 +17,14 @@ argument, and returns an ordered list containing the indices of all capital (upp
 
 ```js
 const capitals = function (word) {
-  const result = []
+  const result = [];
 
-  word.split('').forEach((letter, i) => {
-    if (letter.toUpperCase() === letter) result.push(i)
-  })
+  word.split("").forEach((letter, i) => {
+    if (letter.toUpperCase() === letter) result.push(i);
+  });
 
-  return result
-}
+  return result;
+};
 ```
 
 </details>

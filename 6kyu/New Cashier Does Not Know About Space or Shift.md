@@ -33,14 +33,23 @@ The menu items are fairly simple, there is no overlap in the names of the items:
 
 ```js
 function getOrder(input) {
-  const menu = ['Burger', 'Fries', 'Chicken', 'Pizza', 'Sandwich', 'Onionrings', 'Milkshake', 'Coke']
+  const menu = [
+    "Burger",
+    "Fries",
+    "Chicken",
+    "Pizza",
+    "Sandwich",
+    "Onionrings",
+    "Milkshake",
+    "Coke",
+  ];
   return input
-    .match(new RegExp(menu.join('|'), 'gi'))
-    .map(v => {
-      return v[0].toUpperCase() + v.slice(1)
+    .match(new RegExp(menu.join("|"), "gi"))
+    .map((v) => {
+      return v[0].toUpperCase() + v.slice(1);
     })
     .sort((a, b) => menu.indexOf(a) - menu.indexOf(b))
-    .join(' ')
+    .join(" ");
 }
 ```
 

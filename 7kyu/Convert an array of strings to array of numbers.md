@@ -18,7 +18,7 @@ Note that you can receive floats as well.
 
 ```js
 function toNumberArray(stringarray) {
-  return stringarray.map(s => +s)
+  return stringarray.map((s) => +s);
 }
 ```
 

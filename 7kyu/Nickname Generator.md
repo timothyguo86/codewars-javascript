@@ -32,9 +32,9 @@ If the string is less than 4 characters, return "Error: Name too short".
 
 ```js
 function nicknameGenerator(name) {
-  if (name.length < 4) return 'Error: Name too short'
-  else if (name[2].match(/[^aeiou]/)) return name.slice(0, 3)
-  else return name.slice(0, 4)
+  if (name.length < 4) return "Error: Name too short";
+  else if (name[2].match(/[^aeiou]/)) return name.slice(0, 3);
+  else return name.slice(0, 4);
 }
 ```
 

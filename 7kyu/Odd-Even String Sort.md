@@ -24,14 +24,14 @@ Tested strings are at least 8 characters long.
 
 ```js
 function sortMyString(S) {
-  let oddS = ''
-  let evenS = ''
+  let oddS = "";
+  let evenS = "";
   for (let i = 0; i < S.length; i++) {
-    if (i % 2 === 0) evenS = evenS + S[i]
-    else oddS = oddS + S[i]
+    if (i % 2 === 0) evenS = evenS + S[i];
+    else oddS = oddS + S[i];
   }
 
-  return evenS + ' ' + oddS
+  return evenS + " " + oddS;
 }
 ```
 

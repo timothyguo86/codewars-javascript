@@ -15,7 +15,7 @@ In honor of my grandfather's memory we will write a function using his formula!
 ## Example
 
 ```javascript
-predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86
+predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86;
 ```
 
 Note: the result should be rounded down to the nearest integer.
@@ -28,12 +28,12 @@ Some random tests might fail due to a bug in the JavaScript implementation. Simp
 
 ```js
 function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
-  let sum = 0
+  let sum = 0;
   for (let i = 0; i < arguments.length; i++) {
-    sum += arguments[i] ** 2
+    sum += arguments[i] ** 2;
   }
 
-  return Math.floor(sum ** 0.5 / 2)
+  return Math.floor(sum ** 0.5 / 2);
 }
 ```
 

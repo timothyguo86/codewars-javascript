@@ -37,8 +37,8 @@ mnop     ponm     |mnop     abcd
 And
 
 - A high-order function `oper(fct, s)` where:
-    - `fct` is the function of one variable to apply to the string `s`
-    - (`fct` will be one of `vertMirror`, `horMirror`)
+  - `fct` is the function of one variable to apply to the string `s`
+  - (`fct` will be one of `vertMirror`, `horMirror`)
 
 #### Examples:
 
@@ -65,17 +65,17 @@ See "Sample Tests".
 ```js
 function vertMirror(strng) {
   return strng
-    .split('\n')
-    .map(row => [...row].reverse().join(''))
-    .join('\n')
+    .split("\n")
+    .map((row) => [...row].reverse().join(""))
+    .join("\n");
 }
 
 function horMirror(strng) {
-  return strng.split('\n').reverse().join('\n')
+  return strng.split("\n").reverse().join("\n");
 }
 
 function oper(fct, s) {
-  return fct(s)
+  return fct(s);
 }
 ```
 

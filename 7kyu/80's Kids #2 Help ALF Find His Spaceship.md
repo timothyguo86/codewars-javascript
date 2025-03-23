@@ -55,19 +55,19 @@ Check out my other 80's Kids Katas:
 
 ```js
 function findSpaceship(map) {
-  if (!map) return 'Spaceship lost forever.'
-  const mapArr = map.split('\n').reverse()
-  let x = 0
-  let y = 0
+  if (!map) return "Spaceship lost forever.";
+  const mapArr = map.split("\n").reverse();
+  let x = 0;
+  let y = 0;
   for (let i = 0; i < mapArr.length; i++) {
-    if (mapArr[i].includes('X')) {
-      x = mapArr[i].indexOf('X')
-      y = i
-      return [x, y]
+    if (mapArr[i].includes("X")) {
+      x = mapArr[i].indexOf("X");
+      y = i;
+      return [x, y];
     }
   }
 
-  return 'Spaceship lost forever.'
+  return "Spaceship lost forever.";
 }
 ```
 

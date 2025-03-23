@@ -20,19 +20,19 @@ You may assume that there won't be exceptional situations (like stack underflow 
 
 ```js
 function calc(expr) {
-  if (!expr) return 0
-  const stack = []
-  const tokens = expr.split(' ')
+  if (!expr) return 0;
+  const stack = [];
+  const tokens = expr.split(" ");
 
-  tokens.forEach(token => {
-    if (!isNaN(token)) stack.push(Number(token))
+  tokens.forEach((token) => {
+    if (!isNaN(token)) stack.push(Number(token));
     else {
-      const b = stack.pop()
-      const a = stack.pop()
-      stack.push(eval(`${a} ${token} ${b}`))
+      const b = stack.pop();
+      const a = stack.pop();
+      stack.push(eval(`${a} ${token} ${b}`));
     }
-  })
-  return stack[0]
+  });
+  return stack[0];
 }
 ```
 

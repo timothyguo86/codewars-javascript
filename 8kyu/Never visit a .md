@@ -153,7 +153,7 @@ There is no preloaded code to help you. _This is not about coding skills; think 
 //--- next loop --
 // n == 20, => 18 (every multiple of 9 in this list happens to lead to an apple, so...)
 function SubtractSum(n) {
-  return 'apple'
+  return "apple";
 }
 ```
 

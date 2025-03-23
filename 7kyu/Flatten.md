@@ -13,8 +13,8 @@ of flattening.
 
 ```js
 const flatten = function (array) {
-  return array.flat()
-}
+  return array.flat();
+};
 ```
 
 </details>

@@ -28,13 +28,13 @@ _Adapted from ProjectEuler.net_
 
 ```js
 function solution(digits) {
-  let largestNum = 0
+  let largestNum = 0;
 
   for (let i = 0; i < digits.length - 4; i++) {
-    largestNum = Math.max(+digits.slice(i, i + 5), +largestNum)
+    largestNum = Math.max(+digits.slice(i, i + 5), +largestNum);
   }
 
-  return largestNum
+  return largestNum;
 }
 ```
 

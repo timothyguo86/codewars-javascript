@@ -21,14 +21,14 @@ If you like this Kata, please try:
 ```js
 function capitalize(s) {
   const odd = s
-    .split('')
+    .split("")
     .map((char, i) => (i % 2 === 0 ? char.toUpperCase() : char))
-    .join('')
+    .join("");
   const even = s
-    .split('')
+    .split("")
     .map((char, i) => (i % 2 !== 0 ? char.toUpperCase() : char))
-    .join('')
-  return [odd, even]
+    .join("");
+  return [odd, even];
 }
 ```
 

@@ -36,54 +36,55 @@ Fix the code so we can all go home early.
 class Dinglemouse {
   constructor() {
     // Initialize an array to store attributes
-    this.attributes = []
+    this.attributes = [];
   }
 
   // Method to set the age attribute
   setAge(age) {
     // Set the age attribute
-    this.age = age
+    this.age = age;
     // Add 'age' to the list of attributes
-    this.attributes.push('age')
+    this.attributes.push("age");
     // Return the current object to allow method chaining
-    return this
+    return this;
   }
 
   // Method to set the sex attribute
   setSex(sex) {
-    this.sex = sex
+    this.sex = sex;
     // Add 'sex' to the list of attributes
-    this.attributes.push('sex')
+    this.attributes.push("sex");
     // Return the current object to allow method chaining
-    return this
+    return this;
   }
 
   // Method to set the name attribute
   setName(name) {
     // Set the name attribute
-    this.name = name
+    this.name = name;
     // Add 'name' to the list of attributes
-    this.attributes.push('name')
+    this.attributes.push("name");
     // Return the current object to allow method chaining
-    return this
+    return this;
   }
 
   // Method to generate a greeting message
   hello() {
     // Get unique attributes
-    const uniqueAttributes = [...new Set(this.attributes)]
+    const uniqueAttributes = [...new Set(this.attributes)];
     // Initialize the message
-    let message = 'Hello.'
+    let message = "Hello.";
     // Iterate over unique attributes
-    uniqueAttributes.forEach(attr => {
+    uniqueAttributes.forEach((attr) => {
       // Add attribute-specific message to the greeting message
-      if (attr === 'age') message += ` I am ${this.age}.`
-      else if (attr === 'name') message += ` My name is ${this.name}.`
-      else if (attr === 'sex') message += ` I am ${this.sex === 'M' ? 'male' : 'female'}.`
-    })
+      if (attr === "age") message += ` I am ${this.age}.`;
+      else if (attr === "name") message += ` My name is ${this.name}.`;
+      else if (attr === "sex")
+        message += ` I am ${this.sex === "M" ? "male" : "female"}.`;
+    });
 
     // Return the final greeting message
-    return message
+    return message;
   }
 }
 ```

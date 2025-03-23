@@ -83,8 +83,8 @@ prod\[i\] is equal to The Product of all the elements of Arr\[\] except Arr\[i\]
 
 ```js
 function productArray(numbers) {
-  const product = numbers.reduce((prod, cur) => prod * cur)
-  return numbers.map(v => product / v)
+  const product = numbers.reduce((prod, cur) => prod * cur);
+  return numbers.map((v) => product / v);
 }
 ```
 

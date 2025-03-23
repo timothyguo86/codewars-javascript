@@ -28,8 +28,8 @@ _10_ is the number that fits between _5_ and _14_ and the index of _10_ in the i
 
 ```js
 function gimme(triplet) {
-  const middle = [...triplet].sort((a, b) => a - b)[1]
-  return triplet.indexOf(middle)
+  const middle = [...triplet].sort((a, b) => a - b)[1];
+  return triplet.indexOf(middle);
 }
 ```
 

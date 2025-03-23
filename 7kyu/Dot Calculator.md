@@ -36,8 +36,8 @@ string. When it comes to subtraction, the first number will always be greater th
 
 ```js
 function dotCalculator(equation) {
-  const [a, op, b] = equation.split(' ')
-  return '.'.repeat(eval(a.length + op[0] + b.length))
+  const [a, op, b] = equation.split(" ");
+  return ".".repeat(eval(a.length + op[0] + b.length));
 }
 ```
 

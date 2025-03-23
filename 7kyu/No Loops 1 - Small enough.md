@@ -21,7 +21,7 @@ Looking for more, loop-restrained fun? Check out the other kata in the series:
 
 ```js
 function smallEnough(a, limit) {
-  return a.every(v => v <= limit)
+  return a.every((v) => v <= limit);
 }
 ```
 

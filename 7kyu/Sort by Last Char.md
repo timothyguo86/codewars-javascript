@@ -11,7 +11,8 @@ All inputs will be valid.
 <details><summary>My Solution</summary>
 
 ```js
-const last = x => x.split(' ').sort((a, b) => a[a.length - 1].localeCompare(b[b.length - 1]))
+const last = (x) =>
+  x.split(" ").sort((a, b) => a[a.length - 1].localeCompare(b[b.length - 1]));
 ```
 
 </details>

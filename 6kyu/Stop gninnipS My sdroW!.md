@@ -19,15 +19,15 @@ Examples:
 ```js
 function spinWords(string) {
   return string
-    .split(' ')
-    .map(word => {
+    .split(" ")
+    .map((word) => {
       if (word.length >= 5) {
-        return word.split('').reverse().join('')
+        return word.split("").reverse().join("");
       }
 
-      return word
+      return word;
     })
-    .join(' ')
+    .join(" ");
 }
 ```
 

@@ -26,15 +26,15 @@ A correctly reordered string.
 
 ```js
 function flipNumber(n) {
-  let output = ''
-  let arr = n.split('')
+  let output = "";
+  let arr = n.split("");
 
   while (arr.length > 0) {
-    output += arr.pop()
-    arr.reverse()
+    output += arr.pop();
+    arr.reverse();
   }
 
-  return output
+  return output;
 }
 ```
 

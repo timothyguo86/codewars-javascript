@@ -34,19 +34,21 @@ With longer passphrases it's better to have a small and easy program. Would you 
 function playPass(s, n) {
   return [...s]
     .map((v, i) => {
-      if (/[0-9]/.test(v)) return 9 - v
+      if (/[0-9]/.test(v)) return 9 - v;
       if (/[A-Z]/.test(v)) {
-        let charCode = v.charCodeAt(0) + n
-        charCode = charCode > 90 ? charCode - 26 : charCode
-        return i % 2 ? String.fromCharCode(charCode).toLowerCase() : String.fromCharCode(charCode)
+        let charCode = v.charCodeAt(0) + n;
+        charCode = charCode > 90 ? charCode - 26 : charCode;
+        return i % 2
+          ? String.fromCharCode(charCode).toLowerCase()
+          : String.fromCharCode(charCode);
       }
-      return v
+      return v;
     })
-    .join('')
-    .split(' ')
+    .join("")
+    .split(" ")
     .reverse()
-    .map(w => [...w].reverse().join(''))
-    .join(' ')
+    .map((w) => [...w].reverse().join(""))
+    .join(" ");
 }
 ```
 

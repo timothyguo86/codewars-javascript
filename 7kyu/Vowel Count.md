@@ -13,7 +13,7 @@ The input string will only consist of lower case letters and/or spaces.
 ```js
 function getCount(str) {
   // Count the number of vowels (aeiou) in the input string
-  return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0
+  return str.match(/[aeiou]/g) ? str.match(/[aeiou]/g).length : 0;
 }
 ```
 

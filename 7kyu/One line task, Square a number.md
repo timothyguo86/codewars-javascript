@@ -30,7 +30,7 @@ up: [Multiples of 3 and 5 :)](https://www.codewars.com/kata/one-line-task-multip
 <details><summary>My Solution</summary>
 
 ```js
-const sq = n => (n / (1 / n) - -0.5) | 0
+const sq = (n) => (n / (1 / n) - -0.5) | 0;
 ```
 
 </details>

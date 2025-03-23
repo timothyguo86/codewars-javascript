@@ -17,8 +17,10 @@ good luck :)
 
 ```js
 function evil(n) {
-  const binaryN = n.toString(2)
-  return binaryN.replace(/0/g, '').length % 2 === 0 ? "It's Evil!" : "It's Odious!"
+  const binaryN = n.toString(2);
+  return binaryN.replace(/0/g, "").length % 2 === 0
+    ? "It's Evil!"
+    : "It's Odious!";
 }
 ```
 

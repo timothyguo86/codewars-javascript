@@ -20,7 +20,7 @@ Write a function that takes a string and returns a string without the unnecessar
 
 ```js
 function removeChars(s) {
-  return s.replace(/[^a-z\s]/gi, '')
+  return s.replace(/[^a-z\s]/gi, "");
 }
 ```
 

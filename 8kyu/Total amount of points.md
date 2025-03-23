@@ -30,13 +30,13 @@ function points(games) {
   // Calculate the total points based on game results
   return games.reduce((sum, game) => {
     if (game[0] > game[2]) {
-      sum += 3
+      sum += 3;
     } else if (game[0] === game[2]) {
-      sum += 1
+      sum += 1;
     }
 
-    return sum
-  }, 0)
+    return sum;
+  }, 0);
 }
 ```
 

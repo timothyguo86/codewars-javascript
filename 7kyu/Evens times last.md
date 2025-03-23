@@ -16,12 +16,12 @@ function evenLast(numbers) {
   return (
     numbers.reduce((total, cur, i) => {
       if (i % 2 === 0) {
-        total += cur
+        total += cur;
       }
 
-      return total
+      return total;
     }, 0) * numbers.slice(-1)
-  )
+  );
 }
 ```
 

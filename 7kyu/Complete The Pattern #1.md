@@ -53,11 +53,11 @@ rows.
 
 ```js
 function pattern(n) {
-  let output = ''
+  let output = "";
   for (let i = 1; i <= n; i++) {
-    output += `${i}`.repeat(i) + (i + 1 > n ? '' : '\n')
+    output += `${i}`.repeat(i) + (i + 1 > n ? "" : "\n");
   }
-  return output
+  return output;
 }
 ```
 

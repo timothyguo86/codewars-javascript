@@ -30,13 +30,13 @@ If the carpet catches fire, return `"Fire!"`, if not, return `"That was close!"`
 
 ```js
 function cake(x, y) {
-  let fallTotal = 0
+  let fallTotal = 0;
   for (let i = 0; i < y.length; i++) {
-    if (i % 2 === 0) fallTotal += y[i].charCodeAt(0)
-    else fallTotal += y[i].charCodeAt(0) - 96
+    if (i % 2 === 0) fallTotal += y[i].charCodeAt(0);
+    else fallTotal += y[i].charCodeAt(0) - 96;
   }
 
-  return fallTotal > x * 0.7 ? 'Fire!' : 'That was close!'
+  return fallTotal > x * 0.7 ? "Fire!" : "That was close!";
 }
 ```
 

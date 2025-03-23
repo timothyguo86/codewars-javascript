@@ -22,7 +22,7 @@ The possible card values are `2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A`
 
 ```js
 function isFlush(cards) {
-  return cards.every(c => c.slice(-1) === cards[0].slice(-1))
+  return cards.every((c) => c.slice(-1) === cards[0].slice(-1));
 }
 ```
 

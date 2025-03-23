@@ -13,8 +13,8 @@ Example: The binary representation of `1234` is `10011010010`, so the function s
 const countBits = function (n) {
   // Convert the decimal number 'n' to its binary representation,
   // then count the number of '1' bits by removing '0's and measuring the length
-  return n.toString(2).replace(/0/g, '').length
-}
+  return n.toString(2).replace(/0/g, "").length;
+};
 ```
 
 </details>

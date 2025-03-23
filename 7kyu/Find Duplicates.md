@@ -17,18 +17,18 @@ returned array should appear in the order when they first appeared as duplicates
 
 ```js
 function duplicates(arr) {
-  const noDups = new Set()
-  const dups = new Set()
+  const noDups = new Set();
+  const dups = new Set();
 
   for (let v of arr) {
     if (noDups.has(v)) {
-      dups.add(v)
+      dups.add(v);
     } else {
-      noDups.add(v)
+      noDups.add(v);
     }
   }
 
-  return [...dups]
+  return [...dups];
 }
 ```
 

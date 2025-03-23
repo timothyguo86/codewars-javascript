@@ -45,18 +45,18 @@ race(80, 91, 37)   => [3, 21, 49] or "3 21 49"
 
 ```js
 function race(v1, v2, g) {
-  if (v1 >= v2) return null // If the first tortoise is faster than or equal to the second tortoise, return null
+  if (v1 >= v2) return null; // If the first tortoise is faster than or equal to the second tortoise, return null
 
   // Calculate the time needed for the second tortoise to catch the first in seconds
-  let time = (g / (v2 - v1)) * 3600
+  let time = (g / (v2 - v1)) * 3600;
 
   // Calculate the hour, minute, and second components
-  let hour = Math.floor(time / 3600)
-  let min = Math.floor((time % 3600) / 60)
-  let sec = Math.floor(time % 60)
+  let hour = Math.floor(time / 3600);
+  let min = Math.floor((time % 3600) / 60);
+  let sec = Math.floor(time % 60);
 
   // Return the time needed in [hour, min, sec] format
-  return [hour, min, sec]
+  return [hour, min, sec];
 }
 ```
 
