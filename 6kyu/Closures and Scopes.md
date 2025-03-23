@@ -1,6 +1,7 @@
 # [Closures and Scopes](https://www.codewars.com/kata/526ec46d6f5e255e150002d1)
 
-We want to create a function, which returns an array of functions, which return their index in the array. For better understanding, here an example:
+We want to create a function, which returns an array of functions, which return their index in the array. For better
+understanding, here an example:
 
 ```js
 var callbacks = createFunctions(5) // create an array, containing 5 functions

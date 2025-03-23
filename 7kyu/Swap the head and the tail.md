@@ -2,7 +2,8 @@
 
 You need to swap the head and the tail of the specified array:
 
-the head (the first half) of array moves to the end, the tail (the second half) moves to the start. The middle element (if it exists) leaves on the same position.
+the head (the first half) of array moves to the end, the tail (the second half) moves to the start. The middle element (
+if it exists) leaves on the same position.
 
 Return new array.
 

@@ -33,7 +33,8 @@ And to total:
 
 `3 + 2*1 + 2*3 + 2 + 1` = `3 + 2 + 6 + 3` = `14`
 
-Empty string should return `0`. The string can contain spaces and letters (upper and lower case), you should calculate the scrabble score only of the letters in that string.
+Empty string should return `0`. The string can contain spaces and letters (upper and lower case), you should calculate
+the scrabble score only of the letters in that string.
 
     ""           --> 0
     "STREET"    --> 6

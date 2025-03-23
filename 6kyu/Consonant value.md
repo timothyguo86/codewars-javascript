@@ -1,6 +1,7 @@
 # [Consonant value](https://www.codewars.com/kata/59c633e7dcc4053512000073)
 
-Given a lowercase string that has alphabetic characters only and no spaces, return the highest value of consonant substrings. Consonants are any letters of the alphabet except `"aeiou"`.
+Given a lowercase string that has alphabetic characters only and no spaces, return the highest value of consonant
+substrings. Consonants are any letters of the alphabet except `"aeiou"`.
 
 We shall assign the following values: `a = 1, b = 2, c = 3, .... z = 26`.
 
@@ -67,9 +68,5 @@ function solve(s) {
 }
 ```
 
-};
-
-```
-
 </details>
-```
+

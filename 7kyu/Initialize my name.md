@@ -1,6 +1,7 @@
 # [Initialize my name](https://www.codewars.com/kata/5768a693a3205e1cc100071f)
 
-Some people just have a first name; some people have first and last names and some people have first, middle and last names.
+Some people just have a first name; some people have first and last names and some people have first, middle and last
+names.
 
 You task is to initialize the middle names (if there is any).
 

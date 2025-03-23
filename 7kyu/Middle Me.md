@@ -2,7 +2,8 @@
 
 Write a function that will take a key of X and place it in the middle of Y repeated N times.
 
-Extra challege (not tested): You can complete this with under 70 characters without using regex. Challenge yourself to do this. It wont be best practices but it will work.
+Extra challege (not tested): You can complete this with under 70 characters without using regex. Challenge yourself to
+do this. It wont be best practices but it will work.
 
 Rules:
 

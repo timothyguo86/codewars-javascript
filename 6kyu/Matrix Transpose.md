@@ -1,6 +1,7 @@
 # [Matrix Transpose](https://www.codewars.com/kata/52fba2a9adcd10b34300094c)
 
-Write a function that outputs the transpose of a matrix - a new matrix where the columns and rows of the original are swapped.
+Write a function that outputs the transpose of a matrix - a new matrix where the columns and rows of the original are
+swapped.
 
 For example, the transpose of:
 
@@ -17,7 +18,8 @@ is
 | 3 6 |
 ```
 
-The input to your function will be an array of matrix rows. You can assume that each row has the same length, and that the height and width of the matrix are both positive.
+The input to your function will be an array of matrix rows. You can assume that each row has the same length, and that
+the height and width of the matrix are both positive.
 
 ---
 

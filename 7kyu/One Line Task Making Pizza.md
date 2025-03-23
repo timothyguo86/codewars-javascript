@@ -6,10 +6,12 @@ Fix the code to pass all the tests. Unfortunately, you can only modify **ONE** l
 
 ## Rules
 
-- Usually, the changes you make are limited to one line. Please don't complain that you can't write your own code, because this is a `bugfix` kata. Also, don't complain that the initial code is too messy. That's why you need to do the task ;-)
+- Usually, the changes you make are limited to one line. Please don't complain that you can't write your own code,
+  because this is a `bugfix` kata. Also, don't complain that the initial code is too messy. That's why you need to do
+  the task ;-)
 - You can do the following operations:
-  1. Replace the existing characters.
-  2. Add the character at the end of the line.
+    1. Replace the existing characters.
+    2. Add the character at the end of the line.
 - You should not Add a new line or Delete a line.
 - The overall difference of the modified code is less than 5 characters.
 
@@ -17,7 +19,7 @@ Fix the code to pass all the tests. Unfortunately, you can only modify **ONE** l
 
 Some examples of modify operations:
 
-```js
+```
 var hello = "word"   <--- initial code
                  xxx  <--- 3 characters modified
 var hello = "world"  <--- modified code
@@ -51,6 +53,7 @@ function makePizza(pieces) {
   }
   return result
 }
+
 function make(step) {
   switch (step) {
     case 5:

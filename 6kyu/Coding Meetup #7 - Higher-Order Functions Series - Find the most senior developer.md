@@ -1,8 +1,10 @@
 # [Coding Meetup #7 - Higher-Order Functions Series - Find the most senior developer](https://www.codewars.com/kata/582887f7d04efdaae3000090)
 
-You will be given a sequence of objects representing data about developers who have signed up to attend the next coding meetup that you are organising.
+You will be given a sequence of objects representing data about developers who have signed up to attend the next coding
+meetup that you are organising.
 
-Your task is to return a sequence which includes the developer who is the oldest. In case of a tie, include all same-age senior developers listed in the same order as they appeared in the original input array.
+Your task is to return a sequence which includes the developer who is the oldest. In case of a tie, include all same-age
+senior developers listed in the same order as they appeared in the original input array.
 
 For example, given the following input array:
 
@@ -24,7 +26,10 @@ Notes:
 
 - The input array will always be valid and formatted as in the example above and will never be empty.
 
-This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: `forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course possible.
+This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have
+been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like:
+`forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course
+possible.
 
 Here is the full list of the katas in the **Coding Meetup** series:
 

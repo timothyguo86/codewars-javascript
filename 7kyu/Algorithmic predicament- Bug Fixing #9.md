@@ -6,9 +6,11 @@ Oh no! Timmy's algorithm has gone wrong! Help Timmy fix his algorithm!
 
 Your task is to fix Timmy's algorithm so it returns the group name with the highest total age.
 
-You will receive two groups of `people` objects, with two properties `name` and `age`. The name property is a string, and the age property is a number.
+You will receive two groups of `people` objects, with two properties `name` and `age`. The name property is a string,
+and the age property is a number.
 
-Your goal is to calculate the total age of all people with the same name in both groups and return the name of the person with the highest total age. If two names have the same total age, return the first alphabetical name.
+Your goal is to calculate the total age of all people with the same name in both groups and return the name of the
+person with the highest total age. If two names have the same total age, return the first alphabetical name.
 
 ---
 
@@ -50,7 +52,7 @@ function highestAge(group1, group2) {
 }
 
 // Prototype method to find the index of an element with a specific property value in an array
-Array.prototype.indexOfProp = function (prop, value) {
+Array.prototype.indexOfProp = function(prop, value) {
   for (var i = 0; i < this.length; i++) {
     if (this[i][prop] === value) return i
   }
@@ -58,3 +60,5 @@ Array.prototype.indexOfProp = function (prop, value) {
   return -1
 }
 ```
+
+</details>

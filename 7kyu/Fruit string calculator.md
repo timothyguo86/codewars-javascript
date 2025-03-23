@@ -2,8 +2,8 @@
 
 You are given a string of words and numbers. Extract the expression including:
 
-1.  the operator: either addition (`"gains"`) or subtraction (`"loses"`)
-2.  the two numbers that we are operating on
+1. the operator: either addition (`"gains"`) or subtraction (`"loses"`)
+2. the two numbers that we are operating on
 
 Return the result of the calculation.
 

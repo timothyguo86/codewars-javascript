@@ -1,6 +1,7 @@
 # [Pandemia 🌡️](https://www.codewars.com/kata/5e2596a9ad937f002e510435)
 
-⚠️ The world is in quarantine! There is a new pandemia that struggles mankind. Each continent is isolated from each other but infected people have spread before the warning. ⚠️
+⚠️ The world is in quarantine! There is a new pandemia that struggles mankind. Each continent is isolated from each
+other but infected people have spread before the warning. ⚠️
 
 🗺️ You would be given a map of the world in a type of string:
 

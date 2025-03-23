@@ -10,8 +10,8 @@ Examples:
 
 Points:
 
-1.  The arrays may be of different lengths, with at least one character/digit.
-2.  One array will be of string characters (in lower case, a-z), a second of integers (all positive starting at 1).
+1. The arrays may be of different lengths, with at least one character/digit.
+2. One array will be of string characters (in lower case, a-z), a second of integers (all positive starting at 1).
 
 _Inspired by [https://adriann.github.io/programming_problems.html](https://adriann.github.io/programming_problems.html)_
 

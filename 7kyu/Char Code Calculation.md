@@ -1,6 +1,7 @@
 # [Char Code Calculation](https://www.codewars.com/kata/57f75cc397d62fc93d000059)
 
-Given a string, turn each character into its ASCII character code and join them together to create a number - let's call this number`total1`:
+Given a string, turn each character into its ASCII character code and join them together to create a number - let's call
+this number`total1`:
 
     'ABC' --> 'A' = 65, 'B' = 66, 'C' = 67 --> 656667
 

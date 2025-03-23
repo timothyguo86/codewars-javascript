@@ -1,6 +1,7 @@
 # [Split In Parts](https://www.codewars.com/kata/5650ab06d11d675371000003)
 
-The aim of this kata is to split a given string into different strings of equal size (note size of strings is passed to the method)
+The aim of this kata is to split a given string into different strings of equal size (note size of strings is passed to
+the method)
 
 Example:
 

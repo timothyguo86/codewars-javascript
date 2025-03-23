@@ -6,7 +6,8 @@ This is a kata series that you can only solve using recursion.
 
 ##2 - Fibonacci number
 
-In mathematical terms, the sequence `f(n)` of [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) numbers is defined by the recurrence relation
+In mathematical terms, the sequence `f(n)` of [fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) numbers is
+defined by the recurrence relation
 
 `f(n) = f(n-1) + f(n-2)`
 
@@ -29,3 +30,5 @@ const fibonacci = n => {
   return n === 1 || n === 2 ? 1 : fibonacci(n - 1) + fibonacci(n - 2)
 }
 ```
+
+</details>

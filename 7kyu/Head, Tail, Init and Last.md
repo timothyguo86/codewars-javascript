@@ -13,7 +13,8 @@ Haskell has some useful functions for dealing with lists:
     λ last [1,2,3,4,5]
     5
 
-Your job is to implement these functions in your given language. Make sure it doesn't edit the array; that would cause problems! Here's a cheat sheet:
+Your job is to implement these functions in your given language. Make sure it doesn't edit the array; that would cause
+problems! Here's a cheat sheet:
 
     | HEAD | <----------- TAIL ------------> |
     [  1,  2,  3,  4,  5,  6,  7,  8,  9,  10]
@@ -31,7 +32,8 @@ Here's how I expect the functions to be called in your language:
 
 ---
 
-_Most tests consist of 100 randomly generated arrays, each with four tests, one for each operation. There are 400 tests overall. No empty arrays will be given. Haskell has QuickCheck tests_
+_Most tests consist of 100 randomly generated arrays, each with four tests, one for each operation. There are 400 tests
+overall. No empty arrays will be given. Haskell has QuickCheck tests_
 
 ---
 

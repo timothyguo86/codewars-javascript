@@ -1,10 +1,14 @@
 # [If you can't beat 'em, join 'em!](https://www.codewars.com/kata/5d37899a3b34c6002df273ee)
 
-Inside of the city there are many gangs, each with differing numbers of members wielding different weapons and possessing different strength levels. The gangs do not really want to fight one another, and so the "If you can't beat 'em, join 'em" rule applies. The gangs start combining with the most powerful gangs being joined by the weaker gangs until there is one gang left.
+Inside of the city there are many gangs, each with differing numbers of members wielding different weapons and
+possessing different strength levels. The gangs do not really want to fight one another, and so the "If you can't beat '
+em, join 'em" rule applies. The gangs start combining with the most powerful gangs being joined by the weaker gangs
+until there is one gang left.
 
 Challenge:
 
-You are given an array of arrays. Inside of the interior arrays are numbers. Join the arrays together by descending total array value ending up with one final array.
+You are given an array of arrays. Inside of the interior arrays are numbers. Join the arrays together by descending
+total array value ending up with one final array.
 
 Simple example:
 

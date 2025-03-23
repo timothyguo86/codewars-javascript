@@ -1,6 +1,7 @@
 # [Lost number in number sequence](https://www.codewars.com/kata/595aa94353e43a8746000120)
 
-An ordered sequence of numbers from 1 to N is given. One number might have deleted from it, then the remaining numbers were mixed. Find the number that was deleted.
+An ordered sequence of numbers from 1 to N is given. One number might have deleted from it, then the remaining numbers
+were mixed. Find the number that was deleted.
 
 Example:
 
@@ -25,3 +26,5 @@ function findDeletedNumber(arr, mixArr) {
   return getSum(arr) - getSum(mixArr)
 }
 ```
+
+</details>

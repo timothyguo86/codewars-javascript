@@ -8,7 +8,8 @@
 
 # Task
 
-**_Given_** an _array/list \[\] of integers_ , **_Find_** **_The maximum difference_** _between the successive elements in its sorted form_.
+**_Given_** an _array/list \[\] of integers_ , **_Find_** **_The maximum difference_** _between the successive elements
+in its sorted form_.
 
 ---
 

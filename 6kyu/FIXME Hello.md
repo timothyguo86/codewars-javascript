@@ -1,6 +1,7 @@
 # [FIXME: Hello](https://www.codewars.com/kata/5b0a80ce84a30f4762000069)
 
-The code provided has a method `hello` which is supposed to show only those attributes which have been _explicitly_ set. Furthermore, it is supposed to say them in the _same order_ they were set.
+The code provided has a method `hello` which is supposed to show only those attributes which have been _explicitly_ set.
+Furthermore, it is supposed to say them in the _same order_ they were set.
 
 But it's not working properly.
 
@@ -12,7 +13,8 @@ There are 3 attributes:
 - age
 - sex ('M' or 'F')
 
-When the same attribute is assigned multiple times, the `hello` method shows it only once. If this happens, the order depends on the _first_ assignment of that attribute, but the value is from the _last_ assignment.
+When the same attribute is assigned multiple times, the `hello` method shows it only once. If this happens, the order
+depends on the _first_ assignment of that attribute, but the value is from the _last_ assignment.
 
 ## Examples
 

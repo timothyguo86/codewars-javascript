@@ -2,7 +2,8 @@
 
 ## Task
 
-Create a function that accepts four parameters min, max, x and y and returns an array of numbers from min(inclusive) to max(inclusive).
+Create a function that accepts four parameters min, max, x and y and returns an array of numbers from min(inclusive) to
+max(inclusive).
 If the number divisible by x => Fizz
 If the number divisible by y => Buzz
 If the number divisible by x and y => FizzBuzz

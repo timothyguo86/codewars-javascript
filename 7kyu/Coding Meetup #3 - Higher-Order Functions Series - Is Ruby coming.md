@@ -1,6 +1,7 @@
 # [Coding Meetup #3 - Higher-Order Functions Series - Is Ruby coming?](https://www.codewars.com/kata/5827acd5f524dd029d0005a4)
 
-You will be given an array of objects (associative arrays in PHP) representing data about developers who have signed up to attend the next coding meetup that you are organising.
+You will be given an array of objects (associative arrays in PHP) representing data about developers who have signed up
+to attend the next coding meetup that you are organising.
 
 Your task is to return:
 
@@ -23,7 +24,10 @@ Notes:
 
 - The input array will always be valid and formatted as in the example above.
 
-This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: `forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course possible.
+This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have
+been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like:
+`forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course
+possible.
 
 Here is the full list of the katas in the **Coding Meetup** series:
 

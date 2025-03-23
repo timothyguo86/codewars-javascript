@@ -22,7 +22,8 @@ Subclass.foo // Error !
 
 Can you fix the code ?
 
-Modify `Class` so that `Subclass.foo` will work correctly. This should also work for any level of inheritance from `Class`, e.g. with:
+Modify `Class` so that `Subclass.foo` will work correctly. This should also work for any level of inheritance from
+`Class`, e.g. with:
 
 ```js
 class Deepclass extends Subclass {}

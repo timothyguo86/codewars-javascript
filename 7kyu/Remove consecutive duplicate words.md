@@ -6,7 +6,8 @@ Your task is to remove all consecutive duplicate words from a string, leaving on
 
     --> "alpha beta gamma delta alpha beta gamma delta"
 
-Words will be separated by a single space. There will be no leading or trailing spaces in the string. An empty string (0 words) is a valid input.
+Words will be separated by a single space. There will be no leading or trailing spaces in the string. An empty string (0
+words) is a valid input.
 
 ---
 

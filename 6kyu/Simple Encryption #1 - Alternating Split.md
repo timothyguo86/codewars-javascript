@@ -1,6 +1,7 @@
 # [Simple Encryption #1 - Alternating Split](https://www.codewars.com/kata/57814d79a56c88e3e0000786)
 
-Implement a pseudo-encryption algorithm which, given a string `S` and an integer `N`, concatenates all the odd-indexed characters of `S` with all the even-indexed characters of `S`. This process should be repeated `N` times.
+Implement a pseudo-encryption algorithm which, given a string `S` and an integer `N`, concatenates all the odd-indexed
+characters of `S` with all the even-indexed characters of `S`. This process should be repeated `N` times.
 
 Examples:
 

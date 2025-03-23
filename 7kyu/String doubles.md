@@ -1,6 +1,7 @@
 # [String doubles](https://www.codewars.com/kata/5a145ab08ba9148dd6000094)
 
-In this Kata, you will write a function `doubles` that will remove double string characters that are adjacent to each other.
+In this Kata, you will write a function `doubles` that will remove double string characters that are adjacent to each
+other.
 
 For example:
 
@@ -12,7 +13,8 @@ For example:
     d) The 4 d's all disappear, because we first remove the first double, and again we remove the second double.
     e) There is only one 'a' at the end, so it stays.
 
-Two more examples: `doubles('abbbzz') = 'ab'` and `doubles('abba') = ""`. In the second example, when we remove the b's in `'abba'`, the double `a` that results is then removed.
+Two more examples: `doubles('abbbzz') = 'ab'` and `doubles('abba') = ""`. In the second example, when we remove the b's
+in `'abba'`, the double `a` that results is then removed.
 
 The strings will contain lowercase letters only. More examples in the test cases.
 

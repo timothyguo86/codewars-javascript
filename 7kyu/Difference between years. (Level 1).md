@@ -1,6 +1,7 @@
 # [Difference between years. (Level 1)](https://www.codewars.com/kata/588f5a38ec641b411200005b)
 
-Write a function that receives two strings as parameter. This strings are in the following format of date: `YYYY/MM/DD`. Your job is: Take the `years` and calculate the difference between them.
+Write a function that receives two strings as parameter. This strings are in the following format of date: `YYYY/MM/DD`.
+Your job is: Take the `years` and calculate the difference between them.
 
 ### Examples:
 

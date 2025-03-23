@@ -22,7 +22,8 @@ Example:
 
 ## Task
 
-You will be passed the dice value frequencies, and your task is to write the code to return a string representing a histogram, so that when it is printed it has the same format as the example.
+You will be passed the dice value frequencies, and your task is to write the code to return a string representing a
+histogram, so that when it is printed it has the same format as the example.
 
 ## Notes
 
@@ -37,17 +38,27 @@ You will be passed the dice value frequencies, and your task is to write the cod
 
 ```js
 function histogram(results) {
-  let histogram  = ''
-  for(let i = results.length - 1; i > 0; i--) {
-    histogram += `${i + 1}|` + (results[i] ? )
-  }
   let [one, two, three, four, five, six] = results
-  return  '6|' + (six ? `${'#'.repeat(six)} ${six}` : '') + '\n' +
-          '5|' + (five ? `${'#'.repeat(five)} ${five}` : '') + '\n' +
-          '4|' + (four ? `${'#'.repeat(four)} ${four}` : '') + '\n' +
-          '3|' + (three ? `${'#'.repeat(three)} ${three}` : '') + '\n' +
-          '2|' + (two ? `${'#'.repeat(two)} ${two}` : '') + '\n' +
-          '1|' + (one ? `${'#'.repeat(one)} ${one}` : '') + '\n'
+  return (
+    '6|' +
+    (six ? `${'#'.repeat(six)} ${six}` : '') +
+    '\n' +
+    '5|' +
+    (five ? `${'#'.repeat(five)} ${five}` : '') +
+    '\n' +
+    '4|' +
+    (four ? `${'#'.repeat(four)} ${four}` : '') +
+    '\n' +
+    '3|' +
+    (three ? `${'#'.repeat(three)} ${three}` : '') +
+    '\n' +
+    '2|' +
+    (two ? `${'#'.repeat(two)} ${two}` : '') +
+    '\n' +
+    '1|' +
+    (one ? `${'#'.repeat(one)} ${one}` : '') +
+    '\n'
+  )
 }
 ```
 

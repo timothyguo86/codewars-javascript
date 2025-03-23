@@ -19,7 +19,8 @@ Example
       add(1,2,3); //=> 3
       add(1,4,-6,20); //=> 6
 
-Check my another kata here!! [http://www.codewars.com/kata/555b73a81a6285b6ce000047](http://www.codewars.com/kata/555b73a81a6285b6ce000047)
+Check my another kata
+here!! [http://www.codewars.com/kata/555b73a81a6285b6ce000047](http://www.codewars.com/kata/555b73a81a6285b6ce000047)
 
 ---
 

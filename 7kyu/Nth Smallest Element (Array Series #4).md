@@ -1,6 +1,7 @@
 # [Nth Smallest Element (Array Series #4)](https://www.codewars.com/kata/5a512f6a80eba857280000fc)
 
-Introduction and warm-up (highly recommended): [Playing With Lists/Arrays Series](https://www.codewars.com/collections/playing-with-lists-slash-arrays)
+Introduction and warm-up (highly
+recommended): [Playing With Lists/Arrays Series](https://www.codewars.com/collections/playing-with-lists-slash-arrays)
 
 ### Task
 

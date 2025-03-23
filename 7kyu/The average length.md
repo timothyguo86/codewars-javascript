@@ -1,6 +1,7 @@
 # [The average length](https://www.codewars.com/kata/5a430359e1ce0e35540000b1)
 
-Given an array of strings of the same letter type. Return a new array, which will differ in that the length of each element is equal to the average length of the elements of the previous array.
+Given an array of strings of the same letter type. Return a new array, which will differ in that the length of each
+element is equal to the average length of the elements of the previous array.
 
 A few examples:
 

@@ -1,6 +1,7 @@
 # [Unique string characters](https://www.codewars.com/kata/597c684822bc9388f600010f)
 
-In this Kata, you will be given two strings `a` and `b` and your task will be to return the characters that are not common in the two strings.
+In this Kata, you will be given two strings `a` and `b` and your task will be to return the characters that are not
+common in the two strings.
 
 For example:
 

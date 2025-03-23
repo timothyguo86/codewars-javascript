@@ -10,13 +10,15 @@ _the rhythm of beautiful musical notes is drawing a Pendulum_
 
 # Task
 
-**_Given_** an _array/list \[\] of n integers_ , **_Arrange_** _them in a way similar to the to-and-fro movement of a Pendulum_
+**_Given_** an _array/list \[\] of n integers_ , **_Arrange_** _them in a way similar to the to-and-fro movement of a
+Pendulum_
 
 - **_The Smallest element_** of the list of integers , must come _in center position of array/list_.
 
-  - **_The Higher than smallest_** , _goes to the right_ .
+    - **_The Higher than smallest_** , _goes to the right_ .
 
-- **_The Next higher_** number goes _to the left of minimum number_ and So on , in a to-and-fro manner similar to that of a Pendulum.
+- **_The Next higher_** number goes _to the left of minimum number_ and So on , in a to-and-fro manner similar to that
+  of a Pendulum.
 
 ![!alt](./../images/the_poet_and_the_pendulum.png)
 
@@ -25,7 +27,8 @@ _the rhythm of beautiful musical notes is drawing a Pendulum_
 # Notes
 
 - **_Array/list_** size is _at least \*\*\_3_\*\*\_ .
-- In **_Even array size_** , _The minimum element should be moved to (n-1)/2 index_ (considering that indexes start from 0)
+- In **_Even array size_** , _The minimum element should be moved to (n-1)/2 index_ (considering that indexes start from
+    0)
 - **_Repetition_** of numbers in _the array/list could occur_ , So **_(duplications are included when Arranging)_**.
 
   ***
@@ -36,7 +39,8 @@ _the rhythm of beautiful musical notes is drawing a Pendulum_
 
 ## **_Explanation_**:
 
-- **_Since_** , `5` is the **_The Smallest element_** of the list of integers , came _in The center position of array/list_
+- **_Since_** , `5` is the **_The Smallest element_** of the list of integers , came _in The center position of
+  array/list_
 - **_The Higher than smallest_** is `6` _goes to the right_ of `5` .
 - **_The Next higher_** number goes _to the left of minimum number_ and So on .
 - Remember , **_Duplications are included when Arranging_** , Don't Delete Them .
@@ -47,10 +51,12 @@ _the rhythm of beautiful musical notes is drawing a Pendulum_
 
 ## **_Explanation_**:
 
-- **_Since_** , `-10` is the **_The Smallest element_** of the list of integers , came _in The center position of array/list_
+- **_Since_** , `-10` is the **_The Smallest element_** of the list of integers , came _in The center position of
+  array/list_
 - **_The Higher than smallest_** is `-9` _goes to the right_ of it .
 - **_The Next higher_** number goes _to the left of_ `-10` , and So on .
-- Remeber , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start from 0) .
+- Remeber , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start from
+    0) .
 
   ***
 
@@ -58,10 +64,12 @@ _the rhythm of beautiful musical notes is drawing a Pendulum_
 
 ## **_Explanation_**:
 
-- **_Since_** , `-18` is the **_The Smallest element_** of the list of integers , came _in The center position of array/list_
+- **_Since_** , `-18` is the **_The Smallest element_** of the list of integers , came _in The center position of
+  array/list_
 - **_The Higher than smallest_** is `-16` _goes to the right_ of it .
 - **_The Next higher_** number goes _to the left of_ `-18` , and So on .
-- Remember , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start from 0) .
+- Remember , In **_Even array size_** , _The minimum element moved to (n-1)/2 index_ (considering that indexes start
+  from 0) .
 
 ---
 

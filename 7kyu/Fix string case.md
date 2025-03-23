@@ -1,6 +1,7 @@
 # [Fix string case](https://www.codewars.com/kata/5b180e9fedaa564a7000009a)
 
-In this Kata, you will be given a string that may have mixed uppercase and lowercase letters, and your task is to convert that string to either lowercase only or uppercase only based on:
+In this Kata, you will be given a string that may have mixed uppercase and lowercase letters, and your task is to
+convert that string to either lowercase only or uppercase only based on:
 
 - Make as few changes as possible.
 - If the string contains an equal number of uppercase and lowercase letters, convert the string to lowercase.

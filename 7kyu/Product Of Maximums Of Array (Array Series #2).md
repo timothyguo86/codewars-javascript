@@ -26,7 +26,8 @@
 
 #### _Explanation_:
 
-- **_Since_** _the size (k) equal 2_ , then **_the subsequence of size 2_** _whose gives_ **_product of maxima_** is `5 * 4 = 20` .
+- **_Since_** _the size (k) equal 2_ , then **_the subsequence of size 2_** _whose gives_ **_product of maxima_** is
+  `5 * 4 = 20` .
 
   ***
 
@@ -34,7 +35,8 @@
 
 #### _Explanation_:
 
-- **_Since_** _the size (k) equal 3_ , then **_the subsequence of size 3_** _whose gives_ **_product of maxima_** is `8 * 9 * 10 = 720` .
+- **_Since_** _the size (k) equal 3_ , then **_the subsequence of size 3_** _whose gives_ **_product of maxima_** is
+  `8 * 9 * 10 = 720` .
 
   ***
 
@@ -42,7 +44,8 @@
 
 #### _Explanation_:
 
-- **_Since_** _the size (k) equal 5_ , then **_the subsequence of size 5_** _whose gives_ **_product of maxima_** is `10 * 10 * 8 * 4 * 3 = 9600` .
+- **_Since_** _the size (k) equal 5_ , then **_the subsequence of size 5_** _whose gives_ **_product of maxima_** is
+  `10 * 10 * 8 * 4 * 3 = 9600` .
 
   ***
 
@@ -50,7 +53,8 @@
 
 #### _Explanation_:
 
-- **_Since_** _the size (k) equal 2_ , then **_the subsequence of size 2_** _whose gives_ **_product of maxima_** is `-4 * -1 = 4` .
+- **_Since_** _the size (k) equal 2_ , then **_the subsequence of size 2_** _whose gives_ **_product of maxima_** is
+  `-4 * -1 = 4` .
 
   ***
 
@@ -58,7 +62,8 @@
 
 #### _Explanation_:
 
-- **_Since_** _the size (k) equal 3_ , then **_the subsequence of size 3_** _whose gives_ **_product of maxima_** is `10 * 3 * -1 = -30` .
+- **_Since_** _the size (k) equal 3_ , then **_the subsequence of size 3_** _whose gives_ **_product of maxima_** is
+  `10 * 3 * -1 = -30` .
 
   ***
 

@@ -2,7 +2,8 @@
 
 ## Task
 
-Implement a function which finds the numbers less than `2`, and the indices of numbers greater than `1` in the given sequence, and returns them as a pair of sequences.
+Implement a function which finds the numbers less than `2`, and the indices of numbers greater than `1` in the given
+sequence, and returns them as a pair of sequences.
 
 Return a nested array or a tuple depending on the language:
 

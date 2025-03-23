@@ -32,7 +32,8 @@ The function `dateFilter` should take two arguments: `date` and `format`.
 'd/M/yy H%m' // Can return something like '1/31/14 1%59'
 ```
 
-Where there is an odd number of letters, parse the longest first then the remaining if needed. For example, `yyy` should be parsed as `[yy]y`, `ddd` should be parsed as `[dd][d]`.
+Where there is an odd number of letters, parse the longest first then the remaining if needed. For example, `yyy` should
+be parsed as `[yy]y`, `ddd` should be parsed as `[dd][d]`.
 
 When there are more than 2 of MdHms, for example, `dddd` it should be parsed as `[dd][dd]`.
 

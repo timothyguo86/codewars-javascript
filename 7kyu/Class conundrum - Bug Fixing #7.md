@@ -1,6 +1,7 @@
 # [Class conundrum - Bug Fixing #7](https://www.codewars.com/kata/55cd4ce59382498cbd000080)
 
-Oh no! Timmy's List Class has broken! Can you help timmy and fix his class? Timmy has a List class he has created, this is used for type strict arrays (which timmy calls Lists).
+Oh no! Timmy's List Class has broken! Can you help timmy and fix his class? Timmy has a List class he has created, this
+is used for type strict arrays (which timmy calls Lists).
 
 When timmy calls the Count property of the list it still remains at 0 when adding items.
 

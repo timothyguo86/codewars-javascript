@@ -27,7 +27,8 @@ Note for untyped languages: all inputs are always valid and of their expected ty
       1     2          3        4       -> 2nd and 4th occurence are replaced
     "Vader soid: No, I am your fother!"
 
-As you can see in the example: The first changed is the 2nd 'a'. So the start is always at the nth suitable char and not at the first!
+As you can see in the example: The first changed is the 2nd 'a'. So the start is always at the nth suitable char and not
+at the first!
 
 ---
 

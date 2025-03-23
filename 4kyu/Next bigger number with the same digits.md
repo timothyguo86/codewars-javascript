@@ -1,6 +1,7 @@
 # [Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e)
 
-Create a function that takes a positive integer and returns the next bigger number that can be formed by rearranging its digits. For example:
+Create a function that takes a positive integer and returns the next bigger number that can be formed by rearranging its
+digits. For example:
 
       12 ==> 21
      513 ==> 531

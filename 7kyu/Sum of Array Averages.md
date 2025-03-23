@@ -10,18 +10,18 @@ First, determine the average of each array. Then, return the sum of all the aver
 
 The example given: `sumAverage([[3, 4, 1, 3, 5, 1, 4], [21, 54, 33, 21, 77]])`, the answer being 44.
 
-1.  Calculate the average of each individual array:
+1. Calculate the average of each individual array:
 
-        [3, 4, 1, 3, 5, 1, 4] = (3 + 4 + 1 + 3 + 5 + 1 + 4) / 7 = 3
-        [21, 54, 33, 21, 77] = (21 + 54 + 33 + 21 + 77) / 5 = 41.2
+       [3, 4, 1, 3, 5, 1, 4] = (3 + 4 + 1 + 3 + 5 + 1 + 4) / 7 = 3
+       [21, 54, 33, 21, 77] = (21 + 54 + 33 + 21 + 77) / 5 = 41.2
 
-2.  Add the average of each array together:
+2. Add the average of each array together:
 
-        3 + 41.2 = 44.2
+       3 + 41.2 = 44.2
 
-3.  Round the final average down:
+3. Round the final average down:
 
-        floor(44.2) = 44
+       floor(44.2) = 44
 
 ---
 

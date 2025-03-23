@@ -2,7 +2,8 @@
 
 ## Task
 
-**_Given_** _an array of integers_ , **_Find_** **_the maximum product_** _obtained from multiplying 2 adjacent numbers in the array_.
+**_Given_** _an array of integers_ , **_Find_** **_the maximum product_** _obtained from multiplying 2 adjacent numbers
+in the array_.
 
 ---
 

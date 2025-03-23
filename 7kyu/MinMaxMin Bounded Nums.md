@@ -1,8 +1,10 @@
 # [MinMaxMin: Bounded Nums](https://www.codewars.com/kata/58d3487a643a3f6aa20000ff)
 
-Given an unsorted array of integers, find the smallest number in the array, the largest number in the array, and the smallest number between the two array bounds that is not in the array.
+Given an unsorted array of integers, find the smallest number in the array, the largest number in the array, and the
+smallest number between the two array bounds that is not in the array.
 
-For instance, given the array \[-1, 4, 5, -23, 24\], the smallest number is -23, the largest number is 24, and the smallest number between the array bounds is -22. You may assume the input is well-formed.
+For instance, given the array \[-1, 4, 5, -23, 24\], the smallest number is -23, the largest number is 24, and the
+smallest number between the array bounds is -22. You may assume the input is well-formed.
 
 You solution should return an array `[smallest, minimumAbsent, largest]`
 

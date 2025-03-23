@@ -1,6 +1,7 @@
 # [Double Trouble](https://www.codewars.com/kata/53d32bea2f2a21f666000256)
 
-Given an array of integers (x), and a target (t), you must find out if any two consecutive numbers in the array sum to t. If so, remove the second number.
+Given an array of integers (x), and a target (t), you must find out if any two consecutive numbers in the array sum to
+t. If so, remove the second number.
 
 Example:
 

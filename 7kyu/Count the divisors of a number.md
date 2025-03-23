@@ -13,7 +13,8 @@ Random tests go up to `n = 500000`.
 30 --> 8 // we have 8 divisors - 1, 2, 3, 5, 6, 10, 15 and 30
 ```
 
-Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to see which numbers are counted in each case.
+Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to
+see which numbers are counted in each case.
 
 ---
 

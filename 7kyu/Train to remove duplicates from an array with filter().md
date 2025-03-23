@@ -1,6 +1,7 @@
 # [Train to remove duplicates from an array with filter()](https://www.codewars.com/kata/58308360aeb69a460b0002b2)
 
-In this kata your task is to remove all the duplicates from the array using a standart build-in method - Array.prototype.filter(); return the array containing unique values only.
+In this kata your task is to remove all the duplicates from the array using a standart build-in method -
+Array.prototype.filter(); return the array containing unique values only.
 
 Tip: use the index of value(s) to solve this kata
 

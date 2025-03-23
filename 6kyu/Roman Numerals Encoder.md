@@ -1,8 +1,10 @@
 # [Roman Numerals Encoder](https://www.codewars.com/kata/51b62bf6a9c58071c600001b)
 
-Create a function taking a positive integer between `1` and `3999` (both included) as its parameter and returning a string containing the Roman Numeral representation of that integer.
+Create a function taking a positive integer between `1` and `3999` (both included) as its parameter and returning a
+string containing the Roman Numeral representation of that integer.
 
-Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any digit with a value of zero. There cannot be more than 3 identical symbols in a row.
+Modern Roman numerals are written by expressing each digit separately starting with the leftmost digit and skipping any
+digit with a value of zero. There cannot be more than 3 identical symbols in a row.
 
 In Roman numerals:
 

@@ -4,7 +4,8 @@ Pirates have notorious difficulty with enunciating. They tend to blur all the le
 
 At long last, we need a way to unscramble what these pirates are saying.
 
-Write a function that will accept a jumble of letters as well as a dictionary, and output a list of words that the pirate might have meant.
+Write a function that will accept a jumble of letters as well as a dictionary, and output a list of words that the
+pirate might have meant.
 
 For example:
 

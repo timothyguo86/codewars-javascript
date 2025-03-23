@@ -2,7 +2,9 @@
 
 Determine if the poker hand is flush, meaning if the five cards are of the **same suit**.
 
-Your function will be passed a list/array of 5 strings, each representing a poker card in the format `"5H"` (5 of hearts), meaning the value of the card followed by the initial of its suit (`H`earts, `S`pades, `D`iamonds or `C`lubs). No jokers included.
+Your function will be passed a list/array of 5 strings, each representing a poker card in the format `"5H"` (5 of
+hearts), meaning the value of the card followed by the initial of its suit (`H`earts, `S`pades, `D`iamonds or `C`lubs).
+No jokers included.
 
 Your function should return `true` if the hand is a flush, `false` otherwise.
 

@@ -8,7 +8,8 @@ Your job is to figure out the index of which vowel is missing from a given strin
 - `O` has an index of 3,
 - `U` has an index of 4.
 
-**Notes:** There is no need for string validation and every sentence given will contain all vowels but one. Also, you won't need to worry about capitals.
+**Notes:** There is no need for string validation and every sentence given will contain all vowels but one. Also, you
+won't need to worry about capitals.
 
 ## Examples
 

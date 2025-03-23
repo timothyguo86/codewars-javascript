@@ -1,8 +1,10 @@
 # [Scaling Squared Strings](https://www.codewars.com/kata/56ed20a2c4e5d69155000301)
 
-You will be given an array of objects representing data about developers who have signed up to attend the next coding meetup that you are organising.
+You will be given an array of objects representing data about developers who have signed up to attend the next coding
+meetup that you are organising.
 
-Your task is to return an **object which includes the count of food options selected by the developers on the meetup sign-up form.**.
+Your task is to return an **object which includes the count of food options selected by the developers on the meetup
+sign-up form.**.
 
 For example, given the following input array:
 
@@ -32,9 +34,13 @@ Notes:
 - The order of the meals count in the object does not matter.
 - The count value should be a valid number.
 - The input array will always be valid and formatted as in the example above.
-- there are 5 possible meal options and the strings representing the selected meal option will always be formatted in the same way, as follows: `'standard'`, `'vegetarian'`, `'vegan'`, `'diabetic'`, `'gluten-intolerant'`.
+- there are 5 possible meal options and the strings representing the selected meal option will always be formatted in
+  the same way, as follows: `'standard'`, `'vegetarian'`, `'vegan'`, `'diabetic'`, `'gluten-intolerant'`.
 
-This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: `forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course possible.
+This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have
+been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like:
+`forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course
+possible.
 
 Here is the full list of the katas in the **Coding Meetup** series:
 

@@ -9,7 +9,7 @@ function memoize(fn) {
   const cache = {}
 
   // Return a memoized version of the function
-  return function (...args) {
+  return function(...args) {
     if (cache[args]) return cache[args] // Return cached result
 
     const result = fn.apply(this, args) // Compute result

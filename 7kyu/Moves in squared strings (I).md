@@ -37,8 +37,8 @@ mnop     ponm     |mnop     abcd
 And
 
 - A high-order function `oper(fct, s)` where:
-  - `fct` is the function of one variable to apply to the string `s`
-  - (`fct` will be one of `vertMirror`, `horMirror`)
+    - `fct` is the function of one variable to apply to the string `s`
+    - (`fct` will be one of `vertMirror`, `horMirror`)
 
 #### Examples:
 
@@ -50,11 +50,13 @@ oper(hor_mirror, s) => "mnop\nijkl\nefgh\nabcd"
 
 #### Note:
 
-The form of the parameter `fct` in `oper` changes according to the language. You can see each form according to the language in "Sample Tests".
+The form of the parameter `fct` in `oper` changes according to the language. You can see each form according to the
+language in "Sample Tests".
 
 #### Bash Note:
 
-The input strings are separated by `,` instead of `\n`. The output strings should be separated by `\r` instead of `\n`. See "Sample Tests".
+The input strings are separated by `,` instead of `\n`. The output strings should be separated by `\r` instead of `\n`.
+See "Sample Tests".
 
 ---
 
@@ -67,9 +69,11 @@ function vertMirror(strng) {
     .map(row => [...row].reverse().join(''))
     .join('\n')
 }
+
 function horMirror(strng) {
   return strng.split('\n').reverse().join('\n')
 }
+
 function oper(fct, s) {
   return fct(s)
 }

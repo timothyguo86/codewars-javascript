@@ -1,6 +1,7 @@
 # [Nice Array](https://www.codewars.com/kata/59b844528bcb7735560000a0)
 
-A `Nice array` is defined to be an array where for every value `n` in the array, there is also an element `n - 1` or `n + 1` in the array.
+A `Nice array` is defined to be an array where for every value `n` in the array, there is also an element `n - 1` or
+`n + 1` in the array.
 
 examples:
 
@@ -21,7 +22,8 @@ examples:
 
     for n = 4, there is neither n - 1 = 3 nor n + 1 = 5
 
-Write a function named `isNice`/`IsNice` that returns `true` if its array argument is a Nice array, else `false`. An empty array is not considered nice.
+Write a function named `isNice`/`IsNice` that returns `true` if its array argument is a Nice array, else `false`. An
+empty array is not considered nice.
 
 ---
 

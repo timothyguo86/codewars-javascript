@@ -8,7 +8,8 @@ Some numbers have funny properties. For example:
 - 46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 ```
 
-- Given two positive integers `n` and `p`, we want to find a positive integer `k`, if it exists, such that the sum of the digits of `n` raised to consecutive powers starting from p is equal to `k * n`.
+- Given two positive integers `n` and `p`, we want to find a positive integer `k`, if it exists, such that the sum of
+  the digits of `n` raised to consecutive powers starting from p is equal to `k * n`.
 
 In other words, writing the consecutive digits of `n` as `a, b, c, d ..`., is there an integer `k` such that :
 $`(a^p + b^{p+1} + c^{p+2} + d^{p+3} + ...) = n∗k`$

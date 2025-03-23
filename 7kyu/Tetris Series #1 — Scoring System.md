@@ -2,13 +2,17 @@
 
 # A History Lesson
 
-Tetris is a puzzle video game originally designed and programmed by Soviet Russian software engineer Alexey Pajitnov. The first playable version was completed on June 6, 1984. Pajitnov derived its name from combining the Greek numerical prefix tetra- (the falling pieces contain 4 segments) and tennis, Pajitnov's favorite sport.
+Tetris is a puzzle video game originally designed and programmed by Soviet Russian software engineer Alexey Pajitnov.
+The first playable version was completed on June 6, 1984. Pajitnov derived its name from combining the Greek numerical
+prefix tetra- (the falling pieces contain 4 segments) and tennis, Pajitnov's favorite sport.
 
 # About scoring system
 
-The scoring formula is built on the idea that more difficult line clears should be awarded more points. For example, a single line clear is worth `40` points, clearing four lines at once (known as a Tetris) is worth `1200`.
+The scoring formula is built on the idea that more difficult line clears should be awarded more points. For example, a
+single line clear is worth `40` points, clearing four lines at once (known as a Tetris) is worth `1200`.
 
-A level multiplier is also used. The game starts at level `0`. The level increases every ten lines you clear. Note that after increasing the level, the total number of cleared lines is not reset.
+A level multiplier is also used. The game starts at level `0`. The level increases every ten lines you clear. Note that
+after increasing the level, the total number of cleared lines is not reset.
 
 For our task you can use this table:
 

@@ -2,7 +2,8 @@
 
 ### Debug `getSumOfDigits` Function
 
-Debug the `getSumOfDigits` function that takes a positive integer to calculate the sum of its digits. Assume that the argument is an integer.
+Debug the `getSumOfDigits` function that takes a positive integer to calculate the sum of its digits. Assume that the
+argument is an integer.
 
 #### Example
 

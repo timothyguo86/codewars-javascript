@@ -2,7 +2,8 @@
 
 # Task
 
-**_Given_** _an array of N integers, you have to find_ **_how many times_** _you have to_ **_add up the smallest numbers_** _in the array until_ **_their Sum_** _becomes greater or equal to_ **_K_**.
+**_Given_** _an array of N integers, you have to find_ **_how many times_** _you have to_ *
+*_add up the smallest numbers_** _in the array until_ **_their Sum_** _becomes greater or equal to_ **_K_**.
 
 ---
 
@@ -23,7 +24,8 @@
 
 - We _add two smallest elements_ **_(1 + 2)_**, _their sum is 3_ .
 - **_Then_** we **_add the next smallest number to it (3 + 3)_** , so _the sum becomes 6_ .
-- **_Now_** the result is greater or equal to **_6_** , _Hence the output is (2) i.e (2) operations are required to do this_ .
+- **_Now_** the result is greater or equal to **_6_** , _Hence the output is (2) i.e (2) operations are required to do
+  this_ .
 
   ***
 
@@ -34,7 +36,8 @@
 - We _add two smallest elements_ **_(4 + 2)_**, _their sum is 6_ .
 - **_Then_** we **_add the next smallest number to it (6 + 8)_** , so _the sum becomes 14_ .
 - **_Now_** we **_add the next smallest number (14 + 9)_** , so _the sum becomes 23_ .
-- **_Now_** the result is greater or equal to **_23_** , _Hence the output is (3) i.e (3) operations are required to do this_ .
+- **_Now_** the result is greater or equal to **_23_** , _Hence the output is (3) i.e (3) operations are required to do
+  this_ .
 
   ***
 
@@ -44,7 +47,8 @@
 
 - We _add two smallest elements_ **_(19 + 17)_**, _their sum is 36_ .
 - **_Then_** we **_add the next smallest number to it (36 + 28)_** , so _the sum becomes 64_ .
-- We need to **_keep doing this_** _until \*\*\_the sum_** becomes greater or equal to **_K_** (464 in this case)\_, which will require **_8_\*\* Steps .
+- We need to **_keep doing this_** _until \*\*\_the sum_** becomes greater or equal to **_K_** (464 in this case)\_,
+  which will require **_8_\*\* Steps .
 
   ***
 

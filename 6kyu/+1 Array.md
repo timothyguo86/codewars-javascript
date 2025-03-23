@@ -2,7 +2,8 @@
 
 Given an array of integers of any length, return an array that has 1 added to the value represented by the array.
 
-If the array is invalid (empty, or contains negative integers or integers with more than 1 digit), return `nil` (or your language's equivalent).
+If the array is invalid (empty, or contains negative integers or integers with more than 1 digit), return `nil` (or your
+language's equivalent).
 
 ### Examples
 
@@ -26,10 +27,10 @@ If the array is invalid (empty, or contains negative integers or integers with m
 ```js
 /**
  * Increments the given array of non-negative single-digit integers by one.
- * 
+ *
  * @param {number[]} arr - The array of non-negative single-digit integers.
  * @returns {number[] | null} - The incremented array, or null if the input is invalid.
- * 
+ *
  * The function performs the following steps:
  * 1. Checks if the array contains any invalid elements (negative numbers or numbers greater than 9) or if the array is empty. If so, it returns null.
  * 2. Iterates through the array from the last element to the first.

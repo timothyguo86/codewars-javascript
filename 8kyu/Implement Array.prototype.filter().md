@@ -1,6 +1,7 @@
 # [Implement Array.prototype.filter()](https://www.codewars.com/kata/56dd9b84fe5754786f0014f7)
 
-What we want to implement is `Array.prototype.filter()` function, just like the existing `Array.prototype.filter()`. Another similar function is `_.filter()` in underscore.js and lodash.js.
+What we want to implement is `Array.prototype.filter()` function, just like the existing `Array.prototype.filter()`.
+Another similar function is `_.filter()` in underscore.js and lodash.js.
 
 The usage will be quite simple, like:
 

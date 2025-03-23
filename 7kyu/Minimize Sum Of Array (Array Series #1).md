@@ -8,7 +8,8 @@
 
 # Task
 
-**_Given_** an **_array of integers_** , **_Find the minimum sum_** which is obtained _from summing each Two integers product_ .
+**_Given_** an **_array of integers_** , **_Find the minimum sum_** which is obtained _from summing each Two integers
+product_ .
 
 ---
 

@@ -8,7 +8,8 @@
 
 # Task
 
-**_Given_** an _array/list \[\] of integers_ , **_Construct_** a _product array \*\*\_Of same size_\*\* Such That prod\[i\] is equal to The Product of all the elements of Arr\[\] except Arr\[i\]\_.
+**_Given_** an _array/list \[\] of integers_ , **_Construct_** a _product array \*\*\_Of same size_\*\* Such That
+prod\[i\] is equal to The Product of all the elements of Arr\[\] except Arr\[i\]\_.
 
 ---
 
@@ -26,7 +27,8 @@
 
 ## **_Explanation_**:
 
-- **_The first element_** _in prod \[\] array_ **_20_** _is the product of all array's elements except the first element_
+- **_The first element_** _in prod \[\] array_ **_20_** _is the product of all array's elements except the first
+  element_
 - **_The second element_** **_12_** _is the product of all array's elements except the second element_ .
 
   ***
@@ -35,7 +37,8 @@
 
 ## **_Explanation_**:
 
-- **_The first element_** **_10_** _is the product of all array's elements_ **_except_** _the first element \*\*\_1_\*\*\_
+- **_The first element_** **_10_** _is the product of all array's elements_ **_except_** _the first element
+  \*\*\_1_\*\*\_
 - **_The second element_** **_2_** _is the product of all array's elements_ **_except_** _the second element_ **_5_**
 - **_The Third element_** **_5_** _is the product of all array's elements_ **_except_** _the Third element_ **_2_**.
 
@@ -49,7 +52,8 @@
 - **_The second element_** **_600_** _is the product of all array's elements_ **_except_** _the second element_ **_3_**
 - **_The Third element_** **_360_** _is the product of all array's elements_ **_except_** _the third element_ **_5_**
 - **_The Fourth element_** **_300_** _is the product of all array's elements_ **_except_** _the fourth element_ **_6_**
-- _Finally_ ,**_The Fifth element_** **_900_** _is the product of all array's elements_ **_except_** _the fifth element_ **_2_**
+- _Finally_ ,**_The Fifth element_** **_900_** _is the product of all array's elements_ **_except_** _the fifth element_
+  **_2_**
 
 ---
 

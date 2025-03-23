@@ -1,6 +1,7 @@
 # [Name to Matrix](https://www.codewars.com/kata/5a91e0793e9156ccb0003f6e)
 
-Given a name, turn that name into a perfect square matrix (nested array with the amount of arrays equivalent to the length of each array).
+Given a name, turn that name into a perfect square matrix (nested array with the amount of arrays equivalent to the
+length of each array).
 
 You will need to add periods (`.`) to the end of the name if necessary, to turn it into a matrix.
 

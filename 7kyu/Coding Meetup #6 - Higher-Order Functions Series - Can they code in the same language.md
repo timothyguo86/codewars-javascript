@@ -1,6 +1,7 @@
 # [Coding Meetup #6 - Higher-Order Functions Series - Can they code in the same language?](https://www.codewars.com/kata/58287977ef8d4451f90001a0)
 
-You will be given an array of objects (associative arrays in PHP, tables in COBOL) representing data about developers who have signed up to attend the next coding meetup that you are organising.
+You will be given an array of objects (associative arrays in PHP, tables in COBOL) representing data about developers
+who have signed up to attend the next coding meetup that you are organising.
 
 Your task is to return either:
 
@@ -19,10 +20,14 @@ your function should return `true`.
 
 Notes:
 
-- The strings representing a given language will always be formatted in the same way (e.g. 'JavaScript' will always be formatted will upper-case 'J' and 'S'
+- The strings representing a given language will always be formatted in the same way (e.g. 'JavaScript' will always be
+  formatted will upper-case 'J' and 'S'
 - The input array will always be valid and formatted as in the example above.
 
-This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like: `forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course possible.
+This kata is part of the **Coding Meetup** series which includes a number of short and easy to follow katas which have
+been designed to allow mastering the use of higher-order functions. In JavaScript this includes methods like:
+`forEach, filter, map, reduce, some, every, find, findIndex`. Other approaches to solving the katas are of course
+possible.
 
 Here is the full list of the katas in the **Coding Meetup** series:
 
@@ -44,7 +49,8 @@ Here is the full list of the katas in the **Coding Meetup** series:
 
 [Coding Meetup #9 - Higher-Order Functions Series - Is the meetup age-diverse?](https://www.codewars.com/kata/coding-meetup-number-9-higher-order-functions-series-is-the-meetup-age-diverse)
 
-[Coding Meetup #10 - Higher-Order Functions Series - Create usernames](https://www.codewars.com/kata/coding-meetup-number-10-higher-order-functions-series-create-usernames) <<<<<<< mine
+[Coding Meetup #10 - Higher-Order Functions Series - Create usernames](https://www.codewars.com/kata/coding-meetup-number-10-higher-order-functions-series-create-usernames) <<<<<<<
+mine
 
 [Coding Meetup #11 - Higher-Order Functions Series - Find the average age](https://www.codewars.com/kata/coding-meetup-number-11-higher-order-functions-series-find-the-average-age)
 
@@ -65,7 +71,7 @@ Here is the full list of the katas in the **Coding Meetup** series:
 ```js
 function isSameLanguage(list) {
   return list.every(dev => dev.language === list[0].language)
-}}
+}
 ```
 
 </details>

@@ -23,7 +23,8 @@ An **_element is leader_** _if it is greater than The Sum all the elements to it
 - **_Array/list_** size is _at least 3_ .
 - **_Array/list's numbers_** Will be **_mixture of positives , negatives and zeros_**
 - **_Repetition_** of numbers in _the array/list could occur_.
-- **_Returned Array/list_** _should store the leading numbers \*\*\_in the same order_\*\* in the original array/list\_ .
+- **_Returned Array/list_** _should store the leading numbers \*\*\_in the same order_\*\* in the original
+  array/list\_ .
 
   ***
 

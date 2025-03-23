@@ -1,6 +1,7 @@
 # [Generate range of integers](https://www.codewars.com/kata/55eca815d0d20962e1000106)
 
-Implement the function generateRange which takes three arguments (start, stop, step) and returns the range of integers from start to stop (inclusive) in increments of step.
+Implement the function generateRange which takes three arguments (start, stop, step) and returns the range of integers
+from start to stop (inclusive) in increments of step.
 
 ### Examples
 

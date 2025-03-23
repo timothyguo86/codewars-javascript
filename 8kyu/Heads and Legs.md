@@ -14,7 +14,8 @@ Assuming there are no other types of animals, work out how many of each animal a
 
 `Return a tuple in Python - (chickens, cows) and an array list - [chickens, cows]/{chickens, cows} in all other languages`
 
-If either the heads & legs is negative, the result of your calculation is negative or the calculation is a float return "No solutions" (no valid cases), or [-1, -1] in COBOL.
+If either the heads & legs is negative, the result of your calculation is negative or the calculation is a float
+return "No solutions" (no valid cases), or [-1, -1] in COBOL.
 
 In the form:
 

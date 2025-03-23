@@ -2,7 +2,8 @@
 
 # Write Number in Expanded Form
 
-You will be given a number and you will need to return it as a string in [Expanded Form](https://www.mathsisfun.com/definitions/expanded-notation.html). For example:
+You will be given a number and you will need to return it as a string
+in [Expanded Form](https://www.mathsisfun.com/definitions/expanded-notation.html). For example:
 
 ```haskell
 expandedForm 12    -- Should return '10 + 2'

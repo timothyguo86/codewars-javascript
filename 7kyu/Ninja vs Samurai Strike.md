@@ -1,6 +1,7 @@
 # [Ninja vs Samurai: Strike](https://www.codewars.com/kata/517b0f33cd023d848d000001)
 
-Something is wrong with our Warrior class. The strike method does not work correctly. The following shows an example of this code being used:
+Something is wrong with our Warrior class. The strike method does not work correctly. The following shows an example of
+this code being used:
 
 ```js
 var ninja = new Warrior('Ninja')
