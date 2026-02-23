@@ -1,4 +1,4 @@
-# [!a == a ?!](https://www.codewars.com/kata/59f9796cffe75f9299000025)
+# [Area of a Polygon (Easy)](https://www.codewars.com/kata/574758e396b130b63e00069b)
 
 Write the function `polygonArea(A,B,C,D)` that finds the area of polygons of this type:
 
